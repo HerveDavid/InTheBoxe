@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
-    <link rel="stylesheet" href="src/style/accueil/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style/accueil.css">
     <meta charset="utf-8">
     <title>InThBoxe</title>
   </head>
@@ -10,11 +11,11 @@
       <h1 class="logo"><img src="src/img/logo.png" alt="logo-InTheBoxe"></h1>
       <nav class="topNavigation">
         <ul>
-          <li><a href="#Accueil">Accueil</a></li>
-          <li><a href="#Club">Club</a></li>
-          <li><a href="#Entrainement">Entrainement</a></li>
-          <li><a href="#Competition">Competition</a></li>
-          <li><a href="#Contact">Contact</a></li>
+          <li id="Accueil"><a href="#Accueil">Accueil</a></li>
+          <li id= "Club"><a href="#Club">Club</a></li>
+          <li id="Entrainement"><a href="#Entrainement">Entrainement</a></li>
+          <li id="Competition"><a href="#Competition">Competition</a></li>
+          <li id="Contact"><a href="#Contact">Contact</a></li>
         </ul>
         <button type="button" name="connexion">Connexion</button>
       </nav>
