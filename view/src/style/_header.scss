@@ -1,0 +1,92 @@
+@import "variables";
+
+header {
+  background: $white;
+  color: $black;
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  font-family: $fontLow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  .logo{
+    position: absolute;
+    left: 1.97%;
+    right: 92.43%;
+    top: 0%;
+    bottom: 5.56%;
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      #Accueil {
+        position: absolute;
+        left: 18.67%;
+        right: 68.75%;
+        top: -2.78%;
+        bottom: 2.78%;
+      }
+      #Club{
+        position: absolute;
+        left: 29.77%;
+        right: 57.65%;
+        top: 0%;
+        bottom: 0%;
+      }
+      #Entrainement{
+        position: absolute;
+        left: 42.19%;
+        right: 44.98%;
+        top: 0%;
+        bottom: 0%;
+      }
+      #Competition{
+        position: absolute;
+        width: 154px;
+        height: 72px;
+        left: 709px;
+        top: 0px;
+      }
+      #Contact{
+        position: absolute;
+        left: 70.23%;
+        right: 17.19%;
+        top: 0%;
+        bottom: 0%;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+
+  button{
+
+    position: absolute;
+    left: 83.31%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    color: $white;
+    background-color: $red;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
