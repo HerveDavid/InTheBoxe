@@ -2,6 +2,7 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap" rel="stylesheet">
     <title>InTheBoxe</title>
   </head>
   <body>
