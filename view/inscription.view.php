@@ -44,9 +44,18 @@
             <input type="email" name="mail" id="mail" required/>
           </p>
           <p>
+            <label for="mdp"><h2>Mot de passe </h2></label>
+            <input type="mdp" name="mdp" id="mdp" />
+          </p>
+          <p>
+            <label for="confim"><h2>Confirmation du mot de passe :</h2></label>
+            <input type="confim" name="confim" id="confim" />
+          </p>
+          <p>
             <label for="tel"><h2>Téléphone</h2></label>
             <input type="tel" name="tel" id="tel" />
           </p>
+
           <p>
             <label for="naiss"><h2>Date de naissance</h2></label>
             <input type="date" name="naiss" id="naiss" required/>
@@ -64,6 +73,7 @@
             <input type="number" name="cp" id="cp" required/>
           </p>
           <input type="submit" value="Inscription">
+          <p style='color:red'> <?=$erreur ?></p>
         </fieldset>
       </form>
     </div>
