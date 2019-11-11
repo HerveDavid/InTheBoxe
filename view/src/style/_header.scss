@@ -1,92 +1,76 @@
 @import "variables";
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1440px;
+  height: 1024px;
+}
+
 header {
   background: $white;
-  color: $black;
-
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-
-  font-family: $fontLow;
+  margin: 2.3em;
+  height: 3em;
+  // width: 54em;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 43px;
+  text-decoration: none;
+
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
+  padding: 30px 10%;
 
-  .logo{
-    position: absolute;
-    left: 1.97%;
-    right: 92.43%;
-    top: 0%;
-    bottom: 5.56%;
+  .logo {
+    cursor: pointer;
   }
 
-  nav {
-    ul {
-      list-style: none;
-      #Accueil {
-        position: absolute;
-        left: 18.67%;
-        right: 68.75%;
-        top: -2.78%;
-        bottom: 2.78%;
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      padding: 1.2em;
+      a {
+        font-family: $fontLow;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 43px;
+        text-decoration: none;
+        color: $black;
+        transition: all 0.3s ease 0s;
+
+        :hover {
+          color: $black;
+        }
+
       }
-      #Club{
-        position: absolute;
-        left: 29.77%;
-        right: 57.65%;
-        top: 0%;
-        bottom: 0%;
-      }
-      #Entrainement{
-        position: absolute;
-        left: 42.19%;
-        right: 44.98%;
-        top: 0%;
-        bottom: 0%;
-      }
-      #Competition{
-        position: absolute;
-        width: 154px;
-        height: 72px;
-        left: 709px;
-        top: 0px;
-      }
-      #Contact{
-        position: absolute;
-        left: 70.23%;
-        right: 17.19%;
-        top: 0%;
-        bottom: 0%;
-      }
-    }
-    a {
-      text-decoration: none;
     }
   }
 
-  button{
-
-    position: absolute;
-    left: 83.31%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
+  button {
+    padding: 1.8em 22px;
 
     color: $white;
     background-color: $red;
-    font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 43px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+
+    border: none;
+
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    :hover {
+      background-color: $black;
+    }
+
   }
+
 }

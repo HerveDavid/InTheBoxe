@@ -4,6 +4,10 @@
   margin: 0;
   padding: 0; }
 
+body {
+  width: 1440px;
+  height: 1024px; }
+
 header {
   background: #FFFFFF;
   margin: 2.3em;
@@ -46,9 +50,4 @@ header {
     header button :hover {
       background-color: #000000; }
 
-body {
-  width: 1440px;
-  height: 1024px;
-  background: url("../img/accueil/background.png"); }
-
-/*# sourceMappingURL=accueil.css.map */
+/*# sourceMappingURL=club.css.map */
