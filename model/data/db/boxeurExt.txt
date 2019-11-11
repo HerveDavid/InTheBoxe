@@ -1,0 +1,2 @@
+100|tom|1996-11-10|poids plume|amateur|10|6|4
+102|paul|1987-08-07|mi lourd|semi professionel|20|2|3
