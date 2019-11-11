@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../view/src/style/club.css">
     <title>InTheBoxe</title>
   </head>
   <body>
