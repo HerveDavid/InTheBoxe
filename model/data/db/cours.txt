@@ -1,0 +1,2 @@
+cardio|19h30|mardi|2
+puissance|18h|jeudi|4

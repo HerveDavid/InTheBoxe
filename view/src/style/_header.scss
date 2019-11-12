@@ -1,5 +1,6 @@
 @import "variables";
 
+<<<<<<< Updated upstream
 * {
   box-sizing: border-box;
   margin: 0;
@@ -30,6 +31,34 @@ header {
   .logo {
     cursor: pointer;
   }
+=======
+header {
+  // background: $white;
+  // color: $black;
+  //
+  // position: absolute;
+  // left: 0%;
+  // right: 0%;
+  // top: 0%;
+  // bottom: 0%;
+  //
+  // font-family: $fontLow;
+  // font-style: normal;
+  // font-weight: normal;
+  // font-size: 24px;
+  // line-height: 43px;
+  // display: flex;
+  // align-items: center;
+  // text-align: center;
+  //
+  // .logo{
+  //   position: absolute;
+  //   left: 1.97%;
+  //   right: 92.43%;
+  //   top: 0%;
+  //   bottom: 5.56%;
+  // }
+>>>>>>> Stashed changes
 
   ul {
     list-style-type: none;
