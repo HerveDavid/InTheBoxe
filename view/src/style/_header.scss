@@ -13,8 +13,10 @@ body {
 
 header {
   background: $white;
-  margin: 2.3em;
+
+  margin: 1em;
   height: 3em;
+  padding: 30px 10%;
   // width: 54em;
   font-style: normal;
   font-weight: normal;
@@ -25,11 +27,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
 
   .logo {
     cursor: pointer;
   }
+}
+
 header {
   background: $white;
   color: $black;

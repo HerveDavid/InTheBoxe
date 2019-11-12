@@ -2,7 +2,13 @@
 @import "content";
 
 body{
-  width: 1440px;
-  height: 1024px;
-  background: url("../img/accueil/background.png");
+  height: 100%;
+  background: url(../img/accueil/background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  margin: 5%;
+
 }
