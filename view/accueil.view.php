@@ -24,7 +24,7 @@
       <h1>Explorez vos limites</h1>
       <p>Inscrivez vous pour avoir accès à des cours gratuits <br>
         et aux tournois de boxe en ligne</p>
-      <a href="../view/inscription.view.php">Inscription</a>
+      <a href="../view/inscription.ctrl.php">Inscription</a>
     </div>
     <footer>
       <h1>Accès aux cours et informations</h1>
