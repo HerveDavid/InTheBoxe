@@ -17,7 +17,7 @@
           <li id="Contact"><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
-      <button type="button" name="connexion">Connexion</button>
+      <a href="../view/connexion.view.php" name="connexion">Connexion</a>
     </header>
     <div id="Content">
       <h2>Boxing Club Evian-Les-Bains</h2>
