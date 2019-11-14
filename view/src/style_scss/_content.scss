@@ -1,11 +1,11 @@
 @import "variables";
 
 #Content{
-  // position: absolute;
-  // width: 1216px;
-  // height: 806px;
-  // left: 112px;
-  // top: 72px;"
+  position: absolute;
+  width: 1216px;
+  height: 806px;
+  left: 112px;
+  top: 72px;
   position: absolute;
   width: 1216px;
   height: 806px;
@@ -35,5 +35,4 @@
     color: $white;
     background-color: $red;
     text-align: center;
-  }
 }
