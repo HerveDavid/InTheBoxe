@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1440px;
+  height: 1024px;
+}
+
+header {
+  background: #FFFFFF;
+  margin: 1em;
+  height: 3em;
+  padding: 30px 10%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 43px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  cursor: pointer;
+}
+
+header {
+  background: #FFFFFF;
+  color: #000000;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  font-family: Palanquin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+header .logo {
+  position: absolute;
+  left: 1.97%;
+  right: 92.43%;
+  top: 0%;
+  bottom: 5.56%;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 1.2em;
+}
+
+header ul li a {
+  font-family: Palanquin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 43px;
+  text-decoration: none;
+  color: #000000;
+  transition: all 0.3s ease 0s;
+}
+
+header ul li a :hover {
+  color: #000000;
+}
+
+header button {
+  padding: 1.8em 22px;
+  color: #FFFFFF;
+  background-color: #BE1E2D;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+header button :hover {
+  background-color: #000000;
+}
+
+#Content {
+  position: absolute;
+  width: 1216px;
+  height: 806px;
+  left: 112px;
+  top: 72px;
+  position: absolute;
+  width: 1216px;
+  height: 806px;
+  left: 112px;
+  top: 72px;
+  margin: 10 auto;
+  width: 40em;
+  color: #FFFFFF;
+  font-family: Palanquin;
+  display: inline-block;
+  width: 15em;
+  height: 3em;
+  color: #FFFFFF;
+  background-color: #BE1E2D;
+  text-align: center;
+}
+
+#Content h1 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 85px;
+  display: flex;
+  align-items: center;
+}
+
+#Content a {
+  color: #FFFFFF;
+  background-color: #BE1E2D;
+}
+
+footer h1 {
+  color: #000000;
+  font-family: Palanquin;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+body {
+  height: 100%;
+  background: url(../img/accueil/background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 5%;
+}
