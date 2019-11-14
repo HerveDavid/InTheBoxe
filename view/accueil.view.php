@@ -22,7 +22,8 @@
     <div id="Content">
       <h2>Boxing Club Evian-Les-Bains</h2>
       <h1>Explorez vos limites</h1>
-      <p>Inscrivez vous pour avoir accès à des cours gratuits et aux tournois de boxe en ligne</p>
+      <p>Inscrivez vous pour avoir accès à des cours gratuits <br>
+        et aux tournois de boxe en ligne</p>
       <a href="../view/inscription.view.php">Inscription</a>
     </div>
     <footer>

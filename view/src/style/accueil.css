@@ -68,6 +68,11 @@ header {
     padding: 1.8em 22px;
     color: #FFFFFF;
     background-color: #BE1E2D;
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
     font-weight: bold;
     border: none;
     cursor: pointer;
@@ -76,19 +81,43 @@ header {
       background-color: #000000; }
 
 #Content {
+<<<<<<< Updated upstream
+=======
+  margin: 10 auto;
+  width: 40em;
+>>>>>>> Stashed changes
   color: #FFFFFF;
   font-family: Palanquin; }
   #Content h1 {
     font-family: Rubik;
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     font-style: normal;
     font-weight: bold;
     font-size: 72px;
     line-height: 85px;
     display: flex;
+<<<<<<< Updated upstream
     align-items: center; }
   #Content a {
     color: #FFFFFF;
     background-color: #BE1E2D; }
+=======
+<<<<<<< Updated upstream
+    align-items: center;
+=======
+    align-items: center; }
+  #Content a {
+    display: inline-block;
+    width: 15em;
+    height: 3em;
+    color: #FFFFFF;
+    background-color: #BE1E2D;
+>>>>>>> Stashed changes
+    text-align: center; }
+>>>>>>> Stashed changes
 
 footer h1 {
   color: #000000;
