@@ -1,0 +1,105 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1440px;
+  height: 1024px;
+}
+
+header {
+  background: $white;
+
+  margin: 1em;
+  height: 3em;
+  padding: 30px 10%;
+  // width: 54em;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 43px;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    cursor: pointer;
+  }
+}
+
+header {
+  background: $white;
+  color: $black;
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  font-family: $fontLow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  .logo{
+    position: absolute;
+    left: 1.97%;
+    right: 92.43%;
+    top: 0%;
+    bottom: 5.56%;
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      padding: 1.2em;
+      a {
+        font-family: $fontLow;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 43px;
+        text-decoration: none;
+        color: $black;
+        transition: all 0.3s ease 0s;
+
+        :hover {
+          color: $black;
+        }
+
+      }
+    }
+  }
+
+  button {
+    padding: 1.8em 22px;
+
+    color: $white;
+    background-color: $red;
+    font-weight: bold;
+
+    border: none;
+
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    :hover {
+      background-color: $black;
+    }
+
+  }
+
+}

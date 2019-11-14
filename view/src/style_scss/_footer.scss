@@ -1,0 +1,17 @@
+@import "variables";
+
+footer {
+
+  h1{
+    color: $black;
+    font-family: Palanquin;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+  }
+}

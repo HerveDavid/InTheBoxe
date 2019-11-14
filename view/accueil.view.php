@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../view/src/style/accueil.css">
     <meta charset="utf-8">
     <title>InTheBoxe</title>
   </head>
   <body>
     <header>
-      <h1 class="logo"><img src="src/img/logo.png" alt="logo-InTheBoxe"></h1>
+      <img class="logo" src="src/img/logo.png" alt="logo-InTheBoxe">
       <nav class="topNavigation">
         <ul>
           <li id="Accueil"><a href="../view/accueil.view.php">Accueil</a></li>
@@ -16,13 +16,14 @@
           <li id="Competition"><a href="#Competition">Competition</a></li>
           <li id="Contact"><a href="#Contact">Contact</a></li>
         </ul>
-        <button type="button" name="connexion">Connexion</button>
       </nav>
+      <a href="../view/connexion.view.php" name="connexion">Connexion</a>
     </header>
     <div id="Content">
       <h2>Boxing Club Evian-Les-Bains</h2>
       <h1>Explorez vos limites</h1>
-      <p>Inscrivez vous pour avoir accès à des cours gratuits et aux tournois de boxe en ligne</p>
+      <p>Inscrivez vous pour avoir accès à des cours gratuits <br>
+        et aux tournois de boxe en ligne</p>
       <a href="../view/inscription.view.php">Inscription</a>
     </div>
     <footer>

@@ -2,6 +2,7 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="../view/src/style/entrainement.css">
     <title>InTheBoxe</title>
   </head>
   <body>

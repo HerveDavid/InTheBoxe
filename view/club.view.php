@@ -2,6 +2,7 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="../view/src/style/club.css">
     <title>InTheBoxe</title>
   </head>
   <body>
@@ -15,7 +16,7 @@
           <li id="Competition"><a href="#Competition">Competition</a></li>
           <li id="Contact"><a href="#Contact">Contact</a></li>
         </ul>
-        <button type="button" name="connexion">Connexion</button>
+        <a href="../view/connexion.view.php" name="connexion">Connexion</a>
       </nav>
     </header>
     <div id="Club-1">
