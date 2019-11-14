@@ -16,7 +16,7 @@
           <li id="Competition"><a href="#Competition">Competition</a></li>
           <li id="Contact"><a href="#Contact">Contact</a></li>
         </ul>
-        <button type="button" name="inscription">Inscription</button>
+        <a href="../view/inscription.view.php">Inscription</a>
       </nav>
     </header>
     <div id="Gauche">
