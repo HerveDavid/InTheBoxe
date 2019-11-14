@@ -10,7 +10,7 @@ CREATE TABLE adherent(
   categorie VARCHAR(20),
   combattant VARCHAR(25),
   certificat VARCHAR(30),
-  mail VARCHAR(30),
+  mail VARCHAR(30) UNIQUE,
   adresse VARCHAR(40),
   apayer FLOAT,
   tel VARCHAR(10),
