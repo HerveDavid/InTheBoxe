@@ -1,5 +1,6 @@
 <?php
-
+session_start();
+var_dump($_SESSION['essai']);
 
   /////////////////declaration/////////////////////////////////////////////
 
@@ -20,7 +21,7 @@
   else {
     $erreur="";
   }
-  
+
   /////////////////////////////////////////////////////////////////////////
 
 
@@ -75,7 +76,7 @@
 
   // Si formulaire non rempli afficher la vue inscription
   } else {
-    include('../view/inscription.view.php');
+    //include('../view/inscription.view.php');
   }
 
 

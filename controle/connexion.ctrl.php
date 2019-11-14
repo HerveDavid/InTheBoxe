@@ -29,14 +29,17 @@ if (isset($_POST['mail'])
     // Initialisation des variables
     $email=$_POST['mail'];
     $motdepasse=$_POST['mdp'];
-    $MDPofficiel = $adherents->getMDP($email);
+    $adh = $adherents->getAdherent($email);
 
     // Vérification que le pseudo existe
-    if (count($MDPofficiel)>0) {
-      if ($MDPofficiel[0][0]==$motdepasse) {
-        $profil=$adherents->getProfil($email);
+    if (isset($adh)) {
+      if ($adh->getMdp()==$motdepasse) {
+
+        session_start();
+        $_SESSION['id'] = $adh.getId(); //a modifier
+        //$profil=$adherents->getProfil($email);
         // Affichage du profil
-        header('Location: profil.ctrl.php?id='.$profil[0]['id']);
+        header('Location: profil.ctrl.php?');
       } else {
         // Si le profil n'est pas trouvé
         header('Location: connexion.ctrl.php?erreur=1');

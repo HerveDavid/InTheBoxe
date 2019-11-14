@@ -1,5 +1,10 @@
 <?php
-  include('../view/accueil.view.html');
+session_start();
+
+$_SESSION['essai'] = "coucou";
+
+
+  include('../view/accueil.view.php');
 
 
 
