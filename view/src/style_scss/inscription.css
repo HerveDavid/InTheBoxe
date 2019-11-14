@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+header {
+  background: #FFFFFF;
+  margin: 2.3em;
+  height: 3em;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 43px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%; }
+  header .logo {
+    cursor: pointer; }
+  header ul {
+    list-style-type: none; }
+    header ul li {
+      display: inline-block;
+      padding: 1.2em; }
+      header ul li a {
+        font-family: Palanquin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 43px;
+        text-decoration: none;
+        color: #000000;
+        transition: all 0.3s ease 0s; }
+        header ul li a :hover {
+          color: #000000; }
+  header button {
+    padding: 1.8em 22px;
+    color: #FFFFFF;
+    background-color: #BE1E2D;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s; }
+    header button :hover {
+      background-color: #000000; }
+
+/*# sourceMappingURL=inscription.css.map */

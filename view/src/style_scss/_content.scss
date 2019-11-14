@@ -1,23 +1,18 @@
 @import "variables";
 
 #Content{
-<<<<<<< Updated upstream
   // position: absolute;
   // width: 1216px;
   // height: 806px;
   // left: 112px;
   // top: 72px;"
-=======
-<<<<<<< Updated upstream
   position: absolute;
   width: 1216px;
   height: 806px;
   left: 112px;
   top: 72px;
-=======
   margin: 10 auto;
   width: 40em;
->>>>>>> Stashed changes
   color: $white;
   font-family: $fontLow;
   h1{
@@ -31,11 +26,9 @@
   }
 
   a{
-<<<<<<< Updated upstream
     color: $white;
     background-color: $red;
   }
-=======
     display: inline-block;
     width: 15em;
     height: 3em;
@@ -43,6 +36,4 @@
     background-color: $red;
     text-align: center;
   }
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 }
