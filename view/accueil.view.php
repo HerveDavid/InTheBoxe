@@ -15,9 +15,10 @@
           <li id="Entrainement"><a href="#Entrainement">Entrainement</a></li>
           <li id="Competition"><a href="#Competition">Competition</a></li>
           <li id="Contact"><a href="#Contact">Contact</a></li>
+          <li id="Connexion"><a href="../view/connexion.view.php">Connexion</a></li>
         </ul>
       </nav>
-      <a href="../view/connexion.view.php" name="connexion">Connexion</a>
+      <!-- <a href="../view/connexion.view.php" name="connexion">Connexion</a> -->
     </header>
     <div id="Content">
       <h2>Boxing Club Evian-Les-Bains</h2>
