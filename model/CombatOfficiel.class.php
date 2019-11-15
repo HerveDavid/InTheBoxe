@@ -2,7 +2,6 @@
 //classe des Combats Officiels
 class CombatOfficiel{
 
-}
 private $licenceint;
 private $licenceext;
 private $dateprevue;

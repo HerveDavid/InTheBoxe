@@ -15,8 +15,9 @@
           <li id="Entrainement"><a href="#Entrainement">Entrainement</a></li>
           <li id="Competition"><a href="#Competition">Competition</a></li>
           <li id="Contact"><a href="#Contact">Contact</a></li>
+          <li id="Connexion"><a href="../view/connexion.view.php">Connexion</a></li>
         </ul>
-        <a href="../view/connexion.view.php" name="connexion">Connexion</a>
+        <!-- <a href="../view/connexion.view.php" name="connexion">Connexion</a> -->
       </nav>
     </header>
     <article>
@@ -29,6 +30,7 @@
       <p>Participez à des combats et trouvez un adversaire qui vous correspond</p>
     </div>
     <div id="Droite">
+      <img src="src/img/gantsBoxe.jpg" alt="">
       <h1>Inscription</h1>
       <form class="inscription" action="" method="post">
         <fieldset>

@@ -2,7 +2,6 @@
 //classe des entrainements personalisés
 class boxeurExt{
 
-}
 private $licence;
 private $nom;
 private $datenaiss;

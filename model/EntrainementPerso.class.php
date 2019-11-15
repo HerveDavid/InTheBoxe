@@ -2,12 +2,14 @@
 //classe des entrainements personalisés
 class entrainementPerso{
 
-}
+<<<<<<< HEAD
+=======
+
+>>>>>>> a5acaf3d457de9a07f0cb633b4b26b9065a79aa9
 private $numlicence;
 private $numentrainement;
 private $nomexercice;
 private $nbrep;
-
 
 public function __construct(array $param = array()) {
   //
@@ -20,9 +22,26 @@ public function __construct(array $param = array()) {
     }
   }
 }
+
 public function getNumLicense():INTEGER{return $this->numlicence;}
 public function getNumEntrainement():INTEGER{return $this->numentrainement;}
 public function getNomExercice():string{return $this->nomexercice;}
 public function getNbRep():INTEGER{return $this->nbrep;}
+
+public function setNumLicence(int $numlic):void{
+  $this->numlicence=$numlic;
 }
+
+public function setNumEntrainement(int $nument):void{
+  $this->numentrainement=$nument;
+}
+
+public function setExercice(string $exercice): void{
+  $this->nomexercice=$exercice;
+}
+public function setNbRep(string $rep): void{
+  $this->nbrep=$rep;
+
+}
+
 ?>

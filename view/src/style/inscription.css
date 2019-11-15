@@ -4,11 +4,12 @@ header {
   font-family: Palanquin;
   font-style: normal;
   font-weight: normal;
+  font-size: 24px;
+  line-height: 43px;
   position: relative;
   margin: 1.2em auto;
   align-items: center;
   width: 50em;
-  height: 2.5em;
   display: flex;
   flex-direction: row;
 }
@@ -18,15 +19,17 @@ header nav {
 }
 
 header nav ul {
+  height: 100%;
   display: flex;
   flex-direction: row;
   list-style: none;
+  margin: 0 0;
 }
 
 header nav ul li {
   text-align: center;
   width: 100%;
-  padding: 0.3em;
+  padding: 0.5em;
 }
 
 header nav ul li a {
@@ -46,17 +49,27 @@ header nav ul #Connexion a {
 article {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 article div {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 200px;
-  text-align: center;
+  align-items: center;
 }
 
 article div form {
   display: flex;
   text-align: center;
+}
+
+article #Droite img {
+  position: relative;
+  z-index: -1000;
+  max-width: 100%;
+  filter: blur(10px);
+  -moz-filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -o-filter: blur(10px);
 }
