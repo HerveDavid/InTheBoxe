@@ -1,10 +1,7 @@
 <?php
 
-<<<<<<< HEAD
-=======
 include('../model/Adherent.class.php');
 
->>>>>>> 88ffd820f2fd7b88ef8cc4fd2f00a00852e8f3e5
 class DAO {
   private $db;
   private $database = '../model/data/db/boxe.db';
@@ -29,17 +26,9 @@ class DAO {
 
   public function getAdherent($licence){
     $q = "SELECT * FROM adherent WHERE licence='$licence'";
-<<<<<<< HEAD
-    try{
-      $r= $this->db->query($q);
-    }
-    $res = $r->fetchAll(PDO::FETCH_CLASS,'Adherent');
-    return new Adherent();
-=======
     $r= $this->db->query($q);
     $res = $r->fetchAll(PDO::FETCH_CLASS[0]);
     return new Adherent($res);
->>>>>>> 88ffd820f2fd7b88ef8cc4fd2f00a00852e8f3e5
   }
 
   public function CreeAdherent(adherent $adherent){

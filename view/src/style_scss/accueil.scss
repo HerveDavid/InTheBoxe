@@ -2,16 +2,13 @@
 // @import "content";
 // @import "footer";
 
-// body{
-//   height: 100%;
-//   background: url(../img/accueil/background.png) no-repeat center center fixed;
-//   -webkit-background-size: cover;
-//   -moz-background-size: cover;
-//   -o-background-size: cover;
-//   background-size: cover;
-//
-//   margin: 10%;
-// }
+body{
+  background: url(../img/accueil/background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 //
 // #Content{
 //   position: absolute;
