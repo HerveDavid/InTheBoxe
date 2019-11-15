@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$_SESSION['essai'] = "coucou";
+$_SESSION['mail'] = "";
 
 
   include('../view/accueil.view.php');

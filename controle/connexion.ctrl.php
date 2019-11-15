@@ -36,7 +36,7 @@ if (isset($_POST['mail'])
       if ($adh->getMdp()==$motdepasse) {
 
         session_start();
-        $_SESSION['id'] = $adh.getId(); //a modifier
+        $_SESSION['mail'] = $adh.getMail(); //a modifier
         //$profil=$adherents->getProfil($email);
         // Affichage du profil
         header('Location: profil.ctrl.php?');

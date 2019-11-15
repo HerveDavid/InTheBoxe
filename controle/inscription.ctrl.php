@@ -1,6 +1,5 @@
 <?php
 session_start();
-var_dump($_SESSION['mail']);
 
   /////////////////declaration/////////////////////////////////////////////
 
@@ -56,7 +55,7 @@ var_dump($_SESSION['mail']);
 
         // Insertion de l'Adherent dans la base de données
         $dao->CreeAdherent($newAdherent);
-        $_SESSION['mail']
+        $_SESSION['mail'] = $email;
         // Afficher le nouveau profil
         header('Location: profil.ctrl.php?numAdh='.$dao->getNumAdherent($email));
 
@@ -76,7 +75,8 @@ var_dump($_SESSION['mail']);
 
   // Si formulaire non rempli afficher la vue inscription
   } else {
-    //include('../view/inscription.view.php');
+    $erreur="szasa"; 
+    include('../view/inscription.view.php');
   }
 
 

@@ -74,7 +74,8 @@
             <input type="number" name="cp" id="cp" required/>
           </p>
           <input type="submit" value="Inscription">
-          <p style='color:red'> <?=$erreur ?></p>
+          <?php global $erreur; ?>
+          <p style='color:red'> <?= $erreur ?></p>
         </fieldset>
       </form>
     </div>
