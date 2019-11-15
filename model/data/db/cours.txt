@@ -1,2 +1,3 @@
 cardio|19h30|mardi|2
 puissance|18h|jeudi|4
+souplesse|14h|samedi|3

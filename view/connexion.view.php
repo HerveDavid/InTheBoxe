@@ -30,7 +30,7 @@
     </div>
     <div id="Droite">
       <h1>Connexion</h1>
-      <form class="connexion" action="" method="post">
+      <form class="connexion" action="../controle/connexion.ctrl.php" method="post">
         <fieldset>
           <p>
             <label for="mail"><h2>Adresse mail</h2></label>
