@@ -49,17 +49,27 @@ header nav ul #Connexion a {
 article {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 article div {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 200px;
-  text-align: center;
+  align-items: center;
 }
 
 article div form {
   display: flex;
   text-align: center;
+}
+
+article #Droite img {
+  position: relative;
+  z-index: -1000;
+  max-width: 100%;
+  filter: blur(10px);
+  -moz-filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -o-filter: blur(10px);
 }

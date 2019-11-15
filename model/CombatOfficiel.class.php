@@ -2,11 +2,11 @@
 //classe des Combats Officiels
 class CombatOfficiel{
 
-}
 private $licenceint;
 private $licenceext;
 private $dateprevue;
 private $horaire;
+private $lieu;
 
 public function __construct(array $param = array()) {
   //
@@ -23,5 +23,6 @@ public function getLicenceInt():INTEGER{return $this->licenceint;}
 public function getLicenceExt():INTEGER{return $this->licenceext;}
 public function getDatePrevue():date{return $this->dateprevue;}
 public function getHoraire():INTEGER{return $this->horaire;}
+public function getLieu():string{return $this->lieu;}
 }
 ?>

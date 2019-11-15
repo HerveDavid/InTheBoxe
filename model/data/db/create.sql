@@ -35,7 +35,8 @@ CREATE TABLE prof(
 
 CREATE TABLE activite(
   nom VARCHAR(25) PRIMARY KEY,
-  type VARCHAR(25)
+  type VARCHAR(25),
+  dateactivite date
 );
 
 CREATE TABLE boxeurExt(
@@ -94,7 +95,8 @@ CREATE TABLE combatOfficiel(
   licenceint INTEGER,
   licenceext INTEGER,
   dateprevue DATE,
-  horaire VARCHAR,
+  horaire VARCHAR(25),
+  lieu VARCHAR(25),
   PRIMARY KEY(licenceint,licenceext,dateprevue),
   FOREIGN KEY(licenceint) REFERENCES adherent(licence),
   FOREIGN KEY(licenceext) REFERENCES boxeurExt(licence)

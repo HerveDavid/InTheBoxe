@@ -30,6 +30,7 @@
       <p>Participez à des combats et trouvez un adversaire qui vous correspond</p>
     </div>
     <div id="Droite">
+      <img src="src/img/gantsBoxe.jpg" alt="">
       <h1>Inscription</h1>
       <form class="inscription" action="" method="post">
         <fieldset>
