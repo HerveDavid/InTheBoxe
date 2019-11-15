@@ -15,8 +15,9 @@
           <li id="Entrainement"><a href="#Entrainement">Entrainement</a></li>
           <li id="Competition"><a href="#Competition">Competition</a></li>
           <li id="Contact"><a href="#Contact">Contact</a></li>
+          <li id="Connexion"><a href="../view/connexion.view.php">Connexion</a></li>
         </ul>
-        <a href="../view/inscription.view.php">Inscription</a>
+        <!-- <a href="../view/inscription.view.php">Inscription</a> -->
       </nav>
     </header>
     <article>

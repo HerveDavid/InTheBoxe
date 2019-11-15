@@ -2,7 +2,8 @@
 
 //classe des adhérents
 class Adherent {
-
+  private $id;
+  private $motdepasse;
   private $mail;
   private $nom;
   private $prenom;
@@ -32,7 +33,8 @@ public function __construct(array $param = array()) {
       }
     }
   }
-
+public function getId():INTEGER {return $this->id;}
+public function getMotDePasse():string{return $this->motdepasse;}
 public function getLicence(): INTEGER {return $this->licence;}
 public function getNom(): string {return $this->nom;}
 public function getPrenom(): string {return $this->prenom;}
@@ -50,9 +52,11 @@ public function getTel(): string {return $this->tel;}
 public function getVictoire(): INTEGER {return $this->victoire;}
 public function getDefaite(): INTEGER {return $this->defaite;}
 public function getNul(): INTEGER {return $this->nul;}
-public function getMdp(): string {return $this->$motdepasse;}
-public function getId(): string {return $this->id;}
 
+public function getPalmares():string{
+  $res = "Adherent : '$this->getNom()' '$this->getPrenom()' Nombre de victoire : '$this->getVictoire()' Nombre de match nul : '$this->getNul' Nombre de défaite : '$this->getDefaite' ";
+  return $res;
+}
 
 }
  ?>

@@ -6,33 +6,92 @@ header {
   font-weight: normal;
   font-size: 24px;
   line-height: 43px;
-  display: inline-block;
+  position: relative;
+  margin: 0 auto;
   align-items: center;
-  justify-content: space-between;
+  width: 50em;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
+}
+
+header nav {
+  width: 100%;
 }
 
 header nav ul {
+  padding: inherit;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
   list-style: none;
+  margin: 0 0;
+}
+
+header nav ul li {
+  text-align: center;
+  width: 100%;
+  padding: 0.5em;
 }
 
 header nav ul li a {
+  color: #000000;
   text-decoration: none;
+}
+
+header nav ul #Connexion {
+  background-color: #BE1E2D;
+}
+
+header nav ul #Connexion a {
+  font-weight: bold;
+  color: #FFFFFF;
 }
 
 article {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 article div {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 200px;
-  text-align: center;
+  align-items: center;
 }
 
 article div form {
   display: flex;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+article div fieldset {
+  border: 0px;
+}
+
+article div fieldset input[type=text], article div fieldset input[type=email], article div fieldset input[type=mdp], article div fieldset input[type=confim], article div fieldset input[type=tel] {
+  background: none;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+article div fieldset p {
+  margin: 10%;
+}
+
+article ::placeholder {
+  font-size: 110%;
+  color: white;
+  opacity: 1;
+}
+
+article #Droite {
+  color: white;
+  background-image: url("../img/gantsBoxe.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }

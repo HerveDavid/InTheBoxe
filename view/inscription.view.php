@@ -15,8 +15,9 @@
           <li id="Entrainement"><a href="#Entrainement">Entrainement</a></li>
           <li id="Competition"><a href="#Competition">Competition</a></li>
           <li id="Contact"><a href="#Contact">Contact</a></li>
+          <li id="Connexion"><a href="../view/connexion.view.php">Connexion</a></li>
         </ul>
-        <a href="../view/connexion.view.php" name="connexion">Connexion</a>
+        <!-- <a href="../view/connexion.view.php" name="connexion">Connexion</a> -->
       </nav>
     </header>
     <article>
@@ -33,28 +34,28 @@
       <form class="inscription" action="" method="post">
         <fieldset>
           <p>
-            <label for="prenom"><h2>Prénom</h2></label>
-            <input type="text" name="prenom" id="prenom" autofocus/>
+            <!-- <label for="prenom"><h2>Prénom</h2></label> -->
+            <input type="text" name="prenom" id="prenom" autofocus placeholder="Prénom"/>
           </p>
           <p>
-            <label for="nom"><h2>Nom</h2></label>
-            <input type="text" name="nom" id="nom" required/>
+            <!-- <label for="nom"><h2>Nom</h2></label> -->
+            <input type="text" name="nom" id="nom" required placeholder="Nom"/>
           </p>
           <p>
-            <label for="mail"><h2>Adresse mail</h2></label>
-            <input type="email" name="mail" id="mail" required/>
+            <!-- <label for="mail"><h2>Adresse mail</h2></label> -->
+            <input type="email" name="mail" id="mail" required placeholder="Adresse mail"/>
           </p>
           <p>
-            <label for="mdp"><h2>Mot de passe </h2></label>
-            <input type="mdp" name="mdp" id="mdp" />
+            <!-- <label for="mdp"><h2>Mot de passe </h2></label> -->
+            <input type="mdp" name="mdp" id="mdp" placeholder="Mot de passe"/>
           </p>
           <p>
-            <label for="confim"><h2>Confirmation du mot de passe :</h2></label>
-            <input type="confim" name="confim" id="confim" />
+            <!-- <label for="confim"><h2>Confirmation du mot de passe :</h2></label> -->
+            <input type="confim" name="confim" id="confim" placeholder="Confirmation du mot de passe"/>
           </p>
           <p>
-            <label for="tel"><h2>Téléphone</h2></label>
-            <input type="tel" name="tel" id="tel" />
+            <!-- <label for="tel"><h2>Téléphone</h2></label> -->
+            <input type="tel" name="tel" id="tel" placeholder="Téléphone"/>
           </p>
 
           <p>
@@ -62,12 +63,12 @@
             <input type="date" name="naiss" id="naiss" required/>
           </p>
           <p>
-            <label for="adresse"><h2>Adressse</h2></label>
-            <input type="text" name="adresse" id="adresse" required/>
+            <!-- <label for="adresse"><h2>Adressse</h2></label> -->
+            <input type="text" name="adresse" id="adresse" required placeholder="Adressse"/>
           </p>
           <p>
-            <label for="ville"><h2>Ville</h2></label>
-            <input type="text" name="ville" id="ville" required/>
+            <!-- <label for="ville"><h2>Ville</h2></label> -->
+            <input type="text" name="ville" id="ville" required placeholder="Ville"/>
           </p>
           <p>
             <label for="cp"><h2>Code postal</h2></label>

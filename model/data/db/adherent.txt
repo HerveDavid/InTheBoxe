@@ -1,2 +1,0 @@
-1|kadura|walidi|2000-11-10|1.40|60|masculin|professionel|poids plume|oui|certificat valide|walidi@gmail.com|25 rue du muscle|10|0652908745|3|1|2
-2|watrin|cesar|2000-03-21|1.70|60|masculin|amateur|poids lourd|oui|certificat valide|cesar@gmail.com|25 rue de la femme|30|0652208745|12|5|4

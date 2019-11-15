@@ -3,16 +3,43 @@
 article{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 
   div{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 200px;
-    text-align: center;
+    align-items: center;
+
     form{
       display: flex;
       text-align: center;
+      background-color: rgba(255,255,255, .2);
+      border-radius: 10px;
+    }
+    fieldset{
+      border: 0px;
+      input[type=text], input[type=email], input[type=mdp], input[type=confim], input[type=tel]{
+        background: none;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+      }
+      p{
+        margin: 10%;
+      }
     }
   }
+  ::placeholder {
+    font-size: 110%;
+    color: white;
+    opacity: 1;
+  }
+
+  #Droite{
+    color: white;
+    background-image: url("../img/gantsBoxe.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
 }
