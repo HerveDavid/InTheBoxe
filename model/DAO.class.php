@@ -1,5 +1,6 @@
 <?php
 
+include('../model/Adherent.class.php');
 
 class DAO {
   private $db;
@@ -26,8 +27,8 @@ class DAO {
   public function getAdherent($licence){
     $q = "SELECT * FROM adherent WHERE licence='$licence'";
     $r= $this->db->query($q);
-    $res = $r->fetchAll(PDO::FETCH_CLASS,'adherent');
-    return new Product();
+    $res = $r->fetchAll(PDO::FETCH_CLASS[0]);
+    return new Adherent($res);
   }
 
   public function CreeAdherent(adherent $adherent){
