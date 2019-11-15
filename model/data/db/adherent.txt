@@ -1,8 +1,3 @@
-<<<<<<< HEAD
 1|kadura|walidi|2000-11-10|1.40|60|masculin|professionel|poids plume|oui|certificat valide|walidi@gmail.com|25, Rue des Oliviers|10e|0652908745|3|1|2
 2|watrin|cesar|2000-03-21|1.70|60|masculin|amateur|poids lourd|oui|certificat valide|cesar@gmail.com|12, Avenue Joseph Valier|30e|0652208745|1|12|0
 3|godefroid|louis|1999-09-29|1.75|masculin|novice|poids plume|oui|certificat valide|louis@gmail.com|2, Chemin de Contamine|20e|0652638489|7|8|9
-=======
-1|kadura|walidi|2000-11-10|1.40|60|masculin|professionel|poids plume|oui|certificat valide|walidi@gmail.com|25 rue du muscle|10|0652908745|3|1|2
-2|watrin|cesar|2000-03-21|1.70|60|masculin|amateur|poids lourd|oui|certificat valide|cesar@gmail.com|25 rue de la femme|30|0652208745|12|5|4
->>>>>>> 88ffd820f2fd7b88ef8cc4fd2f00a00852e8f3e5
