@@ -7,7 +7,7 @@ header {
   font-size: 24px;
   line-height: 43px;
   position: relative;
-  margin: 1.2em auto;
+  margin: 0 auto;
   align-items: center;
   width: 50em;
   display: flex;
@@ -19,6 +19,7 @@ header nav {
 }
 
 header nav ul {
+  padding: inherit;
   height: 100%;
   display: flex;
   flex-direction: row;

@@ -7,7 +7,7 @@ header {
   font-size: 24px;
   line-height: 43px;
   position: relative;
-  margin: 1.2em auto;
+  margin: 0 auto;
   align-items: center;
   width: 50em;
   display: flex;
@@ -19,6 +19,7 @@ header nav {
 }
 
 header nav ul {
+  padding: inherit;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -44,32 +45,4 @@ header nav ul #Connexion {
 header nav ul #Connexion a {
   font-weight: bold;
   color: #FFFFFF;
-}
-
-article {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-article div {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-article div form {
-  display: flex;
-  text-align: center;
-}
-
-article #Droite img {
-  position: relative;
-  z-index: -1000;
-  max-width: 100%;
-  filter: blur(10px);
-  -moz-filter: blur(10px);
-  -webkit-filter: blur(10px);
-  -o-filter: blur(10px);
 }

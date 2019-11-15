@@ -12,7 +12,7 @@ header {
 
   position: relative;
 
-  margin: 1.2em auto;
+  margin: 0 auto;
   align-items: center;
 
   width: 50em;
@@ -26,6 +26,7 @@ header {
     width: 100%;
 
     ul {
+      padding: inherit;
 
       height: 100%;
       display: flex;
