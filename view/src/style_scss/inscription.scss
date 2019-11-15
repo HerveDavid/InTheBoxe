@@ -19,9 +19,9 @@ article{
 
   #Droite{
     img{
-      position: absolute;
+      position: relative;
       z-index:-1000;
-      max-width: 20%;
+      max-width: 100%;
       filter        : blur(10px);
       -moz-filter   : blur(10px);
       -webkit-filter: blur(10px);
