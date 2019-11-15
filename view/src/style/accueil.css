@@ -7,11 +7,12 @@ header {
   font-size: 24px;
   line-height: 43px;
   position: relative;
-  margin: 1.2em auto;
+  margin: 0 auto;
   align-items: center;
   width: 50em;
   display: flex;
   flex-direction: row;
+  box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
 
 header nav {
@@ -19,6 +20,7 @@ header nav {
 }
 
 header nav ul {
+  padding: inherit;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -52,4 +54,40 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  color: #FFFFFF;
+  font-family: Palanquin;
+  font-style: normal;
+  font-weight: normal;
+}
+
+#Content {
+  margin: 10em 22em;
+}
+
+#Content h1 {
+  font-family: Rubik;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 85px;
+}
+
+#Content p {
+  font-family: Palanquin;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 43px;
+  display: flex;
+}
+
+#Content a {
+  font-family: Palanquin;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 0.4em 2.5em;
+  background-color: #BE1E2D;
+  color: #FFFFFF;
+  text-decoration: none;
 }

@@ -12,7 +12,7 @@ header {
 
   position: relative;
 
-  margin: 1.2em auto;
+  margin: 0 auto;
   align-items: center;
 
   width: 50em;
@@ -21,11 +21,14 @@ header {
   display: flex;
   flex-direction: row;
 
+  box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);;
+
   nav {
 
     width: 100%;
 
     ul {
+      padding: inherit;
 
       height: 100%;
       display: flex;

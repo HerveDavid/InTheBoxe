@@ -8,33 +8,47 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  color: $white;
+  font-family: $fontLow;
+  font-style: normal;
+  font-weight: normal;
+
 }
-//
-// #Content{
-//   position: absolute;
-//   width: 1216px;
-//   height: 806px;
-//   left: 112px;
-//   top: 72px;
-//   margin: 10 auto;
-//   width: 40em;
-//   color: $white;
-//   font-family: $fontLow;
-//   h1{
-//     font-family: $fontHigh;
-//     font-style: normal;
-//     font-weight: bold;
-//     font-size: 72px;
-//     line-height: 85px;
-//     display: flex;
-//     align-items: center;
-//   }
-//
-//   a {
-//     color: $white;
-//   }
-//
-//   color: $white;
-//   text-align: center;
-//
-// }
+
+#Content {
+  // width: 50em;
+  margin:  10em 22em ;
+  // padding: inherit;
+  h1 {
+
+
+    font-family: $fontHigh;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 85px;
+
+  }
+
+  p{
+    font-family: $fontLow;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 43px;
+    display: flex;
+  }
+
+  a{
+    font-family: $fontLow;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    padding: 0.4em 2.5em;
+    background-color: $red;
+    color: $white;
+    text-decoration: none;
+  }
+}
