@@ -48,6 +48,12 @@ public function getVictoire(): INTEGER {return $this->victoire;}
 public function getDefaite(): INTEGER {return $this->defaite;}
 public function getNul(): INTEGER {return $this->nul;}
 
+public function getPalmares():string{
+  $res = "Adherent : '$this->getNom()' '$this->getPrenom()' Nombre de victoire : '$this->getVictoire()' Nombre de match nul : '$this->getNul' Nombre de défaite : '$this->getDefaite' ";
+  return $res;
+}
+
+
 
 
 

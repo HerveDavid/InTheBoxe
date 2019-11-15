@@ -35,7 +35,8 @@ CREATE TABLE prof(
 
 CREATE TABLE activite(
   nom VARCHAR(25) PRIMARY KEY,
-  type VARCHAR(25)
+  type VARCHAR(25),
+  dateactivite date
 );
 
 CREATE TABLE boxeurExt(
