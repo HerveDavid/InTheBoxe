@@ -5,8 +5,8 @@
 // Utilisation de la classe View du framework
 require_once('../framework/view.class.php');
 // Utilisation de la DAO
-require_once('../model/AdherentDAO.class.php');
-$adherents = new AdherentDAO();
+require_once('../model/DAO.class.php');
+$dao = new DAO;
 
 /////////////////////////////////////////////////////////////////////////
 

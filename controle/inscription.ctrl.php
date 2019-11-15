@@ -1,14 +1,14 @@
 <?php
 session_start();
-var_dump($_SESSION['essai']);
+var_dump($_SESSION['mail']);
 
   /////////////////declaration/////////////////////////////////////////////
 
   // Utilisation de la classe View du framework
   require_once('../framework/view.class.php');
   // Utilisation de la DAO
-  require_once('../model/AdherentDAO.class.php');
-  $adherents = new AdherentDAO();
+  require_once('../model/DAO.class.php');
+  $dao = new DAO();
 
   /////////////////////////////////////////////////////////////////////////
 
@@ -46,7 +46,7 @@ var_dump($_SESSION['essai']);
     $cpostal=$_POST['cp'];
 
     // Vérifier que le mail n'éxiste pas dans la base de données
-    if (!$adherents->mailExistant($email)) {
+    if (!$dao->mailExistant($email)) {
 
       // Vérifier que les mots de passes correspondents
       if ($motdepasse == $confimMdp) {
@@ -55,10 +55,10 @@ var_dump($_SESSION['essai']);
         $newAdherent= new Adherent($prenom,$nom,$email,$motdepasse,$confimMdp,$telephone,$dateNaiss,$adresse,$ville,$cpostal);
 
         // Insertion de l'Adherent dans la base de données
-        $adherents->CreeAdherent($newAdherent);
-
+        $dao->CreeAdherent($newAdherent);
+        $_SESSION['mail']
         // Afficher le nouveau profil
-        header('Location: profil.ctrl.php?numAdh='.$adherents->getNumAdherent($email));
+        header('Location: profil.ctrl.php?numAdh='.$dao->getNumAdherent($email));
 
 
         // Si le mot de passe sasie et le mot de passe de Confirmation ne correspondents pas
