@@ -22,13 +22,3 @@ header nav ul li a {
 body {
   background-color: #BE1E2D;
 }
-
-article {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-article div {
-  padding-top: 150px;
-}
