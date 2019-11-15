@@ -37,8 +37,9 @@ class DAO {
     '$adherent->getDateNaiss()',$adherent->getTaille(),$adherent->getPoids(),'$adherent->getStatut()','$adherent->getCategorie()',
     '$adherent->getCombattant()','$adherent->getCertificat()','$adherent->getMail()','$adherent->getAdresse()','$adherent->getAdresse()',
     $adherent->getApayer(),'$adherent->getTel()',$adherent->getVictoire(),$adherent->getDefaite(),$adherent->getNul(),'$adherent->getMdp()')";
+    $this->db->query($q);
   }
-  $this->db->query($q);
+
 }
 
 

@@ -2,7 +2,8 @@
 
 //classe des adhérents
 class Adherent {
-  private $licence;
+
+  private $mail;
   private $nom;
   private $prenom;
   private $datenaiss;
@@ -13,7 +14,7 @@ class Adherent {
   private $categorie;
   private $combattant;
   private $certifivat;
-  private $mail;
+  private $licence;
   private $adresse;
   private $apayer;
   private $tel;
