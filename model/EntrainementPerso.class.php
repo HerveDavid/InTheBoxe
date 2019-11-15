@@ -2,12 +2,10 @@
 //classe des entrainements personalisés
 class entrainementPerso{
 
-}
 private $numlicence;
 private $numentrainement;
 private $nomexercice;
 private $nbrep;
-
 
 public function __construct(array $param = array()) {
   //
@@ -20,6 +18,7 @@ public function __construct(array $param = array()) {
     }
   }
 }
+
 public function getNumLicense():INTEGER{return $this->numlicence;}
 public function getNumEntrainement():INTEGER{return $this->numentrainement;}
 public function getNomExercice():string{return $this->nomexercice;}
