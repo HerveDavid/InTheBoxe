@@ -3,7 +3,7 @@
 
 class DAO {
   private $db;
-  private $database = '../data/db/boxe.db';
+  private $database = '../model/data/db/boxe.db';
 
   public function __construct() {
     if (! file_exists($this->database)) {
@@ -23,10 +23,10 @@ class DAO {
     }
   }
 
-  public function getAdherent(){
+  public function getAdherent($licence){
     $q = "SELECT * FROM adherent WHERE licence='$licence'";
     $r= $this->db->query($q);
-    $res = $r->fetchAll(PDO::FETCH_CLASS,'Adherent');
+    $res = $r->fetchAll(PDO::FETCH_CLASS,'adherent');
     return new Product();
   }
 
