@@ -7,8 +7,8 @@ header {
   font-style: normal;
   font-weight: normal;
 
-  // font-size: 24px;
-  // line-height: 43px;
+  font-size: 24px;
+  line-height: 43px;
 
   position: relative;
 
@@ -16,7 +16,7 @@ header {
   align-items: center;
 
   width: 50em;
-  height: 2.5em;
+  // height: 2.8em;
 
   display: flex;
   flex-direction: row;
@@ -27,16 +27,17 @@ header {
 
     ul {
 
+      height: 100%;
       display: flex;
       flex-direction: row;
 
       list-style: none;
+      margin: 0 0;
 
       li {
         text-align: center;
         width: 100%;
-
-        padding: 0.3em;
+        padding: 0.5em;
 
         a {
           color: $black;
