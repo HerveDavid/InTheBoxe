@@ -25,9 +25,7 @@ class DAO {
 
   public function getAdherent(){
     $q = "SELECT * FROM adherent WHERE licence='$licence'";
-    try{
-      $r= $this->db->query($q);
-    }
+    $r= $this->db->query($q);
     $res = $r->fetchAll(PDO::FETCH_CLASS,'Adherent');
     return new Product();
   }
