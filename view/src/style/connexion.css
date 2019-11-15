@@ -92,3 +92,11 @@ header button {
 header button :hover {
   background-color: #000000;
 }
+
+article {
+  display: flex;
+}
+
+article div {
+  margin-top: 100px;
+}

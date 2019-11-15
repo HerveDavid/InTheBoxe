@@ -1,1 +1,8 @@
 @import "header";
+
+article{
+  display: flex;
+  div {
+    margin-top: 100px;
+  }
+}
