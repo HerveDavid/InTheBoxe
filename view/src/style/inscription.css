@@ -59,6 +59,8 @@ article div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 article div form {
@@ -66,17 +68,26 @@ article div form {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
+  width: 100%;
 }
 
 article div fieldset {
   border: 0px;
+  width: inherit;
 }
 
-article div fieldset input[type=text], article div fieldset input[type=email], article div fieldset input[type=mdp], article div fieldset input[type=confim], article div fieldset input[type=tel] {
+article div fieldset input {
+  width: 100%;
+  color: white;
   background: none;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
+}
+
+article div fieldset input[type=submit] {
+  width: auto;
+  background-color: #BE1E2D;
 }
 
 article div fieldset p {

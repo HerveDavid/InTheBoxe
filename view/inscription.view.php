@@ -59,20 +59,20 @@
           </p>
 
           <p>
-            <label for="naiss"><h2>Date de naissance</h2></label>
-            <input type="date" name="naiss" id="naiss" required/>
+            <!-- <label for="naiss"><h2>Date de naissance</h2></label> -->
+            <input type="date" name="naiss" id="naiss" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" required placeholder="Date de naissance"/>
           </p>
           <p>
-            <!-- <label for="adresse"><h2>Adressse</h2></label> -->
-            <input type="text" name="adresse" id="adresse" required placeholder="Adressse"/>
+            <!-- <label for="adresse"><h2>Adresse</h2></label> -->
+            <input type="text" name="adresse" id="adresse" required placeholder="Adresse"/>
           </p>
           <p>
             <!-- <label for="ville"><h2>Ville</h2></label> -->
             <input type="text" name="ville" id="ville" required placeholder="Ville"/>
           </p>
           <p>
-            <label for="cp"><h2>Code postal</h2></label>
-            <input type="number" name="cp" id="cp" required/>
+            <!-- <label for="cp"><h2>Code postal</h2></label> -->
+            <input type="number" name="cp" id="cp" required placeholder="Code postal"/>
           </p>
           <input type="submit" value="Inscription">
           <p style='color:red'> <?=$erreur ?></p>
