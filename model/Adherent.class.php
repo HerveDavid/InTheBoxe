@@ -21,6 +21,8 @@ class Adherent {
   private $victoire;
   private $defaite
   private $nul;
+  private $motdepasse;
+  private $id;
 
 public function __construct(array $param = array()) {
     $i = 0;
@@ -48,6 +50,8 @@ public function getTel(): string {return $this->tel;}
 public function getVictoire(): INTEGER {return $this->victoire;}
 public function getDefaite(): INTEGER {return $this->defaite;}
 public function getNul(): INTEGER {return $this->nul;}
+public function getMdp(): string {return $this->$motdepasse;}
+public function getId(): string {return $this->id;}
 
 
 
