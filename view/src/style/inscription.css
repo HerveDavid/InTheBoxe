@@ -92,3 +92,21 @@ header button {
 header button :hover {
   background-color: #000000;
 }
+
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+article div {
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
+  text-align: center;
+}
+
+article div form {
+  display: flex;
+  text-align: center;
+}

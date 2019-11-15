@@ -1,1 +1,18 @@
 @import "header";
+
+article{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  div{
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    text-align: center;
+    form{
+      display: flex;
+      text-align: center;
+    }
+  }
+}
