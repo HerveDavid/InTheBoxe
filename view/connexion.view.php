@@ -19,6 +19,7 @@
         <a href="../view/inscription.view.php">Inscription</a>
       </nav>
     </header>
+    <article>
     <div id="Gauche">
       <h1>Planning en ligne</h1>
       <p>Communiquez directement avec vos coachs et gérez votre planning selon vos besoins</p>
@@ -44,5 +45,6 @@
         </fieldset>
       </form>
     </div>
+  </article>
   </body>
 </html>
