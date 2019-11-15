@@ -12,6 +12,7 @@ header {
   width: 50em;
   display: flex;
   flex-direction: row;
+  box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
 
 header nav {
