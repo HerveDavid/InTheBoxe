@@ -1,6 +1,5 @@
 <?php
 
-
 class DAO {
   private $db;
   private $database = '../data/db/boxe.db';
@@ -29,7 +28,7 @@ class DAO {
       $r= $this->db->query($q);
     }
     $res = $r->fetchAll(PDO::FETCH_CLASS,'Adherent');
-    return new Product();
+    return new Adherent();
   }
 
   public function CreeAdherent(adherent $adherent){
