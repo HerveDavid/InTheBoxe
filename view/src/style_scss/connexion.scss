@@ -1,10 +1,4 @@
 @import "header";
-
-article{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  div {
-    padding-top: 150px;
-  }
+body {
+  background-color: $red;
 }

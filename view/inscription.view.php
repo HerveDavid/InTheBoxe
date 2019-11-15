@@ -19,6 +19,7 @@
         <a href="../view/connexion.view.php" name="connexion">Connexion</a>
       </nav>
     </header>
+    <article>
     <div id="Gauche">
       <h1>Planning en ligne</h1>
       <p>Communiquez directement avec vos coachs et gérez votre planning selon vos besoins</p>
@@ -28,6 +29,7 @@
       <p>Participez à des combats et trouvez un adversaire qui vous correspond</p>
     </div>
     <div id="Droite">
+      <img src="src/img/gantsBoxe.jpg" alt="">
       <h1>Inscription</h1>
       <form class="inscription" action="" method="post">
         <fieldset>
@@ -77,5 +79,6 @@
         </fieldset>
       </form>
     </div>
+  </article>
   </body>
 </html>
