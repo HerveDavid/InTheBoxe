@@ -1,15 +1,43 @@
 @import "header";
-@import "content";
-@import "footer";
+// @import "content";
+// @import "footer";
 
-body{
-  height: 100%;
-  background: url(../img/accueil/background.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-  margin: 5%;
-
-}
+// body{
+//   height: 100%;
+//   background: url(../img/accueil/background.png) no-repeat center center fixed;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+//
+//   margin: 10%;
+// }
+//
+// #Content{
+//   position: absolute;
+//   width: 1216px;
+//   height: 806px;
+//   left: 112px;
+//   top: 72px;
+//   margin: 10 auto;
+//   width: 40em;
+//   color: $white;
+//   font-family: $fontLow;
+//   h1{
+//     font-family: $fontHigh;
+//     font-style: normal;
+//     font-weight: bold;
+//     font-size: 72px;
+//     line-height: 85px;
+//     display: flex;
+//     align-items: center;
+//   }
+//
+//   a {
+//     color: $white;
+//   }
+//
+//   color: $white;
+//   text-align: center;
+//
+// }
