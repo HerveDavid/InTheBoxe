@@ -95,8 +95,10 @@ header button :hover {
 
 article {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 article div {
-  margin-top: 100px;
+  padding-top: 150px;
 }
