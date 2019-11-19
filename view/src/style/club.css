@@ -2,13 +2,11 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 body {
   width: 1440px;
-  height: 1024px;
-}
+  height: 1024px; }
 
 header {
   background: #FFFFFF;
@@ -22,12 +20,9 @@ header {
   text-decoration: none;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-header .logo {
-  cursor: pointer;
-}
+  align-items: center; }
+  header .logo {
+    cursor: pointer; }
 
 header {
   background: #FFFFFF;
@@ -44,51 +39,36 @@ header {
   line-height: 43px;
   display: flex;
   align-items: center;
-  text-align: center;
-}
-
-header .logo {
-  position: absolute;
-  left: 1.97%;
-  right: 92.43%;
-  top: 0%;
-  bottom: 5.56%;
-}
-
-header ul {
-  list-style-type: none;
-}
-
-header ul li {
-  display: inline-block;
-  padding: 1.2em;
-}
-
-header ul li a {
-  font-family: Palanquin;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 43px;
-  text-decoration: none;
-  color: #000000;
-  transition: all 0.3s ease 0s;
-}
-
-header ul li a :hover {
-  color: #000000;
-}
-
-header button {
-  padding: 1.8em 22px;
-  color: #FFFFFF;
-  background-color: #BE1E2D;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-
-header button :hover {
-  background-color: #000000;
-}
+  text-align: center; }
+  header .logo {
+    position: absolute;
+    left: 1.97%;
+    right: 92.43%;
+    top: 0%;
+    bottom: 5.56%; }
+  header ul {
+    list-style-type: none; }
+    header ul li {
+      display: inline-block;
+      padding: 1.2em; }
+      header ul li a {
+        font-family: Palanquin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 43px;
+        text-decoration: none;
+        color: #000000;
+        transition: all 0.3s ease 0s; }
+        header ul li a :hover {
+          color: #000000; }
+  header button {
+    padding: 1.8em 22px;
+    color: #FFFFFF;
+    background-color: #BE1E2D;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s; }
+    header button :hover {
+      background-color: #000000; }
