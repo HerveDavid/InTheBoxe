@@ -18,7 +18,6 @@
           <li id="Connexion"><a href="../view/connexion.view.php">Connexion</a></li>
         </ul>
       </nav>
-      <!-- <a href="../view/connexion.view.php" name="connexion">Connexion</a> -->
     </header>
     <div id="Content">
       <h2>Boxing Club Evian-Les-Bains</h2>
@@ -31,10 +30,14 @@
     </div>
     <footer>
       <h1>Accès aux cours et informations</h1>
-      <h1>Top 3 cours</h1>
-      <a href="#Cours1"><img src="src/img/accueil/cours1.png" alt="cours-1"></a>
-      <a href="#Cours2"><img src="src/img/accueil/cours2.png" alt="cours-2"></a>
-      <a href="#Cours3"><img src="src/img/accueil/cours2.png" alt="cours-3"></a>
+      <h2>Top 3 cours</h2>
+      <nav>
+        <ul>
+          <li><a href="#Cours1"><img src="src/img/accueil/cours1.png" alt="cours-1"></a></li>
+          <li><a href="#Cours2"><img src="src/img/accueil/cours2.png" alt="cours-2"></a></li>
+          <li><a href="#Cours3"><img src="src/img/accueil/cours2.png" alt="cours-3"></a></li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>

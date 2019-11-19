@@ -1,6 +1,4 @@
 @import "header";
-// @import "content";
-// @import "footer";
 
 body{
   background: url(../img/accueil/background.png) no-repeat center center fixed;
@@ -14,19 +12,21 @@ body{
   font-style: normal;
   font-weight: normal;
 
+  margin: 0 22em;
+
 }
 
 #Content {
-  // width: 50em;
-  margin:  10em 22em ;
-  // padding: inherit;
+
+  margin: 10em 0;
+
   h1 {
 
 
     font-family: $fontHigh;
     font-weight: bold;
-    font-size: 72px;
-    line-height: 85px;
+    font-size: 5em;
+    line-height: 1em;
 
   }
 
@@ -34,8 +34,8 @@ body{
     font-family: $fontLow;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 43px;
+    font-size: 2.2em;
+    line-height: 1.5em;
     display: flex;
   }
 
@@ -43,12 +43,49 @@ body{
     font-family: $fontLow;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 2.2em;
+    line-height: 1.5em;
 
     padding: 0.4em 2.5em;
     background-color: $red;
     color: $white;
     text-decoration: none;
+  }
+}
+
+footer{
+  background: inherit;
+  display: flex;
+  flex-direction: row;
+  height: 10em;
+  align-items: center;
+  h1{
+    padding: 1.3em;
+    margin: 0;
+    background-color: $white;
+    color: $black;
+    font-family: $fontHigh;
+  }
+  h2{
+    padding: 2em;
+    margin: 0;
+    color: $white;
+    font-family: $fontLow;
+  }
+  nav{
+    margin-top: -10em;
+    width: 100%;
+    ul{
+      padding: inherit;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      margin: 0 0;
+      justify-content: space-around;
+      li{
+        align-content: center;
+      }
+    }
   }
 }

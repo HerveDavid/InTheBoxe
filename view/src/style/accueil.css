@@ -7,9 +7,7 @@ header {
   font-size: 24px;
   line-height: 43px;
   position: relative;
-  margin: 0 auto;
   align-items: center;
-  width: 50em;
   display: flex;
   flex-direction: row;
   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
@@ -58,25 +56,26 @@ body {
   font-family: Palanquin;
   font-style: normal;
   font-weight: normal;
+  margin: 0 22em;
 }
 
 #Content {
-  margin: 10em 22em;
+  margin: 10em 0;
 }
 
 #Content h1 {
   font-family: Rubik;
   font-weight: bold;
-  font-size: 72px;
-  line-height: 85px;
+  font-size: 5em;
+  line-height: 1em;
 }
 
 #Content p {
   font-family: Palanquin;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 43px;
+  font-size: 2.2em;
+  line-height: 1.5em;
   display: flex;
 }
 
@@ -84,10 +83,52 @@ body {
   font-family: Palanquin;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 2.2em;
+  line-height: 1.5em;
   padding: 0.4em 2.5em;
   background-color: #BE1E2D;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+footer {
+  background: inherit;
+  display: flex;
+  flex-direction: row;
+  height: 10em;
+  align-items: center;
+}
+
+footer h1 {
+  padding: 1.3em;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Rubik;
+}
+
+footer h2 {
+  padding: 2em;
+  margin: 0;
+  color: #FFFFFF;
+  font-family: Palanquin;
+}
+
+footer nav {
+  margin-top: -10em;
+  width: 100%;
+}
+
+footer nav ul {
+  padding: inherit;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0 0;
+  justify-content: space-around;
+}
+
+footer nav ul li {
+  align-content: center;
 }
