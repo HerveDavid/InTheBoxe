@@ -2,7 +2,6 @@
 //classe des entrainements personalisés
 class matchPotentiel{
 
-}
 private $boxeurint;
 private $licenceint;
 private $boxeurext;

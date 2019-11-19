@@ -15,15 +15,18 @@
           <li id="Entrainement"><a href="#Entrainement">Entrainement</a></li>
           <li id="Competition"><a href="#Competition">Competition</a></li>
           <li id="Contact"><a href="#Contact">Contact</a></li>
+          <li id="Connexion"><a href="../view/connexion.view.php">Connexion</a></li>
         </ul>
       </nav>
-      <a href="../view/connexion.view.php" name="connexion">Connexion</a>
+      <!-- <a href="../view/connexion.view.php" name="connexion">Connexion</a> -->
     </header>
     <div id="Content">
       <h2>Boxing Club Evian-Les-Bains</h2>
-      <h1>Explorez vos limites</h1>
+      <h1>Explorez vos limites.</h1>
       <p>Inscrivez vous pour avoir accès à des cours gratuits <br>
         et aux tournois de boxe en ligne</p>
+
+      <br>
       <a href="../controle/inscription.ctrl.php">Inscription</a>
     </div>
     <footer>

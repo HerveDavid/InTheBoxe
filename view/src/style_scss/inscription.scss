@@ -1,1 +1,55 @@
 @import "header";
+
+article{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    form{
+      display: flex;
+      text-align: center;
+      background-color: rgba(255,255,255, .2);
+      border-radius: 10px;
+      width: 100%;
+    }
+    fieldset{
+      border: 0px;
+      width: inherit;
+      input{
+        width: 100%;
+        color: white;
+        background: none;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+      }
+      input[type=submit]{
+        width: auto;
+        background-color: $red;
+      }
+      p{
+        margin: 10%;
+      }
+    }
+  }
+  ::placeholder {
+    font-size: 110%;
+    color: white;
+    opacity: 1;
+  }
+
+  #Droite{
+    color: white;
+    background-image: url("../img/gantsBoxe.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+}

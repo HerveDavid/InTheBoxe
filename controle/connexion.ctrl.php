@@ -5,8 +5,8 @@
 // Utilisation de la classe View du framework
 require_once('../framework/view.class.php');
 // Utilisation de la DAO
-require_once('../model/AdherentDAO.class.php');
-$adherents = new AdherentDAO();
+require_once('../model/DAO.class.php');
+$dao = new DAO;
 
 /////////////////////////////////////////////////////////////////////////
 
@@ -36,7 +36,7 @@ if (isset($_POST['mail'])
       if ($adh->getMdp()==$motdepasse) {
 
         session_start();
-        $_SESSION['id'] = $adh.getId(); //a modifier
+        $_SESSION['mail'] = $adh.getMail(); //a modifier
         //$profil=$adherents->getProfil($email);
         // Affichage du profil
         header('Location: profil.ctrl.php?');
