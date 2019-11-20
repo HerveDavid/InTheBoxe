@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="src/img/logo.png" alt="logo-InTheBoxe">
+      <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
       <nav class="topNavigation">
         <ul>
           <li id="Accueil"><a href="../view/accueil.view.php">Accueil</a></li>
@@ -15,10 +15,26 @@
           <li id="Entrainement"><a href="#Entrainement">Entrainement</a></li>
           <li id="Competition"><a href="#Competition">Competition</a></li>
           <li id="Contact"><a href="#Contact">Contact</a></li>
+          <!-- <li><button class="open-button" type="button" onclick="openForm">Connexion</button></li> -->
           <li id="Connexion"><a href="../view/connexion.view.php">Connexion</a></li>
         </ul>
       </nav>
     </header>
+    <!-- Connexion formulaire -->
+    <div class="form-popup" id="formulaire">
+      <form action="/action_page.php" class="form-container">
+        <h1>Connexion</h1>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" name="email" required focus autofocus>
+
+        <label for="psw"><b>Mot de passe</b></label>
+        <input type="password" name="psw" required>
+
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
     <div id="Content">
       <h2>Boxing Club Evian-Les-Bains</h2>
       <h1>Explorez vos limites.</h1>
@@ -33,11 +49,20 @@
       <h2>Top 3 cours</h2>
       <nav>
         <ul>
-          <li><a href="#Cours1"><img src="src/img/accueil/cours1.png" alt="cours-1"></a></li>
-          <li><a href="#Cours2"><img src="src/img/accueil/cours2.png" alt="cours-2"></a></li>
-          <li><a href="#Cours3"><img src="src/img/accueil/cours2.png" alt="cours-3"></a></li>
+          <li><a href="#Cours1"><img src="../view/src/img/accueil/cours1.png" alt="cours-1"></a></li>
+          <li><a href="#Cours2"><img src="../view/src/img/accueil/cours2.png" alt="cours-2"></a></li>
+          <li><a href="#Cours3"><img src="../view/src/img/accueil/cours2.png" alt="cours-3"></a></li>
         </ul>
       </nav>
     </footer>
   </body>
+  <script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+</script>
 </html>
