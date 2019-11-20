@@ -84,7 +84,6 @@ article div fieldset input {
 }
 
 article div fieldset input[type=submit] {
-  width: auto;
   background-color: #BE1E2D;
 }
 

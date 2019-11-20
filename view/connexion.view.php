@@ -21,25 +21,18 @@
       </nav>
     </header>
     <article>
-    <div id="Gauche">
-      <h1>Planning en ligne</h1>
-      <p>Communiquez directement avec vos coachs et gérez votre planning selon vos besoins</p>
-      <h1>Entrainement en ligne</h1>
-      <p>Progressez avec +100 cours personnalisés certifiés par des coachs</p>
-      <h1>Inscription au combat en ligne</h1>
-      <p>Participez à des combats et trouvez un adversaire qui vous correspond</p>
-    </div>
-    <div id="Droite">
+    <div id="divco">
+      <img src="src/img/connexion_logo.png" alt="">
       <h1>Connexion</h1>
       <form class="connexion" action="../controle/connexion.ctrl.php" method="post">
         <fieldset>
           <p>
-            <label for="mail"><h2>Adresse mail</h2></label>
-            <input type="email" placeholder="Entrer votre email" name="mail" id="mail" required/>
+            <!-- <label for="mail"><h2>Adresse mail</h2></label> -->
+            <input type="email" placeholder="Adresse mail" name="mail" id="mail" required/>
           </p>
           <p>
-            <label for="mdp"><h2>Mot de passe </h2></label>
-            <input type="mdp" placeholder="Entrer votre mot de passe" name="mdp" id="mdp" required/>
+            <!-- <label for="mdp"><h2>Mot de passe </h2></label> -->
+            <input type="mdp" placeholder="Mot de passe" name="mdp" id="mdp" required/>
           </p>
           <input type="submit" id="submit" value="Connexion">
           <p style='color:red'> <?=$erreur ?></p>

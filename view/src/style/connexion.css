@@ -46,6 +46,35 @@ header nav ul #Connexion a {
   color: #FFFFFF;
 }
 
-body {
+#divco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+}
+
+#divco img {
+  max-width: 90px;
+}
+
+#divco fieldset {
+  border: 0px;
+}
+
+#divco fieldset input {
+  width: 100%;
+  background: none;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+#divco fieldset input[type=submit] {
   background-color: #BE1E2D;
+  color: white;
+}
+
+::placeholder {
+  font-size: 110%;
+  opacity: 1;
 }
