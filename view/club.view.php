@@ -6,21 +6,21 @@
     <title>InTheBoxe</title>
   </head>
   <body>
-    <header class="navbar">
-      <img class="logo" src="src/img/logo.png" alt="logo-InTheBoxe">
+    <header>
+      <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
       <nav class="topNavigation">
         <ul>
-          <li id="Accueil"><a href="../view/accueil.view.php">Accueil</a></li>
-          <li id= "Club"><a href="../view/club.view.php">Club</a></li>
+          <li id="Accueil"><a href="../controle/accueil.ctrl.php">Accueil</a></li>
+          <li id= "Club"><a href="../controle/club.ctrl.php">Club</a></li>
           <li id="Entrainement"><a href="#Entrainement">Entrainement</a></li>
           <li id="Competition"><a href="#Competition">Competition</a></li>
           <li id="Contact"><a href="#Contact">Contact</a></li>
-          <li id="Connexion"><a href="../view/connexion.view.php">Connexion</a></li>
+          <li id="Connexion"><a href="../controle/connexion.ctrl.php">Connexion</a></li>
         </ul>
       </nav>
     </header>
     <div id="Club-1">
-      <img src="src/img/club/background.png">
+      <img src="../view/src/img/club/background.png">
       <section>
         <h1>L’Histoire du club</h1>
         <p>Créé en 2015 par Monsieur INSERERNOM, le Boxing Club
@@ -36,15 +36,15 @@
         </p>
         <div id="icones">
           <figure>
-            <img src="src/img/club/combativite.png" alt="">
+            <img src="../view/src/img/club/combativite.png" alt="">
             <figcaption>Combativité</figcaption>
           </figure>
           <figure>
-            <img src="src/img/club/respect.png" alt="">
+            <img src="../view/src/img/club/respect.png" alt="">
             <figcaption>Respect</figcaption>
           </figure>
           <figure>
-            <img src="src/img/club/honneur.png" alt="">
+            <img src="../view/src/img/club/honneur.png" alt="">
             <figcaption>Honneur</figcaption>
           </figure>
         </div>
@@ -64,7 +64,7 @@
       </div>
     </section>
     <div id="Club-2">
-      <img src="src/img/club/local.png">
+      <img src="../view/src/img/club/local.png">
       <section>
         <h1>Nos locaux</h1>
         <p>
@@ -85,7 +85,7 @@
           votre condition physique.
         </p>
       </section>
-      <img src="src/img/club/equipement.png">
+      <img src="../view/src/img/club/equipement.png">
     </div>
   </body>
 </html>

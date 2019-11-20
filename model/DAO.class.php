@@ -1,6 +1,6 @@
 <?php
 
-include('../model/Adherent.class.php');
+include('../model/AdherentDuClub.class.php');
 
 class DAO {
   private $db;
@@ -24,18 +24,27 @@ class DAO {
     }
   }
 
-  public function getAdherent($licence){
-    $q = "SELECT * FROM adherent WHERE licence='$licence'";
+  public function getAdherent($email){
+    $q = "SELECT * FROM adherent WHERE licence='$email'";
     $r= $this->db->query($q);
-    $res = $r->fetchAll(PDO::FETCH_CLASS[0]);
+    $res = $r->fetchAll(PDO::FETCH_CLASS);
     return new Adherent($res);
   }
-
+  public function mailExistant($email){
+    $q = "SELECT * FROM adherentClub WHERE mail='$email'";
+    $r= $this->db->query($q);
+    $res = $r->fetchAll(PDO::FETCH_CLASS[0]);
+    if (count($res)==0) {
+      return false;
+    }else {return true;}
+  }
   public function CreeAdherent(adherent $adherent){
-    $q = "INSERT INTO adherent VALUES ('$adherent->getLicence()','$adherent->getNom()','$adherent->getPrenom()',
-    '$adherent->getDateNaiss()',$adherent->getTaille(),$adherent->getPoids(),'$adherent->getStatut()','$adherent->getCategorie()',
+    $mdp = $adherent->getMdp();
+    $nom=$adherent->getPrenom();
+    $q = "INSERT INTO adherent VALUES ('$adherent->getNom()','$adherent->getPrenom()',
+    '$adherent->getDateNaiss()','$adherent->getTaille()','$adherent->getPoids()','$adherent->getStatut()','$adherent->getCategorie()',
     '$adherent->getCombattant()','$adherent->getCertificat()','$adherent->getMail()','$adherent->getAdresse()','$adherent->getAdresse()',
-    $adherent->getApayer(),'$adherent->getTel()',$adherent->getVictoire(),$adherent->getDefaite(),$adherent->getNul(),'$adherent->getMdp()')";
+    '$adherent->getApayer()','$adherent->getTel()','$adherent->getVictoire()','$adherent->getDefaite()','$adherent->getNul()',)";
     $this->db->query($q);
   }
 

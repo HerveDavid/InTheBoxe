@@ -7,22 +7,22 @@
   </head>
   <body>
     <header>
-      <h1 class="logo"><img src="src/img/logo.png" alt="logo-InTheBoxe"></h1>
+      <h1 class="logo"><img src="../view/src/img/logo.png" alt="logo-InTheBoxe"></h1>
       <nav class="topNavigation">
         <ul>
-          <li id="Accueil"><a href="../view/accueil.view.php">Accueil</a></li>
-          <li id= "Club"><a href="../view/club.view.php">Club</a></li>
+          <li id="Accueil"><a href="../controle/accueil.ctrl.php">Accueil</a></li>
+          <li id= "Club"><a href="../controle/club.ctrl.php">Club</a></li>
           <li id="Entrainement"><a href="#Entrainement">Entrainement</a></li>
           <li id="Competition"><a href="#Competition">Competition</a></li>
           <li id="Contact"><a href="#Contact">Contact</a></li>
-          <li id="Connexion"><a href="../view/connexion.view.php">Connexion</a></li>
+          <li id="Connexion"><a href="../controle/connexion.ctrl.php">Connexion</a></li>
         </ul>
         <!-- <a href="../view/inscription.view.php">Inscription</a> -->
       </nav>
     </header>
     <article>
     <div id="divco">
-      <img src="src/img/connexion_logo.png" alt="">
+      <img src="../view/src/img/connexion_logo.png" alt="">
       <h1>Connexion</h1>
       <form class="connexion" action="../controle/connexion.ctrl.php" method="post">
         <fieldset>

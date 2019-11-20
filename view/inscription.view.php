@@ -7,15 +7,15 @@
   </head>
   <body>
     <header>
-      <h1 class="logo"><img src="src/img/logo.png" alt="logo-InTheBoxe"></h1>
+      <h1 class="logo"><img src="../view/src/img/logo.png" alt="logo-InTheBoxe"></h1>
       <nav class="topNavigation">
         <ul>
-          <li id="Accueil"><a href="../view/accueil.view.php">Accueil</a></li>
-          <li id= "Club"><a href="../view/club.view.php">Club</a></li>
+          <li id="Accueil"><a href="../controle/accueil.ctrl.php">Accueil</a></li>
+          <li id= "Club"><a href="../controle/club.ctrl.php">Club</a></li>
           <li id="Entrainement"><a href="#Entrainement">Entrainement</a></li>
           <li id="Competition"><a href="#Competition">Competition</a></li>
           <li id="Contact"><a href="#Contact">Contact</a></li>
-          <li id="Connexion"><a href="../view/connexion.view.php">Connexion</a></li>
+          <li id="Connexion"><a href="../controle/connexion.ctrl.php">Connexion</a></li>
         </ul>
         <!-- <a href="../view/connexion.view.php" name="connexion">Connexion</a> -->
       </nav>
@@ -47,11 +47,11 @@
           </p>
           <p>
             <!-- <label for="mdp"><h2>Mot de passe </h2></label> -->
-            <input type="mdp" name="mdp" id="mdp" placeholder="Mot de passe"/>
+            <input type="password" name="mdp" id="mdp" placeholder="Mot de passe"/>
           </p>
           <p>
             <!-- <label for="confim"><h2>Confirmation du mot de passe :</h2></label> -->
-            <input type="confim" name="confim" id="confim" placeholder="Confirmation du mot de passe"/>
+            <input type="password" name="confim" id="confim" placeholder="Confirmation du mot de passe"/>
           </p>
           <p>
             <!-- <label for="tel"><h2>Téléphone</h2></label> -->
