@@ -59,6 +59,21 @@ article {
   justify-content: space-around;
 }
 
+article h1 {
+  font-family: Rubik;
+  font-size: 2em;
+  border-bottom: 0.2em solid #BE1E2D;
+  width: 75%;
+}
+
+article p {
+  font-family: Palanquin;
+  text-align: justify;
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 75%;
+}
+
 article div {
   width: 100%;
   display: flex;
@@ -110,4 +125,8 @@ article #Droite {
   background-image: url("../img/gantsBoxe.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+article #Droite h1 {
+  border: 0;
 }

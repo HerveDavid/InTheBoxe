@@ -81,6 +81,7 @@ p {
 }
 
 .club img {
+  border: 0;
   flex: 50%;
 }
 
