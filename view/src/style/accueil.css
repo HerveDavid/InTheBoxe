@@ -106,7 +106,6 @@ body {
 
 footer {
   background: inherit;
-  overflow: hidden;
   position: relative;
   top: 22em;
   margin: 0 15.5em;
@@ -138,6 +137,26 @@ footer h2 {
   font-family: Palanquin;
 }
 
+footer nav {
+  z-index: 2;
+  margin-top: -10em;
+  width: 100%;
+}
+
+footer nav ul {
+  padding: inherit;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0 0;
+  justify-content: space-around;
+}
+
+footer nav ul li {
+  align-content: center;
+}
+
 footer:before {
   content: '';
   position: absolute;
@@ -145,7 +164,7 @@ footer:before {
   left: 0;
   right: 0;
   bottom: 0;
-  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.5);
   filter: blur(10px);
   background: inherit;
   z-index: 0;

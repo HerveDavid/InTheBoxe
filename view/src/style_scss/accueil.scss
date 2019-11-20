@@ -56,7 +56,7 @@ body{
 
 footer{
   background: inherit;
-  overflow: hidden;
+  // overflow: hidden;
   // background-color: rgba(#3E3E3E, 0.76);
   position: relative;
   top: 22em;
@@ -86,25 +86,23 @@ footer{
     color: $white;
     font-family: $fontLow;
   }
-  // nav{
-  //   // overflow: visible;
-  //   position: absolute;
-  //   z-index: 2;
-  //   margin-top: -10em;
-  //   width: 100%;
-  //   ul{
-  //     padding: inherit;
-  //     height: 100%;
-  //     display: flex;
-  //     flex-direction: row;
-  //     list-style: none;
-  //     margin: 0 0;
-  //     justify-content: space-around;
-  //     li{
-  //       align-content: center;
-  //     }
-  //   }
-  // }
+  nav{
+    z-index: 2;
+    margin-top: -10em;
+    width: 100%;
+    ul{
+      padding: inherit;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      margin: 0 0;
+      justify-content: space-around;
+      li{
+        align-content: center;
+      }
+    }
+  }
 }
 
 footer:before{
@@ -114,7 +112,7 @@ footer:before{
   left: 0;
   right: 0;
   bottom: 0;
-  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 0 1px rgba(255, 255, 255, .5);
   filter: blur(10px);
   background: inherit;
   z-index: 0;

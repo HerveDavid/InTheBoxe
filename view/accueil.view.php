@@ -32,10 +32,10 @@
       <a href="../controle/inscription.ctrl.php">Inscription</a>
     </div>
     <footer>
-      <section>
+      <!-- <section> -->
         <h1>Accès aux cours et informations</h1>
         <h2>Top 3 cours</h2>
-      </section>
+      <!-- </section> -->
       <nav>
         <ul>
           <li><a href="#Cours1"><img src="../view/src/img/accueil/cours1.png" alt="cours-1"></a></li>
