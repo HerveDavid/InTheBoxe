@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="src/img/logo.png" alt="logo-InTheBoxe">
+      <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
       <nav class="topNavigation">
         <ul>
           <li id="Accueil"><a href="../view/accueil.view.php">Accueil</a></li>
@@ -33,9 +33,9 @@
       <h2>Top 3 cours</h2>
       <nav>
         <ul>
-          <li><a href="#Cours1"><img src="src/img/accueil/cours1.png" alt="cours-1"></a></li>
-          <li><a href="#Cours2"><img src="src/img/accueil/cours2.png" alt="cours-2"></a></li>
-          <li><a href="#Cours3"><img src="src/img/accueil/cours2.png" alt="cours-3"></a></li>
+          <li><a href="#Cours1"><img src="../view/src/img/accueil/cours1.png" alt="cours-1"></a></li>
+          <li><a href="#Cours2"><img src="../view/src/img/accueil/cours2.png" alt="cours-2"></a></li>
+          <li><a href="#Cours3"><img src="../view/src/img/accueil/cours2.png" alt="cours-3"></a></li>
         </ul>
       </nav>
     </footer>
