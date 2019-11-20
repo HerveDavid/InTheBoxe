@@ -41,7 +41,6 @@ header {
           color: #FFFFFF; }
 
 article {
-  margin-top: 7%;
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
@@ -52,6 +51,7 @@ article {
     width: 90%; }
   article p {
     font-family: Palanquin;
+    margin: 10%;
     text-align: justify;
     font-size: 1.2em;
     font-weight: 600;
@@ -83,10 +83,8 @@ article {
       article div fieldset input[type=submit] {
         background-color: #BE1E2D; }
       article div fieldset p {
-        margin: 10%;
+        margin: 8%;
         margin-left: 0px; }
-    article div p {
-      margin: 10%; }
   article ::placeholder {
     font-size: 110%;
     color: white;
@@ -98,4 +96,5 @@ article {
     background-repeat: no-repeat;
     background-size: 100%; }
     article #Droite h1 {
+      margin-top: 20%;
       border: 0; }
