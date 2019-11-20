@@ -23,15 +23,19 @@
     <div id="Content">
       <h2>Boxing Club Evian-Les-Bains</h2>
       <h1>Explorez vos limites.</h1>
-      <p>Inscrivez vous pour avoir accès à des cours gratuits <br>
-        et aux tournois de boxe en ligne</p>
-
+      <p>
+        Inscrivez vous pour avoir accès à des cours gratuits
+        <br>
+        et aux tournois de boxe en ligne
+      </p>
       <br>
       <a href="../controle/inscription.ctrl.php">Inscription</a>
     </div>
     <footer>
-      <h1>Accès aux cours et informations</h1>
-      <h2>Top 3 cours</h2>
+      <!-- <section> -->
+        <h1>Accès aux cours et informations</h1>
+        <h2>Top 3 cours</h2>
+      <!-- </section> -->
       <nav>
         <ul>
           <li><a href="#Cours1"><img src="../view/src/img/accueil/cours1.png" alt="cours-1"></a></li>

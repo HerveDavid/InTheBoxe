@@ -98,3 +98,7 @@ article {
     article #Droite h1 {
       margin-top: 20%;
       border: 0; }
+    article #Droite p {
+      width: 80%; }
+    article #Droite input {
+      margin: 0; }
