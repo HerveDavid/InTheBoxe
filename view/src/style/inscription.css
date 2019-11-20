@@ -63,7 +63,7 @@ article h1 {
   font-family: Rubik;
   font-size: 2em;
   border-bottom: 0.2em solid #BE1E2D;
-  width: 75%;
+  width: 90%;
 }
 
 article p {
@@ -71,7 +71,7 @@ article p {
   text-align: justify;
   font-size: 1.2em;
   font-weight: 600;
-  width: 75%;
+  width: 100%;
 }
 
 article div {
