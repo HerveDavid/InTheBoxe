@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-      <h1 class="logo"><img src="../view/src/img/logo.png" alt="logo-InTheBoxe"></h1>
+      <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
       <nav class="topNavigation">
         <ul>
           <li id="Accueil"><a href="../controle/accueil.ctrl.php">Accueil</a></li>
@@ -17,7 +17,6 @@
           <li id="Contact"><a href="#Contact">Contact</a></li>
           <li id="Connexion"><a href="../controle/connexion.ctrl.php">Connexion</a></li>
         </ul>
-        <!-- <a href="../view/inscription.view.php">Inscription</a> -->
       </nav>
     </header>
     <article>

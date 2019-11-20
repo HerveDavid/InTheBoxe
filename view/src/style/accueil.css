@@ -78,15 +78,15 @@ body {
 #Content h1 {
   font-family: Rubik;
   font-weight: bold;
-  font-size: 5em;
+  font-size: 4em;
   line-height: 1em;
 }
 
 #Content p {
   font-family: Palanquin;
   font-style: normal;
-  font-weight: 500;
-  font-size: 2.2em;
+  font-weight: 600;
+  font-size: 2em;
   line-height: 1.5em;
   display: flex;
 }
@@ -123,6 +123,7 @@ footer h1 {
   color: #000000;
   font-family: Palanquin;
   font-size: 1em;
+  text-align: justify;
 }
 
 footer h2 {

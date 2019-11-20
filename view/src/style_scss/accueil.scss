@@ -23,7 +23,7 @@ body{
 
     font-family: $fontHigh;
     font-weight: bold;
-    font-size: 5em;
+    font-size: 4em;
     line-height: 1em;
 
   }
@@ -31,8 +31,8 @@ body{
   p{
     font-family: $fontLow;
     font-style: normal;
-    font-weight: 500;
-    font-size: 2.2em;
+    font-weight: 600;
+    font-size: 2em;
     line-height: 1.5em;
     display: flex;
   }
@@ -70,6 +70,7 @@ footer{
     color: $black;
     font-family: $fontLow;
     font-size: 1em;
+    text-align: justify;
   }
   h2{
     padding: 2em;
