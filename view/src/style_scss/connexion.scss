@@ -1,4 +1,31 @@
 @import "header";
-body {
-  background-color: $red;
+#divco{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+
+  img{
+    max-width: 90px;
+  }
+  fieldset{
+    border: 0px;
+
+    input{
+      width: 100%;
+      background: none;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+    }
+    input[type=submit]{
+      background-color: $red;
+      color:white;
+    }
+  }
+}
+
+::placeholder {
+  font-size: 110%;
+  opacity: 1;
 }
