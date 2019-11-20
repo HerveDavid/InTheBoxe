@@ -15,58 +15,26 @@ p{
   width: 75%;
 }
 
-#Club-1{
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // z-index: -1;
+.club{
+  margin: 0;
+  padding: 0;
   display: flex;
   img{
     flex: 50%;
   }
-  section{
+  .container{
     flex: 50%;
-    margin: 1em;
-    // padding:  2em;
+    section{
+      margin: 0;
+      padding-top: 5em;
+      padding-left: 2em;
+    }
   }
-  #icones{
+}
+
+#icones{
     display: flex;
     flex-direction: row;
     align-items: baseline;
     text-align: center;
-  }
-}
-
-#Club-2{
-  // position: absolute;
-  // top: 100%;
-  // left: 0;
-  // z-index: -1;
-  display: flex;
-  img{
-    flex: 50%;
-  }
-  section{
-    flex: 50%;
-    margin: 1em;
-
-    // padding:  5em 5em;
-  }
-}
-
-#Club-3{
-  // position: absolute;
-  // top: 100%;
-  // left: 0;
-  // z-index: -1;
-  display: flex;
-  img{
-    flex: 50%;
-    margin: 1em
-  }
-  section{
-    flex: 50%;
-    // margin: 5em;
-    // padding:  5em 5em;
-  }
 }

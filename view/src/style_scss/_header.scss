@@ -4,7 +4,7 @@ $size: 10em;
 
 header {
   position: fixed; /* Set the navbar to fixed position */
-  // top: 22em; /* Position the navbar at the top of the page */
+  top: 0; /* Position the navbar at the top of the page */
   // width: 75%; /* Full width */
   left: $size;
   right: $size;

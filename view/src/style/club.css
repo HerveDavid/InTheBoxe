@@ -2,6 +2,8 @@
 header {
   position: fixed;
   /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
   left: 10em;
   right: 10em;
   z-index: 100;
@@ -72,48 +74,29 @@ p {
   width: 75%;
 }
 
-#Club-1 {
+.club {
+  margin: 0;
+  padding: 0;
   display: flex;
 }
 
-#Club-1 img {
+.club img {
   flex: 50%;
 }
 
-#Club-1 section {
+.club .container {
   flex: 50%;
-  margin: 1em;
 }
 
-#Club-1 #icones {
+.club .container section {
+  margin: 0;
+  padding-top: 5em;
+  padding-left: 2em;
+}
+
+#icones {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   text-align: center;
-}
-
-#Club-2 {
-  display: flex;
-}
-
-#Club-2 img {
-  flex: 50%;
-}
-
-#Club-2 section {
-  flex: 50%;
-  margin: 1em;
-}
-
-#Club-3 {
-  display: flex;
-}
-
-#Club-3 img {
-  flex: 50%;
-  margin: 1em;
-}
-
-#Club-3 section {
-  flex: 50%;
 }
