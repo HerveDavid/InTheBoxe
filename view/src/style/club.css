@@ -63,6 +63,7 @@ p {
   padding: 0;
   display: flex; }
   .club img {
+    border: 0;
     flex: 50%; }
   .club .container {
     flex: 50%; }
@@ -76,3 +77,9 @@ p {
   flex-direction: row;
   align-items: baseline;
   text-align: center; }
+
+#Club-2 section {
+  padding-top: 25em; }
+
+#Club-3 section {
+  padding-top: 25em; }

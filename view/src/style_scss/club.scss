@@ -20,6 +20,7 @@ p{
   padding: 0;
   display: flex;
   img{
+    border: 0;
     flex: 50%;
   }
   .container{
@@ -37,4 +38,16 @@ p{
     flex-direction: row;
     align-items: baseline;
     text-align: center;
+}
+
+#Club-2 {
+  section{
+    padding-top: 25em;
+  }
+}
+
+#Club-3 {
+  section{
+    padding-top: 25em;
+  }
 }
