@@ -130,3 +130,11 @@ article #Droite {
 article #Droite h1 {
   border: 0;
 }
+
+article #Droite p {
+  width: 80%;
+}
+
+article #Droite input {
+  margin: 0;
+}
