@@ -25,10 +25,14 @@ class DAO {
   }
 
   public function getAdherent($email){
-    $q = "SELECT * FROM adherent WHERE licence='$email'";
+    $q = "SELECT * FROM adherentClub WHERE mail='$email'";
     $r= $this->db->query($q);
-    $res = $r->fetchAll(PDO::FETCH_CLASS);
-    return new Adherent($res);
+    $res = $r->fetchAll(PDO::FETCH_CLASS[0]);
+
+    if (count($res)==0) {
+      return null;
+    }else {return new Adherent($res[0]);}
+
   }
   public function mailExistant($email){
     $q = "SELECT * FROM adherentClub WHERE mail='$email'";
@@ -39,18 +43,24 @@ class DAO {
     }else {return true;}
   }
   public function CreeAdherent(adherent $adherent){
-    $mdp = $adherent->getMdp();
-    $nom=$adherent->getPrenom();
-    $q = "INSERT INTO adherent VALUES ('$adherent->getNom()','$adherent->getPrenom()',
-    '$adherent->getDateNaiss()','$adherent->getTaille()','$adherent->getPoids()','$adherent->getStatut()','$adherent->getCategorie()',
-    '$adherent->getCombattant()','$adherent->getCertificat()','$adherent->getMail()','$adherent->getAdresse()','$adherent->getAdresse()',
-    '$adherent->getApayer()','$adherent->getTel()','$adherent->getVictoire()','$adherent->getDefaite()','$adherent->getNul()',)";
-    $this->db->query($q);
-  }
+    $id = $adherent->getId();
+    $mdp = $adherent->getMotDePasse();
+    $nom = $adherent->getNom();
+    $prenom = $adherent->getPrenom();
+    $mail = $adherent->getMail();
+    $q = "INSERT INTO adherentClub (id,mail,motdepasse,nom,prenom) VALUES ($id,'$mail','$mdp','$nom' ,'$prenom')";
 
+    $query=$this->db->query($q);
+    return $query;
+  }
 }
 
-
+/*
+$q = "INSERT INTO adherent VALUES ('$adherent->getNom()','$adherent->getPrenom()',
+'$adherent->getDateNaiss()','$adherent->getTaille()','$adherent->getPoids()','$adherent->getStatut()','$adherent->getCategorie()',
+'$adherent->getCombattant()','$adherent->getCertificat()','$adherent->getMail()','$adherent->getAdresse()','$adherent->getAdresse()',
+'$adherent->getApayer()','$adherent->getTel()','$adherent->getVictoire()','$adherent->getDefaite()','$adherent->getNul()',)";
+*/
 
 
 

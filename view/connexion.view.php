@@ -35,6 +35,7 @@
             <input type="mdp" placeholder="Mot de passe" name="mdp" id="mdp" required/>
           </p>
           <input type="submit" id="submit" value="Connexion">
+          <?php global $erreur; ?>
           <p style='color:red'> <?=$erreur ?></p>
         </fieldset>
       </form>

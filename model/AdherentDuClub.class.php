@@ -3,8 +3,9 @@
 //classe des adhérents
 class Adherent {
   private $id;
-  private $motdepasse;
   private $mail;
+  private $motdepasse;
+
   private $nom;
   private $prenom;
   private $datenaiss;
