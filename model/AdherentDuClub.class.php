@@ -17,6 +17,7 @@ class Adherent {
   private $certifivat;
   private $licence;
   private $adresse;
+  ZASDZA
   private $apayer;
   private $tel;
   private $victoire;
