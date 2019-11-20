@@ -57,7 +57,11 @@ session_start();
         $newAdherent= new Adherent($param);
 
         // Insertion de l'Adherent dans la base de données
-        $dao->CreeAdherent($newAdherent);
+        if ($dao->CreeAdherent($newAdherent)){
+          echo "sa a marcher";
+        }else {
+          echo "nope";
+        }
         $_SESSION['mail'] = $email;
         // Afficher le nouveau profil
         //header('Location: profil.ctrl.php?numAdh='.$dao->getNumAdherent($email));
