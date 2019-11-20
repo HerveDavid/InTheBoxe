@@ -81,6 +81,13 @@ p {
   margin: 1em;
 }
 
+#Club-1 #icones {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  text-align: center;
+}
+
 #Club-2 {
   display: flex;
 }

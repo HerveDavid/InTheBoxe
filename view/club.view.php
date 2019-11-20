@@ -34,11 +34,20 @@
           permettre à nos adhérents de pratiquer la boxe dans un
           environnement accueillant et propice au progrès.
         </p>
-        <p class="icones">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-        </p>
+        <div id="icones">
+          <figure>
+            <img src="src/img/club/combativite.png" alt="">
+            <figcaption>Combativité</figcaption>
+          </figure>
+          <figure>
+            <img src="src/img/club/respect.png" alt="">
+            <figcaption>Respect</figcaption>
+          </figure>
+          <figure>
+            <img src="src/img/club/honneur.png" alt="">
+            <figcaption>Honneur</figcaption>
+          </figure>
+        </div>
         <h1>Des coachs certifiés</h1>
         <p>
           Le boxing club d’Evian-Les-Bains vous propose des cours

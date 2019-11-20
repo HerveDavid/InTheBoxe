@@ -29,6 +29,12 @@ p{
     margin: 1em;
     // padding:  2em;
   }
+  #icones{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    text-align: center;
+  }
 }
 
 #Club-2{
