@@ -53,7 +53,11 @@ article{
       }
       p{
         margin: 10%;
+        margin-left: 0px;
       }
+    }
+    p{
+      margin: 10%;
     }
   }
   ::placeholder {
@@ -63,6 +67,7 @@ article{
   }
 
   #Droite{
+    padding-top: 0px;
     color: white;
     background-image: url("../img/gantsBoxe.jpg");
     background-repeat: no-repeat;

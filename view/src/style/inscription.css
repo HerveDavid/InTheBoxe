@@ -83,12 +83,16 @@ article {
       article div fieldset input[type=submit] {
         background-color: #BE1E2D; }
       article div fieldset p {
-        margin: 10%; }
+        margin: 10%;
+        margin-left: 0px; }
+    article div p {
+      margin: 10%; }
   article ::placeholder {
     font-size: 110%;
     color: white;
     opacity: 1; }
   article #Droite {
+    padding-top: 0px;
     color: white;
     background-image: url("../img/gantsBoxe.jpg");
     background-repeat: no-repeat;
