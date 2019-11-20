@@ -17,86 +17,62 @@ header {
   align-items: center;
   display: flex;
   flex-direction: row;
-  box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
-}
-
-header nav {
-  width: 100%;
-}
-
-header nav ul {
-  padding: inherit;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  margin: 0 0;
-}
-
-header nav ul li {
-  text-align: center;
-  width: 100%;
-  padding: 0.8em;
-}
-
-header nav ul li a {
-  color: #000000;
-  text-decoration: none;
-}
-
-header nav ul #Connexion {
-  background-color: #BE1E2D;
-}
-
-header nav ul #Connexion a {
-  font-weight: bold;
-  color: #FFFFFF;
-}
+  box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13); }
+  header nav {
+    width: 100%; }
+    header nav ul {
+      padding: inherit;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      margin: 0 0; }
+      header nav ul li {
+        text-align: center;
+        width: 100%;
+        padding: 0.8em; }
+        header nav ul li a {
+          color: #000000;
+          text-decoration: none; }
+      header nav ul #Connexion {
+        background-color: #BE1E2D; }
+        header nav ul #Connexion a {
+          font-weight: bold;
+          color: #FFFFFF; }
 
 body {
   font-family: Palanquin;
   font-style: normal;
   font-weight: normal;
-  color: #000000;
-}
+  color: #000000; }
 
 h1 {
   font-family: Rubik;
   font-size: 2em;
   border-bottom: 0.2em solid #BE1E2D;
-  width: 50%;
-}
+  width: 50%; }
 
 p {
   text-align: justify;
   font-size: 1em;
   font-weight: 600;
-  width: 75%;
-}
+  width: 75%; }
 
 .club {
   margin: 0;
   padding: 0;
-  display: flex;
-}
-
-.club img {
-  flex: 50%;
-}
-
-.club .container {
-  flex: 50%;
-}
-
-.club .container section {
-  margin: 0;
-  padding-top: 5em;
-  padding-left: 2em;
-}
+  display: flex; }
+  .club img {
+    flex: 50%; }
+  .club .container {
+    flex: 50%; }
+    .club .container section {
+      margin: 0;
+      padding-top: 5em;
+      padding-left: 2em; }
 
 #icones {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  text-align: center;
-}
+  text-align: center; }
