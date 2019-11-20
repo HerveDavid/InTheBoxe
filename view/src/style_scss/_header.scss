@@ -12,10 +12,7 @@ header {
 
   position: relative;
 
-  // margin: 0 auto;
   align-items: center;
-
-  // width: 50em;
 
   display: flex;
   flex-direction: row;
@@ -40,6 +37,7 @@ header {
         text-align: center;
         width: 100%;
         padding: 0.5em;
+
 
         a {
           color: $black;

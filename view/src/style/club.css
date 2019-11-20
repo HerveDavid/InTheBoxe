@@ -45,3 +45,64 @@ header nav ul #Connexion a {
   font-weight: bold;
   color: #FFFFFF;
 }
+
+body {
+  font-family: Palanquin;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  margin: 0 22em;
+}
+
+h1 {
+  font-family: Rubik;
+  font-size: 2em;
+  border-bottom: 0.2em solid #BE1E2D;
+  width: 50%;
+}
+
+p {
+  text-align: justify;
+  font-size: 1em;
+  font-weight: 600;
+  width: 75%;
+}
+
+#Club-1 {
+  display: flex;
+}
+
+#Club-1 img {
+  flex: 50%;
+}
+
+#Club-1 section {
+  flex: 50%;
+  margin: 1em;
+}
+
+#Club-2 {
+  display: flex;
+}
+
+#Club-2 img {
+  flex: 50%;
+}
+
+#Club-2 section {
+  flex: 50%;
+  margin: 1em;
+}
+
+#Club-3 {
+  display: flex;
+}
+
+#Club-3 img {
+  flex: 50%;
+  margin: 1em;
+}
+
+#Club-3 section {
+  flex: 50%;
+}

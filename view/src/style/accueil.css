@@ -47,16 +47,20 @@ header nav ul #Connexion a {
 }
 
 body {
+  font-family: Palanquin;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  margin: 0 22em;
+}
+
+body {
   background: url(../img/accueil/background.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   color: #FFFFFF;
-  font-family: Palanquin;
-  font-style: normal;
-  font-weight: normal;
-  margin: 0 22em;
 }
 
 #Content {
@@ -92,7 +96,6 @@ body {
 }
 
 footer {
-  background: inherit;
   display: flex;
   flex-direction: row;
   height: 10em;
@@ -100,11 +103,14 @@ footer {
 }
 
 footer h1 {
-  padding: 1.3em;
-  margin: 0;
+  width: auto;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0.8em;
   background-color: #FFFFFF;
   color: #000000;
-  font-family: Rubik;
+  font-family: Palanquin;
+  font-size: 2em;
 }
 
 footer h2 {

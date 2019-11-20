@@ -1,1 +1,66 @@
 @import "header";
+@import "body";
+
+h1{
+  font-family: $fontHigh;
+  font-size: 2em;
+  border-bottom: 0.2em solid $red;
+  width: 50%;
+}
+
+p{
+  text-align: justify;
+  font-size: 1em;
+  font-weight: 600;
+  width: 75%;
+}
+
+#Club-1{
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // z-index: -1;
+  display: flex;
+  img{
+    flex: 50%;
+  }
+  section{
+    flex: 50%;
+    margin: 1em;
+    // padding:  2em;
+  }
+}
+
+#Club-2{
+  // position: absolute;
+  // top: 100%;
+  // left: 0;
+  // z-index: -1;
+  display: flex;
+  img{
+    flex: 50%;
+  }
+  section{
+    flex: 50%;
+    margin: 1em;
+
+    // padding:  5em 5em;
+  }
+}
+
+#Club-3{
+  // position: absolute;
+  // top: 100%;
+  // left: 0;
+  // z-index: -1;
+  display: flex;
+  img{
+    flex: 50%;
+    margin: 1em
+  }
+  section{
+    flex: 50%;
+    // margin: 5em;
+    // padding:  5em 5em;
+  }
+}
