@@ -54,6 +54,7 @@ header nav ul #Connexion a {
 }
 
 article {
+  margin-top: 7%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -112,6 +113,11 @@ article div fieldset input[type=submit] {
 
 article div fieldset p {
   margin: 10%;
+  margin-left: 0px;
+}
+
+article div p {
+  margin: 10%;
 }
 
 article ::placeholder {
@@ -121,6 +127,7 @@ article ::placeholder {
 }
 
 article #Droite {
+  padding-top: 0px;
   color: white;
   background-image: url("../img/gantsBoxe.jpg");
   background-repeat: no-repeat;
