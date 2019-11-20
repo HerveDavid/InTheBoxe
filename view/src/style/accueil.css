@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
 header {
+  position: fixed;
+  /* Set the navbar to fixed position */
+  left: 10em;
+  right: 10em;
+  z-index: 100;
   background-color: #FFFFFF;
+  color: #000000;
   font-family: Palanquin;
   font-style: normal;
   font-weight: normal;
   font-size: 1.6em;
   line-height: 1em;
-  position: relative;
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -51,19 +56,6 @@ body {
   font-style: normal;
   font-weight: normal;
   color: #000000;
-  margin: 0 22em;
-}
-
-/* Button used to open the contact form - fixed at the bottom of the page */
-/* The popup form - hidden by default */
-.form-popup {
-  background-color: #FFFFFF;
-  color: #000000;
-}
-
-.form-popup form {
-  display: flex;
-  flex-direction: column;
 }
 
 body {
@@ -76,7 +68,9 @@ body {
 }
 
 #Content {
-  margin: 10em 0;
+  position: relative;
+  top: 8em;
+  margin: 0 15.5em;
 }
 
 #Content h1 {
@@ -108,6 +102,9 @@ body {
 }
 
 footer {
+  position: relative;
+  top: 22em;
+  margin: 0 15.5em;
   display: flex;
   flex-direction: row;
   height: 10em;
@@ -118,11 +115,12 @@ footer h1 {
   width: auto;
   height: 100%;
   box-sizing: border-box;
-  padding: 0.8em;
+  text-align: center;
+  padding: 3em;
   background-color: #FFFFFF;
   color: #000000;
   font-family: Palanquin;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 footer h2 {

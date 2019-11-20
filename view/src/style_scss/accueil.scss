@@ -12,8 +12,11 @@ body{
 }
 
 #Content {
-
-  margin: 10em 0;
+  position: relative;
+  top: 8em;
+  margin: 0 15.5em;
+  // margin: 0 22em;
+  // margin: 10em 0;
 
   h1 {
 
@@ -49,6 +52,10 @@ body{
 }
 
 footer{
+  position: relative;
+  top: 22em;
+  margin: 0 15.5em;
+
   display: flex;
   flex-direction: row;
   height: 10em;
@@ -57,11 +64,12 @@ footer{
     width: auto;
     height: 100%;
     box-sizing: border-box;
-    padding: 0.8em;
+    text-align: center;
+    padding: 3em;
     background-color: $white;
     color: $black;
     font-family: $fontLow;
-    font-size: 2em;
+    font-size: 1em;
   }
   h2{
     padding: 2em;

@@ -6,7 +6,7 @@
     <title>InTheBoxe</title>
   </head>
   <body>
-    <header>
+    <header class="navbar">
       <img class="logo" src="src/img/logo.png" alt="logo-InTheBoxe">
       <nav class="topNavigation">
         <ul>

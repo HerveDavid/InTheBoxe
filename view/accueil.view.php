@@ -15,26 +15,11 @@
           <li id="Entrainement"><a href="#Entrainement">Entrainement</a></li>
           <li id="Competition"><a href="#Competition">Competition</a></li>
           <li id="Contact"><a href="#Contact">Contact</a></li>
-          <!-- <li><button class="open-button" type="button" onclick="openForm">Connexion</button></li> -->
           <li id="Connexion"><a href="../view/connexion.view.php">Connexion</a></li>
         </ul>
       </nav>
     </header>
     <!-- Connexion formulaire -->
-    <div class="form-popup" id="formulaire">
-      <form action="/action_page.php" class="form-container">
-        <h1>Connexion</h1>
-
-        <label for="email"><b>Email</b></label>
-        <input type="text" name="email" required focus autofocus>
-
-        <label for="psw"><b>Mot de passe</b></label>
-        <input type="password" name="psw" required>
-
-        <button type="submit" class="btn">Login</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-      </form>
-    </div>
     <div id="Content">
       <h2>Boxing Club Evian-Les-Bains</h2>
       <h1>Explorez vos limites.</h1>

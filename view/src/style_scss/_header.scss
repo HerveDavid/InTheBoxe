@@ -1,7 +1,18 @@
 @import "variables";
 
+$size: 10em;
+
 header {
+  position: fixed; /* Set the navbar to fixed position */
+  // top: 22em; /* Position the navbar at the top of the page */
+  // width: 75%; /* Full width */
+  left: $size;
+  right: $size;
+  z-index: 100;
+  // position: absolute;
+  // margin: 0 9.6em;
   background-color: $white;
+  color: $black;
 
   font-family: $fontLow;
   font-style: normal;
@@ -10,7 +21,7 @@ header {
   font-size: 1.6em;
   line-height: 1em;
 
-  position: relative;
+  // position: relative;
 
   align-items: center;
 

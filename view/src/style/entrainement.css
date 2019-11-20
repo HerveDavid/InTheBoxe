@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
 header {
+  position: fixed;
+  /* Set the navbar to fixed position */
+  left: 10em;
+  right: 10em;
+  z-index: 100;
   background-color: #FFFFFF;
+  color: #000000;
   font-family: Palanquin;
   font-style: normal;
   font-weight: normal;
   font-size: 1.6em;
   line-height: 1em;
-  position: relative;
   align-items: center;
   display: flex;
   flex-direction: row;
