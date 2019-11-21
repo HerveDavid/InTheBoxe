@@ -49,18 +49,18 @@ session_start();
 
       // Vérifier que les mots de passes correspondents
       if ($motdepasse == $confimMdp) {
-
+        $adresseComplete= "$adresse $cpostal $ville";
         // Creation de l'Adherent
         //remplacer le 1 par getNewId()
-        $param = array(1,$motdepasse,$email,$nom,$prenom,$telephone,$dateNaiss,$adresse,$ville,$cpostal);
-        var_dump($param);
+        $param = array($dao->getNewId(),$email,$motdepasse,$nom,$prenom,$telephone,$dateNaiss,$adresseComplete);
+
         $newAdherent= new Adherent($param);
 
         // Insertion de l'Adherent dans la base de données
         if ($dao->CreeAdherent($newAdherent)){
-          echo "sa a marcher";
+          echo "un nouvel adherent a bien étais créé !";
         }else {
-          echo "nope";
+          echo "Echec";
         }
         $_SESSION['mail'] = $email;
         // Afficher le nouveau profil
@@ -69,14 +69,15 @@ session_start();
 
         // Si le mot de passe sasie et le mot de passe de Confirmation ne correspondents pas
       } else {
-        //header('Location :inscription.ctrl.php?erreur=Les mot de passes ne correspondents pas');//ORTHOGRAPHE
-        var_dump($motdepasse);
+        header('Location: inscription.ctrl.php?erreur=Les mot de passes ne correspondents pas');//ORTHOGRAPHE
+        //var_dump($motdepasse);
       }
 
     // Si le mail saisie a déjà etais utiliser
     } else {
-      //header('Location :inscription.ctrl.php?erreur=Cette email a déjà étais attribuer');//ORTHOGRAPHE
-      var_dump($email);
+      header('Location: inscription.ctrl.php?erreur=Cette email a deja etais attribuer');//ORTHOGRAPHE
+      //header('Location: inscription.ctrl.php?erreur=Cette email a déjà étais attribuer');//ORTHOGRAPHE
+      //var_dump($email);
     }
   ///////////////////////////////////////////////////////////////////////
 

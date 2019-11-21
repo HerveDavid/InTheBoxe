@@ -8,7 +8,10 @@ class Adherent {
 
   private $nom;
   private $prenom;
+
   private $datenaiss;
+    private $adresse;
+    private $tel;
   private $taille;
   private $poids;
   private $genre;
@@ -17,9 +20,9 @@ class Adherent {
   private $combattant;
   private $certifivat;
   private $licence;
-  private $adresse;
+
   private $apayer;
-  private $tel;
+
   private $victoire;
   private $defaite;
   private $nul;
@@ -32,12 +35,12 @@ class Adherent {
         }
       }
     }
-  public function getId():INTEGER {return $this->id;}
+  public function getId() {return $this->id;}
   public function getMotDePasse():string{return $this->motdepasse;}
   public function getLicence(): INTEGER {return $this->licence;}
   public function getNom(): string {return $this->nom;}
   public function getPrenom(): string {return $this->prenom;}
-  public function getDateNaiss(): date {return $this->datenaiss;}
+  public function getDateNaiss() {return $this->datenaiss;}
   public function getTaille(): float {return $this->taille;}
   public function getPoids(): INTEGER {return $this->poids;}
   public function getStatut(): string {return $this->statut;}
@@ -45,9 +48,9 @@ class Adherent {
   public function getCombattant(): string {return $this->combattant;}
   public function getCertificat(): string {return $this->certificat;}
   public function getMail(): string {return $this->mail;}
-  public function getAdresse(): string {return $this->adhérents;}
+  public function getAdresse() {return $this->adresse;}
   public function getApayer(): float {return $this->apayer;}
-  public function getTel(): string {return $this->tel;}
+  public function getTel() {return $this->tel;}
   public function getVictoire(): INTEGER {return $this->victoire;}
   public function getDefaite(): INTEGER {return $this->defaite;}
   public function getNul(): INTEGER {return $this->nul;}

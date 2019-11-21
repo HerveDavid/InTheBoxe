@@ -23,7 +23,13 @@ class DAO {
       die("PDO Error :".$e->getMessage()." '".$this->database."'\n");
     }
   }
-
+  public function getNewId(){
+    $q = "SELECT id FROM adherentClub ORDER BY id DESC LIMIT 1 ";
+    $r= $this->db->query($q);
+    $res = $r->fetchAll(PDO::FETCH_CLASS[0]);
+    $newId = $res[0][0] +1; //a modifier
+    return $newId;
+  }
   public function getAdherent($email){
     $q = "SELECT * FROM adherentClub WHERE mail='$email'";
     $r= $this->db->query($q);
@@ -48,7 +54,10 @@ class DAO {
     $nom = $adherent->getNom();
     $prenom = $adherent->getPrenom();
     $mail = $adherent->getMail();
-    $q = "INSERT INTO adherentClub (id,mail,motdepasse,nom,prenom) VALUES ($id,'$mail','$mdp','$nom' ,'$prenom')";
+    $tel = $adherent->getTel();
+    $adresse = $adherent->getAdresse();
+    $date = $adherent->getDateNaiss();
+    $q = "INSERT INTO adherentClub (id,mail,motdepasse,nom,prenom,datenaiss,adresse,tel) VALUES ($id,'$mail','$mdp','$nom' ,'$prenom','$date','$adresse','$tel')";
 
     $query=$this->db->query($q);
     return $query;

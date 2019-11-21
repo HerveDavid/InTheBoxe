@@ -34,23 +34,23 @@
         <fieldset>
           <p>
             <!-- <label for="prenom"><h2>Prénom</h2></label> -->
-            <input type="text" name="prenom" id="prenom" autofocus placeholder="Prénom"/>
+            <input type="text" name="prenom" id="prenom" autofocus placeholder="Prénom" required/>
           </p>
           <p>
             <!-- <label for="nom"><h2>Nom</h2></label> -->
-            <input type="text" name="nom" id="nom" required placeholder="Nom"/>
+            <input type="text" name="nom" id="nom" required placeholder="Nom" required/>
           </p>
           <p>
             <!-- <label for="mail"><h2>Adresse mail</h2></label> -->
-            <input type="email" name="mail" id="mail" required placeholder="Adresse mail"/>
+            <input type="email" name="mail" id="mail" required placeholder="Adresse mail" required/>
           </p>
           <p>
             <!-- <label for="mdp"><h2>Mot de passe </h2></label> -->
-            <input type="password" name="mdp" id="mdp" placeholder="Mot de passe"/>
+            <input type="password" name="mdp" id="mdp" placeholder="Mot de passe" required/>
           </p>
           <p>
             <!-- <label for="confim"><h2>Confirmation du mot de passe :</h2></label> -->
-            <input type="password" name="confim" id="confim" placeholder="Confirmation du mot de passe"/>
+            <input type="password" name="confim" id="confim" placeholder="Confirmation du mot de passe" required/>
           </p>
           <p>
             <!-- <label for="tel"><h2>Téléphone</h2></label> -->
@@ -63,15 +63,15 @@
           </p>
           <p>
             <!-- <label for="adresse"><h2>Adresse</h2></label> -->
-            <input type="text" name="adresse" id="adresse" required placeholder="Adresse"/>
+            <input type="text" name="adresse" id="adresse" required placeholder="Adresse"required/>
           </p>
           <p>
             <!-- <label for="ville"><h2>Ville</h2></label> -->
-            <input type="text" name="ville" id="ville" required placeholder="Ville"/>
+            <input type="text" name="ville" id="ville" required placeholder="Ville" required/>
           </p>
           <p>
             <!-- <label for="cp"><h2>Code postal</h2></label> -->
-            <input type="number" name="cp" id="cp" required placeholder="Code postal"/>
+            <input type="number" name="cp" id="cp" required placeholder="Code postal" required/>
           </p>
           <input type="submit" value="Inscription">
           <?php global $erreur; ?>

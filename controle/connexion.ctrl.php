@@ -37,16 +37,15 @@ if (isset($_POST['mail'])
     var_dump($adh);
     // Vérification que le pseudo existe
     if ($adh!=null) {
-      var_dump($adh->getMotDePasse());
       if ($adh->getMotDePasse()==$motdepasse) {
 
         session_start();
-        $_SESSION['mail'] = $adh.getMail(); //a modifier
+        //$_SESSION['mail'] = $adh.getMail(); //a modifier
         // Affichage du profil
-        header('Location: profil.ctrl.php?');
+        //header('Location: profil.ctrl.php?');
       } else {
         // Si le mot de passe est faut
-        //header('Location: connexion.ctrl.php?erreur=2');
+        header('Location: connexion.ctrl.php?erreur=2');
       }
     } else {
       // Si le mail n'existe pas

@@ -31,7 +31,7 @@
           </p>
           <p>
             <!-- <label for="mdp"><h2>Mot de passe </h2></label> -->
-            <input type="mdp" placeholder="Mot de passe" name="mdp" id="mdp" required/>
+            <input type="password" placeholder="Mot de passe" name="mdp" id="mdp" required/>
           </p>
           <input type="submit" id="submit" value="Connexion">
           <?php global $erreur; ?>

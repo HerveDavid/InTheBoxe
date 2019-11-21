@@ -5,6 +5,8 @@ CREATE TABLE adherentClub(
   nom VARCHAR(25),
   prenom VARCHAR(25),
   datenaiss DATE,
+  adresse VARCHAR(150),
+  tel VARCHAR(10),
   taille FLOAT,
   poids INTEGER,
   genre VARCHAR(25),
@@ -13,9 +15,9 @@ CREATE TABLE adherentClub(
   combattant VARCHAR(25),
   certificat VARCHAR(30),
   licence INTEGER,
-  adresse VARCHAR(40),
+
   apayer FLOAT,
-  tel VARCHAR(10),
+
   victoire INTEGER,
   defaite INTEGER,
   nul INTEGER
