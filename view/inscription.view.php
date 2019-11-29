@@ -25,7 +25,7 @@
       <p>Communiquez directement avec vos coachs et gérez votre planning selon vos besoins</p>
       <h1>Entrainement en ligne</h1>
       <p>Progressez avec +100 cours personnalisés certifiés par des coachs</p>
-      <h1>Inscription au combat en ligne</h1>
+      <h1>Combat en ligne</h1>
       <p>Participez à des combats et trouvez un adversaire qui vous correspond</p>
     </div>
     <div id="Droite">
