@@ -1,0 +1,80 @@
+@import "header";
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+.boxe-main-full {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  padding-top: 100px;
+  display: table-cell;
+
+  h5 {
+    margin: 0 0 0.55em;
+    text-align: center;
+    color: $red;
+    text-rendering: optimizelegibility;
+    font-family: $fontLow;
+  }
+
+  h1 {
+    margin: 0 0 0.55em;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-rendering: optimizelegibility;
+    font-family: $fontHigh;
+  }
+
+  p {
+    text-align: center;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.boxe-main-gauche {
+  padding-top: 40px;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+
+  p {
+    text-align: center;
+    font-family: $fontHigh;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  form {
+      input {
+      border-color: $red;
+      color: $red;
+      background-color: white;
+      }
+
+      textarea {
+        color: $red;
+        width: 697px;
+        height: 228px;
+        margin: 10px;
+        border-color: $red;
+      }
+
+      .bouton {
+        width: 100px;
+        height: 50px;
+      }
+  }
+
+}
