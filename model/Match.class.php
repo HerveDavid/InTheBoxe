@@ -31,5 +31,12 @@ public function getClubExt():string{return $this->clubext;}
 public function getCategorie():string{return $this->categorie;}
 public function getDateCombat():date{return $this->datecombat;}
 public function getLieu():string{return $this->lieu;}
+////a revoir
+public function getGagnant():adherent{return ....}
+  public function setGagnant(adherent gagnant):void{
+    $this->gagnant=$gagnant;
+  }
+  public function getPerdant():adherent{return $adherent->getPerdant;}
 }
+public function setPerdant(adherent perdant):void{return $this->perdant;}
 ?>

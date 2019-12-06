@@ -13,6 +13,9 @@ class Exercices{
   }
 
 public function getNom(): string {return $this->nom;}
+public fnction setNom(nom):void{
+  $this->nom=$nom;
+}
 }
 
 
