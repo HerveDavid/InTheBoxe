@@ -1,9 +1,9 @@
-DROP TABLE adherentClub;
-DROP TABLE adherent;
-DROP TABLE adherent;
-DROP TABLE adherent;
-DROP TABLE adherent;
-DROP TABLE adherent;
-DROP TABLE adherent;
-DROP TABLE adherent;
-DROP TABLE adherent;
+DROP TABLE adherentClub ;
+DROP TABLE adherentExterieur ;
+DROP TABLE cours ;
+DROP TABLE coach ;
+DROP TABLE activite ;
+DROP TABLE club ;
+DROP TABLE exercices ;
+DROP TABLE entrainementPerso ;
+DROP TABLE match ;

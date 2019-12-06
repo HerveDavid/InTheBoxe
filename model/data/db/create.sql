@@ -1,4 +1,4 @@
-CREATE TABLE adherentDuClub(
+CREATE TABLE adherentClub(
   id INTEGER PRIMARY KEY,
   mail VARCHAR(30) UNIQUE,
   motdepasse VARCHAR(25),
@@ -13,8 +13,8 @@ CREATE TABLE adherentDuClub(
   statut VARCHAR(20),
   categorie VARCHAR(20),
   combattant VARCHAR(25),
-  certificat VARCHAR(30),
-  licence INTEGER,
+  certificat BOOLEAN,
+  licence VARCHAR(20),
   apayer FLOAT,
   victoire INTEGER,
   defaite INTEGER,
