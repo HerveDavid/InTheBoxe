@@ -13,11 +13,9 @@ CREATE TABLE adherentClub(
   statut VARCHAR(20),
   categorie VARCHAR(20),
   combattant VARCHAR(25),
-  certificat VARCHAR(30),
-  licence INTEGER,
-
+  certificat BOOLEAN,
+  licence VARCHAR(20),
   apayer FLOAT,
-
   victoire INTEGER,
   defaite INTEGER,
   nul INTEGER
@@ -84,7 +82,7 @@ CREATE TABLE entrainementPerso(
 );
 
 
-CREATE TABLE Match(
+CREATE TABLE match(
  boxeurint VARCHAR(25),
  licenceint INTEGER,
  boxeurext VARCHAR(25),

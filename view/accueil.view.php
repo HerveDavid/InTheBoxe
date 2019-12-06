@@ -12,7 +12,7 @@
         <ul>
           <li id="Accueil"><a href="../view/accueil.view.php">Accueil</a></li>
           <li id= "Club"><a href="../view/club.view.php">Club</a></li>
-          <li id="Entrainement"><a href="#Entrainement">Entrainement</a></li>
+          <li id="Entrainement"><a href="../view/entrainement.view.php">Entrainement</a></li>
           <li id="Competition"><a href="#Competition">Competition</a></li>
           <li id="Contact"><a href="#Contact">Contact</a></li>
           <li id="Connexion"><a href="../view/connexion.view.php">Connexion</a></li>

@@ -1,28 +1,24 @@
 <?php
 
 //classe des adhérents
-class Adherent {
+class AdherentClub extends Adherent {
   private $id;
   private $mail;
   private $motdepasse;
-
   private $nom;
   private $prenom;
-
   private $datenaiss;
-    private $adresse;
-    private $tel;
+  private $adresse;
+  private $tel;
   private $taille;
   private $poids;
   private $genre;
   private $statut;
   private $categorie;
   private $combattant;
-  private $certifivat;
+  private $certificat;
   private $licence;
-
   private $apayer;
-
   private $victoire;
   private $defaite;
   private $nul;

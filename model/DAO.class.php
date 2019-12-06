@@ -1,6 +1,6 @@
 <?php
 
-include('../model/AdherentDuClub.class.php');
+include('../model/Adherent.class.php');
 
 class DAO {
   private $db;
@@ -33,11 +33,14 @@ class DAO {
   public function getAdherent($email){
     $q = "SELECT * FROM adherentClub WHERE mail='$email'";
     $r= $this->db->query($q);
-    $res = $r->fetchAll(PDO::FETCH_CLASS[0]);
-
+    $res = $r->fetchAll(PDO::FETCH_ASSOC)[0];
+    var_dump($res);
+    foreach ($res as $key => $value) {
+      var_dump($key);
+    }
     if (count($res)==0) {
       return null;
-    }else {return new Adherent($res[0]);}
+    }else {return new AdherentClub($res);}
 
   }
   public function mailExistant($email){
