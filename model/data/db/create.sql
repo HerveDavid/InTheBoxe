@@ -1,4 +1,4 @@
-CREATE TABLE adherentClub(
+CREATE TABLE adherentDuClub(
   id INTEGER PRIMARY KEY,
   mail VARCHAR(30) UNIQUE,
   motdepasse VARCHAR(25),
@@ -15,9 +15,7 @@ CREATE TABLE adherentClub(
   combattant VARCHAR(25),
   certificat VARCHAR(30),
   licence INTEGER,
-
   apayer FLOAT,
-
   victoire INTEGER,
   defaite INTEGER,
   nul INTEGER
@@ -84,7 +82,7 @@ CREATE TABLE entrainementPerso(
 );
 
 
-CREATE TABLE Match(
+CREATE TABLE match(
  boxeurint VARCHAR(25),
  licenceint INTEGER,
  boxeurext VARCHAR(25),
