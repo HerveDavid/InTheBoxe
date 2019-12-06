@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
+header {
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  left: 10em;
+  right: 10em;
+  z-index: 100;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Palanquin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6em;
+  line-height: 1em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav ul {
+  padding: inherit;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0 0;
+}
+
+header nav ul li {
+  text-align: center;
+  width: 100%;
+  padding: 0.8em;
+}
+
+header nav ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+header nav ul #Connexion {
+  background-color: #BE1E2D;
+}
+
+header nav ul #Connexion a {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.boxe-main-full {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  padding-top: 100px;
+  display: table-cell;
+}
+
+.boxe-main-full h5 {
+  margin: 0 0 0.55em;
+  text-align: center;
+  color: #BE1E2D;
+  text-rendering: optimizelegibility;
+  font-family: Palanquin;
+}
+
+.boxe-main-full h1 {
+  margin: 0 0 0.55em;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-rendering: optimizelegibility;
+  font-family: Rubik;
+}
+
+.boxe-main-full p {
+  text-align: center;
+}
+
+.boxe-main-full p img {
+  width: 50px;
+  height: 50px;
+}
+
+.boxe-main-gauche {
+  padding-top: 40px;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+}
+
+.boxe-main-gauche p {
+  text-align: center;
+  font-family: Rubik;
+}
+
+.boxe-main-gauche p img {
+  width: 50px;
+  height: 50px;
+}
+
+.boxe-main-gauche form input {
+  border-color: #BE1E2D;
+  color: #BE1E2D;
+  background-color: white;
+}
+
+.boxe-main-gauche form textarea {
+  color: #BE1E2D;
+  width: 697px;
+  height: 228px;
+  margin: 10px;
+  border-color: #BE1E2D;
+}
+
+.boxe-main-gauche form .bouton {
+  width: 100px;
+  height: 50px;
+}
