@@ -1,1 +1,53 @@
 @import "header";
+@import "body";
+
+h1{
+  font-family: $fontHigh;
+  font-size: 2em;
+  border-bottom: 0.2em solid $red;
+  width: 50%;
+}
+
+p{
+  text-align: justify;
+  font-size: 1em;
+  font-weight: 600;
+  width: 75%;
+}
+
+.club{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  img{
+    border: 0;
+    flex: 50%;
+  }
+  .container{
+    flex: 50%;
+    section{
+      margin: 0;
+      padding-top: 5em;
+      padding-left: 2em;
+    }
+  }
+}
+
+#icones{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    text-align: center;
+}
+
+#Club-2 {
+  section{
+    padding-top: 25em;
+  }
+}
+
+#Club-3 {
+  section{
+    padding-top: 25em;
+  }
+}

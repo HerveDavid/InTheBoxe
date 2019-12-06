@@ -13,7 +13,11 @@ $dao = new DAO;
 ///////////////// Si message d'erreur detecter //////////////////////////
 
 if (isset($_GET['erreur'])) {
-  $erreur= $_GET['erreur'];
+  if ($_GET['erreur']==1) {
+    $erreur = "Le mail que vous avez entre est incorrect";
+  }else {
+    $erreur = "Le mot de passe que vous avez entre est incorrect";
+  }
 }
 else {
   $erreur="";
@@ -29,23 +33,22 @@ if (isset($_POST['mail'])
     // Initialisation des variables
     $email=$_POST['mail'];
     $motdepasse=$_POST['mdp'];
-    $adh = $adherents->getAdherent($email);
-
+    $adh = $dao->getAdherent($email);
+    var_dump($adh);
     // Vérification que le pseudo existe
-    if (isset($adh)) {
-      if ($adh->getMdp()==$motdepasse) {
+    if ($adh!=null) {
+      if ($adh->getMotDePasse()==$motdepasse) {
 
         session_start();
-        $_SESSION['mail'] = $adh.getMail(); //a modifier
-        //$profil=$adherents->getProfil($email);
+        //$_SESSION['mail'] = $adh.getMail(); //a modifier
         // Affichage du profil
-        header('Location: profil.ctrl.php?');
+        //header('Location: profil.ctrl.php?');
       } else {
-        // Si le profil n'est pas trouvé
-        header('Location: connexion.ctrl.php?erreur=1');
+        // Si le mot de passe est faut
+        header('Location: connexion.ctrl.php?erreur=2');
       }
     } else {
-      // Si il n'y a pas de MDPofficiel
+      // Si le mail n'existe pas
       header('Location: connexion.ctrl.php?erreur=1');
     }
 // Si formulaire non rempli afficher la vue inscription

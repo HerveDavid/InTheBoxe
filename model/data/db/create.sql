@@ -1,10 +1,12 @@
 CREATE TABLE adherentClub(
   id INTEGER PRIMARY KEY,
+  mail VARCHAR(30) UNIQUE,
   motdepasse VARCHAR(25),
-  licence INTEGER,
   nom VARCHAR(25),
   prenom VARCHAR(25),
   datenaiss DATE,
+  adresse VARCHAR(150),
+  tel VARCHAR(10),
   taille FLOAT,
   poids INTEGER,
   genre VARCHAR(25),
@@ -12,10 +14,10 @@ CREATE TABLE adherentClub(
   categorie VARCHAR(20),
   combattant VARCHAR(25),
   certificat VARCHAR(30),
-  mail VARCHAR(30) UNIQUE,
-  adresse VARCHAR(40),
+  licence INTEGER,
+
   apayer FLOAT,
-  tel VARCHAR(10),
+
   victoire INTEGER,
   defaite INTEGER,
   nul INTEGER
@@ -35,7 +37,7 @@ CREATE TABLE adherentExterieur(
   victoire INTEGER,
   defaite INTEGER,
   nul INTEGER
-)
+);
 
 CREATE TABLE cours(
   type VARCHAR(20),

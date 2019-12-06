@@ -30,14 +30,14 @@ session_start();
     && isset($_POST['mail']) && isset($_POST['tel'])
     && isset($_POST['naiss']) && isset($_POST['adresse'])
     && isset($_POST['ville']) && isset($_POST['cp'])
-    && isset($_POST['mdp']) && isset($_POST['conf'])) {
+    && isset($_POST['mdp']) && isset($_POST['confim'])) {
 
     // Initialisation des variables
     $prenom=$_POST['prenom'];
     $nom=$_POST['nom'];
     $email=$_POST['mail'];
     $motdepasse=$_POST['mdp'];
-    $confimMdp=$_POST['$confim'];
+    $confimMdp=$_POST['confim'];
     $telephone=$_POST['tel'];
     $dateNaiss=$_POST['naiss'];
     $adresse=$_POST['adresse'];
@@ -49,25 +49,35 @@ session_start();
 
       // Vérifier que les mots de passes correspondents
       if ($motdepasse == $confimMdp) {
-
+        $adresseComplete= "$adresse $cpostal $ville";
         // Creation de l'Adherent
-        $newAdherent= new Adherent($prenom,$nom,$email,$motdepasse,$confimMdp,$telephone,$dateNaiss,$adresse,$ville,$cpostal);
+        //remplacer le 1 par getNewId()
+        $param = array($dao->getNewId(),$email,$motdepasse,$nom,$prenom,$telephone,$dateNaiss,$adresseComplete);
+
+        $newAdherent= new Adherent($param);
 
         // Insertion de l'Adherent dans la base de données
-        $dao->CreeAdherent($newAdherent);
+        if ($dao->CreeAdherent($newAdherent)){
+          echo "un nouvel adherent a bien étais créé !";
+        }else {
+          echo "Echec";
+        }
         $_SESSION['mail'] = $email;
         // Afficher le nouveau profil
-        header('Location: profil.ctrl.php?numAdh='.$dao->getNumAdherent($email));
-
+        //header('Location: profil.ctrl.php?numAdh='.$dao->getNumAdherent($email));
+        var_dump($newAdherent);
 
         // Si le mot de passe sasie et le mot de passe de Confirmation ne correspondents pas
       } else {
-        header('Location :inscription.ctrl.php?erreur=Les mot de passes ne correspondents pas');//ORTHOGRAPHE
+        header('Location: inscription.ctrl.php?erreur=Les mot de passes ne correspondents pas');//ORTHOGRAPHE
+        //var_dump($motdepasse);
       }
 
     // Si le mail saisie a déjà etais utiliser
     } else {
-      header('Location :inscription.ctrl.php?erreur=Cette email a déjà étais attribuer');//ORTHOGRAPHE
+      header('Location: inscription.ctrl.php?erreur=Cette email a deja etais attribuer');//ORTHOGRAPHE
+      //header('Location: inscription.ctrl.php?erreur=Cette email a déjà étais attribuer');//ORTHOGRAPHE
+      //var_dump($email);
     }
   ///////////////////////////////////////////////////////////////////////
 
@@ -75,7 +85,6 @@ session_start();
 
   // Si formulaire non rempli afficher la vue inscription
   } else {
-    $erreur="szasa"; 
     include('../view/inscription.view.php');
   }
 
