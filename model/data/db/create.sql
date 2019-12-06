@@ -77,7 +77,7 @@ CREATE TABLE entrainementPerso(
   nomexercice VARCHAR(25),
   nbrep INTEGER,
   PRIMARY KEY(numlicence,numentrainement,nomexercice),
-  FOREIGN KEY(numlicence) REFERENCES adherent(licence),
+  FOREIGN KEY(numlicence) REFERENCES adherentClub(licence),
   FOREIGN KEY(nomexercice) REFERENCES exercices(nom)
 );
 
@@ -93,5 +93,5 @@ CREATE TABLE match(
  lieu VARCHAR(25),
  PRIMARY KEY(licenceint,licenceext,datecombat),
  FOREIGN KEY(boxeurint,licenceint,categorie) REFERENCES adherent(prenom,licence,categorie),
- FOREIGN KEY(boxeurext,licenceext) REFERENCES boxeurExt
+ FOREIGN KEY(boxeurext,licenceext) REFERENCES adherentExterieur
 );
