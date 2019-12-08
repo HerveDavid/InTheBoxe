@@ -38,7 +38,7 @@
         <p>
             <img src="../view/src/img/contact/mail.png" alt="enveloppe">
         </p>
-        <p>
+        <p id="question">
             Pour toutes questions n'hésitez pas à nous contacter
         </p>
 
@@ -49,6 +49,43 @@
           <br>
           <input type="submit" class="bouton" value="ENVOYER">
         </form>
+    </div>
+
+    <div class="boxe-main-droite">
+      <p id="place">
+          <img src="../view/src/img/contact/place.png" alt="place">
+      </p>
+      <h5>
+        Boxing Club Evian
+      </h5>
+      <p>
+        Impasse du Docteur Dumur
+        <br>
+        74500 Évian-les-Bains
+        <br>
+        06 58 87 23 90
+        <br>
+        boxingclubevian@gmail.com
+      </p>
+      <p id="titreHoraires">
+        Horaires d'ouverture
+      </p>
+      <p id="horaires">
+        Lundi ……………….……. 9h > 21h
+        <br>
+        Mardi ……………….……. 9h > 21h
+        <br>
+        Mercredi ……………….……. 9h > 21h
+        <br>
+        Jeudi .…….………….…. 9h > 21h
+        <br>
+        Vendredi ……………….……. 9h > 21h
+        <br>
+        Samedi ……………….……. 9h > 21h
+        <br>
+        Dimanche …...........…………….……. OFF
+      </p>
+
     </div>
 
 

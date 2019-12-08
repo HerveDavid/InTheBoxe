@@ -11,7 +11,9 @@
   width: 50%;
   height: 50%;
   padding-top: 100px;
-  display: table-cell;
+  display: inline-table;
+  position: relative;
+  left: 10%;
 
   h5 {
     margin: 0 0 0.55em;
@@ -42,10 +44,12 @@
 
 .boxe-main-gauche {
   padding-top: 40px;
+  padding-left: 10%;
   margin: auto;
-  text-align: center;
+  text-align: left;
   width: 50%;
   height: 50%;
+  display: table-cell;
 
   p {
     text-align: center;
@@ -56,25 +60,76 @@
     }
   }
 
+  #question {
+    text-align: left;
+  }
+
   form {
       input {
       border-color: $red;
       color: $red;
       background-color: white;
+      font-family: $fontHigh;
+      margin-top: 22px;
+      margin-bottom: 22px;
       }
 
       textarea {
         color: $red;
         width: 697px;
         height: 228px;
-        margin: 10px;
+        margin-top: 22px;
+        margin-bottom: 22px;
         border-color: $red;
       }
 
       .bouton {
         width: 100px;
         height: 50px;
+        margin-top: 22px;
+        margin-bottom: 22px;
       }
+
+      .bouton:hover {
+        background-color: $red;
+        opacity: 0.80;
+        color: white;
+      }
+  }
+}
+
+.boxe-main-droite {
+  display: table-cell;
+  padding-top: 40px;
+  padding-right: 10%;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  font-family: $fontLow;
+
+  h5 {
+    color: $red;
+    text-align: right;
+  }
+
+  #place {
+    text-align: center;
+    font-family: $fontHigh;
+    position: relative;
+    left: 60px;
+    img {
+      width: 50px;
+      height: 40px;
+    }
+  }
+
+  p {
+    text-align: right;
+  }
+
+  #titreHoraires {
+    color: $red;
   }
 
 }
