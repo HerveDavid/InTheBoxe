@@ -1,3 +1,4 @@
+
 CREATE TABLE adherentClub(
   id INTEGER PRIMARY KEY,
   mail VARCHAR(30) UNIQUE,
@@ -7,7 +8,7 @@ CREATE TABLE adherentClub(
   datenaiss DATE,
   adresse VARCHAR(150),
   tel VARCHAR(10),
-  taille FLOAT,
+  taille VARCHAR(10),
   poids INTEGER,
   genre VARCHAR(25),
   statut VARCHAR(20),

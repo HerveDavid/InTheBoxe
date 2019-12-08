@@ -34,13 +34,21 @@ class DAO {
     $q = "SELECT * FROM adherentClub WHERE mail='$email'";
     $r= $this->db->query($q);
     $res = $r->fetchAll(PDO::FETCH_ASSOC)[0];
-    var_dump($res);
+    //var_dump($res);
     foreach ($res as $key => $value) {
-      var_dump($key);
+      //var_dump($key);
     }
     if (count($res)==0) {
       return null;
     }else {return new AdherentClub($res);}
+  }
+  public function estCoach($mail){
+    $q = "SELECT * FROM coach WHERE mail='$email'";
+    $r= $this->db->query($q);
+    $res = $r->fetchAll(PDO::FETCH_CLASS[0]);
+    if (count($res)==0) {
+      return false;
+    }else {return true;}
 
   }
   public function mailExistant($email){
