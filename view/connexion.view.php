@@ -12,9 +12,9 @@
         <ul>
           <li id="Accueil"><a href="../controle/accueil.ctrl.php">Accueil</a></li>
           <li id= "Club"><a href="../controle/club.ctrl.php">Club</a></li>
-          <li id="Entrainement"><a href="#Entrainement">Entrainement</a></li>
-          <li id="Competition"><a href="#Competition">Competition</a></li>
-          <li id="Contact"><a href="#Contact">Contact</a></li>
+          <li id="Entrainement"><a href="../controle/entrainement.ctrl.php">Entrainement</a></li>
+          <li id="Compétition"><a href="#Competition">Competition</a></li>
+          <li id="Contact"><a href="../controle/contact.ctrl.php">Contact</a></li>
           <li id="Connexion"><a href="../controle/connexion.ctrl.php">Connexion</a></li>
         </ul>
       </nav>

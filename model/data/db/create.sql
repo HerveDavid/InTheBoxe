@@ -47,9 +47,10 @@ CREATE TABLE cours(
 );
 
 CREATE TABLE coach(
-  numprof INTEGER PRIMARY KEY,
-  nomprof VARCHAR(25),
-  prenomprof VARCHAR(25)
+  id INTEGER PRIMARY KEY,
+  mail VARCHAR(30) UNIQUE,
+  nom VARCHAR(25),
+  prenom VARCHAR(25)
 );
 
 CREATE TABLE activite(
