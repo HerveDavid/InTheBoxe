@@ -42,5 +42,11 @@
       </nav>
     </header>
     <div id="calendar"></div>
+    <?php
+    //demande de competition
+    //affichage des informations (info , stats , status , docs a fournir )
+    //les cours a la quelle il ses inscrit
+
+     ?>
   </body>
 </html>

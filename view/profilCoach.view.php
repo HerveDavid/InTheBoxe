@@ -28,5 +28,13 @@
         </ul>
       </nav>
     </header>
+
+    <?php
+    // accepter/refuser les demande de competition
+    //affichage les informations des adherent
+    //mesagerie
+    //message a transmettre
+
+     ?>
   </body>
 </html>
