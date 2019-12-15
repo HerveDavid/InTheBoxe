@@ -1,6 +1,7 @@
 DROP TABLE adherentClub ;
 DROP TABLE adherentExterieur ;
 DROP TABLE cours ;
+DROP TABLE profil ;
 DROP TABLE coach ;
 DROP TABLE activite ;
 DROP TABLE club ;

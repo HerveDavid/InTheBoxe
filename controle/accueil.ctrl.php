@@ -5,4 +5,5 @@
     $_SESSION['mail']=Null;
   }
   include('../view/accueil.view.php');
+  
  ?>

@@ -34,7 +34,6 @@ abstract class Adherent {
 
 class AdherentClub extends Adherent {
   private $mail;
-  private $motdepasse;
   private $adresse;
   private $tel;
   private $statut;
@@ -48,7 +47,6 @@ class AdherentClub extends Adherent {
       }
     }
   //////////////////declaration des getter//////////////////////
-  public function getMotDePasse(){return $this->motdepasse;}
   public function getStatut() {return $this->statut;}
   public function getCombattant() {return $this->combattant;}
   public function getCertificat() {return $this->certificat;}

@@ -33,14 +33,20 @@ if (isset($_POST['mail'])
     // Initialisation des variables
     $email=$_POST['mail'];
     $motdepasse=$_POST['mdp'];
-    $adh = $dao->getAdherent($email);
-    var_dump($adh);
-    // Vérification que le pseudo existe
-    if ($adh!=null) {
-      if ($adh->getMotDePasse()==$motdepasse) {
 
+    $profil = $dao->getProfil($email);
+    // Vérification que le mail existe
+    if ($profil!=null) {
+      if ($profil->getMotDePasse()==$motdepasse) {
+        //recuperer le prenom du profil
+        if ($dao->estCoach($email)) {
+          $adh = $dao->getCoach($email);
+        } else {
+          $adh = $dao->getAdherent($email);
+        }
         session_start();
-        $_SESSION['mail'] = $email; //a modifier
+        $_SESSION['mail'] = $email;
+        $_SESSION['prenom'] = $adh->getPrenom();
         // Affichage du profil
         header('Location: profil.ctrl.php?');
       } else {

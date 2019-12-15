@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
+body {
+  font-family: Palanquin;
+}
+header {
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  left: 10em;
+  right: 10em;
+  z-index: 100;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Palanquin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6em;
+  line-height: 1em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav ul {
+  padding: inherit;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0 0;
+}
+
+header nav ul li {
+  text-align: center;
+  width: 100%;
+  padding: 0.8em;
+}
+
+header nav ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+header nav ul #Connexion {
+  background-color: #BE1E2D;
+}
+
+header nav ul #Connexion a {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+#planning {
+  padding-top: 10%;
+}

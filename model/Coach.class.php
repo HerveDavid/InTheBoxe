@@ -1,20 +1,21 @@
 
 <?php
-  class Prof{
-    private $numprof;
-    private $nomprof;
-    private $prenomprof;
+  class Coach{
+    private $mail;
+    private $nom;
+    private $prenom;
+    private $tel;
+    private $adresse;
 
     public function __construct(array $param = array()) {
-      $i = 0;
-      foreach ($this as $key => $value) {
-        if ($i < count($param)) {
-          $this->$key = $param[$i++];
-        }
+      foreach ($param as $key => $value) {
+          $this->$key = $value;
       }
     }
-    public function getNumProf(): INTEGER {return $this->numprof;}
-    public function getNomProf(): string {return $this->nomprof;}
-    public function getPrenomProf(): string {return $this->prenomptof;}
+    public function getMail() {return $this->mail;}
+    public function getNom() {return $this->nom;}
+    public function getPrenom() {return $this->prenom;}
+    public function getTel() {return $this->tel;}
+    public function getAdresse() {return $this->adresse;}
   }
 ?>

@@ -52,20 +52,20 @@ session_start();
         $adresseComplete= "$adresse $cpostal $ville";
         // Creation de l'Adherent
         //remplacer le 1 par getNewId()
-        $param = array($dao->getNewId(),$email,$motdepasse,$nom,$prenom,$telephone,$dateNaiss,$adresseComplete);
+        $param = array("mail"=>$email,"nom"=>$nom,"prenom"=>$prenom,"tel"=>$telephone,"datenaiss"=>$dateNaiss,"adresse"=>$adresseComplete);
 
-        $newAdherent= new Adherent($param);
+        $newAdherent= new AdherentClub($param);
 
         // Insertion de l'Adherent dans la base de données
-        if ($dao->CreeAdherent($newAdherent)){
+        if ($dao->CreeAdherent($newAdherent,$motdepasse)){
           echo "un nouvel adherent a bien étais créé !";
         }else {
           echo "Echec";
         }
         $_SESSION['mail'] = $email;
+        $_SESSION['prenom'] = $prenom;
         // Afficher le nouveau profil
-        //header('Location: profil.ctrl.php?numAdh='.$dao->getNumAdherent($email));
-        var_dump($newAdherent);
+        header('Location: profil.ctrl.php');
 
         // Si le mot de passe sasie et le mot de passe de Confirmation ne correspondents pas
       } else {

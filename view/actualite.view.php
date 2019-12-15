@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../view/src/style/connexion.css">
-    <title>InTheBoxe</title>
+    <link rel="stylesheet" href="../view/src/style/actualite.css">
+
+    <title></title>
   </head>
   <body>
     <header>
@@ -27,26 +28,5 @@
         </ul>
       </nav>
     </header>
-    <article>
-    <div id="divco">
-      <img src="../view/src/img/connexion_logo.png" alt="">
-      <h1>Connexion</h1>
-      <form class="connexion" action="../controle/connexion.ctrl.php" method="post">
-        <fieldset>
-          <p>
-            <!-- <label for="mail"><h2>Adresse mail</h2></label> -->
-            <input type="email" placeholder="Adresse mail" name="mail" id="mail" required/>
-          </p>
-          <p>
-            <!-- <label for="mdp"><h2>Mot de passe </h2></label> -->
-            <input type="password" placeholder="Mot de passe" name="mdp" id="mdp" required/>
-          </p>
-          <input type="submit" id="submit" value="Connexion">
-          <?php global $erreur; ?>
-          <p style='color:red'> <?=$erreur ?></p>
-        </fieldset>
-      </form>
-    </div>
-  </article>
   </body>
 </html>
