@@ -43,9 +43,7 @@ class AdherentClub extends Adherent {
   private $apayer;
 
   public function __construct(array $param = array()) {
-      var_dump($param);
       foreach ($param as $key => $value) {
-          var_dump($key);
           $this->$key = $value;
       }
     }

@@ -21,7 +21,12 @@ CREATE TABLE adherentClub(
   defaite INTEGER,
   nul INTEGER
 );
-
+CREATE TABLE profil (
+  id INTEGER PRIMARY KEY,
+  mail VARCHAR(50) UNIQUE,
+  motdepasse VARCHAR(25),
+  coach BOOLEAN
+);
 CREATE TABLE adherentExterieur(
   licence INTEGER PRIMARY KEY,
   nom VARCHAR(25),

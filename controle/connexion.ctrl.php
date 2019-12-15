@@ -40,10 +40,11 @@ if (isset($_POST['mail'])
       if ($adh->getMotDePasse()==$motdepasse) {
 
         session_start();
-        //$_SESSION['mail'] = $adh.getMail(); //a modifier
+        $_SESSION['mail'] = $email; //a modifier
         // Affichage du profil
-        //header('Location: profil.ctrl.php?');
+        header('Location: profil.ctrl.php?');
       } else {
+
         // Si le mot de passe est faut
         header('Location: connexion.ctrl.php?erreur=2');
       }

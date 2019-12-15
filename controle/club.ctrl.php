@@ -1,3 +1,4 @@
 <?php
-    include('../view/club.view.php');
+  session_start();
+  include('../view/club.view.php');
 ?>

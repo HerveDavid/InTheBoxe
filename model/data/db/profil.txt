@@ -1,0 +1,2 @@
+1|shourky@gmail.com|s|true
+2|autre@gmail.com|a|false

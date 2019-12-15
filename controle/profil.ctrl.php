@@ -1,10 +1,13 @@
 <?php
+  include('../model/DAO.class.php');
+  $dao = new DAO();
   session_start();
 
-  if(estCoach($_SESSION['mail']){
-    include('../view/coach.view.php');
+  if($dao->estCoach($_SESSION['mail'])){
+    include('../view/profilCoach.view.php');
 
-  }else include('../view/profil.view.php');
-
+  }else {
+    include('../view/profilAdherent.view.php');
+  }
 
  ?>

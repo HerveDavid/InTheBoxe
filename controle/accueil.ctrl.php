@@ -1,5 +1,8 @@
 <?php
+
   session_start();
-  $_SESSION['mail'] = "";
+  if (isset($_GET['deco'])) {
+    $_SESSION['mail']=Null;
+  }
   include('../view/accueil.view.php');
  ?>
