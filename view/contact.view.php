@@ -50,10 +50,10 @@
             Pour toutes questions n'hésitez pas à nous contacter
         </p>
 
-        <form action="" method="post" class="formulaire-email" novalidate="novalidate">
-          <input type="email" name="votre-email" value="" size="40" aria-required="true" aria-invalid="false" placeholder="E-mail">
+        <form action="../controle/contact.ctrl.php" method="post" class="formulaire-email" novalidate="novalidate">
+          <input type="email" name="email" value="" size="40" aria-required="true" aria-invalid="false" placeholder="E-mail" required>
           <br>
-          <textarea name="votre-message" aria-invalid="false" placeholder="Entrez votre message"></textarea>
+          <textarea name="message" aria-invalid="false" placeholder="Entrez votre message" required></textarea>
           <br>
           <input type="submit" class="bouton" value="ENVOYER">
         </form>

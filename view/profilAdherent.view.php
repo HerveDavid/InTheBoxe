@@ -38,11 +38,21 @@
               echo "<li id=\"Connexion\"><a href=\"../controle/connexion.ctrl.php\">Connexion</a></li>";
             }
            ?>
+
         </ul>
       </nav>
     </header>
-    <div id="calendar"></div>
+    <!-- <div id="calendar"></div> -->
     <?php
+    $mail= $profil->getMail();
+    $adresse= $profil->getAdresse();
+    $statut = $profil->getStatut();
+    $nom= $profil->getNom();
+    $prenom=$profil->getPrenom();
+    $dateNaiss= $profil->getDateNaiss();
+    $cours = $dao->getCours($mail);
+    var_dump($profil);
+    var_dump($cours);
     //demande de competition
     //affichage des informations (info , stats , status , docs a fournir )
     //les cours a la quelle il ses inscrit

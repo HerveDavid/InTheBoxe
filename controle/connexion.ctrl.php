@@ -41,9 +41,12 @@ if (isset($_POST['mail'])
         //recuperer le prenom du profil
         if ($dao->estCoach($email)) {
           $adh = $dao->getCoach($email);
+          echo "coach";
         } else {
+          echo "adherent";
           $adh = $dao->getAdherent($email);
         }
+        var_dump($adh);
         session_start();
         $_SESSION['mail'] = $email;
         $_SESSION['prenom'] = $adh->getPrenom();

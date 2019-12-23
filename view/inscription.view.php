@@ -38,7 +38,7 @@
     </div>
     <div id="Droite">
       <h1>Inscription</h1>
-      <form class="inscription" action="" method="post">
+      <form class="inscription" action="../controle/inscription.ctrl.php" method="post">
         <fieldset>
           <p>
             <!-- <label for="prenom"><h2>Prénom</h2></label> -->

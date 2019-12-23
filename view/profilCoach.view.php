@@ -30,6 +30,8 @@
     </header>
 
     <?php
+    var_dump($profil);
+
     // accepter/refuser les demande de competition
     //affichage les informations des adherent
     //mesagerie

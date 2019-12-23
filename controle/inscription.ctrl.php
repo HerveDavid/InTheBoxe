@@ -27,18 +27,24 @@ session_start();
   ///////////////// Si formulaire est rempli /////////////////////////////
 
   if (isset($_POST['prenom']) && isset($_POST['nom'])
-    && isset($_POST['mail']) && isset($_POST['tel'])
+    && isset($_POST['mail'])
     && isset($_POST['naiss']) && isset($_POST['adresse'])
     && isset($_POST['ville']) && isset($_POST['cp'])
     && isset($_POST['mdp']) && isset($_POST['confim'])) {
 
     // Initialisation des variables
+    if (isset($_POST['tel']) ) {
+      $telephone=$_POST['tel'];
+     } else {
+      $telephone=null;
+    }
+
     $prenom=$_POST['prenom'];
     $nom=$_POST['nom'];
     $email=$_POST['mail'];
     $motdepasse=$_POST['mdp'];
     $confimMdp=$_POST['confim'];
-    $telephone=$_POST['tel'];
+
     $dateNaiss=$_POST['naiss'];
     $adresse=$_POST['adresse'];
     $ville=$_POST['ville'];

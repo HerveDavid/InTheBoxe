@@ -3,6 +3,7 @@
 include('../model/Adherent.class.php');
 include('../model/Coach.class.php');
 include('../model/profil.class.php');
+include('../model/Cours.class.php');
 
 class DAO {
   private $db;
@@ -25,59 +26,67 @@ class DAO {
       die("PDO Error :".$e->getMessage()." '".$this->database."'\n");
     }
   }
-  public function getNewId(){
-    $q = "SELECT id FROM adherentClub ORDER BY id DESC LIMIT 1 ";
-    $r= $this->db->query($q);
-    $res = $r->fetchAll(PDO::FETCH_CLASS[0]);
-    $newId = $res[0][0] +1; //a modifier
-    return $newId;
-  }
+  // public function getNewId(){
+  //   $query = "SELECT id FROM adherentClub ORDER BY id DESC LIMIT 1 ";
+  //   $r= $this->db->query($query);
+  //   $res = $r->fetchAll(PDO::FETCH_CLASS[0]);
+  //   $newId = $res[0][0] +1; //a modifier
+  //   return $newId;
+  // }
   public function getAdherent($email){
-    $q = "SELECT * FROM adherentClub WHERE mail='$email'";
-    $r= $this->db->query($q);
-    $res = $r->fetchAll(PDO::FETCH_ASSOC)[0];
+    $query = "SELECT * FROM adherentClub WHERE mail='$email'";
+    $sql= $this->db->query($query);
+    $adherent = $sql->fetchAll(PDO::FETCH_ASSOC)[0];
 
-    if (count($res)==0) {
+    if (count($adherent)==0) {
       return null;
-    }else {return new AdherentClub($res);}
+    }else {return new AdherentClub($adherent);}
   }
   public function getCoach($email){
-    $q = "SELECT * FROM coach WHERE mail='$email'";
-    $r= $this->db->query($q);
-    $res = $r->fetchAll(PDO::FETCH_ASSOC);
-    var_dump($res);
-    if (count($res)==0) {
+    $query = "SELECT * FROM coach WHERE mail='$email'";
+    $sql= $this->db->query($query);
+    $coach = $sql->fetchAll(PDO::FETCH_ASSOC);
+    if (count($coach)==0) {
       return null;
-    }else {return new Coach($res[0]);}
+    }else {return new Coach($coach[0]);}
+  }
+
+
+  public function getCours($email){
+    $query = "SELECT num,type,horaireDebut,horaireFin,jours FROM cours , participant WHERE mail='$email' and num=numCours";
+    $sql= $this->db->query($query);
+    $resultat = $sql->fetchAll(PDO::FETCH_ASSOC);
+    $listCours=array();
+    foreach ($resultat as $value) {
+      $cours = new Cours($value);
+      array_push($listCours,$cours);
+    }
+    return $listCours;
   }
   public function getProfil($email){
-    $q = "SELECT * FROM profil WHERE mail='$email'";
-    $r= $this->db->query($q);
-    $res = $r->fetchAll(PDO::FETCH_ASSOC)[0];
+    $query = "SELECT * FROM profil WHERE mail='$email'";
+    $sql= $this->db->query($query);
+    $profil = $sql->fetchAll(PDO::FETCH_ASSOC)[0];
 
-    if (count($res)==0) {
+    if (count($profil)==0) {
       return null;
-    }else {return new Profil($res);}
+    }else {return new Profil($profil);}
   }
   public function estCoach($email){
-    $q = "SELECT coach FROM profil WHERE mail='$email'";
-    $r= $this->db->query($q);
-    $res = $r->fetchAll(PDO::FETCH_CLASS[0]);
-    if ($res[0][0]=='0') {
-      return false;
-    }else {return true;}
+    return $this->getProfil($email)->estCoach()=='true';
 
   }
   public function mailExistant($email){
-    $q = "SELECT mail FROM adherentClub WHERE mail='$email'
-          UNION
-          SELECT mail FROM coach WHERE mail='$email'";
-    $r= $this->db->query($q);
-    $res = $r->fetchAll(PDO::FETCH_CLASS[0]);
-    if (count($res)==0) {
+    $query = "SELECT mail FROM adherentClub WHERE mail='$email'
+              UNION
+              SELECT mail FROM coach WHERE mail='$email'";
+    $sql= $this->db->query($query);
+    $resultat = $sql->fetchAll(PDO::FETCH_CLASS[0]);
+    if (count($resultat)==0) {
       return false;
     }else {return true;}
   }
+
   public function CreeAdherent(adherent $adherent , $mdp){
     $nom = $adherent->getNom();
     $prenom = $adherent->getPrenom();
@@ -111,15 +120,6 @@ class DAO {
     return $insertCoach && $insertProfil;
   }
 }
-
-/*
-$q = "INSERT INTO adherent VALUES ('$adherent->getNom()','$adherent->getPrenom()',
-'$adherent->getDateNaiss()','$adherent->getTaille()','$adherent->getPoids()','$adherent->getStatut()','$adherent->getCategorie()',
-'$adherent->getCombattant()','$adherent->getCertificat()','$adherent->getMail()','$adherent->getAdresse()','$adherent->getAdresse()',
-'$adherent->getApayer()','$adherent->getTel()','$adherent->getVictoire()','$adherent->getDefaite()','$adherent->getNul()',)";
-*/
-
-
 
 
 

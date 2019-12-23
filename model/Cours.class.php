@@ -1,19 +1,17 @@
 <?php
 
 class Cours{
+  private $num;
   private $type;
-  private $horaire;
-  private $jour;
-  private $participantmoy;
+  private $horaireDebut;
+  private $horaireFin;
+  private $jours;
 
   public function __construct(array $param = array()) {
-    $i = 0;
-    foreach ($this as $key => $value) {
-      if ($i < count($param)) {
-        $this->$key = $param[$i++];
+      foreach ($param as $key => $value) {
+          $this->$key = $value;
       }
     }
-  }
 
 public function getType(): string {return $this->type;}
 public function getHoraire(): string {return $this->horaire;}

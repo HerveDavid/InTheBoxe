@@ -19,6 +19,7 @@ CREATE TABLE adherentClub(
   defaite INTEGER,
   nul INTEGER
 );
+
 CREATE TABLE adherentExterieur(
   licence INTEGER PRIMARY KEY,
   nom VARCHAR(25),
@@ -34,6 +35,7 @@ CREATE TABLE adherentExterieur(
   defaite INTEGER,
   nul INTEGER
 );
+
 CREATE TABLE coach(
   mail VARCHAR(30) UNIQUE,
   nom VARCHAR(25),
@@ -50,19 +52,25 @@ CREATE TABLE profil (
 
 
 CREATE TABLE cours(
-  type VARCHAR(20),
-  horaire VARCHAR(20),
-  jour VARCHAR(20),
-  participantmoy INTEGER,
-  PRIMARY KEY(horaire,jour)
+  num INTEGER PRIMARY KEY ,
+  type VARCHAR(30),
+  horaireDebut TIME,
+  horaireFin TIME,
+  jours VARCHAR(20)
+);
+
+CREATE TABLE participant(
+  numCours INTEGER ,
+  mail VARCHAR(50),
+  PRIMARY KEY (numCours, mail),
+  FOREIGN KEY (numCours) REFERENCES cours(num)
 );
 
 
-
-CREATE TABLE activite(
+CREATE TABLE actualite(
   nom VARCHAR(25) PRIMARY KEY,
   type VARCHAR(25),
-  dateactivite date
+  dateAct DATE
 );
 
 
