@@ -54,6 +54,8 @@ class AdherentClub extends Adherent {
   public function getCertificat() {return $this->certificat;}
   public function getMail() {return $this->mail;}
   public function getAdresse() {return $this->adresse;}
+  public function getCodePostal() {return $this->codePostal;}
+  public function getVille() {return $this->ville;}
   public function getApayer() {return $this->apayer;}
   public function getTel() {return $this->tel;}
 }

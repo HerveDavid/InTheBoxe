@@ -1,4 +1,4 @@
-shourky@gmail.com|Saiss|shourky
-walid@gmail.com|kadura|walid
-Karim@gmail.com|Zober|Karim
-Himed@gmail.com|Saiss|Himed
+shourky@gmail.com|Saiss|shourky|0612345678|25 charles de Gaules|38000|GRENOBLE
+walid@gmail.com|kadura|walid|0612345678|25 charles de Gaules|38000|GRENOBLE
+Karim@gmail.com|Zober|Karim|0612345678|25 charles de Gaules|38000|GRENOBLE
+Himed@gmail.com|Saiss|Himed|0612345678|25 charles de Gaules|38000|GRENOBLE

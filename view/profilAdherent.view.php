@@ -51,6 +51,8 @@
     $prenom=$profil->getPrenom();
     $dateNaiss= $profil->getDateNaiss();
     $tel = $profil->getTel();
+    $codePostal = $profil->getCodePostal();
+    $ville = $profil->getVille();
     $cours = $dao->getCours($mail);
     var_dump($profil);
     var_dump($cours);
@@ -77,15 +79,15 @@
 
          <p>
            <!-- <label for="adresse"><h2>Adresse</h2></label> -->
-           <input type="text" name="adresse" id="adresse" required placeholder="Adresse" value="<?=$adresse ?>"required/>
+           <input type="text" name="adresse" id="adresse" required placeholder="Adresse" value="<?=$adresse ?>" required/>
          </p>
          <p>
            <!-- <label for="ville"><h2>Ville</h2></label> -->
-           <input type="text" name="ville" id="ville" required placeholder="Ville" required/>
+           <input type="text" name="ville" id="ville" required placeholder="Ville" value="<?=$ville ?>" required/>
          </p>
          <p>
            <!-- <label for="cp"><h2>Code postal</h2></label> -->
-           <input type="number" name="cp" id="cp" required placeholder="Code postal" required/>
+           <input type="number" name="codePostal" id="codePostal" required placeholder="Code postal" value="<?=$codePostal ?>" required/>
          </p>
          <input type="submit" value="validé">
          <?php global $erreur; ?>

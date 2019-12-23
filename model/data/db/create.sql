@@ -101,6 +101,10 @@ CREATE TABLE entrainementPerso(
   FOREIGN KEY(nomexercice) REFERENCES exercices(nom)
 );
 
+CREATE TABLE demandeCombats(
+  num INTEGER,
+  mail VARCHAR(30)
+);
 
 CREATE TABLE match(
  boxeurint VARCHAR(25),

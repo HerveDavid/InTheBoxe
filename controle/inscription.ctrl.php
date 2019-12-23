@@ -55,7 +55,6 @@ session_start();
 
       // Vérifier que les mots de passes correspondents
       if ($motdepasse == $confimMdp) {
-        "$adresse $cpostal $ville";
         // Creation de l'Adherent
         $param = array("mail"=>$email,"nom"=>$nom,"prenom"=>$prenom,"tel"=>$telephone,"datenaiss"=>$dateNaiss,"adresse"=>$adresse,"codePostal"=> $cpostal , "ville"=>$ville);
 
@@ -73,7 +72,7 @@ session_start();
         header('Location: profil.ctrl.php');
 
         // Si le mot de passe sasie et le mot de passe de Confirmation ne correspondents pas
-      } else { 
+      } else {
         header('Location: inscription.ctrl.php?erreur=Les mot de passes ne correspondents pas');//ORTHOGRAPHE
         //var_dump($motdepasse);
       }

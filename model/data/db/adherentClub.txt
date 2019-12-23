@@ -1,4 +1,4 @@
-walidi@gmail.com|kadura|walid|2000-11-10|25, Rue des Oliviers|0652908745|1m40|60|masculin|attente|poids plume|oui|true|novice|10.50|3|1|2
-cesar@gmail.com|watrin|cesar|2000-03-21|12, Avenue Joseph Valier|0652208745|1m70|80|masculin|adherent|poids lourd|oui|true|loisir|0|1|12|0
-louis@gmail.com|godefroid|louis|1999-09-29|2, Chemin de Contamine|0652638489|1m75|65|masculin|attente|poids plume|oui|true|pro|22.90|7|8|9
-amine@gmail.com|benmansour|amine|1999-09-29|2, Chemin de Contamine|0652664489|masculin|attente|50.0
+walidi@gmail.com|kadura|walid|2000-11-10|25, Rue des Oliviers|38000|GRENOBLE|0652908745|1m40|60|masculin|attente|poids plume|oui|true|novice|10.50|3|1|2
+cesar@gmail.com|watrin|cesar|2000-03-21|12, Avenue Joseph Valier|38000|GRENOBLE|0652208745|1m70|80|masculin|adherent|poids lourd|oui|true|loisir|0|1|12|0
+louis@gmail.com|godefroid|louis|1999-09-29|2, Chemin de Contamine|38000|GRENOBLE|0652638489|1m75|65|masculin|attente|poids plume|oui|true|pro|22.90|7|8|9
+amine@gmail.com|benmansour|amine|1999-09-29|2, Chemin de Contamine|38000|GRENOBLE|0652664489|masculin|attente|50.0
