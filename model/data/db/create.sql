@@ -5,6 +5,8 @@ CREATE TABLE adherentClub(
   prenom VARCHAR(25),
   datenaiss DATE,
   adresse VARCHAR(150),
+  codePostal INTEGER,
+  ville VARCHAR(20),
   tel VARCHAR(10),
   taille VARCHAR(10),
   poids INTEGER,
@@ -41,7 +43,9 @@ CREATE TABLE coach(
   nom VARCHAR(25),
   prenom VARCHAR(25),
   tel VARCHAR(10),
-  adresse VARCHAR(50)
+  adresse VARCHAR(50),
+  codePostal INTEGER,
+  ville VARCHAR(20)
 );
 
 CREATE TABLE profil (

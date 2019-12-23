@@ -35,6 +35,8 @@ abstract class Adherent {
 class AdherentClub extends Adherent {
   private $mail;
   private $adresse;
+  private $codePostal;
+  private $ville;
   private $tel;
   private $statut;
   private $combattant;

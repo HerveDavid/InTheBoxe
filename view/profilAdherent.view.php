@@ -50,6 +50,7 @@
     $nom= $profil->getNom();
     $prenom=$profil->getPrenom();
     $dateNaiss= $profil->getDateNaiss();
+    $tel = $profil->getTel();
     $cours = $dao->getCours($mail);
     var_dump($profil);
     var_dump($cours);
@@ -58,5 +59,38 @@
     //les cours a la quelle il ses inscrit
 
      ?>
+     <form class="parametrage" action="../controle/parametrage.ctrl.php" method="post">
+       <fieldset>
+         <p>
+           <!-- <label for="prenom"><h2>Prénom</h2></label> -->
+           <input type="text" name="prenom" id="prenom" autofocus placeholder="Prénom" value="<?=$prenom ?>" required/>
+         </p>
+         <p>
+           <!-- <label for="nom"><h2>Nom</h2></label> -->
+           <input type="text" name="nom" id="nom" required placeholder="Nom" value="<?=$nom ?>" required/>
+         </p>
+
+         <p>
+           <!-- <label for="tel"><h2>Téléphone</h2></label> -->
+           <input type="tel" name="tel" id="tel" placeholder="Téléphone" value="<?=$tel ?>"/>
+         </p>
+
+         <p>
+           <!-- <label for="adresse"><h2>Adresse</h2></label> -->
+           <input type="text" name="adresse" id="adresse" required placeholder="Adresse" value="<?=$adresse ?>"required/>
+         </p>
+         <p>
+           <!-- <label for="ville"><h2>Ville</h2></label> -->
+           <input type="text" name="ville" id="ville" required placeholder="Ville" required/>
+         </p>
+         <p>
+           <!-- <label for="cp"><h2>Code postal</h2></label> -->
+           <input type="number" name="cp" id="cp" required placeholder="Code postal" required/>
+         </p>
+         <input type="submit" value="validé">
+         <?php global $erreur; ?>
+         <p style='color:red'> <?= $erreur ?></p>
+       </fieldset>
+     </form>
   </body>
 </html>

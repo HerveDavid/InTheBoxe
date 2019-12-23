@@ -92,10 +92,12 @@ class DAO {
     $prenom = $adherent->getPrenom();
     $mail = $adherent->getMail();
     $tel = $adherent->getTel();
-    $adresse = $adherent->getAdresse();
+    $adresse = $coach->getAdresse();
+    $codePostal = $coach->getCodePostal();
+    $ville = $coach->getVille();
     $date = $adherent->getDateNaiss();
 
-    $query = "INSERT INTO adherentClub (mail,nom,prenom,datenaiss,adresse,tel) VALUES ('$mail','$nom' ,'$prenom','$date','$adresse','$tel')";
+    $query = "INSERT INTO adherentClub (mail,nom,prenom,datenaiss,adresse,codePostal,ville,tel) VALUES ('$mail','$nom' ,'$prenom','$date','$adresse', '$codePostal', '$ville','$tel')";
     $insertAdherent=$this->db->query($query);
 
     $query = "INSERT INTO profil (mail,motdepasse,coach) VALUES ('$mail','$mdp', false)";
@@ -110,14 +112,31 @@ class DAO {
     $mail = $coach->getMail();
     $tel = $coach->getTel();
     $adresse = $coach->getAdresse();
+    $codePostal = $coach->getCodePostal();
+    $ville = $coach->getVille();
 
-    $query = "INSERT INTO coach (mail,nom,prenom,adresse,tel) VALUES ('$mail','$nom' ,'$prenom','$adresse','$tel')";
+    $query = "INSERT INTO coach (mail,nom,prenom,tel,adresse,codePostal,ville) VALUES ('$mail','$nom' ,'$prenom','$tel','$adresse', '$codePostal', '$ville')";
     $insertCoach=$this->db->query($query);
 
     $query = "INSERT INTO profil (mail,motdepasse,coach) VALUES ('$mail','$mdp', true)";
     $insertProfil=$this->db->query($query);
 
     return $insertCoach && $insertProfil;
+  }
+  public function updateAdherent($modif, $mail){
+    $attribut =explode(" ",$modif);
+    $query = "UPDATE adherentClub SET '$attribut[0]'='$attribut[1]' WHERE mail= '$mail'";
+    return $this->db->query($query);
+  }
+
+  public function updateCoach($modif, $mail){
+    $attribut =explode(" ",$modif);
+    $query = "UPDATE coach SET '$attribut[0]'='$attribut[1]' WHERE mail= '$mail'";
+    return $this->db->query($query);
+  }
+  public function suppAdherent($mail){
+    $query = "DELETE FROM adherentClub WHERE mail= '$mail'";
+    return $this->db->query($query);
   }
 }
 
