@@ -15,15 +15,14 @@
           <li id="Planning"><a href="../controle/planning.ctrl.php">Planning</a></li>
           <li id= "Club"><a href="../controle/club.ctrl.php">Club</a></li>
           <li id="Contact"><a href="../controle/contact.ctrl.php">Contact</a></li>
-          <?php
-            if (isset($_SESSION['mail'])) {
-              $nom = $_SESSION['prenom'];
-              echo "<li id=\"Connexion\"><a href=\"../controle/profil.ctrl.php\">$nom</a></li>";
-              echo "<li id=\"Connexion\"><a href=\"../controle/accueil.ctrl.php?deco=1\">Déconnexion</a></li>";
-            }else {
-              echo "<li id=\"Connexion\"><a href=\"../controle/connexion.ctrl.php\">Connexion</a></li>";
-            }
-           ?>
+          <?php if (isset($_SESSION['mail'])) {
+              $nom = $_SESSION['prenom']; ?>
+            <li id="Connexion"><a href="../controle/profil.ctrl.php"><?=$nom?></a></li>
+            <li id="Connexion"><a href="../controle/accueil.ctrl.php?deco=1">Déconnexion</a></li>
+          <?php }else { ?>
+            <li id="Connexion"><a href="../controle/connexion.ctrl.php">Connexion</a></li>
+          <?php } ?>
+
         </ul>
       </nav>
     </header>
