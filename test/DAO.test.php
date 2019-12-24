@@ -1,7 +1,7 @@
 <?php
   require_once('../model/DAO.class.php');
-    require_once('../model/Adherent.class.php');
-    require_once('../model/Coach.class.php');
+  require_once('../model/Adherent.class.php');
+  require_once('../model/Coach.class.php');
 
 
   $dao = new DAO();

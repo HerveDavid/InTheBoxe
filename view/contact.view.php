@@ -50,13 +50,19 @@
             Pour toutes questions n'hésitez pas à nous contacter
         </p>
 
-        <form action="../controle/contact.ctrl.php" method="post" class="formulaire-email" novalidate="novalidate">
-          <input type="email" name="email" value="" size="40" aria-required="true" aria-invalid="false" placeholder="E-mail" required>
+        <form action="../controle/contact.ctrl.php" method="post" class="formulaire-email">
+          <input type="email" name="email" size="40" required placeholder="E-mail" >
           <br>
-          <textarea name="message" aria-invalid="false" placeholder="Entrez votre message" required></textarea>
+          <input type="text" name="nom"  size="40" required  placeholder="Nom" >
+          <br>
+          <input type="text" name="sujet" size="40"  required placeholder="Sujet" >
+          <br>
+          <textarea name="message" required placeholder="Entrez votre message" ></textarea>
           <br>
           <input type="submit" class="bouton" value="ENVOYER">
         </form>
+        <?php     global $confirmation; ?>
+        <p style='color:green'> <?= $confirmation ?></p>
     </div>
 
     <div class="boxe-main-droite">
