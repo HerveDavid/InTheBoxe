@@ -47,58 +47,8 @@ header nav ul #Connexion a {
   color: #FFFFFF;
 }
 
-body {
-  font-family: Palanquin;
-  font-style: normal;
-  font-weight: normal;
-  color: #000000;
+#planning {
+  padding-top: 10%;
 }
 
-h1 {
-  font-family: Rubik;
-  font-size: 2em;
-  border-bottom: 0.2em solid #BE1E2D;
-  width: 50%;
-}
-
-p {
-  text-align: justify;
-  font-size: 1em;
-  font-weight: 600;
-  width: 75%;
-}
-
-.club {
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-.club img {
-  border: 0;
-  flex: 50%;
-}
-.club .container {
-  flex: 50%;
-}
-.club .container section {
-  margin: 0;
-  padding-top: 5em;
-  padding-left: 2em;
-}
-
-#icones {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  text-align: center;
-}
-
-#Club-2 section {
-  padding-top: 25em;
-}
-
-#Club-3 section {
-  padding-top: 25em;
-}
-
-/*# sourceMappingURL=club.css.map */
+/*# sourceMappingURL=entrainement.css.map */

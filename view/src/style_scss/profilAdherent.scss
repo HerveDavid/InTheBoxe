@@ -1,0 +1,11 @@
+@import "header";
+@import "variables";
+
+#photo {
+  margin-top: 10%;
+  font-family: $fontLow;
+}
+
+#informations{
+  display: flex;
+}

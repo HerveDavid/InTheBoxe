@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
-    <link rel="stylesheet" href="../framework/boostrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../framework/boostrap/css/bootstrap.min.css">
     <script type="text/javascript" src="../framework/bootstrap/js/boostrap.min.js"></script>
     <script type="text/javascript" src="../framework/jquery.js"></script>
 
@@ -11,10 +11,10 @@
     <script src='../framework/fullcalendar/packages/core/main.js'></script>
     <script src='../framework/fullcalendar/packages/interaction/main.js'></script>
     <script src='../framework/fullcalendar/packages/daygrid/main.js'></script>
-    <script src='../framework/fullcalendar/packages/timegrid/main.js'></script>
+    <script src='../framework/fullcalendar/packages/timegrid/main.js'></script> -->
 
     <link rel="stylesheet" href="../view/src/style/profilAdherent.css">
-    <script type="text/javascript" src="../view/src/js/profil.js"></script>
+    <!-- <script type="text/javascript" src="../view/src/js/profil.js"></script> -->
 
     <meta charset="utf-8">
     <title>Votre profil</title>
@@ -41,6 +41,22 @@
       </nav>
     </header>
     <!-- <div id="calendar"></div> -->
+    <div align="center" id="photo">
+      <h1> Mon profil </h1>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/173024/img_scale_sociaux.png" border="0" align="center"/>
+    </div>
+    <div id="informations">
+      <div class="gauche">
+        <h1>Mon nom</h1>
+        <h1>Mon prénom</h1>
+        <h1>Adresse</h1>
+      </div>
+      <div class="droite">
+        <h1>informations complémentaire</h1>
+      </div>
+    </div>
+
+
     <?php
     $mail= $profil->getMail();
     $adresse= $profil->getAdresse();

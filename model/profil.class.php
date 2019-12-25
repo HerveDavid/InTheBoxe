@@ -12,12 +12,8 @@
    public function getMail() {return $this->mail;}
    public function getMotDePasse() {return $this->motdepasse;}
    public function estCoach() {return $this->coach;}
-   
+
  }
-
-
-
-
 
 
  ?>
