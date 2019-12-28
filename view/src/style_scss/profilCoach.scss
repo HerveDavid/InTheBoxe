@@ -1,0 +1,29 @@
+ @import "header";
+
+ h1 {
+   font-family: $fontHigh;
+ }
+
+ h3, h4 {
+   font-family: $fontLow;
+ }
+
+ body {
+   background:#fffff;
+ }
+
+ .container{
+   margin-top: 10%;
+   margin-bottom: 10%;
+ }
+
+  .user-image{
+    img {
+      width: 20%;
+      // height: 50%;
+    }
+  }
+
+  .style1 {
+    background-color: $red;
+  }

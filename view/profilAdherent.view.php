@@ -1,25 +1,17 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
-    <!-- <link rel="stylesheet" href="../framework/boostrap/css/bootstrap.min.css">
-    <script type="text/javascript" src="../framework/bootstrap/js/boostrap.min.js"></script>
-    <script type="text/javascript" src="../framework/jquery.js"></script>
-
-    <link href='../framework/fullcalendar/packages/core/main.css' rel='stylesheet' />
-    <link href='../framework/fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
-    <link href='../framework/fullcalendar/packages/timegrid/main.css' rel='stylesheet' />
-    <script src='../framework/fullcalendar/packages/core/main.js'></script>
-    <script src='../framework/fullcalendar/packages/interaction/main.js'></script>
-    <script src='../framework/fullcalendar/packages/daygrid/main.js'></script>
-    <script src='../framework/fullcalendar/packages/timegrid/main.js'></script> -->
-
     <link rel="stylesheet" href="../view/src/style/profilAdherent.css">
-    <!-- <script type="text/javascript" src="../view/src/js/profil.js"></script> -->
-
     <meta charset="utf-8">
     <title>Votre profil</title>
   </head>
   <body>
+
     <header>
       <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
       <nav class="topNavigation">
@@ -40,21 +32,41 @@
         </ul>
       </nav>
     </header>
-    <!-- <div id="calendar"></div> -->
-    <div align="center" id="photo">
-      <h1> Mon profil </h1>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/173024/img_scale_sociaux.png" border="0" align="center"/>
-    </div>
-    <div id="informations">
-      <div class="gauche">
-        <h1>Mon nom</h1>
-        <h1>Mon prénom</h1>
-        <h1>Adresse</h1>
-      </div>
-      <div class="droite">
-        <h1>informations complémentaire</h1>
-      </div>
-    </div>
+
+  <div class="container d-flex justify-content-around">
+    <div class="user-details">
+            <div class="user-image text-center">
+                <img src="../view/src/img/profil/connexion_logo.png" alt="Mon nom" title="Mon nom" class="img-thumbnail">
+            </div>
+            <div class="user-info-block">
+                <div class="user-heading">
+                    <h3>Mon nom</h3>
+                    <span class="help-block">Mon adresse mail</span>
+                    <hr class="style1">
+                </div>
+                <div class="user-body">
+                    <div class="tab-content">
+                        <div id="information" class="tab-pane active">
+                            <h4>Information de compte</h4>
+
+                            <section>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </section>
+                            <hr class="style1">
+                        </div>
+                        <div id="email" class="tab-pane active">
+                            <h4>Envoyer un message</h4>
+                            <hr class="style1">
+                        </div>
+                        <div id="settings" class="tab-pane active">
+                          <h4>Réglages</h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
 
 
     <?php
