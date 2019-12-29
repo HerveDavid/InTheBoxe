@@ -33,6 +33,15 @@ class DAO {
   //   $newId = $res[0][0] +1; //a modifier
   //   return $newId;
   // }
+  public function getAllAdherent(){
+    $query = "SELECT * FROM adherentClub";
+    $sql= $this->db->query($query);
+    $adherent = $sql->fetchAll(PDO::FETCH_ASSOC)[0];
+
+    if (count($adherent)==0) {
+      return null;
+    }else {return new AdherentClub($adherent);}
+  }
   public function getAdherent($email){
     $query = "SELECT * FROM adherentClub WHERE mail='$email'";
     $sql= $this->db->query($query);
@@ -125,7 +134,8 @@ class DAO {
   }
   public function updateAdherent($modif, $mail){
     $attribut =explode(" ",$modif);
-    $query = "UPDATE adherentClub SET '$attribut[0]'='$attribut[1]' WHERE mail= '$mail'";
+    $nouvelle =explode("$attribut[0] ",$modif);
+    $query = "UPDATE adherentClub SET '$attribut[0]'='$nouvelle[1]' WHERE mail= '$mail'";
     return $this->db->query($query);
   }
 
