@@ -92,9 +92,9 @@ class DAO {
     $prenom = $adherent->getPrenom();
     $mail = $adherent->getMail();
     $tel = $adherent->getTel();
-    $adresse = $coach->getAdresse();
-    $codePostal = $coach->getCodePostal();
-    $ville = $coach->getVille();
+    $adresse = $adherent->getAdresse();
+    $codePostal = $adherent->getCodePostal();
+    $ville = $adherent->getVille();
     $date = $adherent->getDateNaiss();
 
     $query = "INSERT INTO adherentClub (mail,nom,prenom,datenaiss,adresse,codePostal,ville,tel) VALUES ('$mail','$nom' ,'$prenom','$date','$adresse', '$codePostal', '$ville','$tel')";

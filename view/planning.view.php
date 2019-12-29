@@ -42,24 +42,23 @@
 
     <div class="container" id="planning">
       <div class="onglet">
-        <ul>
-          <li><a href="#planning">Mon planning</a></li>
-          <li><a href="#cours">Cours en ligne</a></li>
-        </ul>
+
       </div>
+      <?php if (!$adhConnecter) {?>
+        <h1>Il faut être adhérent pour pouvoir s'inscrire à un cours</h1>
+      <?php } ?>
       <div class="row">
         <div class="col">
           <div class="container">
             <div class="row">
-              Information
             </div>
             <div class="row">
             </div>
             <div class="row">
-              Contact client
             </div>
           </div>
         </div>
+
         <div class="col" id="calendar"></div>
       </div>
     </div>
