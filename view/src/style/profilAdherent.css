@@ -19,9 +19,11 @@ header {
   flex-direction: row;
   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
+
 header nav {
   width: 100%;
 }
+
 header nav ul {
   padding: inherit;
   height: 100%;
@@ -30,18 +32,22 @@ header nav ul {
   list-style: none;
   margin: 0 0;
 }
+
 header nav ul li {
   text-align: center;
   width: 100%;
   padding: 0.8em;
 }
+
 header nav ul li a {
   color: #000000;
   text-decoration: none;
 }
+
 header nav ul #Connexion {
   background-color: #BE1E2D;
 }
+
 header nav ul #Connexion a {
   font-weight: bold;
   color: #FFFFFF;
@@ -70,4 +76,128 @@ body {
 
 .style1 {
   background-color: #BE1E2D;
+}
+
+.portfolio-experiment {
+  text-align: center;
+  background: rgba(0, 0, 0, 0);
+}
+
+.portfolio-experiment a {
+  color: #BE1E2D;
+  text-decoration: none;
+  padding: 1em calc(1em * 1.2);
+  display: inline-block;
+  border: 1px solid transparent;
+  margin: 20px;
+  position: relative;
+  font-size: 2em;
+  cursor: pointer;
+  letter-spacing: 0.07em;
+}
+
+.portfolio-experiment a .text {
+  font-family: Rubik;
+  transform: translate3d(0, 1em, 0);
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+
+.portfolio-experiment a:after {
+  position: absolute;
+  content: '';
+  bottom: -1px;
+  left: calc(1em * 1.2);
+  right: calc(1em * 1.2);
+  height: 1px;
+  background: #BE1E2D;
+  transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+  transform-origin: left;
+}
+
+.portfolio-experiment .line {
+  position: absolute;
+  background: #BE1E2D;
+}
+
+.portfolio-experiment .line.-right, .portfolio-experiment .line.-left {
+  width: 1px;
+  bottom: -1px;
+  top: -1px;
+  transform: scale3d(1, 0, 1);
+}
+
+.portfolio-experiment .line.-top, .portfolio-experiment .line.-bottom {
+  height: 1px;
+  left: -1px;
+  right: -1px;
+  transform: scale3d(0, 1, 1);
+}
+
+.portfolio-experiment .line.-right {
+  right: -1px;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  transform-origin: top;
+}
+
+.portfolio-experiment .line.-top {
+  top: -1px;
+  transition: transform 0.08s linear 0.43s;
+  transform-origin: left;
+}
+
+.portfolio-experiment .line.-left {
+  left: -1px;
+  transition: transform 0.08s linear 0.51s;
+  transform-origin: bottom;
+}
+
+.portfolio-experiment .line.-bottom {
+  bottom: -1px;
+  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  transform-origin: right;
+}
+
+.portfolio-experiment a:hover .text,
+.portfolio-experiment a:active .text {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+
+.portfolio-experiment a:hover:after,
+.portfolio-experiment a:active:after {
+  transform: scale3d(0, 1, 1);
+  right: -1px;
+  left: -1px;
+  transform-origin: right;
+  transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
+}
+
+.portfolio-experiment a:hover .line,
+.portfolio-experiment a:active .line {
+  transform: scale3d(1, 1, 1);
+}
+
+.portfolio-experiment a:hover .line.-right,
+.portfolio-experiment a:active .line.-right {
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  transform-origin: bottom;
+}
+
+.portfolio-experiment a:hover .line.-top,
+.portfolio-experiment a:active .line.-top {
+  transition: transform 0.08s linear 0.4s;
+  transform-origin: right;
+}
+
+.portfolio-experiment a:hover .line.-left,
+.portfolio-experiment a:active .line.-left {
+  transition: transform 0.08s linear 0.48s;
+  transform-origin: top;
+}
+
+.portfolio-experiment a:hover .line.-bottom,
+.portfolio-experiment a:active .line.-bottom {
+  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  transform-origin: left;
 }

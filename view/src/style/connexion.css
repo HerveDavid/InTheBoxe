@@ -19,9 +19,11 @@ header {
   flex-direction: row;
   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
+
 header nav {
   width: 100%;
 }
+
 header nav ul {
   padding: inherit;
   height: 100%;
@@ -30,18 +32,22 @@ header nav ul {
   list-style: none;
   margin: 0 0;
 }
+
 header nav ul li {
   text-align: center;
   width: 100%;
   padding: 0.8em;
 }
+
 header nav ul li a {
   color: #000000;
   text-decoration: none;
 }
+
 header nav ul #Connexion {
   background-color: #BE1E2D;
 }
+
 header nav ul #Connexion a {
   font-weight: bold;
   color: #FFFFFF;
@@ -54,12 +60,15 @@ header nav ul #Connexion a {
   margin: 5%;
   margin-top: 7%;
 }
+
 #divco img {
   max-width: 90px;
 }
+
 #divco fieldset {
   border: 0px;
 }
+
 #divco fieldset input {
   width: 100%;
   background: none;
@@ -67,6 +76,7 @@ header nav ul #Connexion a {
   border-left: 0px;
   border-right: 0px;
 }
+
 #divco fieldset input[type=submit] {
   background-color: #BE1E2D;
   color: white;
@@ -76,5 +86,3 @@ header nav ul #Connexion a {
   font-size: 110%;
   opacity: 1;
 }
-
-/*# sourceMappingURL=connexion.css.map */

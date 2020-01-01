@@ -84,6 +84,19 @@
 
                             <hr class="style1">
                         </div>
+
+                        <section class="portfolio-experiment">
+                          <a href="">
+                            <span class="text">Je m'entraine</span>
+                            <span class="line -right"></span>
+                            <span class="line -top"></span>
+                            <span class="line -left"></span>
+                            <span class="line -bottom"></span>
+                          </a>
+                        </section>
+
+                        <hr class="style1">
+
                         <div id="cours" class="tab-pane active">
                             <h4>Cours inscrit</h4>
                             <br>
