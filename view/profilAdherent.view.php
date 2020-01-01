@@ -86,7 +86,7 @@
                         </div>
 
                         <section class="portfolio-experiment">
-                          <a href="">
+                          <a href="../controle/Circuit-Training/Timer.php">
                             <span class="text">Je m'entraine</span>
                             <span class="line -right"></span>
                             <span class="line -top"></span>

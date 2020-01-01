@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "Entrainement.css",
+	"sources": [
+		"../scss/Entrainement.scss"
+	],
+	"sourcesContent": [
+		"\n@import url(\"https://fonts.googleapis.com/css?family=Oswald&display=swap\");\n.chronometre{\n       margin: auto ;\n       width: 500px;\n       text-align: center;\n       font-family:'Oswald', sans-serif;\n\n\n\n       .tim{\n         margin: auto;\n         width: 400px;\n         border: 2px solid;\n         border-radius: 10px;\n         padding:5px 0;\n         text-align: center;\n         font-size: 2.5em;\n         margin-bottom: 10px;\n\n\n       }\n\n       button{\n         background: #3498db;\n         color: #fff;\n         width: 100px;\n         border: 1px solid;\n         font-size: 1em;\n         border-radius: 5px;\n         line-height: 1.5em;\n         border: none\n       }\n\n       #clear {\n          background: red;\n          margin: 10px;\n       }\n\n     }\n\n\n     .LesTours {\n       font-size: 1.5em;\n       font-family: 'Oswald', sans-serif;\n       p {\n         text-align: center;\n       }\n\n     }\n"
+	],
+	"names": [],
+	"mappings": "AACA,OAAO,CAAC,kEAAI;;AACZ,AAAA,YAAY,CAAA;EACL,MAAM,EAAE,IAAK;EACb,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,MAAM;EAClB,WAAW,EAAC,oBAAoB;CAiCjC;;;AArCN,AAQO,YARK,CAQL,IAAI,CAAA;EACF,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,SAAS;EACjB,aAAa,EAAE,IAAI;EACnB,OAAO,EAAC,KAAK;EACb,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,KAAK;EAChB,aAAa,EAAE,IAAI;CAGpB;;;AAnBR,AAqBO,YArBK,CAqBL,MAAM,CAAA;EACJ,UAAU,EAAE,OAAO;EACnB,KAAK,EAAE,IAAI;EACX,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,SAAS;EACjB,SAAS,EAAE,GAAG;EACd,aAAa,EAAE,GAAG;EAClB,WAAW,EAAE,KAAK;EAClB,MAAM,EAAE,IACV;CAAC;;;AA9BR,AAgCO,YAhCK,CAgCL,MAAM,CAAC;EACJ,UAAU,EAAE,GAAG;EACf,MAAM,EAAE,IAAI;CACd;;;AAKH,AAAA,SAAS,CAAC;EACR,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,oBAAoB;CAKlC;;;AAPD,AAGE,SAHO,CAGP,CAAC,CAAC;EACA,UAAU,EAAE,MAAM;CACnB"
+}

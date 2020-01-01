@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+body {
+  background: #302646;
+}
+
+.chronometre {
+  position: relative;
+  top: 130px;
+  margin: auto;
+  width: 960px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+.chronometre .tim {
+  margin: auto;
+  width: 960px;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 6.8em;
+  margin-bottom: 10px;
+}
+
+.chronometre button {
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  width: 350px;
+  border: 1px solid white;
+  font-size: 4em;
+  border-radius: 10px;
+  line-height: 1.5em;
+  margin: 20px;
+}
+
+.chronometre #reset {
+  width: 450px;
+  margin: 10px;
+}
+
+.chronometre .portfolio-experiment {
+  background: rgba(0, 0, 0, 0);
+}
+
+.chronometre .portfolio-experiment a {
+  color: white;
+  text-decoration: none;
+  padding: 1em calc(1em * 1.2);
+  display: inline-block;
+  border: 1px solid transparent;
+  margin: 20px;
+  position: relative;
+  font-size: 2em;
+  cursor: pointer;
+  letter-spacing: 0.07em;
+}
+
+.chronometre .portfolio-experiment a .text {
+  font-family: 'Oswald', sans-serif;
+  transform: translate3d(0, 1em, 0);
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+
+.chronometre .portfolio-experiment a:after {
+  position: absolute;
+  content: '';
+  bottom: -1px;
+  left: calc(1em * 1.2);
+  right: calc(1em * 1.2);
+  height: 1px;
+  background: white;
+  transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+  transform-origin: left;
+}
+
+.chronometre .portfolio-experiment .line {
+  position: absolute;
+  background: white;
+}
+
+.chronometre .portfolio-experiment .line.-right, .chronometre .portfolio-experiment .line.-left {
+  width: 1px;
+  bottom: -1px;
+  top: -1px;
+  transform: scale3d(1, 0, 1);
+}
+
+.chronometre .portfolio-experiment .line.-top, .chronometre .portfolio-experiment .line.-bottom {
+  height: 1px;
+  left: -1px;
+  right: -1px;
+  transform: scale3d(0, 1, 1);
+}
+
+.chronometre .portfolio-experiment .line.-right {
+  right: -1px;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  transform-origin: top;
+}
+
+.chronometre .portfolio-experiment .line.-top {
+  top: -1px;
+  transition: transform 0.08s linear 0.43s;
+  transform-origin: left;
+}
+
+.chronometre .portfolio-experiment .line.-left {
+  left: -1px;
+  transition: transform 0.08s linear 0.51s;
+  transform-origin: bottom;
+}
+
+.chronometre .portfolio-experiment .line.-bottom {
+  bottom: -1px;
+  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  transform-origin: right;
+}
+
+.chronometre .portfolio-experiment a:hover .text,
+.chronometre .portfolio-experiment a:active .text {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+
+.chronometre .portfolio-experiment a:hover:after,
+.chronometre .portfolio-experiment a:active:after {
+  transform: scale3d(0, 1, 1);
+  right: -1px;
+  left: -1px;
+  transform-origin: right;
+  transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
+}
+
+.chronometre .portfolio-experiment a:hover .line,
+.chronometre .portfolio-experiment a:active .line {
+  transform: scale3d(1, 1, 1);
+}
+
+.chronometre .portfolio-experiment a:hover .line.-right,
+.chronometre .portfolio-experiment a:active .line.-right {
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  transform-origin: bottom;
+}
+
+.chronometre .portfolio-experiment a:hover .line.-top,
+.chronometre .portfolio-experiment a:active .line.-top {
+  transition: transform 0.08s linear 0.4s;
+  transform-origin: right;
+}
+
+.chronometre .portfolio-experiment a:hover .line.-left,
+.chronometre .portfolio-experiment a:active .line.-left {
+  transition: transform 0.08s linear 0.48s;
+  transform-origin: top;
+}
+
+.chronometre .portfolio-experiment a:hover .line.-bottom,
+.chronometre .portfolio-experiment a:active .line.-bottom {
+  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  transform-origin: left;
+}
+
+#plateforme {
+  position: relative;
+  top: 150px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+#plateforme #surpc {
+  font-size: 4em;
+}
+
+#LesTours {
+  color: white;
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+#LesTours #starteur {
+  font-size: 20em;
+}
+
+#LesTours #exercice {
+  font-size: 18em;
+}

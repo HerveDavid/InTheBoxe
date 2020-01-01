@@ -1,0 +1,209 @@
+
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+
+body {
+  background: #302646;
+}
+
+.chronometre{
+      position: relative;
+      top : 130px;
+       margin: auto ;
+       width: 960px;
+       text-align: center;
+       font-family:'Oswald', sans-serif;
+       color: white;
+
+
+
+
+       .tim{
+         margin: auto;
+         width: 960px;
+         border: 2px solid;
+         border-radius: 10px;
+         padding:5px 0;
+         text-align: center;
+         font-size: 6.8em;
+         margin-bottom: 10px;
+       }
+
+       button{
+         background: rgba(0, 0, 0, 0);
+         color: white;
+         width: 350px;
+         border: 1px solid white;
+         font-size: 4em;
+         border-radius: 10px;
+         line-height: 1.5em;
+         margin: 20px;
+       }
+
+       #reset {
+          width: 450px;
+          margin: 10px;
+       }
+
+       $thick : 1px;
+       $pad : 1em;
+       $extra : calc(#{$pad} * 1.2);
+       $color : white;
+
+       .portfolio-experiment {
+         background: rgba(0, 0, 0, 0);
+
+         a {
+           color: white;
+           text-decoration: none;
+           padding: $pad $extra;
+           display: inline-block;
+           border: $thick solid transparent;
+           margin: 20px;
+           position: relative;
+           font-size: 2em;
+           cursor: pointer;
+           letter-spacing: 0.07em;
+
+           .text {
+             // padding: 0 0.3em;
+             font-family:'Oswald', sans-serif;
+             transform: translate3d(0,$pad,0);
+             display: block;
+             transition: transform 0.4s cubic-bezier(.2,0,0,1) 0.4s;
+           }
+
+           &:after {
+             position: absolute;
+             content: '';
+             bottom: -$thick;
+             left: $extra;
+             right: $extra;
+             height: $thick;
+             background: $color;
+             // z-index: -1;
+             transition:
+               transform 0.8s cubic-bezier(1,0,.37,1) 0.2s,
+               right 0.2s cubic-bezier(.04,.48,0,1) 0.6s,
+               left 0.4s cubic-bezier(.04,.48,0,1) 0.6s;
+             transform-origin: left;
+           }
+
+         }
+
+         .line {
+           position: absolute;
+           background: $color;
+
+           &.-right,
+           &.-left {
+             width: $thick;
+             bottom: -$thick;
+             top: -$thick;
+             transform: scale3d(1,0,1);
+           }
+
+           &.-top,
+           &.-bottom {
+             height: $thick;
+             left: -$thick;
+             right: -$thick;
+             transform: scale3d(0,1,1);
+           }
+
+           &.-right {
+             right: -$thick;
+             transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.23s;
+             transform-origin: top;
+           }
+
+           &.-top {
+             top: -$thick;
+             transition: transform 0.08s linear 0.43s;
+             transform-origin: left;
+           }
+
+           &.-left {
+             left: -$thick;
+             transition: transform 0.08s linear 0.51s;
+             transform-origin: bottom;
+           }
+
+           &.-bottom {
+             bottom: -$thick;
+             transition: transform 0.3s cubic-bezier(1,0,.65,1.01);
+             transform-origin: right;
+           }
+         }
+
+         a:hover,
+         a:active {
+
+           .text {
+             transform: translate3d(0,0,0);
+             transition: transform 0.6s cubic-bezier(.2,0,0,1) 0.4s;
+           }
+
+           &:after {
+             transform: scale3d(0,1,1);
+             right: -$thick;
+             left: -$thick;
+             transform-origin: right;
+             transition:
+               transform 0.2s cubic-bezier(1,0,.65,1.01) 0.17s,
+               right 0.2s cubic-bezier(1,0,.65,1.01),
+               left 0s 0.3s;
+           }
+
+           .line {
+             transform: scale3d(1,1,1);
+
+             &.-right {
+               transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.2s;
+               transform-origin: bottom;
+             }
+
+             &.-top {
+               transition: transform 0.08s linear 0.4s;
+               transform-origin: right;
+             }
+
+             &.-left {
+               transition: transform 0.08s linear 0.48s;
+               transform-origin: top;
+             }
+
+             &.-bottom {
+               transition: transform 0.5s cubic-bezier(0,.53,.29,1) 0.56s;
+               transform-origin: left;
+             }
+           }
+
+         }
+       }
+
+}
+
+     #plateforme {
+       position: relative;
+       top : 150px;
+       color : white;
+       font-family: 'Oswald', sans-serif;
+       text-align: center;
+
+       #surpc {
+         font-size: 4em;
+       }
+     }
+
+     #LesTours {
+       color : white;
+       position: relative;
+       font-family: 'Oswald', sans-serif;
+       text-align: center;
+       #starteur {
+         font-size: 20em;
+       }
+       #exercice {
+         font-size: 18em;
+       }
+     }
