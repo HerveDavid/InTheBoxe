@@ -45,4 +45,7 @@
   echo " test de la methode suppAdherent sur le compte waw@yahoo.com : (deverai retourner false) ";
   $dao->suppAdherent('waw@yahoo.com');
   var_dump($dao->mailExistant('waw@yahoo.com'));
+
+  echo " test de la methode getAllAdherent : ";
+  var_dump($dao->getAllAdherent());
  ?>

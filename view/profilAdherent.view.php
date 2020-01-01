@@ -22,9 +22,9 @@
     $tel = $profil->getTel();
     $codePostal = $profil->getCodePostal();
     $ville = $profil->getVille();
-    $cours = $dao->getCours($mail);
+    $listCours = $dao->getCours($mail);
     // var_dump($profil);
-    // var_dump($cours);
+    var_dump($listCours);
     //demande de competition
     //affichage des informations (info , stats , status , docs a fournir )
     //les cours a la quelle il ses inscrit
@@ -67,7 +67,7 @@
                         <div id="information" class="tab-pane active">
                             <h4>Informations</h4>
                             <ul>
-                              <li>Poids : <?=$profil->getPoids()?> KG</li>
+                              <li>Poids (en kg): <?=$profil->getPoids()?> </li>
                               <li>Taille : <?=$profil->getTaille()?></li>
                               <li>Licence : <?=$profil->getLicence()?></li>
                               <li>Catégorie : <?=$profil->getCategorie()?></li>
@@ -78,9 +78,25 @@
                             </ul>
                             <hr class="style1">
                         </div>
+
                         <div id="email" class="tab-pane active">
                             <h4><a href="#">Envoyer une demande de combat </a></h4>
 
+                            <hr class="style1">
+                        </div>
+                        <div id="cours" class="tab-pane active">
+                            <h4>Cours inscrit</h4>
+                            <br>
+                            <?php if (isset($listCours)) {
+                                    foreach ($listCours as $cours) { ?>
+                                      <h6> <?= $cours->getType() ?></h6>
+                                      <p>  <?= $cours->getHoraireDebut() ?> - <?= $cours->getHoraireFin() ?> le <?= $cours->getJour() ?></p>
+                                      <br>
+                                    <?php }
+                                  } else { ?>
+                                    <p>  Vous n'êtes inscrit a aucun cours </p>
+
+                                  <?php } ?>
                             <hr class="style1">
                         </div>
                         <div id="settings" class="tab-pane active">

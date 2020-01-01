@@ -26,21 +26,15 @@ class DAO {
       die("PDO Error :".$e->getMessage()." '".$this->database."'\n");
     }
   }
-  // public function getNewId(){
-  //   $query = "SELECT id FROM adherentClub ORDER BY id DESC LIMIT 1 ";
-  //   $r= $this->db->query($query);
-  //   $res = $r->fetchAll(PDO::FETCH_CLASS[0]);
-  //   $newId = $res[0][0] +1; //a modifier
-  //   return $newId;
-  // }
   public function getAllAdherent(){
-    $query = "SELECT * FROM adherentClub";
+    $query = "SELECT * FROM adherentClub ORDER BY nom";
     $sql= $this->db->query($query);
-    $adherent = $sql->fetchAll(PDO::FETCH_ASSOC)[0];
-
-    if (count($adherent)==0) {
-      return null;
-    }else {return new AdherentClub($adherent);}
+    $adherents = $sql->fetchAll(PDO::FETCH_ASSOC);
+    $listAdherents = array();
+    foreach ($adherents as $adh ) {
+      array_push($listAdherents,new AdherentClub($adh));
+    }
+    return $listAdherents;
   }
   public function getAdherent($email){
     $query = "SELECT * FROM adherentClub WHERE mail='$email'";
@@ -60,6 +54,17 @@ class DAO {
     }else {return new Coach($coach[0]);}
   }
 
+  public function getAllCours($email){
+    $query = "SELECT num,type,horaireDebut,horaireFin,jours FROM cours , participant WHERE mail='$email' and num=numCours";
+    $sql= $this->db->query($query);
+    $resultat = $sql->fetchAll(PDO::FETCH_ASSOC);
+    $listCours=array();
+    foreach ($resultat as $value) {
+      $cours = new Cours($value);
+      array_push($listCours,$cours);
+    }
+    return $listCours;
+  }
 
   public function getCours($email){
     $query = "SELECT num,type,horaireDebut,horaireFin,jours FROM cours , participant WHERE mail='$email' and num=numCours";
@@ -121,10 +126,8 @@ class DAO {
     $mail = $coach->getMail();
     $tel = $coach->getTel();
     $adresse = $coach->getAdresse();
-    $codePostal = $coach->getCodePostal();
-    $ville = $coach->getVille();
 
-    $query = "INSERT INTO coach (mail,nom,prenom,tel,adresse,codePostal,ville) VALUES ('$mail','$nom' ,'$prenom','$tel','$adresse', '$codePostal', '$ville')";
+    $query = "INSERT INTO coach (mail,nom,prenom,tel,adresse) VALUES ('$mail','$nom' ,'$prenom','$tel','$adresse')";
     $insertCoach=$this->db->query($query);
 
     $query = "INSERT INTO profil (mail,motdepasse,coach) VALUES ('$mail','$mdp', true)";
@@ -145,8 +148,10 @@ class DAO {
     return $this->db->query($query);
   }
   public function suppAdherent($mail){
-    $query = "DELETE FROM adherentClub WHERE mail= '$mail'";
-    return $this->db->query($query);
+    $suppAdherent = "DELETE FROM adherentClub WHERE mail= '$mail'";
+    $suppProfil = "DELETE FROM profil WHERE mail= '$mail'";
+
+    return $this->db->query($suppAdherent) && $this->db->query($suppProfil) ;
   }
 }
 

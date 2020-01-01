@@ -13,10 +13,10 @@ class Cours{
       }
     }
 
-public function getType(): string {return $this->type;}
-public function getHoraire(): string {return $this->horaire;}
-public function getJour(): string {return $this->jour;}
-public function getParticipantMoy(): INTEGER {return $this->participantmoy;}
+public function getType() {return $this->type;}
+public function getHoraireDebut(){return $this->horaireDebut;}
+public function getHoraireFin() {return $this->horaireFin;}
+public function getJour() {return $this->jours;}
 
 
 
