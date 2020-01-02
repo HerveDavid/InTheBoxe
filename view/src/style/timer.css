@@ -40,11 +40,11 @@ body {
   margin: 10px;
 }
 
-.chronometre .portfolio-experiment {
+.chronometre .bouton {
   background: rgba(0, 0, 0, 0);
 }
 
-.chronometre .portfolio-experiment a {
+.chronometre .bouton a {
   color: white;
   text-decoration: none;
   padding: 1em calc(1em * 1.2);
@@ -57,14 +57,14 @@ body {
   letter-spacing: 0.07em;
 }
 
-.chronometre .portfolio-experiment a .text {
+.chronometre .bouton a .text {
   font-family: 'Oswald', sans-serif;
   transform: translate3d(0, 1em, 0);
   display: block;
   transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
 
-.chronometre .portfolio-experiment a:after {
+.chronometre .bouton a:after {
   position: absolute;
   content: '';
   bottom: -1px;
@@ -76,57 +76,57 @@ body {
   transform-origin: left;
 }
 
-.chronometre .portfolio-experiment .line {
+.chronometre .bouton .line {
   position: absolute;
   background: white;
 }
 
-.chronometre .portfolio-experiment .line.-right, .chronometre .portfolio-experiment .line.-left {
+.chronometre .bouton .line.-right, .chronometre .bouton .line.-left {
   width: 1px;
   bottom: -1px;
   top: -1px;
   transform: scale3d(1, 0, 1);
 }
 
-.chronometre .portfolio-experiment .line.-top, .chronometre .portfolio-experiment .line.-bottom {
+.chronometre .bouton .line.-top, .chronometre .bouton .line.-bottom {
   height: 1px;
   left: -1px;
   right: -1px;
   transform: scale3d(0, 1, 1);
 }
 
-.chronometre .portfolio-experiment .line.-right {
+.chronometre .bouton .line.-right {
   right: -1px;
   transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
   transform-origin: top;
 }
 
-.chronometre .portfolio-experiment .line.-top {
+.chronometre .bouton .line.-top {
   top: -1px;
   transition: transform 0.08s linear 0.43s;
   transform-origin: left;
 }
 
-.chronometre .portfolio-experiment .line.-left {
+.chronometre .bouton .line.-left {
   left: -1px;
   transition: transform 0.08s linear 0.51s;
   transform-origin: bottom;
 }
 
-.chronometre .portfolio-experiment .line.-bottom {
+.chronometre .bouton .line.-bottom {
   bottom: -1px;
   transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
   transform-origin: right;
 }
 
-.chronometre .portfolio-experiment a:hover .text,
-.chronometre .portfolio-experiment a:active .text {
+.chronometre .bouton a:hover .text,
+.chronometre .bouton a:active .text {
   transform: translate3d(0, 0, 0);
   transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
 
-.chronometre .portfolio-experiment a:hover:after,
-.chronometre .portfolio-experiment a:active:after {
+.chronometre .bouton a:hover:after,
+.chronometre .bouton a:active:after {
   transform: scale3d(0, 1, 1);
   right: -1px;
   left: -1px;
@@ -134,31 +134,31 @@ body {
   transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
 }
 
-.chronometre .portfolio-experiment a:hover .line,
-.chronometre .portfolio-experiment a:active .line {
+.chronometre .bouton a:hover .line,
+.chronometre .bouton a:active .line {
   transform: scale3d(1, 1, 1);
 }
 
-.chronometre .portfolio-experiment a:hover .line.-right,
-.chronometre .portfolio-experiment a:active .line.-right {
+.chronometre .bouton a:hover .line.-right,
+.chronometre .bouton a:active .line.-right {
   transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
   transform-origin: bottom;
 }
 
-.chronometre .portfolio-experiment a:hover .line.-top,
-.chronometre .portfolio-experiment a:active .line.-top {
+.chronometre .bouton a:hover .line.-top,
+.chronometre .bouton a:active .line.-top {
   transition: transform 0.08s linear 0.4s;
   transform-origin: right;
 }
 
-.chronometre .portfolio-experiment a:hover .line.-left,
-.chronometre .portfolio-experiment a:active .line.-left {
+.chronometre .bouton a:hover .line.-left,
+.chronometre .bouton a:active .line.-left {
   transition: transform 0.08s linear 0.48s;
   transform-origin: top;
 }
 
-.chronometre .portfolio-experiment a:hover .line.-bottom,
-.chronometre .portfolio-experiment a:active .line.-bottom {
+.chronometre .bouton a:hover .line.-bottom,
+.chronometre .bouton a:active .line.-bottom {
   transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
   transform-origin: left;
 }

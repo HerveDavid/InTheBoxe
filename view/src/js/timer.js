@@ -10,7 +10,7 @@
 
    /*La fonction "start" démarre un appel répétitive de la fonction update_chrono par une cadence de 100 milliseconde en utilisant setInterval et désactive le bouton "start" */
   function start(){
-    var audio = new Audio('bruitages/start.mp3');
+    var audio = new Audio('../view/src/bruitages/start.mp3');
     audio.play();
    t =setInterval(update_chrono,100);
    btn_start.disabled=true;
@@ -30,7 +30,7 @@
       if(s>=5&&s<10) {
         repos();
         if (s==5&&ms==2) {
-          var audio = new Audio('bruitages/repos.mp3');
+          var audio = new Audio('../view/src/bruitages/repos.mp3');
           audio.play();
         }
       }
@@ -38,7 +38,7 @@
       if(s>=10&&s<15) {
         crunch();
         if (s==10&&ms==2) {
-          var audio = new Audio('bruitages/start.mp3');
+          var audio = new Audio('../view/src/bruitages/start.mp3');
           audio.play();
         }
       }
@@ -46,7 +46,7 @@
       if(s>=15&&s<20) {
         repos();
         if (s==15&&ms==2) {
-          var audio = new Audio('bruitages/repos.mp3');
+          var audio = new Audio('../view/src/bruitages/repos.mp3');
           audio.play();
         }
       }
@@ -54,7 +54,7 @@
       if(s>=20&&s<25) {
         burpee();
         if (s==20&&ms==2) {
-          var audio = new Audio('bruitages/start.mp3');
+          var audio = new Audio('../view/src/bruitages/start.mp3');
           audio.play();
         }
       }
@@ -62,7 +62,7 @@
       if(s>=25&&s<30) {
         repos();
         if (s==25&&ms==2) {
-          var audio = new Audio('bruitages/repos.mp3');
+          var audio = new Audio('../view/src/bruitages/repos.mp3');
           audio.play();
         }
       }
@@ -70,7 +70,7 @@
       if(s>=30&&s<35) {
         gainage();
         if (s==30&&ms==2) {
-          var audio = new Audio('bruitages/start.mp3');
+          var audio = new Audio('../view/src/bruitages/start.mp3');
           audio.play();
         }
       }
@@ -78,7 +78,7 @@
       if(s>=35&&s<40) {
         repos();
         if (s==35&&ms==2) {
-          var audio = new Audio('bruitages/repos.mp3');
+          var audio = new Audio('../view/src/bruitages/repos.mp3');
           audio.play();
         }
       }
@@ -86,7 +86,7 @@
       if(s>=40&&s<45) {
         fentes();
         if (s==40&&ms==2) {
-          var audio = new Audio('bruitages/start.mp3');
+          var audio = new Audio('../view/src/bruitages/start.mp3');
           audio.play();
         }
       }
@@ -94,7 +94,7 @@
       if(s>=45&&s<50) {
         repos();
         if (s==45&&ms==2) {
-          var audio = new Audio('bruitages/repos.mp3');
+          var audio = new Audio('../view/src/bruitages/repos.mp3');
           audio.play();
         }
       }
@@ -102,7 +102,7 @@
       if(s>=50&&s<55) {
         pompe();
         if (s==50&&ms==2) {
-          var audio = new Audio('bruitages/start.mp3');
+          var audio = new Audio('../view/src/bruitages/start.mp3');
           audio.play();
         }
       }
@@ -110,14 +110,14 @@
       if(s>=55&&s<60) {
         repos();
         if (s==55&&ms==2) {
-          var audio = new Audio('bruitages/repos.mp3');
+          var audio = new Audio('../view/src/bruitages/repos.mp3');
           audio.play();
         }
       }
 
       if(mn==1) {
         stop();
-        var audio = new Audio('bruitages/stop.mp3');
+        var audio = new Audio('../view/src/bruitages/stop.mp3');
         audio.play();
       }
 
@@ -144,7 +144,7 @@
 
 	/*on arrête le "timer" par clearInterval ,on réactive le bouton start */
 	function stop(){
-    var audio = new Audio('bruitages/bouton.mp3');
+    var audio = new Audio('../view/src/bruitages/bouton.mp3');
     audio.play();
     clearInterval(t);
     btn_start.disabled=false;
@@ -152,7 +152,7 @@
 	}
   /*dans cette fonction on arrête le "timer" ,on réactive le bouton "start" et on initialise les variables à zéro */
   function reset(){
-    var audio = new Audio('bruitages/bouton.mp3');
+    var audio = new Audio('../view/src/bruitages/bouton.mp3');
     audio.play();
     clearInterval(t);
     btn_start.disabled=false;
@@ -197,7 +197,7 @@
   }
 
   function inner(num) {
-    var audio = new Audio('bruitages/starteur.mp3');
+    var audio = new Audio('../view/src/bruitages/starteur.mp3');
     audio.play();
     p[1].innerHTML=num;
     var bool = detectmob();

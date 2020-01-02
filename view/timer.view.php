@@ -2,8 +2,8 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/Timer.css">
-    <link rel="icon" href="icons/timer.png" />
+    <link rel="stylesheet" href="../view/src/style/timer.css">
+    <link rel="icon" href="../view/src/img/icons/timer.png" />
     <title>Timer BOXE</title>
   </head>
   <body id="body">
@@ -23,7 +23,7 @@
       <button id="stop" onclick="stop()">Arrêter</button>
       <button id="reset" onclick="reset(); supprime()">Réinitialiser</button>
       <section class="bouton">
-        <a href="../profil.ctrl.php">
+        <a href="accueilTimer.view.php">
           <span class="text">Quitter</span>
           <span class="line -right"></span>
           <span class="line -top"></span>
@@ -44,6 +44,6 @@
     <script type="text/javascript" src="http://services.supportduweb.com/navigation_up_down/1-5417-right.js"></script>
     </div>
 
-    <script src="Timer.js"></script>
+    <script src="../view/src/js/timer.js"></script>
   </body>
 </html>
