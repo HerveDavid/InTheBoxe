@@ -45,22 +45,83 @@
 
       </div>
       <?php if (!$adhConnecter) {?>
-        <h1>Il faut être adhérent pour pouvoir s'inscrire à un cours</h1>
-      <?php } ?>
-      <div class="row">
-        <div class="col">
-          <div class="container">
-            <div class="row">
-            </div>
-            <div class="row">
-            </div>
-            <div class="row">
-            </div>
+        <h3>Il faut être adhérent pour pouvoir s'inscrire à un cours</h3>
+        <div class="container">
+          <div class="card">
+            <div class="card-body" id="calendar"></div>
+          </div>
           </div>
         </div>
+      <?php } else { ?>
+        <div class="d-flex justify-content-around">
+          <div id="gauche" class="container">
+           <div class="card text-black bg-white">
+               <h4 class="card-header">Inscription aux cours</h4>
+               <div class="card-body">
+                   <p class="card-text">Inscrivez vous aux cours que vous souhaitez et qui vous correspond.</p>
+               </div>
+           </div>
+           <br>
+           <div class="card text-black bg-white">
+               <h4 class="card-header">Liste des cours</h4>
+               <div class="card-body">
+                 <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="btn-group dropright">
+                      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" >
+                        "Jeune"places disponibles: 10
+                      </button>
+                      <div class="dropdown-menu">
+                        Pour les jeunes de 8 à 15 ans.
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-secondary">
+                    <div class="btn-group dropright">
+                      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" >
+                        "Attaque" places disponibles: 10
+                      </button>
+                      <div class="dropdown-menu">
+                        Pour les jeunes de 8 à 15 ans.
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <div class="btn-group dropright">
+                      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" >
+                        "Defense" places disponibles: 10
+                      </button>
+                      <div class="dropdown-menu">
+                        Pour les jeunes de 8 à 15 ans.
+                        Coach: Jean Eude
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-danger">
+                    <div class="btn-group dropright">
+                      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" >
+                        "Pro" places disponibles: 10
+                      </button>
+                      <div class="dropdown-menu">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </div>
+                    </div>
+                  </li>
+                  </ul>
+               </div>
+           </div>
+          </div>
+          <div class="container">
+            <div class="card">
+              <div class="card-body" id="calendar"></div>
+            </div>
+            </div>
+          </div>
 
-        <div class="col" id="calendar"></div>
-      </div>
+        </div>
+
+      <?php } ?>
+
     </div>
   </body>
 </html>
