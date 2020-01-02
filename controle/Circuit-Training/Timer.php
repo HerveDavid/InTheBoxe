@@ -22,7 +22,7 @@
       <button id="start" onclick="adapt()">Lancer</button>
       <button id="stop" onclick="stop()">Arrêter</button>
       <button id="reset" onclick="reset(); supprime()">Réinitialiser</button>
-      <section class="portfolio-experiment">
+      <section class="bouton">
         <a href="../profil.ctrl.php">
           <span class="text">Quitter</span>
           <span class="line -right"></span>

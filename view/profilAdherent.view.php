@@ -85,7 +85,7 @@
                             <hr class="style1">
                         </div>
 
-                        <section class="portfolio-experiment">
+                        <section class="bouton">
                           <a href="../controle/Circuit-Training/Timer.php">
                             <span class="text">Je m'entraine</span>
                             <span class="line -right"></span>
