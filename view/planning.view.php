@@ -46,6 +46,12 @@
       </div>
       <?php if (!$adhConnecter) {?>
         <h3>Il faut être adhérent pour pouvoir s'inscrire à un cours</h3>
+        <div class="container">
+          <div class="card">
+            <div class="card-body" id="calendar"></div>
+          </div>
+          </div>
+        </div>
       <?php } else { ?>
         <div class="d-flex justify-content-around">
           <div id="gauche" class="container">

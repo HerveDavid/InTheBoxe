@@ -1,7 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="../view/src/style/actualite.css">
 
     <title></title>
@@ -26,5 +31,35 @@
         </ul>
       </nav>
     </header>
+
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h3>Informations concernant le club</h3>
+        </div>
+
+        <?php for ($i=0; $i < 10; $i++) { ?>
+          <div class="card-body">
+            <div class="card">
+              <div class="card-header">
+                <!-- titre de l'informations avec date -->
+                <h4>Gala informations - 10 janvier 2020</h4>
+              </div>
+              <div class="card-body">
+                <!-- contenu -->
+                Le gala aura toujours lieu le 17 novembre à 13h chez LUI.
+              </div>
+              <div class="card-footer">
+                <!-- nom de celui qui donne l'info -->
+                Informations données par un coach
+              </div>
+            </div>
+          </div>
+          <br>
+        <?php } ?>
+
+
+      </div>
+    </div>
   </body>
 </html>
