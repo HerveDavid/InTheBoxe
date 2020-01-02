@@ -8,17 +8,13 @@
   </head>
   <body>
 
-
-
-
-
       <fieldset>
 
         <h1>Sélectionnez un type d'entrainement</h1>
 
           <div class="services">
                     <div class="service-item">
-                        <a href="Timer.php">
+                        <a href="timer.view.php">
                         <img src="../view/src/img/timer/demo.jpg" alt="Démo">
                         <h4>Démo</h4>
                         </a>
