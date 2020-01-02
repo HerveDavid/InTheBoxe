@@ -40,7 +40,7 @@
           </div>
 
           <section class="bouton">
-            <a href="profilAdherent.view.php">
+            <a href="../controle/profil.ctrl.php">
               <span class="text">Quitter</span>
               <span class="line -right"></span>
               <span class="line -top"></span>

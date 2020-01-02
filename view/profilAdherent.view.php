@@ -86,7 +86,7 @@
                         </div>
 
                         <section class="bouton">
-                          <a href="accueilTimer.view.php">
+                          <a href="../view/accueilTimer.view.php">
                             <span class="text">Je m'entraine</span>
                             <span class="line -right"></span>
                             <span class="line -top"></span>
