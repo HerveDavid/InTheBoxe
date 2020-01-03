@@ -1,5 +1,9 @@
 @import "header";
+@import "variables";
 
+* {
+  font-family: $fontLow;
+}
 #planning {
   margin-top: 10%;
 }
@@ -22,24 +26,27 @@ span {
 
 .boxe-educative{
   background-color: #17d93a;
-  width: 86.3636%;
   color: white;
+
 }
 
 .boxe-educative2{
   background-color: #006f2c;
-  width: 86.3636%;
   color: white;
+
 }
 
 .boxe-loisir {
   background-color: #11c4f4;
-  width: 86.3636%;
   color: white;
 }
 
-.cross-fit-boxing{
+.cross-fit {
   background-color: #c1a900;
-  width: 86.3636%;
+  color: white;
+}
+
+.boxe-femmes {
+  background-color: #e600a0;
   color: white;
 }
