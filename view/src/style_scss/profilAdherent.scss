@@ -29,12 +29,12 @@ body {
    background-color: $red;
  }
 
- $thick : 1px;
+      $thick : 1px;
       $pad : 1em;
       $extra : calc(#{$pad} * 1.2);
       $color : $red;
 
-      .portfolio-experiment {
+      .bouton {
         text-align: center;
         background: rgba(0, 0, 0, 0);
 

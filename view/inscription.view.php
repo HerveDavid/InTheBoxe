@@ -10,7 +10,9 @@
       <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
       <nav class="topNavigation">
         <ul>
+          <?php if (!isset($_SESSION['mail'])) { ?>
           <li id="Accueil"><a href="../controle/accueil.ctrl.php">Accueil</a></li>
+          <?php } ?>
           <li id="Actualités"><a href="../controle/actualite.ctrl.php">Actualités</a></li>
           <li id="Planning"><a href="../controle/planning.ctrl.php">Planning</a></li>
           <li id= "Club"><a href="../controle/club.ctrl.php">Club</a></li>
@@ -27,11 +29,11 @@
     </header>
     <article>
     <div id="Gauche">
-      <h1>Planning en ligne</h1>
-      <p>Communiquez directement avec vos coachs et gérez votre planning selon vos besoins</p>
+      <h1>S'inscrire à des cours</h1>
+      <p>Communiquez directement avec vos coachs et participer aux cours de vos choix</p>
       <h1>Entrainement en ligne</h1>
-      <p>Progressez avec +100 cours personnalisés certifiés par des coachs</p>
-      <h1>Combat en ligne</h1>
+      <p>Progressez avec +100 exercices certifiés par des coachs</p>
+      <h1>Combats</h1>
       <p>Participez à des combats et trouvez un adversaire qui vous correspond</p>
     </div>
     <div id="Droite">

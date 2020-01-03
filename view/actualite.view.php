@@ -16,7 +16,9 @@
       <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
       <nav class="topNavigation">
         <ul>
+          <?php if (!isset($_SESSION['mail'])) { ?>
           <li id="Accueil"><a href="../controle/accueil.ctrl.php">Accueil</a></li>
+          <?php } ?>
           <li id="Actualités"><a href="../controle/actualite.ctrl.php">Actualités</a></li>
           <li id="Planning"><a href="../controle/planning.ctrl.php">Planning</a></li>
           <li id= "Club"><a href="../controle/club.ctrl.php">Club</a></li>

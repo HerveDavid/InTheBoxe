@@ -31,21 +31,21 @@
       <h2>Boxing Club Evian-Les-Bains</h2>
       <h1>Explorez vos limites.</h1>
       <p>
-        Inscrivez vous pour avoir accès à des cours gratuits et aux tournois de boxe en ligne
+        Inscrivez vous pour avoir accès à des cours de boxe et differents exercices d'entrainement
       </p>
       <br>
       <a href="../controle/inscription.ctrl.php">Inscription</a>
     </div>
     <footer>
       <!-- <section> -->
-        <h1>Accès aux cours et informations</h1>
-        <h2>Top 3 cours</h2>
+        <h1>Les cours disponible et leur tarifs</h1>
+        <h2></h2>
       <!-- </section> -->
       <nav>
         <ul>
-          <li><a href="#Cours1"><img src="../view/src/img/accueil/cours1.png" alt="cours-1"></a></li>
-          <li><a href="#Cours2"><img src="../view/src/img/accueil/cours2.png" alt="cours-2"></a></li>
-          <li><a href="#Cours3"><img src="../view/src/img/accueil/cours2.png" alt="cours-3"></a></li>
+          <li><img src="../view/src/img/accueil/cours1.png" alt="cours-1">LOISIR 190€</li>
+          <li><img src="../view/src/img/accueil/cours2.png" alt="cours-2">EDUCATIVE 170€</li>
+          <li><img src="../view/src/img/accueil/cours2.png" alt="cours-3">CROSSFIT 190€</li>
         </ul>
       </nav>
     </footer>
