@@ -38,8 +38,8 @@
           <h3>Informations concernant le club</h3>
         </div>
 
+        <div class="card-body overflow-auto">
         <?php for ($i=0; $i < 10; $i++) { ?>
-          <div class="card-body">
             <div class="card">
               <div class="card-header">
                 <!-- titre de l'informations avec date -->
@@ -54,9 +54,9 @@
                 Informations données par un coach
               </div>
             </div>
-          </div>
           <br>
         <?php } ?>
+      </div>
 
 
       </div>
