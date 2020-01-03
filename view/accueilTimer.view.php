@@ -14,7 +14,7 @@
 
           <div class="services">
                     <div class="service-item">
-                        <a href="timer.view.php">
+                        <a href="../controle/timer.ctrl.php?mode=1">
                         <img src="../view/src/img/timer/demo.jpg" alt="Démo">
                         <h4>Démo</h4>
                         </a>
@@ -40,7 +40,7 @@
           </div>
 
           <section class="bouton">
-            <a href="profilAdherent.view.php">
+            <a href="../controle/profil.ctrl.php">
               <span class="text">Quitter</span>
               <span class="line -right"></span>
               <span class="line -top"></span>

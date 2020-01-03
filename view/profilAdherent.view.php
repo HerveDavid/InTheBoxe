@@ -23,18 +23,15 @@
     $codePostal = $profil->getCodePostal();
     $ville = $profil->getVille();
     $listCours = $dao->getCours($mail);
-    // var_dump($profil);
-    var_dump($listCours);
-    //demande de competition
-    //affichage des informations (info , stats , status , docs a fournir )
-    //les cours a la quelle il ses inscrit
-
+    $statue = $profil->getStatut();
      ?>
     <header>
       <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
       <nav class="topNavigation">
         <ul>
+          <?php if (!isset($_SESSION['mail'])) { ?>
           <li id="Accueil"><a href="../controle/accueil.ctrl.php">Accueil</a></li>
+          <?php } ?>
           <li id="Actualités"><a href="../controle/actualite.ctrl.php">Actualités</a></li>
           <li id="Planning"><a href="../controle/planning.ctrl.php">Planning</a></li>
           <li id= "Club"><a href="../controle/club.ctrl.php">Club</a></li>
@@ -78,7 +75,13 @@
                             </ul>
                             <hr class="style1">
                         </div>
-
+                        <?php if ($statue=='en attente') { ?>
+                          <p>Votre profile est en attente il faut aller au club pour validé votre inscription avec ces justificatifs:</p>
+                          <ul>
+                            <li>Licence</li>
+                            <li>Carte d'identité</li>
+                          </ul>
+                        <?php  }else {?>
                         <div id="email" class="tab-pane active">
                             <h4><a href="#">Envoyer une demande de combat </a></h4>
 
@@ -86,7 +89,7 @@
                         </div>
 
                         <section class="bouton">
-                          <a href="accueilTimer.view.php">
+                          <a href="../controle/timer.ctrl.php">
                             <span class="text">Je m'entraine</span>
                             <span class="line -right"></span>
                             <span class="line -top"></span>
@@ -112,6 +115,7 @@
                                   <?php } ?>
                             <hr class="style1">
                         </div>
+                        <?php  }?>
                         <div id="settings" class="tab-pane active">
                           <h4>Modifier les informations personnelles</h4>
                           <form class="parametrage" action="../controle/parametrage.ctrl.php" method="post">

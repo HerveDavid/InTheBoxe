@@ -23,7 +23,7 @@
       <button id="stop" onclick="stop()">Arrêter</button>
       <button id="reset" onclick="reset(); supprime()">Réinitialiser</button>
       <section class="bouton">
-        <a href="accueilTimer.view.php">
+        <a href="../controle/timer.ctrl.php">
           <span class="text">Quitter</span>
           <span class="line -right"></span>
           <span class="line -top"></span>
