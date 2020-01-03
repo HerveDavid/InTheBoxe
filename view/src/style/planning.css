@@ -19,11 +19,9 @@ header {
   flex-direction: row;
   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
-
 header nav {
   width: 100%;
 }
-
 header nav ul {
   padding: inherit;
   height: 100%;
@@ -32,22 +30,18 @@ header nav ul {
   list-style: none;
   margin: 0 0;
 }
-
 header nav ul li {
   text-align: center;
   width: 100%;
   padding: 0.8em;
 }
-
 header nav ul li a {
   color: #000000;
   text-decoration: none;
 }
-
 header nav ul #Connexion {
   background-color: #BE1E2D;
 }
-
 header nav ul #Connexion a {
   font-weight: bold;
   color: #FFFFFF;
@@ -57,10 +51,42 @@ header nav ul #Connexion a {
   margin-top: 10%;
 }
 
-#planning #gauche {
-  width: 70%;
+.btn-primary {
+  background-color: #BE1E2D;
+  border: none;
+}
+.btn-primary a {
+  color: white;
 }
 
-.btn {
-  background: none;
+hr {
+  background-color: #BE1E2D;
+}
+
+span {
+  color: #545353;
+}
+
+.boxe-educative {
+  background-color: #17d93a;
+  width: 86.3636%;
+  color: white;
+}
+
+.boxe-educative2 {
+  background-color: #006f2c;
+  width: 86.3636%;
+  color: white;
+}
+
+.boxe-loisir {
+  background-color: #11c4f4;
+  width: 86.3636%;
+  color: white;
+}
+
+.cross-fit-boxing {
+  background-color: #c1a900;
+  width: 86.3636%;
+  color: white;
 }

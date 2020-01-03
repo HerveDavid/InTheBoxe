@@ -2,17 +2,44 @@
 
 #planning {
   margin-top: 10%;
+}
 
-  #gauche {
-    width: 70%;
+.btn-primary {
+  background-color: $red;
+  border: none;
+  a {
+    color: white;
   }
 }
 
-.fc-button {
-  // background-color: $bl;
-  // border-color: $red;
+hr {
+  background-color: $red;
 }
 
-.btn {
-  background: none;
+span {
+  color:  #545353;
+}
+
+.boxe-educative{
+  background-color: #17d93a;
+  width: 86.3636%;
+  color: white;
+}
+
+.boxe-educative2{
+  background-color: #006f2c;
+  width: 86.3636%;
+  color: white;
+}
+
+.boxe-loisir {
+  background-color: #11c4f4;
+  width: 86.3636%;
+  color: white;
+}
+
+.cross-fit-boxing{
+  background-color: #c1a900;
+  width: 86.3636%;
+  color: white;
 }
