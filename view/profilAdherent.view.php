@@ -59,6 +59,15 @@
                     <span class="help-block"><?= $mail ?></span>
                     <hr class="style1">
                 </div>
+                <?php if ($statue=='attente') :?>
+                  <p style='color:red' >Votre profile est en attente il faut vous rendre au club pour validé votre inscription.</p>
+                   <p style='color:red' > Conditions et documents requis:</p>
+                  <ul>
+                    <li style='color:red' >Paiment des frais d'inscriptions</li>
+                    <li style='color:red'>Certificat medical</li>
+                    <li style='color:red'>Carte d'identité</li>
+                  </ul>
+                <?php else :?>
                 <div class="user-body">
                     <div class="tab-content">
                         <div id="information" class="tab-pane active">
@@ -75,17 +84,19 @@
                             </ul>
                             <hr class="style1">
                         </div>
-                        <?php if ($statue=='En attente') { ?>
-                          <p>Votre profile est en attente il faut aller au club pour validé votre inscription :</p>
-                          <ul>
-                            <li>Paiment des frais d'inscriptions</li>
-                            <li>Certificat medical</li>
-                            <li>Carte d'identité</li>
-                          </ul>
-                        <?php  }else {?>
-                        <div id="email" class="tab-pane active">
-                            <h4><a href="#">Envoyer une demande de combat </a></h4>
 
+                        <div id="email" class="tab-pane active">
+                          <?php if ($message): ?>
+                            <h4 style="color:grey">Envoyer une demande de combat</h4>
+                            <p style="color:green">Votre demande viens d'être envoyé ! le Coach vous enverra un mail pour vous faire part de sa décision</p>
+                          <?php elseif($demande):?>
+                            <h4 style="color:grey">Envoyer une demande de combat</h4>
+                            <p style="color:grey">Vous avez une demande en cours </p>
+
+                          <?php else:?>
+                            <h4><a href="../controle/profil.ctrl.php?demande=1">Envoyer une demande de combat </a></h4>
+
+                          <?php endif; ?>
                             <hr class="style1">
                         </div>
 
@@ -104,7 +115,7 @@
                         <div id="cours" class="tab-pane active">
                             <h4>Cours inscrit</h4>
                             <br>
-                            <?php if (isset($listCours)) {
+                            <?php if (count($listCours)>0) {
                                     foreach ($listCours as $cours) { ?>
                                       <h6> <?= $cours->getType() ?></h6>
                                       <p>  <?= $cours->getHoraireDebut() ?> - <?= $cours->getHoraireFin() ?> le <?= $cours->getJour() ?></p>
@@ -116,7 +127,7 @@
                                   <?php } ?>
                             <hr class="style1">
                         </div>
-                        <?php  }?>
+                      <?php  endif;?>
                         <div id="settings" class="tab-pane active">
                           <h4>Modifier les informations personnelles</h4>
                           <form class="parametrage" action="../controle/parametrage.ctrl.php" method="post">

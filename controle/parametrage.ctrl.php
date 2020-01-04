@@ -21,6 +21,8 @@ if (isset($_POST['prenom']) && isset($_POST['nom'])
    $adh = $dao->getAdherent($_SESSION['mail']);
    $_SESSION['prenom']= $adh->getPrenom();
 }
+
+
 header('Location: profil.ctrl.php');
 
  ?>

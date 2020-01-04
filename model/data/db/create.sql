@@ -9,9 +9,9 @@ CREATE TABLE adherentClub(
   ville VARCHAR(20),
   tel VARCHAR(10),
   statut VARCHAR(20),
+  genre VARCHAR(25),
   taille VARCHAR(10),
   poids INTEGER,
-  genre VARCHAR(25),
   categorie VARCHAR(20),
   licence VARCHAR(20),
   apayer FLOAT,
@@ -102,8 +102,8 @@ CREATE TABLE entrainement(
 );
 
 CREATE TABLE demandeCombats(
-  num INTEGER,
-  mail VARCHAR(30)
+  num INTEGER PRIMARY KEY,
+  mail VARCHAR(30) UNIQUE
 );
 
 CREATE TABLE match(
