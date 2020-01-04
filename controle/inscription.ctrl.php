@@ -56,7 +56,7 @@ session_start();
       // Vérifier que les mots de passes correspondents
       if ($motdepasse == $confimMdp) {
         // Creation de l'Adherent
-        $param = array("mail"=>$email,"nom"=>$nom,"prenom"=>$prenom,"tel"=>$telephone,"datenaiss"=>$dateNaiss,"adresse"=>$adresse,"codePostal"=> $cpostal , "ville"=>$ville);
+        $param = array("mail"=>$email,"nom"=>$nom,"prenom"=>$prenom,"tel"=>$telephone,"datenaiss"=>$dateNaiss,"adresse"=>$adresse,"codePostal"=> $cpostal , "ville"=>$ville, "statut"=>'En attente');
 
         $newAdherent= new AdherentClub($param);
 

@@ -48,4 +48,26 @@
 
   echo " test de la methode getAllAdherent : ";
   var_dump($dao->getAllAdherent());
+
+  echo " test de la methode getActualites : ";
+  var_dump($dao->getActualites());
+
+  echo " test de la methode CreeActualite : (devrai afficher l'actualite nouveau)  ";
+  $param = array("nom"=>"nouveau","type"=>"evenement","dateAct"=>"2020-02-20","description"=>"wesh ya quoi","coach"=>"walidi");
+  $actu = new Actualite($param);
+  $dao->CreeActualite($actu);
+  var_dump($dao->getActualites());
+
+  echo " test de la methode suppActualite : (deverai ne plus avoir 'nouveau') ";
+  $dao->suppActualite("nouveau","2020-02-20");
+  var_dump($dao->getActualites());
+
+  echo "creation d'un evenement expirer 'vieux' : ";
+  $param = array("nom"=>"vieux","type"=>"evenement","dateAct"=>"2019-02-20","description"=>"wesh ya quoi","coach"=>"walidi");
+  $actu = new Actualite($param);
+  $dao->CreeActualite($actu);
+
+  echo " test de la methode suppActualitePasser : (deverai ne plus avoir 'vieux') <br>";
+  $dao->suppActualitePasser();
+  var_dump($dao->getActualites());
  ?>

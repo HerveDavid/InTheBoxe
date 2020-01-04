@@ -1,15 +1,27 @@
 <?php
+// if (isset($test)) {
+//   require_once('../../model/Adherent.class.php');
+//   require_once('../../model/Actualite.class.php');
+//   require_once('../../model/Coach.class.php');
+//   require_once('../../model/profil.class.php');
+//   require_once('../../model/Cours.class.php');
+//   $test='../';
+// } else {
+  require_once('../model/Adherent.class.php');
+  require_once('../model/Actualite.class.php');
+  require_once('../model/Coach.class.php');
+  require_once('../model/profil.class.php');
+  require_once('../model/Cours.class.php');
+//   $test='';
+// }
 
-include('../model/Adherent.class.php');
-include('../model/Coach.class.php');
-include('../model/profil.class.php');
-include('../model/Cours.class.php');
 
 class DAO {
   private $db;
   private $database = '../model/data/db/boxe.db';
 
   public function __construct() {
+    global $test;
     if (! file_exists($this->database)) {
       die ("Database error: file not found '".$this->database."'\n");
     }
@@ -86,6 +98,16 @@ class DAO {
       return null;
     }else {return new Profil($profil);}
   }
+  public function getActualites(){
+    $query = "SELECT * FROM actualite ORDER BY dateAct";
+    $sql= $this->db->query($query);
+    $actualites = $sql->fetchAll(PDO::FETCH_ASSOC);
+    $listActulaites = array();
+    foreach ($actualites as $actu ) {
+      array_push($listActulaites,new Actualite($actu));
+    }
+    return $listActulaites;
+  }
   public function estCoach($email){
     return $this->getProfil($email)->estCoach()=='true';
 
@@ -110,8 +132,9 @@ class DAO {
     $codePostal = $adherent->getCodePostal();
     $ville = $adherent->getVille();
     $date = $adherent->getDateNaiss();
+    $statut=$adherent->getStatut();
 
-    $query = "INSERT INTO adherentClub (mail,nom,prenom,datenaiss,adresse,codePostal,ville,tel) VALUES ('$mail','$nom' ,'$prenom','$date','$adresse', '$codePostal', '$ville','$tel')";
+    $query = "INSERT INTO adherentClub (mail,nom,prenom,datenaiss,adresse,codePostal,ville,tel,statut) VALUES ('$mail','$nom' ,'$prenom','$date','$adresse', '$codePostal', '$ville','$tel','$statut')";
     $insertAdherent=$this->db->query($query);
 
     $query = "INSERT INTO profil (mail,motdepasse,coach) VALUES ('$mail','$mdp', false)";
@@ -153,6 +176,35 @@ class DAO {
 
     return $this->db->query($suppAdherent) && $this->db->query($suppProfil) ;
   }
+  public function CreeActualite(Actualite $actu){
+    $nom = $actu->getNom();
+    $type = $actu->getType();
+    $date = $actu->getDate();
+    $description = $actu->getDescription();
+    $coach = $actu->getCoach();
+
+    $query = "INSERT INTO actualite (nom,type,dateAct,description,coach) VALUES ('$nom','$type' ,'$date','$description','$coach')";
+    $insertActualite=$this->db->query($query);
+
+  }
+  public function suppActualite($nom,$date){
+    $suppActualite = "DELETE FROM Actualite WHERE nom= '$nom' and dateAct='$date'";
+
+    return $this->db->query($suppActualite)  ;
+  }
+  public function suppActualitePasser(){
+    $today = date("Y-m-d");
+    $actualites = $this->getActualites();
+    foreach ($actualites as $actu) {
+      $date=$actu->getDate();
+
+      if ($date<$today) {
+        echo " <br> $date est plus petit que $today";
+        //$this->suppActualite($actu->getNom(),$actu->getDate());
+      }
+    }
+  }
+
 }
 
 

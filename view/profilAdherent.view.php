@@ -75,10 +75,11 @@
                             </ul>
                             <hr class="style1">
                         </div>
-                        <?php if ($statue=='en attente') { ?>
-                          <p>Votre profile est en attente il faut aller au club pour validé votre inscription avec ces justificatifs:</p>
+                        <?php if ($statue=='En attente') { ?>
+                          <p>Votre profile est en attente il faut aller au club pour validé votre inscription :</p>
                           <ul>
-                            <li>Licence</li>
+                            <li>Paiment des frais d'inscriptions</li>
+                            <li>Certificat medical</li>
                             <li>Carte d'identité</li>
                           </ul>
                         <?php  }else {?>
