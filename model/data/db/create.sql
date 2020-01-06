@@ -8,13 +8,11 @@ CREATE TABLE adherentClub(
   codePostal INTEGER,
   ville VARCHAR(20),
   tel VARCHAR(10),
+  statut VARCHAR(20),
+  genre VARCHAR(25),
   taille VARCHAR(10),
   poids INTEGER,
-  genre VARCHAR(25),
-  statut VARCHAR(20),
   categorie VARCHAR(20),
-  combattant VARCHAR(25),
-  certificat BOOLEAN,
   licence VARCHAR(20),
   apayer FLOAT,
   victoire INTEGER,
@@ -72,9 +70,12 @@ CREATE TABLE participant(
 
 
 CREATE TABLE actualite(
-  nom VARCHAR(25) PRIMARY KEY,
+  nom VARCHAR(25),
   type VARCHAR(25),
-  dateAct DATE
+  dateAct DATE,
+  description TEXT,
+  coach VARCHAR(25),
+  PRIMARY KEY(nom,dateAct);
 );
 
 
@@ -86,31 +87,28 @@ CREATE TABLE club(
   tel VARCHAR(25)
 );
 
-CREATE TABLE exercices(
-  nom VARCHAR(25) PRIMARY KEY
+CREATE TABLE exercice(
+  nomExo VARCHAR(25) PRIMARY KEY,
+  nbRep INTEGER,
+  nbSerie INTEGER,
 );
 
 
-CREATE TABLE entrainementPerso(
-  numlicence INTEGER,
-  numentrainement INTEGER,
-  nomexercice VARCHAR(25),
-  nbrep INTEGER,
-  PRIMARY KEY(numlicence,numentrainement,nomexercice),
-  FOREIGN KEY(numlicence) REFERENCES adherentClub(licence),
-  FOREIGN KEY(nomexercice) REFERENCES exercices(nom)
+CREATE TABLE entrainement(
+  numEnt INTEGER PRIMARY KEY,
+  typeEnt VARCHAR(25),
+  tempsTotal TIME,
+  tempsRepos TIME
 );
 
 CREATE TABLE demandeCombats(
-  num INTEGER,
-  mail VARCHAR(30)
+  num INTEGER PRIMARY KEY,
+  mail VARCHAR(30) UNIQUE
 );
 
 CREATE TABLE match(
- boxeurint VARCHAR(25),
- licenceint INTEGER,
+ boxeurInt VARCHAR(25),
  boxeurext VARCHAR(25),
- licenceext INTEGER,
  clubext VARCHAR(25),
  categorie VARCHAR(20),
  datecombat DATE,

@@ -41,45 +41,47 @@
       <form class="inscription" action="../controle/inscription.ctrl.php" method="post">
         <fieldset>
           <p>
-            <!-- <label for="prenom"><h2>Prénom</h2></label> -->
+          <input type="radio" name="choix" value="Masculin" id="M" required>
+          <label for="M">masculin</label>
+
+
+          <input type="radio" name="choix" value="Féminin" id="F" required>
+          <label for="F">féminin</label>
+          </p>
+          <p>
             <input type="text" name="prenom" id="prenom" autofocus placeholder="Prénom" required/>
           </p>
           <p>
-            <!-- <label for="nom"><h2>Nom</h2></label> -->
             <input type="text" name="nom" id="nom" required placeholder="Nom" required/>
           </p>
           <p>
-            <!-- <label for="mail"><h2>Adresse mail</h2></label> -->
             <input type="email" name="mail" id="mail" required placeholder="Adresse mail" required/>
           </p>
           <p>
-            <!-- <label for="mdp"><h2>Mot de passe </h2></label> -->
             <input type="password" name="mdp" id="mdp" placeholder="Mot de passe" required/>
           </p>
           <p>
-            <!-- <label for="confim"><h2>Confirmation du mot de passe :</h2></label> -->
             <input type="password" name="confim" id="confim" placeholder="Confirmation du mot de passe" required/>
           </p>
           <p>
-            <!-- <label for="tel"><h2>Téléphone</h2></label> -->
             <input type="tel" name="tel" id="tel" placeholder="Téléphone"/>
           </p>
 
           <p>
-            <!-- <label for="naiss"><h2>Date de naissance</h2></label> -->
             <input type="date" name="naiss" id="naiss" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" required placeholder="Date de naissance"/>
           </p>
           <p>
-            <!-- <label for="adresse"><h2>Adresse</h2></label> -->
             <input type="text" name="adresse" id="adresse" required placeholder="Adresse"required/>
           </p>
           <p>
-            <!-- <label for="ville"><h2>Ville</h2></label> -->
             <input type="text" name="ville" id="ville" required placeholder="Ville" required/>
           </p>
           <p>
-            <!-- <label for="cp"><h2>Code postal</h2></label> -->
             <input type="number" name="cp" id="cp" required placeholder="Code postal" required/>
+          </p>
+          <p>
+            <input type="checkbox" id="scales" name="scales" required>
+            <label for="scales">En soumettant ce formulaire, j'accepte que les informations saisies soient utilisés a titre informationnelles et connus uniquement par l'équipe du Boxing Club Evian-Les-Bains</label>
           </p>
           <input type="submit" value="Inscription">
           <?php global $erreur; ?>

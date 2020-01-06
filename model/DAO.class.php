@@ -1,15 +1,27 @@
 <?php
+// if (isset($test)) {
+//   require_once('../../model/Adherent.class.php');
+//   require_once('../../model/Actualite.class.php');
+//   require_once('../../model/Coach.class.php');
+//   require_once('../../model/profil.class.php');
+//   require_once('../../model/Cours.class.php');
+//   $test='../';
+// } else {
+  require_once('../model/Adherent.class.php');
+  require_once('../model/Actualite.class.php');
+  require_once('../model/Coach.class.php');
+  require_once('../model/profil.class.php');
+  require_once('../model/Cours.class.php');
+//   $test='';
+// }
 
-include('../model/Adherent.class.php');
-include('../model/Coach.class.php');
-include('../model/profil.class.php');
-include('../model/Cours.class.php');
 
 class DAO {
   private $db;
   private $database = '../model/data/db/boxe.db';
 
   public function __construct() {
+    global $test;
     if (! file_exists($this->database)) {
       die ("Database error: file not found '".$this->database."'\n");
     }
@@ -86,6 +98,23 @@ class DAO {
       return null;
     }else {return new Profil($profil);}
   }
+  public function getActualites(){
+    $query = "SELECT * FROM actualite ORDER BY dateAct";
+    $sql= $this->db->query($query);
+    $actualites = $sql->fetchAll(PDO::FETCH_ASSOC);
+    $listActulaites = array();
+    foreach ($actualites as $actu ) {
+      array_push($listActulaites,new Actualite($actu));
+    }
+    return $listActulaites;
+  }
+  public function getDemandesCombat(){
+    $query = "SELECT * FROM demandeCombats ORDER BY num ";
+    $sql= $this->db->query($query);
+    $demandes = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+    return $demandes;
+  }
   public function estCoach($email){
     return $this->getProfil($email)->estCoach()=='true';
 
@@ -100,6 +129,28 @@ class DAO {
       return false;
     }else {return true;}
   }
+  public function demandeEnCours($mail){
+    $query = "SELECT * FROM demandeCombats WHERE mail='$mail'";
+    $sql =  $this->db->query($query);
+    $resultat = $sql->fetchAll(PDO::FETCH_CLASS[0]);
+    return count($resultat);
+  }
+  public function CreeDemandeCombat($mail){
+    $query = "SELECT num FROM demandeCombats ORDER BY num DESC LIMIT 1";
+    $sql= $this->db->query($query);
+    $numMax = $sql->fetch(PDO::FETCH_ASSOC);
+
+
+    $num= intval($numMax['num'])+1;
+    var_dump($num);
+    $query = "INSERT INTO demandeCombats VALUES ($num,'$mail')";
+    return $insertProfil=$this->db->query($query);
+  }
+  public function suppDemandeCombat($mail){
+    $suppDemande = "DELETE FROM demandeCombats WHERE mail='$mail'";
+    return $this->db->query($suppDemande);
+  }
+
 
   public function CreeAdherent(adherent $adherent , $mdp){
     $nom = $adherent->getNom();
@@ -110,8 +161,10 @@ class DAO {
     $codePostal = $adherent->getCodePostal();
     $ville = $adherent->getVille();
     $date = $adherent->getDateNaiss();
+    $statut=$adherent->getStatut();
+    $genre=$adherent->getGenre();
 
-    $query = "INSERT INTO adherentClub (mail,nom,prenom,datenaiss,adresse,codePostal,ville,tel) VALUES ('$mail','$nom' ,'$prenom','$date','$adresse', '$codePostal', '$ville','$tel')";
+    $query = "INSERT INTO adherentClub (mail,nom,prenom,datenaiss,adresse,codePostal,ville,tel,statut,genre) VALUES ('$mail','$nom' ,'$prenom','$date','$adresse', '$codePostal', '$ville','$tel','$statut','$genre')";
     $insertAdherent=$this->db->query($query);
 
     $query = "INSERT INTO profil (mail,motdepasse,coach) VALUES ('$mail','$mdp', false)";
@@ -153,6 +206,35 @@ class DAO {
 
     return $this->db->query($suppAdherent) && $this->db->query($suppProfil) ;
   }
+  public function CreeActualite(Actualite $actu){
+    $nom = $actu->getNom();
+    $type = $actu->getType();
+    $date = $actu->getDate();
+    $description = $actu->getDescription();
+    $coach = $actu->getCoach();
+
+    $query = "INSERT INTO actualite (nom,type,dateAct,description,coach) VALUES ('$nom','$type' ,'$date','$description','$coach')";
+    $insertActualite=$this->db->query($query);
+
+  }
+  public function suppActualite($nom,$date){
+    $suppActualite = "DELETE FROM Actualite WHERE nom= '$nom' and dateAct='$date'";
+
+    return $this->db->query($suppActualite)  ;
+  }
+  public function suppActualitePasser(){
+    $today = date("Y-m-d");
+    $actualites = $this->getActualites();
+    foreach ($actualites as $actu) {
+      $date=$actu->getDate();
+
+      if ($date<$today) {
+        echo " <br> $date est plus petit que $today";
+        //$this->suppActualite($actu->getNom(),$actu->getDate());
+      }
+    }
+  }
+
 }
 
 

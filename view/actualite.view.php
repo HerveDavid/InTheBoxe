@@ -41,19 +41,30 @@
         </div>
 
         <div class="card-body overflow-auto">
-        <?php for ($i=0; $i < 10; $i++) { ?>
+        <?php foreach ($actualites as $actu) { ?>
             <div class="card">
               <div class="card-header">
                 <!-- titre de l'informations avec date -->
-                <h4>Gala informations - 10 janvier 2020</h4>
+                <?php
+                $date = date("d-m-Y",strtotime($actu->getDate()));
+                 ?>
+
+                <h4><?=$actu->getNom()?> - <?=$date?></h4>
+                <?php if ($actu->getType()=='evenement'){ ?>
+                  <img src="../view/src/img/actualite/evenement.png" alt="evenement">
+                <?php }elseif ($actu->getType()=='match') {?>
+                  <img src="../view/src/img/actualite/educative.jpg" alt="marche pas">
+                <?php }else{ ?>
+                  <img src="../view/src/img/actualite/info.jpg" alt="une annonce">
+                <?php } ?>
               </div>
               <div class="card-body">
                 <!-- contenu -->
-                Le gala aura toujours lieu le 17 novembre à 13h chez LUI.
+                <?=$actu->getDescription()?>
               </div>
               <div class="card-footer">
                 <!-- nom de celui qui donne l'info -->
-                Informations données par un coach
+                Informations données par le coach <?=$actu->getCoach()?>
               </div>
             </div>
           <br>

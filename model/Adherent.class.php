@@ -19,6 +19,7 @@ abstract class Adherent {
   public function getPrenom() {return $this->prenom;}
   public function getDateNaiss() {return $this->datenaiss;}
   public function getTaille() {return $this->taille;}
+  public function getGenre() {return $this->genre;}
   public function getPoids() {return $this->poids;}
   public function getCategorie() {return $this->categorie;}
   public function getTel() {return $this->tel;}
@@ -39,8 +40,6 @@ class AdherentClub extends Adherent {
   private $ville;
   private $tel;
   private $statut;
-  private $combattant;
-  private $certificat;
   private $apayer;
 
   public function __construct(array $param = array()) {
@@ -50,8 +49,6 @@ class AdherentClub extends Adherent {
     }
   //////////////////declaration des getter//////////////////////
   public function getStatut() {return $this->statut;}
-  public function getCombattant() {return $this->combattant;}
-  public function getCertificat() {return $this->certificat;}
   public function getMail() {return $this->mail;}
   public function getAdresse() {return $this->adresse;}
   public function getCodePostal() {return $this->codePostal;}
@@ -65,7 +62,6 @@ class AdherentClub extends Adherent {
 class AdherentExterieur extends Adherent{
 
     public function __construct(array $param = array()) {
-      var_dump($param);
       foreach ($param as $key => $value) {
           var_dump($key);
           $this->$key = $value;
