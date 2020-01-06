@@ -1,29 +1,33 @@
- @import "header";
+@import "header";
 
- h1 {
-   font-family: $fontHigh;
- }
+h1 {
+ font-family: $fontHigh;
+}
 
- h3, h4 {
-   font-family: $fontLow;
- }
+h3, h4 {
+ font-family: $fontLow;
+}
 
- body {
-   background:#fffff;
- }
+body {
+ background:#fffff;
+}
 
- .container{
-   margin-top: 10%;
-   margin-bottom: 10%;
- }
+.container{
+ margin-top: 10%;
+ margin-bottom: 10%;
+}
 
-  .user-image{
-    img {
-      width: 20%;
-      // height: 50%;
-    }
+.user-image{
+  img {
+    width: 20%;
+    // height: 50%;
   }
+}
 
-  .style1 {
-    background-color: $red;
-  }
+.style1 {
+  background-color: $red;
+}
+
+.tab-pane{
+  width: 50em;
+}
