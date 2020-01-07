@@ -45,22 +45,6 @@
     <div class="container" id="planning">
 
       <?php if (!$adhConnecter) {?>
-
-        <div class="d-flex justify-content-around">
-          <div class="card text-black bg-white">
-            <h3 class="card-header text-center">Inscrivez-vous pour pourvoir vous inscrire à un cours</h3>
-            <div class="card-body d-flex justify-content-center">
-              <button type="button" name="button" class="btn btn-primary">
-                <a href="../controle/inscription.ctrl.php">Inscription</a>
-
-              </button>
-            </div>
-          </div>
-        </div>
-        <br>
-
-      <?php } ?>
-
         <h1 class="text-center">Planning des cours</h1>
         <hr>
         <p class="text-center">
@@ -144,6 +128,438 @@
         </p>
 
       </div>
+    <?php } else { ?>
+      <table class="table table-striped table-bordered table-hover">
+        <thead>
+          <tr>
+            <th scope="col" colspan="2" class="ing-hour-col"></th>
+            <th scope="col" colspan="1" data="1" class="ing-hour-col-09-00">09:00 - 11:00</th>
+            <th scope="col" colspan="1" data="1" class="ing-hour-col-11-00">11:00 - 12:00</th>
+            <th scope="col" colspan="1" data="1" class="ing-hour-col-12-00">12:00 - 13:00</th>
+            <th scope="col" colspan="1" data="1" class="ing-hour-col-16-00">16:00 - 17:00</th>
+            <th scope="col" colspan="1" data="1" class="ing-hour-col-17-00">17:00 - 18:00</th>
+            <th scope="col" colspan="1" data="1" class="ing-hour-col-18-00">18:00 - 19:00</th>
+            <th scope="col" colspan="1" data="1" class="ing-hour-col-19-00">19:00 - 20:00</th>
+            <th scope="col" colspan="1" data="1" class="ing-hour-col-20-00">20:00 - 21:00</th>
+            <th scope="col" colspan="1" data="1" class="ing-hour-col-21-00">21:00 - 22:00</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" colspan="2"  class="ing-day-row ing-day-col-1">lundi</th>
+            <td class="ing-cell ing-hour-col-09-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-11-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-12-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-16-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-17-00 ing-day-row-1 boxe-educative">
+              <h5>Boxe Educative</h5>
+              <p>
+                9/13 ans de 17h à 18h
+                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+              </p>
+            </td>
+            <td colspan="2" class="ing-cell ing-hour-col-18-00 ing-day-row-1 boxe-loisir">
+              <h5>Boxe Loisir</h5>
+              <p>
+                +14 ans de 18h15 à 20h
+                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+              </p>
+            </td>
+            <td class="ing-cell ing-hour-col-19-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-20-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-21-00 ing-day-row-1"></td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="2" class="ing-day-row ing-day-col-1">mardi</th>
+            <td class="ing-cell ing-hour-col-09-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-11-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-12-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-16-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-17-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-18-00 ing-day-row-1 cross-fit-boxing">
+              <h5>Cross Fit Boxing</h5>
+              <p>
+                +14 ans de 18h à 19h15
+                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+              </p>
+            </td>
+            <td class="ing-cell ing-hour-col-19-00 ing-day-row-1"></td>
+            <td colspan="2" class="ing-cell ing-hour-col-20-00 ing-day-row-1 boxe-femmes">
+              <h5>Boxing Femmes</h5>
+              <p>
+                +14 ans de 20h30 à 22h
+                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+              </p>
+            </td>
+            <td class="ing-cell ing-hour-col-21-00 ing-day-row-1"></td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="2" class="ing-day-row ing-day-col-1">mercredi</th>
+            <td class="ing-cell ing-hour-col-09-00 ing-day-row-1 boxe-femmes text-center">
+              <h5>Boxing Femmes</h5>
+              <p>
+                +14 ans de 09h30 à 11h
+                <br>
+                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+              </p>
+            </td>
+            <td class="ing-cell ing-hour-col-11-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-12-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-16-00 ing-day-row-1 boxe-educative2 text-center">
+              <h5>Boxe Educative</h5>
+              <p>
+                6/ans ans de 16h à 17h
+                <br>
+                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+              </p>
+            </td>
+            <td class="ing-cell ing-hour-col-17-00 ing-day-row-1 boxe-educative text-center">
+              <h5>Boxe Educative</h5>
+              <p>
+                9/13 ans de 17h à 18h
+                <br>
+                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+              </p>
+            </td>
+            <td colspan="2" class="ing-cell ing-hour-col-18-00 ing-day-row-1 boxe-loisir text-center">
+              <h5>Boxe Loisir</h5>
+              <p>
+                +14 ans de 18h15 à 20h
+                <br>
+                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+              </p>
+            </td>
+            <td class="ing-cell ing-hour-col-19-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-20-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-21-00 ing-day-row-1"></td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="2"  class="ing-day-row ing-day-col-1">jeudi</th>
+            <td class="ing-cell ing-hour-col-09-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-11-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-12-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-16-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-17-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-18-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-19-00 ing-day-row-1 boxe-femmes text-center">
+              <h5>Boxing Femmes</h5>
+              <p>
+                +14 ans de 19h30 à 20h
+                <br>
+                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+              </p>
+            </td>
+            <td class="ing-cell ing-hour-col-20-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-21-00 ing-day-row-1"></td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="2" class="ing-day-row ing-day-col-1">vendredi</th>
+            <td class="ing-cell ing-hour-col-09-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-11-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-12-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-16-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-17-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-18-00 ing-day-row-1 boxe-loisir text-center">
+              <h5>Boxe Loisir</h5>
+              <p>
+                +14 ans de 18h15 à 20h
+                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+              </p>
+            </td>
+            <td class="ing-cell ing-hour-col-19-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-20-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-21-00 ing-day-row-1"></td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="2" class="ing-day-row ing-day-col-1">samedi</th>
+            <td class="ing-cell ing-hour-col-09-00 ing-day-row-1"></td>
+            <td colspan="2" class="ing-cell ing-hour-col-11-00 ing-day-row-1 boxe-femmes text-center">
+              <h5>Boxing Femmes</h5>
+              <p>
+                +14 ans de 11h15 à 12h45
+                <br>
+                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+              </p>
+            </td>
+            <td class="ing-cell ing-hour-col-12-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-16-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-17-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-18-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-19-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-20-00 ing-day-row-1"></td>
+            <td class="ing-cell ing-hour-col-21-00 ing-day-row-1"></td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- <div id="fightclub-content-band-5" class="fightclub-content-band vc fightclub-hidden-tablet fightclub-hidden-phone man" style="background-color: transparent; padding-bottom: 40px;">
+        <div class="fightclub-container-fluid max width">
+          <div class="fightclub-inner-container">
+            <div class="fightclub-column vc whole" style="">
+              <div class="fightclub-column-inner" style="">
+                <div class="ing-schedule-wrapper" id="ing-location-all">
+                  <table class="ing-schedule-normal-layout">
+                    <tbody>
+                      <tr>
+                        <th colspan="2" class="ing-hour-col"></th>
+                        <th colspan="1" data="1" class="ing-hour-col-10-00">10:00 - 11:00</th>
+                        <th colspan="1" data="1" class="ing-hour-col-11-00">11:00 - 12:00</th>
+                        <th colspan="1" data="1" class="ing-hour-col-16-00">16:00 - 17:00</th>
+                        <th colspan="1" data="1" class="ing-hour-col-17-00">17:00 - 18:00</th>
+                        <th colspan="1" data="1" class="ing-hour-col-18-00">18:00 - 19:00</th>
+                        <th colspan="1" data="1" class="ing-hour-col-19-00">19:00 - 20:00</th>
+                        <th colspan="1" data="1" class="ing-hour-col-20-00">20:00 - 21:00</th>
+                        <th colspan="1" data="1" class="ing-hour-col-21-00">21:00 - 22:00</th>
+                      </tr>
+                      <tr>
+                        <th colspan="2" class="ing-day-row ing-day-col-1">lundi</th>
+                        <td class="ing-cell ing-hour-col-10-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-11-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-16-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-17-00 ing-day-row-1">
+                          <div class="ing-td-relative">
+                            <div class="ing-class-container boxe-educative">
+                              <div class="ing-class-name">Boxe Educative</div>
+                              <div class="ing-details-box-container">
+                                <span class="ing-qtip-box">
+                                  <span class="ing-qtip-data"></span>
+                                </span>
+                                9/13 ans de 17h à 18h
+                                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="ing-cell ing-hour-col-18-00 ing-day-row-1">
+                          <div class="ing-td-relative">
+                            <div class="ing-class-container boxe-loisir">
+                              <div class="ing-class-name">Boxe Loisir</div>
+                              <div class="ing-details-box-container">
+                                <span class="ing-qtip-box">
+                                  <span class="ing-qtip-data"></span>
+                                </span>
+                                +14 ans de 18h15 à 20h
+                                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="ing-cell ing-hour-col-19-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-20-00 ing-day-row-1"></td>
+                      </tr>
+                      <tr>
+                        <th colspan="2" class="ing-day-row ing-day-col-1">mardi</th>
+                        <td class="ing-cell ing-hour-col-10-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-11-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-17-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-18-00 ing-day-row-1">
+                          <div class="ing-td-relative">
+                            <div class="ing-class-container cross-fit-boxing">
+                              <div class="ing-class-name">Cross Fit Boxing</div>
+                              <div class="ing-details-box-container">
+                                <span class="ing-qtip-box">
+                                  <span class="ing-qtip-data"></span>
+                                </span>
+                                +14 ans de 18h à 19h15
+                                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="ing-cell ing-hour-col-19-00 ing-day-row-1">
+                          <div class="ing-td-relative">
+                            <div class="ing-class-container cross-fit-boxing">
+                              <div class="ing-class-name">Cross Fit Boxing</div>
+                              <div class="ing-details-box-container">
+                                <span class="ing-qtip-box">
+                                  <span class="ing-qtip-data"></span>
+                                </span>
+                                +14 ans de 18h à 19h15
+                                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="ing-cell ing-hour-col-20-00 ing-day-row-1">
+                          <div class="ing-td-relative">
+                            <div class="ing-class-container ">
+                              <div class="ing-class-name"></div>
+                              <div class="ing-details-box-container">
+                                <span class="ing-qtip-box">
+                                  <span class="ing-qtip-data"></span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="ing-cell ing-hour-col-20-00 ing-day-row-1">
+                          <div class="ing-td-relative">
+                            <div class="ing-class-container boxe-femmes">
+                              <div class="ing-class-name">Boxing Femmes</div>
+                              <div class="ing-details-box-container">
+                                <span class="ing-qtip-box">
+                                  <span class="ing-qtip-data"></span>
+                                </span>
+                                +14 ans de 20h30 à 22h
+                                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="ing-cell ing-hour-col-21-00 ing-day-row-1">
+                          <div class="ing-td-relative">
+                            <div class="ing-class-container boxe-femmes">
+                              <div class="ing-class-name">Boxing Femmes</div>
+                              <div class="ing-details-box-container">
+                                <span class="ing-qtip-box">
+                                  <span class="ing-qtip-data"></span>
+                                </span>
+                                +14 ans de 20h30 à 22h
+                                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th colspan="2" class="ing-day-row ing-day-col-1">mercredi</th>
+                        <td class="ing-cell ing-hour-col-10-00 ing-day-row-1">
+                          <div class="ing-td-relative">
+                            <div class="ing-class-container boxe-femmes">
+                              <div class="ing-class-name">Boxing Femmes</div>
+                              <div class="ing-details-box-container">
+                                <span class="ing-qtip-box">
+                                  <span class="ing-qtip-data"></span>
+                                </span>
+                                +14 ans de 9h30 à 11h
+                                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="ing-cell ing-hour-col-11-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-16-00 ing-day-row-1">
+                          <div class="ing-td-relative">
+                            <div class="ing-class-container boxe-educative2">
+                              <div class="ing-class-name">Boxe Educative</div>
+                              <div class="ing-details-box-container">
+                                <span class="ing-qtip-box">
+                                  <span class="ing-qtip-data"></span>
+                                </span>
+                                6/ans ans de 16h à 17h
+                                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="ing-cell ing-hour-col-17-00 ing-day-row-1">
+                          <div class="ing-td-relative">
+                            <div class="ing-class-container boxe-educative">
+                              <div class="ing-class-name">Boxe Educative</div>
+                              <div class="ing-details-box-container">
+                                <span class="ing-qtip-box">
+                                  <span class="ing-qtip-data"></span>
+                                </span>
+                                9/13 ans de 17h à 18h
+                                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="ing-cell ing-hour-col-18-00 ing-day-row-1">
+                          <div class="ing-td-relative">
+                            <div class="ing-class-container boxe-loisir">
+                              <div class="ing-class-name">Boxe Loisir</div>
+                              <div class="ing-details-box-container">
+                                <span class="ing-qtip-box">
+                                  <span class="ing-qtip-data"></span>
+                                </span>
+                                +14 ans de 18h15 à 20h
+                                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="ing-cell ing-hour-col-19-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-20-00 ing-day-row-1"></td>
+                      </tr>
+                      <tr>
+                        <th colspan="2" class="ing-day-row ing-day-col-1">jeudi</th>
+                        <td class="ing-cell ing-hour-col-10-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-11-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-15-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-16-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-17-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-18-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-19-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-20-00 ing-day-row-1"></td>
+                      </tr>
+                      <tr>
+                        <th colspan="2" class="ing-day-row ing-day-col-1">vendredi</th>
+                        <td class="ing-cell ing-hour-col-10-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-11-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-17-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-18-00 ing-day-row-1">
+                          <div class="ing-td-relative">
+                            <div class="ing-class-container boxe-loisir">
+                              <div class="ing-class-name">Boxe Loisir</div>
+                              <div class="ing-details-box-container">
+                                <span class="ing-qtip-box">
+                                  <span class="ing-qtip-data"></span>
+                                </span>
+                                +14 ans de 18h15 à 20h
+                                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="ing-cell ing-hour-col-19-00 ing-day-row-1">
+                          <div class="ing-td-relative">
+                            <div class="ing-class-container boxe-femmes">
+                              <div class="ing-class-name">Boxing Femmes</div>
+                              <div class="ing-details-box-container">
+                                <span class="ing-qtip-box">
+                                  <span class="ing-qtip-data"></span>
+                                </span>
+                                +14 ans de 19h30 à 20h
+                                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="ing-cell ing-hour-col-20-00 ing-day-row-1"></td>
+                      </tr>
+                      <tr>
+                        <th colspan="2" class="ing-day-row ing-day-col-1">samedi</th>
+                        <td class="ing-cell ing-hour-col-10-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-11-00 ing-day-row-1">
+                          <div class="ing-td-relative">
+                            <div class="ing-class-container boxe-femmes">
+                              <div class="ing-class-name">Boxing Femmes</div>
+                              <div class="ing-details-box-container">
+                                <span class="ing-qtip-box">
+                                  <span class="ing-qtip-data"></span>
+                                </span>
+                                +14 ans de 11h15 à 12h45
+                                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="ing-cell ing-hour-col-16-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-17-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-18-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-19-00 ing-day-row-1"></td>
+                        <td class="ing-cell ing-hour-col-20-00 ing-day-row-1"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    <?php } ?>
     </div>
   </body>
 </html>

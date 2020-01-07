@@ -102,10 +102,7 @@
 
                         <section class="bouton">
                           <a href="../controle/timer.ctrl.php">
-<<<<<<< HEAD
-=======
                           <a href="../view/accueilTimer.view.php">
->>>>>>> 551463b185dec31bc7898b72e2df48d673db76c1
                             <span class="text">Je m'entraine</span>
                             <span class="line -right"></span>
                             <span class="line -top"></span>
