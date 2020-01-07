@@ -45,7 +45,7 @@
               <div class="card-header">
                 <!-- titre de l'informations avec date -->
                 <?php
-                $date = date("d-m-Y",strtotime($actu->getDate()));
+                $date = $actu->getDateTexte();
                  ?>
 
                 <h4><?=$actu->getNom()?> - <?=$date?></h4>

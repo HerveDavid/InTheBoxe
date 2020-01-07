@@ -18,7 +18,8 @@
         <ul>
           <?php if (!isset($_SESSION['mail'])) { ?>
           <li id="Accueil"><a href="../controle/accueil.ctrl.php">Accueil</a></li>
-          <?php } ?>          <li id="Actualités"><a href="../controle/actualite.ctrl.php">Actualités</a></li>
+          <?php } ?>
+          <li id="Actualités"><a href="../controle/actualite.ctrl.php">Actualités</a></li>
           <li id="Planning"><a href="../controle/planning.ctrl.php">Planning/Tarifs</a></li>
           <li id= "Club"><a href="../controle/club.ctrl.php">Club</a></li>
           <li id="Contact"><a href="../controle/contact.ctrl.php">Contact</a></li>
@@ -36,7 +37,7 @@
       $nom = $profil->getNom() ;
       $prenom = $profil->getPrenom();
       $mail= $profil -> getMail();
-
+      $nombreActualites = count($actualites);
       $nombreAdherents= count($listAdherents);
       $nombreDemandesCombats = count($demandesCombats);
       $nombreAttente = count($listAttente);
@@ -88,56 +89,80 @@
                           <?php foreach ($demandesCombats as $demande) { ?>
                           <div class="card">
                             <div class="card-body">
-                              <?=$demande?> <?=$demande->getPrenom()?>
+                              <img src="../view/src/img/profil/connexion_logo.png" alt="Mon nom" title="Mon nom" class="img-thumbnail" width="100" height="100">
+                              <br>
+                              <h6><?=$demande->getNom()?> <?=$demande->getPrenom()?> </h6>
+                              <br>
+                              Catégorie : <?=$demande->getCategorie()?>
+                              <br>
+                              Age : <?=$demande->getAge()?>
+                              <br>
+                              V - N - D
+                              <br>
+                              <?=$demande->getVictoire()?> - <?=$demande->getNul()?> - <?=$demande->getDefaite()?>
+
                             </div>
                             <div class="card-footer">
-                              auteur
+                              <button type="" class="btn btn-secondary">Accepter</button>
+                              <button type="" class="btn btn-danger">Refuser</button>
                             </div>
                           </div>
                           <?php } ?>
                         </div>
                       </div>
                       <div class="tab-pane fade" id="actualite" role="tabpanel" aria-labelledby="contact-tab">
-                        <form>
+                        <form action="../controle/gerant.ctrl.php"  method="post">
                           <div class="form-group">
-                            <label for="formControlInput">Adresse mail</label>
-                            <input type="email" class="form-control" id="formControlInput" placeholder="coach@example.com">
+                            <label for="formControlInput">Nom de l'actualité</label>
+                            <input name="nomActu" type="nom" class="form-control" id="formControlInput" required>
                           </div>
                           <div class="form-group">
                             <label for="formControlSelectType">Type</label>
-                            <select class="form-control" id="formControlSelectType">
-                              <option>Gala</option>
-                              <option>Combats</option>
-                              <option>Entrainements</option>
-                              <option>Matériels</option>
+                            <select name="typeActu" class="form-control" id="formControlSelectType">
+                              <option>Evenement</option>
+                              <option>Match</option>
+                              <option>Annonce</option>
                             </select>
                           </div>
                           <div class="form-group">
                             <label for="formControlSelectDate">Date</label>
                             <br>
-                            <input type="date" name="date" id="formControlSelectDate">
+                            <input type="date" name="date" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" id="formControlSelectDate" required>
                           </div>
                           <div class="form-group">
-                            <label for="formControlTextarea">Message</label>
-                            <textarea class="form-control" id="formControlTextarea" rows="3"></textarea>
+                            <label for="formControlTextarea">Description</label>
+                            <textarea name="description" class="form-control" id="formControlTextarea" rows="3" required></textarea>
                           </div>
-                          <button type="submit" class="btn btn-primary">Envoyer</button>
+                          <button type="submit" class="btn btn-primary">Poster</button>
                         </form>
+                        <br>
                         <h3>Historique des actualités</h3>
                         <hr class="style1">
-                        <?php for ($i=0; $i < 100; $i++) { ?>
+                        <form method="post" action="../controle/gerant.ctrl.php">
+                          <button type="submit" name="clear" value="true" class="btn btn-secondary">Supprimer les actualite passé</button>
+                        </form>
+                        <br>
+                        <br>
+
+                        <?php foreach ($actualites as $actu) {
+                          $nom = $actu->getNom();
+                          $date = $actu->getDate();
+                          $description=$actu->getDescription();
+                           ?>
                         <div class="historique">
                           <div class="row">
                             <div class="col-sm">
-                              Actu <?php echo $i ?>
+                              <?=$nom?>
                             </div>
                             <div class="col-sm">
-                              Date
+                              <?=$date?>
                             </div>
                             <div class="col-sm">
-                              Description
+                              <?=substr($description, 0, 45).'...'?>
                             </div>
-                            <button type="" class="btn btn-danger">Supprimer</button>
+                            <form method="post" action="../controle/gerant.ctrl.php">
+                              <button type="submit" name="supp" value='<?=$nom?>/<?=$date?>' class="btn btn-danger">Supprimer</button>
+                            </form>
                           </div>
                         </div>
                         <br>

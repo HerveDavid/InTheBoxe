@@ -258,8 +258,8 @@ class DAO {
       $date=$actu->getDate();
 
       if ($date<$today) {
-        echo " <br> $date est plus petit que $today";
-        //$this->suppActualite($actu->getNom(),$actu->getDate());
+        //echo " <br> $date est plus petit que $today";
+        $this->suppActualite($actu->getNom(),$actu->getDate());
       }
     }
   }

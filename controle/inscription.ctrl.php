@@ -39,7 +39,7 @@ session_start();
     }
 
     $prenom=$_POST['prenom'];
-    $nom=$_POST['nom'];
+    $nom=strtoupper($_POST['nom']); //permet de mettre le nom en majuscules
     $email=$_POST['mail'];
     $motdepasse=$_POST['mdp'];
     $confimMdp=$_POST['confim'];
@@ -55,7 +55,7 @@ session_start();
       // Vérifier que les mots de passes correspondents
       if ($motdepasse == $confimMdp) {
         // Creation de l'Adherent
-        $param = array("mail"=>$email,"nom"=>$nom,"prenom"=>$prenom,"tel"=>$telephone,"datenaiss"=>$dateNaiss,"adresse"=>$adresse,"codePostal"=> $cpostal , "ville"=>$ville, "statut"=>'En attente', "genre"=>$genre);
+        $param = array("mail"=>$email,"nom"=>$nom,"prenom"=>$prenom,"tel"=>$telephone,"datenaiss"=>$dateNaiss,"adresse"=>$adresse,"codePostal"=> $cpostal , "ville"=>$ville, "statut"=>'attente', "genre"=>$genre);
 
         $newAdherent= new AdherentClub($param);
 
