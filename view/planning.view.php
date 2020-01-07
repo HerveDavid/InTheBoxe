@@ -259,7 +259,7 @@
             <td class="ing-cell ing-hour-col-12-00 ing-day-row-1"></td>
             <td class="ing-cell ing-hour-col-16-00 ing-day-row-1"></td>
             <td class="ing-cell ing-hour-col-17-00 ing-day-row-1"></td>
-            <td class="ing-cell ing-hour-col-18-00 ing-day-row-1 boxe-loisir text-center">
+            <td colspan="2" class="ing-cell ing-hour-col-18-00 ing-day-row-1 boxe-loisir text-center">
               <h5>Boxe Loisir</h5>
               <p>
                 +14 ans de 18h15 à 20h
