@@ -32,7 +32,15 @@
         </ul>
       </nav>
     </header>
+    <?php
+      $nom = $profil->getNom() ;
+      $prenom = $profil->getPrenom();
+      $mail= $profil -> getMail();
 
+      $nombreAdherents= count($listAdherents);
+      $nombreDemandesCombats = count($demandesCombats);
+      $nombreAttente = count($listAttente);
+     ?>
     <div class="container d-flex justify-content-around">
       <div class="user-details">
               <div class="user-image text-center">
@@ -40,8 +48,8 @@
               </div>
               <div class="user-info-block">
                 <div class="user-heading">
-                    <h3>Mon nom</h3>
-                    <span class="help-block">Mon adresse mail</span>
+                    <h3><?=$nom?> <?=$prenom?></h3>
+                    <span class="help-block"><?=$mail?></span>
                     <hr class="style1">
                 </div>
                 <div class="user-body d-flex flex-row">
@@ -63,22 +71,24 @@
                       <div class="tab-pane fade show active card" id="infoCompte" role="tabpanel" aria-labelledby="home-tab">
                         <div class="card-body">
                           <section>
-                            Nombre d'adherents:
+                            <h4>Nombre d'adherents: <?=$nombreAdherents?> </h4>
                             <br>
-                            Nombre de personnes en attende:
-                            <br>
-                            Nombre de demandes de combats:
-                            <br>
+                            Nombre de personnes en attente: <p id="numAtt"><?=$nombreAttente?></p>
+
+                            Nombre de demandes de combats: <p id="numDC"> <?=$nombreDemandesCombats?></p>
+
+                            Nombre de matchs de combats: <p id="numMatch"> <?=$nombreDemandesCombats?></p>
+
                           </section>
                         </div>
                       </div>
                       <div class="tab-pane fade card" id="combat" role="tabpanel" aria-labelledby="profile-tab">
                         <h3 class="card-header">Nombre de demandes: </h3>
                         <div class="card-body d-flex justify-content-between align-self-baseline align-content-between flex-wrap">
-                          <?php for ($i=0; $i < 100; $i++) { ?>
+                          <?php foreach ($demandesCombats as $demande) { ?>
                           <div class="card">
                             <div class="card-body">
-                              test
+                              <?=$demande?> <?=$demande->getPrenom()?>
                             </div>
                             <div class="card-footer">
                               auteur
@@ -166,9 +176,6 @@
                         </div>
                       </div>
                     </div>
-
-
-
                       <!-- <div class="tab-content">
                           <div id="information" class="tab-pane active">
                               <h4>Information de compte</h4>
@@ -193,7 +200,7 @@
     </div>
 
     <?php
-    var_dump($profil);
+    //var_dump($profil);
 
     // accepter/refuser les demande de competition
     //affichage les informations des adherent

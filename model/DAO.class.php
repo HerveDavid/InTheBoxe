@@ -38,6 +38,7 @@ class DAO {
       die("PDO Error :".$e->getMessage()." '".$this->database."'\n");
     }
   }
+  //////////////////  ADHERENT ////////////////////////////////////////////////
   public function getAllAdherent(){
     $query = "SELECT * FROM adherentClub ORDER BY nom";
     $sql= $this->db->query($query);
@@ -57,6 +58,27 @@ class DAO {
       return null;
     }else {return new AdherentClub($adherent);}
   }
+  public function getAdherentAttente(){
+    $query = "SELECT * FROM adherentClub WHERE statut='attente' ORDER BY nom";
+    $sql= $this->db->query($query);
+    $adherents = $sql->fetchAll(PDO::FETCH_ASSOC);
+    $listAdherents = array();
+    foreach ($adherents as $adh ) {
+      array_push($listAdherents,new AdherentClub($adh));
+    }
+    return $listAdherents;
+  }
+  public function getAdherentsTrier($attribut){
+    $query = "SELECT * FROM adherentClub WHERE statut='adherent' ORDER BY '$attribut'";
+    $sql= $this->db->query($query);
+    $adherents = $sql->fetchAll(PDO::FETCH_ASSOC);
+    $listAdherents = array();
+    foreach ($adherents as $adh ) {
+      array_push($listAdherents,new AdherentClub($adh));
+    }
+    return $listAdherents;
+  }
+  //////////////////  ADHERENT ////////////////////////////////////////////////
   public function getCoach($email){
     $query = "SELECT * FROM coach WHERE mail='$email'";
     $sql= $this->db->query($query);
@@ -65,6 +87,7 @@ class DAO {
       return null;
     }else {return new Coach($coach[0]);}
   }
+  //////////////////  COURS ////////////////////////////////////////////////
 
   public function getAllCours($email){
     $query = "SELECT num,type,horaireDebut,horaireFin,jours FROM cours , participant WHERE mail='$email' and num=numCours";
@@ -89,6 +112,8 @@ class DAO {
     }
     return $listCours;
   }
+  //////////////////  COURS ////////////////////////////////////////////////
+
   public function getProfil($email){
     $query = "SELECT * FROM profil WHERE mail='$email'";
     $sql= $this->db->query($query);
@@ -98,6 +123,7 @@ class DAO {
       return null;
     }else {return new Profil($profil);}
   }
+  ////////////////// ACTUS ////////////////////////////////////////////////
   public function getActualites(){
     $query = "SELECT * FROM actualite ORDER BY dateAct";
     $sql= $this->db->query($query);
@@ -108,16 +134,21 @@ class DAO {
     }
     return $listActulaites;
   }
-  public function getDemandesCombat(){
+  ////////////////// ACTUS ////////////////////////////////////////////////
+
+  public function getDemandesCombats(){
     $query = "SELECT * FROM demandeCombats ORDER BY num ";
     $sql= $this->db->query($query);
-    $demandes = $sql->fetchAll(PDO::FETCH_ASSOC);
-
-    return $demandes;
+    $demandesCombats = $sql->fetchAll(PDO::FETCH_ASSOC);
+    $listDemandes= array();
+    foreach ($demandesCombats as $demande) {
+      array_push($listDemandes,$this->getAdherent($demande['mail']));
+    }
+    return $listDemandes;
   }
+
   public function estCoach($email){
     return $this->getProfil($email)->estCoach()=='true';
-
   }
   public function mailExistant($email){
     $query = "SELECT mail FROM adherentClub WHERE mail='$email'
@@ -139,11 +170,9 @@ class DAO {
     $query = "SELECT num FROM demandeCombats ORDER BY num DESC LIMIT 1";
     $sql= $this->db->query($query);
     $numMax = $sql->fetch(PDO::FETCH_ASSOC);
-
-
     $num= intval($numMax['num'])+1;
-    var_dump($num);
     $query = "INSERT INTO demandeCombats VALUES ($num,'$mail')";
+
     return $insertProfil=$this->db->query($query);
   }
   public function suppDemandeCombat($mail){
