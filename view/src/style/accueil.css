@@ -19,11 +19,9 @@ header {
   flex-direction: row;
   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
-
 header nav {
   width: 100%;
 }
-
 header nav ul {
   padding: inherit;
   height: 100%;
@@ -32,22 +30,18 @@ header nav ul {
   list-style: none;
   margin: 0 0;
 }
-
 header nav ul li {
   text-align: center;
   width: 100%;
   padding: 0.8em;
 }
-
 header nav ul li a {
   color: #000000;
   text-decoration: none;
 }
-
 header nav ul #Connexion {
   background-color: #BE1E2D;
 }
-
 header nav ul #Connexion a {
   font-weight: bold;
   color: #FFFFFF;
@@ -75,11 +69,9 @@ body {
   top: 8em;
   margin: 0 15.5em;
 }
-
 #Content h1 {
   text-shadow: 3px 3px 3px #BE1E2D, 3px 3px 3px #BE1E2D;
 }
-
 #Content h2 {
   font-family: Rubik;
   font-weight: bold;
@@ -88,12 +80,10 @@ body {
   margin: 0px;
   text-shadow: 3px 3px 3px #BE1E2D, 3px 3px 3px #BE1E2D;
 }
-
 #Content h2 {
   font-size: 4.5em;
   text-shadow: 3px 3px 3px #BE1E2D, 3px 3px 3px #BE1E2D;
 }
-
 #Content p {
   font-family: Palanquin;
   font-style: normal;
@@ -103,7 +93,6 @@ body {
   display: flex;
   text-shadow: 3px 3px 3px #BE1E2D, 3px 3px 3px #BE1E2D;
 }
-
 #Content a {
   font-family: Palanquin;
   font-style: normal;
@@ -128,7 +117,6 @@ footer {
   height: 10em;
   align-items: center;
 }
-
 footer h1 {
   z-index: 2;
   width: auto;
@@ -142,7 +130,6 @@ footer h1 {
   font-size: 1em;
   text-align: justify;
 }
-
 footer h2 {
   z-index: 2;
   padding: 2em;
@@ -150,13 +137,11 @@ footer h2 {
   color: #FFFFFF;
   font-family: Palanquin;
 }
-
 footer nav {
   z-index: 2;
   margin-top: -10em;
   width: 100%;
 }
-
 footer nav ul {
   padding: inherit;
   height: 100%;
@@ -166,13 +151,12 @@ footer nav ul {
   margin: 0 0;
   justify-content: space-around;
 }
-
 footer nav ul li {
   align-content: center;
 }
 
 footer:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -187,13 +171,11 @@ footer:before {
 #tarif {
   text-align: center;
 }
-
 #tarif li {
   font-size: 1.5em;
   font-family: Rubik;
   text-shadow: 3px 3px 3px #BE1E2D, 3px 3px 3px #BE1E2D;
 }
-
 #tarif a {
   font-size: 1.2em;
   font-family: Rubik;
