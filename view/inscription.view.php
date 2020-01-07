@@ -14,7 +14,7 @@
           <li id="Accueil"><a href="../controle/accueil.ctrl.php">Accueil</a></li>
           <?php } ?>
           <li id="Actualités"><a href="../controle/actualite.ctrl.php">Actualités</a></li>
-          <li id="Planning"><a href="../controle/planning.ctrl.php">Planning</a></li>
+          <li id="Planning"><a href="../controle/planning.ctrl.php">Planning/Tarifs</a></li>
           <li id= "Club"><a href="../controle/club.ctrl.php">Club</a></li>
           <li id="Contact"><a href="../controle/contact.ctrl.php">Contact</a></li>
           <?php if (isset($_SESSION['mail'])) {
@@ -30,23 +30,23 @@
     <article>
     <div id="Gauche">
       <h1>S'inscrire à des cours</h1>
-      <p>Communiquez directement avec vos coachs et participer aux cours de vos choix</p>
+      <p>Communiquez directement avec vos coachs et participez aux cours</p>
       <h1>Entrainement en ligne</h1>
-      <p>Progressez avec +100 exercices certifiés par des coachs</p>
+      <p>Progressez avec nos exercices certifiés par nes coachs</p>
       <h1>Combats</h1>
-      <p>Participez à des combats et trouvez un adversaire qui vous correspond</p>
+      <p>Trouvez un adversaire qui correspond à votre niveau et participez à un combat</p>
     </div>
     <div id="Droite">
       <h1>Inscription</h1>
       <form class="inscription" action="../controle/inscription.ctrl.php" method="post">
         <fieldset>
           <p>
+          <label for="M">Masculin</label>
           <input type="radio" name="choix" value="Masculin" id="M" required>
-          <label for="M">masculin</label>
-
-
+          </p>
+          <p>
+          <label for="F">Féminin</label>
           <input type="radio" name="choix" value="Féminin" id="F" required>
-          <label for="F">féminin</label>
           </p>
           <p>
             <input type="text" name="prenom" id="prenom" autofocus placeholder="Prénom" required/>

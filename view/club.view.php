@@ -14,7 +14,7 @@
           <li id="Accueil"><a href="../controle/accueil.ctrl.php">Accueil</a></li>
           <?php } ?>
           <li id="Actualités"><a href="../controle/actualite.ctrl.php">Actualités</a></li>
-          <li id="Planning"><a href="../controle/planning.ctrl.php">Planning</a></li>
+          <li id="Planning"><a href="../controle/planning.ctrl.php">Planning/Tarifs</a></li>
           <li id= "Club"><a href="../controle/club.ctrl.php">Club</a></li>
           <li id="Contact"><a href="../controle/contact.ctrl.php">Contact</a></li>
           <?php if (isset($_SESSION['mail'])) {
@@ -32,16 +32,16 @@
       <div class="container">
         <section>
           <h1>L’Histoire du club</h1>
-          <p>Créé en 2015 par Monsieur INSERERNOM, le Boxing Club
+          <p>Créé en 2015 par Aissat CHAOIKI, le Boxing Club
             d’Evian-Les-Bains n’a cessé de croitre au fil des années.
-            Aujourd’hui, c’est plus de 150 adhérents qui viennent
+            Aujourd’hui, c’est plus de 170 adhérents qui viennent
             s’affronter quotidiennement au sein du club.
           </p>
           <h1>Nos valeurs</h1>
           <p>
-            Notre club prône des valeurs sportives importantes afin de
+            Notre club porte des valeurs sportives importantes afin de
             permettre à nos adhérents de pratiquer la boxe dans un
-            environnement accueillant et propice au progrès.
+            environnement accueillant et propice à la progression personelle.
           </p>
           <div id="icones">
             <figure>

@@ -20,13 +20,24 @@ body{
   // margin: 10em 0;
 
   h1 {
+    text-shadow:3px 3px 3px $red, 3px 3px 3px $red;
+  }
+
+  h2 {
 
 
     font-family: $fontHigh;
     font-weight: bold;
-    font-size: 4em;
+    font-size: 3em;
     line-height: 1em;
+    margin: 0px;
+    text-shadow:3px 3px 3px $red, 3px 3px 3px $red;
 
+  }
+
+  h2 {
+    font-size: 4.5em;
+    text-shadow:3px 3px 3px $red, 3px 3px 3px $red;
   }
 
   p{
@@ -36,6 +47,7 @@ body{
     font-size: 2em;
     line-height: 1.5em;
     display: flex;
+    text-shadow:3px 3px 3px $red, 3px 3px 3px $red;
   }
 
   a{
@@ -44,11 +56,13 @@ body{
     font-weight: bold;
     font-size: 2.2em;
     line-height: 1.5em;
-
+    border-radius: 15px;
     padding: 0.4em 2.5em;
     background-color: $red;
     color: $white;
     text-decoration: none;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, .2), 3px 3px 3px rgba(255, 255, 255, .2);
+
   }
 }
 
@@ -116,4 +130,18 @@ footer:before{
   filter: blur(10px);
   background: inherit;
   z-index: 0;
+}
+
+#tarif {
+    text-align: center;
+    li {
+      font-size: 1.5em;
+      font-family: $fontHigh;
+      text-shadow:3px 3px 3px $red, 3px 3px 3px $red;
+    }
+    a {
+      font-size: 1.2em;
+      font-family: $fontHigh;
+      color: white;
+    }
 }
