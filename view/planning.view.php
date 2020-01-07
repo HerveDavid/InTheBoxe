@@ -28,7 +28,7 @@
           <li id="Accueil"><a href="../controle/accueil.ctrl.php">Accueil</a></li>
           <?php } ?>
           <li id="Actualités"><a href="../controle/actualite.ctrl.php">Actualités</a></li>
-          <li id="Planning"><a href="../controle/planning.ctrl.php">Planning</a></li>
+          <li id="Planning"><a href="../controle/planning.ctrl.php">Planning/Tarifs</a></li>
           <li id="Club"><a href="../controle/club.ctrl.php">Club</a></li>
           <li id="Contact"><a href="../controle/contact.ctrl.php">Contact</a></li>
           <?php if (isset($_SESSION['mail'])) {
@@ -151,17 +151,19 @@
             <td class="ing-cell ing-hour-col-11-00 ing-day-row-1"></td>
             <td class="ing-cell ing-hour-col-12-00 ing-day-row-1"></td>
             <td class="ing-cell ing-hour-col-16-00 ing-day-row-1"></td>
-            <td class="ing-cell ing-hour-col-17-00 ing-day-row-1 boxe-educative">
+            <td class="ing-cell ing-hour-col-17-00 ing-day-row-1 boxe-educative text-center">
               <h5>Boxe Educative</h5>
               <p>
                 9/13 ans de 17h à 18h
+                <br>
                 <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
               </p>
             </td>
-            <td colspan="2" class="ing-cell ing-hour-col-18-00 ing-day-row-1 boxe-loisir">
+            <td colspan="2" class="ing-cell ing-hour-col-18-00 ing-day-row-1 boxe-loisir text-center">
               <h5>Boxe Loisir</h5>
               <p>
                 +14 ans de 18h15 à 20h
+                <br>
                 <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
               </p>
             </td>
@@ -176,18 +178,20 @@
             <td class="ing-cell ing-hour-col-12-00 ing-day-row-1"></td>
             <td class="ing-cell ing-hour-col-16-00 ing-day-row-1"></td>
             <td class="ing-cell ing-hour-col-17-00 ing-day-row-1"></td>
-            <td class="ing-cell ing-hour-col-18-00 ing-day-row-1 cross-fit-boxing">
+            <td class="ing-cell ing-hour-col-18-00 ing-day-row-1 cross-fit-boxing text-center">
               <h5>Cross Fit Boxing</h5>
               <p>
                 +14 ans de 18h à 19h15
+                <br>
                 <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
               </p>
             </td>
             <td class="ing-cell ing-hour-col-19-00 ing-day-row-1"></td>
-            <td colspan="2" class="ing-cell ing-hour-col-20-00 ing-day-row-1 boxe-femmes">
+            <td colspan="2" class="ing-cell ing-hour-col-20-00 ing-day-row-1 boxe-femmes text-center">
               <h5>Boxing Femmes</h5>
               <p>
                 +14 ans de 20h30 à 22h
+                <br>
                 <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
               </p>
             </td>

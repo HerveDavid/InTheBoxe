@@ -14,7 +14,7 @@
           <li id="Accueil"><a href="../controle/accueil.ctrl.php">Accueil</a></li>
           <?php } ?>
           <li id="Actualités"><a href="../controle/actualite.ctrl.php">Actualités</a></li>
-          <li id="Planning"><a href="../controle/planning.ctrl.php">Planning</a></li>
+          <li id="Planning"><a href="../controle/planning.ctrl.php">Planning/Tarifs</a></li>
           <li id= "Club"><a href="../controle/club.ctrl.php">Club</a></li>
           <li id="Contact"><a href="../controle/contact.ctrl.php">Contact</a></li>
           <?php if (isset($_SESSION['mail'])) {
@@ -47,7 +47,7 @@
             <img src="../view/src/img/contact/mail.png" alt="enveloppe">
         </p>
         <p id="question">
-            Pour toutes questions n'hésitez pas à nous contacter
+            Pour toutes informations complémentaires n'hésitez pas à nous contacter
         </p>
 
         <form action="../controle/contact.ctrl.php" method="post" class="formulaire-email">
@@ -80,28 +80,38 @@
         06 58 87 23 90
         <br>
         boxingclubevian@gmail.com
+        <br>
+        Parking à proximité du club
       </p>
       <p id="titreHoraires">
         Horaires d'ouverture
       </p>
       <p id="horaires">
-        Lundi ……………….……. 9h > 21h
+        Lundi ……………….…......................…. 17h > 20h
         <br>
-        Mardi ……………….……. 9h > 21h
+        Mardi ………………...............……. 18h30 > 20h
         <br>
-        Mercredi ……………….……. 9h > 21h
+        Mercredi ………….......…….….....…. 18h > 20h
         <br>
-        Jeudi .…….………….…. 9h > 21h
+        Jeudi   ..............9h > 10h30 | 18h > 20h
         <br>
-        Vendredi ……………….……. 9h > 21h
+        Vendredi ……………..…............……. 17h > 20h
         <br>
-        Samedi ……………….……. 9h > 21h
+        Samedi ……......……….....….……. 9h > 10h30
         <br>
-        Dimanche …...........…………….……. OFF
+        Dimanche …................…………….……. FERMÉ
       </p>
 
     </div>
 
+    <div id="fb-root">
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v5.0"></script>
+      <div class="fb-page" data-href="https://www.facebook.com/Boxing-Club-Evian-1779416988982586/" data-tabs="timeline" data-width="1200" data-height="100" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+        <blockquote cite="https://www.facebook.com/Boxing-Club-Evian-1779416988982586/" class="fb-xfbml-parse-ignore">
+          <a href="https://www.facebook.com/Boxing-Club-Evian-1779416988982586/">Boxing Club Evian</a>
+        </blockquote>
+      </div>
+    </div>
 
   </body>
 </html>
