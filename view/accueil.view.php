@@ -12,7 +12,7 @@
         <ul>
           <li id="Accueil"><a href="../controle/accueil.ctrl.php">Accueil</a></li>
           <li id="Actualités"><a href="../controle/actualite.ctrl.php">Actualités</a></li>
-          <li id="Planning"><a href="../controle/planning.ctrl.php">Planning</a></li>
+          <li id="Planning"><a href="../controle/planning.ctrl.php">Planning/Tarifs</a></li>
           <li id= "Club"><a href="../controle/club.ctrl.php">Club</a></li>
           <li id="Contact"><a href="../controle/contact.ctrl.php">Contact</a></li>
           <?php if (isset($_SESSION['mail'])) {
@@ -29,24 +29,24 @@
     <!-- Connexion formulaire -->
     <div id="Content">
       <h2>Boxing Club Evian-Les-Bains</h2>
-      <h1>Explorez vos limites.</h1>
+      <h1>Explorez vos limites</h1>
       <p>
-        Inscrivez vous pour avoir accès à des cours de boxe et differents exercices d'entrainement
+        Inscrivez-vous pour accéder aux cours et aux entrainements en ligne
       </p>
       <br>
       <a href="../controle/inscription.ctrl.php">Inscription</a>
     </div>
     <footer>
       <!-- <section> -->
-        <h1>Les cours disponible et leur tarifs</h1>
-        <h2></h2>
+
       <!-- </section> -->
-      <nav>
+      <nav id="tarif">
         <ul>
           <li><img src="../view/src/img/accueil/cours1.png" alt="cours-1">LOISIR 190€</li>
           <li><img src="../view/src/img/accueil/cours2.png" alt="cours-2">EDUCATIVE 170€</li>
-          <li><img src="../view/src/img/accueil/cours2.png" alt="cours-3">CROSSFIT 190€</li>
+          <li><img src="../view/src/img/accueil/cours3.png" alt="cours-3">CROSSFIT 190€</li>
         </ul>
+        <a href="../controle/planning.ctrl.php"> <br> Explorez nos tarifs dans l'onglet Planning/Tarifs</a>
       </nav>
     </footer>
   </body>

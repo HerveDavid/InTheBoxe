@@ -185,3 +185,9 @@ header nav ul #Connexion a {
 .boxe-main-droite #titreHoraires {
   color: #BE1E2D;
 }
+
+#fb-root {
+  margin-left: 50%;
+  position: relative;
+  bottom: 100px;
+}
