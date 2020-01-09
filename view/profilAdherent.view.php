@@ -102,7 +102,6 @@
 
                         <section class="bouton">
                           <a href="../controle/timer.ctrl.php">
-                            <a href="../view/accueilTimer.view.php">
                             <span class="text">Je m'entraine</span>
                             <span class="line -right"></span>
                             <span class="line -top"></span>
@@ -159,7 +158,7 @@
                                 <label for="cp"><h6>Code postal</h6></label>
                                 <input type="number" name="codePostal" id="codePostal" required placeholder="Code postal" value="<?=$codePostal ?>" required/>
                               </p>
-                              <input type="submit" value="validé">
+                              <input type="submit" value="Valider">
                             </fieldset>
                           </form>
                         </div>

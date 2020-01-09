@@ -27,8 +27,8 @@ abstract class Adherent {
   public function getDefaite() {return $this->defaite;}
   public function getNul() {return $this->nul;}
   //////////////////autres Methodes//////////////////
-  public function getPalmares():string{return "Adherent : '$this->getNom()' '$this->getPrenom()' Nombre de victoire : '$this->getVictoire()' Nombre de match nul : '$this->getNul' Nombre de défaite : '$this->getDefaite' ";}
-
+  public function getPalmares(){return "Adherent : '$this->getNom()' '$this->getPrenom()' Nombre de victoire : '$this->getVictoire()' Nombre de match nul : '$this->getNul' Nombre de défaite : '$this->getDefaite' ";}
+  public function getAge(){return round((time() - strtotime($this->datenaiss)) / 3600 / 24 / 365.242); }
 }
 
 //////////////////////////////ADHERENT CLUB/////////////////////

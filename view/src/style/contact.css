@@ -20,11 +20,9 @@ header {
   flex-direction: row;
   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
-
 header nav {
   width: 100%;
 }
-
 header nav ul {
   padding: inherit;
   height: 100%;
@@ -33,22 +31,18 @@ header nav ul {
   list-style: none;
   margin: 0 0;
 }
-
 header nav ul li {
   text-align: center;
   width: 100%;
   padding: 0.8em;
 }
-
 header nav ul li a {
   color: #000000;
   text-decoration: none;
 }
-
 header nav ul #Connexion {
   background-color: #BE1E2D;
 }
-
 header nav ul #Connexion a {
   font-weight: bold;
   color: #FFFFFF;
@@ -72,7 +66,6 @@ body {
   display: inline-table;
   position: relative;
 }
-
 .boxe-main-full h5 {
   margin: 0 0 0.55em;
   text-align: center;
@@ -80,7 +73,6 @@ body {
   text-rendering: optimizelegibility;
   font-family: Palanquin;
 }
-
 .boxe-main-full h1 {
   margin: 0 0 0.55em;
   text-align: center;
@@ -89,11 +81,9 @@ body {
   text-rendering: optimizelegibility;
   font-family: Rubik;
 }
-
 .boxe-main-full p {
   text-align: center;
 }
-
 .boxe-main-full p img {
   width: 50px;
   height: 50px;
@@ -108,21 +98,17 @@ body {
   height: 50%;
   display: table-cell;
 }
-
 .boxe-main-gauche p {
   text-align: center;
   font-family: Rubik;
 }
-
 .boxe-main-gauche p img {
   width: 50px;
   height: 50px;
 }
-
 .boxe-main-gauche #question {
   text-align: left;
 }
-
 .boxe-main-gauche form input {
   border-color: #BE1E2D;
   color: #BE1E2D;
@@ -131,7 +117,6 @@ body {
   margin-top: 22px;
   margin-bottom: 22px;
 }
-
 .boxe-main-gauche form textarea {
   color: #BE1E2D;
   width: 697px;
@@ -140,17 +125,15 @@ body {
   margin-bottom: 22px;
   border-color: #BE1E2D;
 }
-
 .boxe-main-gauche form .bouton {
   width: 100px;
   height: 50px;
   margin-top: 22px;
   margin-bottom: 22px;
 }
-
 .boxe-main-gauche form .bouton:hover {
   background-color: #BE1E2D;
-  opacity: 0.80;
+  opacity: 0.8;
   color: white;
 }
 
@@ -163,28 +146,23 @@ body {
   height: 50%;
   font-family: Palanquin;
 }
-
 .boxe-main-droite h5 {
   color: #BE1E2D;
   text-align: right;
 }
-
 .boxe-main-droite #place {
   text-align: center;
   font-family: Rubik;
   position: relative;
   left: 60px;
 }
-
 .boxe-main-droite #place img {
   width: 50px;
   height: 40px;
 }
-
 .boxe-main-droite p {
   text-align: right;
 }
-
 .boxe-main-droite #titreHoraires {
   color: #BE1E2D;
 }
