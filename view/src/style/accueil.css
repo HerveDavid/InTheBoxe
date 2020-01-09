@@ -86,12 +86,12 @@ body {
   font-size: 3em;
   line-height: 1em;
   margin: 0px;
-  text-shadow: 3px 3px 3px #BE1E2D, 3px 3px 3px #BE1E2D;
+  text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
 
 #Content h2 {
   font-size: 4.5em;
-  text-shadow: 3px 3px 3px #BE1E2D, 3px 3px 3px #BE1E2D;
+  text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
 
 #Content p {
@@ -191,7 +191,7 @@ footer:before {
 #tarif li {
   font-size: 1.5em;
   font-family: Rubik;
-  text-shadow: 3px 3px 3px #BE1E2D, 3px 3px 3px #BE1E2D;
+  text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
 
 #tarif a {

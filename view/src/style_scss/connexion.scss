@@ -11,6 +11,10 @@
   }
   fieldset{
     border: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: white;
+    border-radius: 10px;
 
     input{
       width: 100%;
@@ -18,12 +22,28 @@
       border-top: 0px;
       border-left: 0px;
       border-right: 0px;
+      color: white;
     }
     input[type=submit]{
       background-color: $red;
       color:white;
     }
+    #inscription {
+      color: white;
+      position: relative;
+      top: 15px;
+    }
   }
+}
+
+
+body {
+  background: url(../img/connexion/connexion.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 ::placeholder {
