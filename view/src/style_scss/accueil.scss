@@ -21,7 +21,7 @@ body{
   // margin: 10em 0;
 
   h1 {
-    text-shadow:3px 3px 3px $red, 3px 3px 3px $red;
+    text-shadow:3px 3px 3px black, 3px 3px 3px black;
   }
 
   h2 {
@@ -32,13 +32,13 @@ body{
     font-size: 3em;
     line-height: 1em;
     margin: 0px;
-    text-shadow:3px 3px 3px $red, 3px 3px 3px $red;
+    text-shadow:3px 3px 3px black, 3px 3px 3px black;
 
   }
 
   h2 {
     font-size: 4.5em;
-    text-shadow:3px 3px 3px $red, 3px 3px 3px $red;
+    text-shadow:3px 3px 3px black, 3px 3px 3px black;
   }
 
   p{
@@ -48,7 +48,7 @@ body{
     font-size: 2em;
     line-height: 1.5em;
     display: flex;
-    text-shadow:3px 3px 3px $red, 3px 3px 3px $red;
+    text-shadow:3px 3px 3px black, 3px 3px 3px black;
   }
 
   a{
@@ -138,7 +138,7 @@ footer:before{
     li {
       font-size: 1.5em;
       font-family: $fontHigh;
-      text-shadow:3px 3px 3px $red, 3px 3px 3px $red;
+      text-shadow:3px 3px 3px black, 3px 3px 3px black;
     }
     a {
       font-size: 1.2em;

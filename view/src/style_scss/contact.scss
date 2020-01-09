@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .boxe-main-full {
   margin: auto;
   text-align: center;
@@ -13,7 +18,7 @@
   padding-top: 100px;
   display: inline-table;
   position: relative;
-  left: 10%;
+
 
   h5 {
     margin: 0 0 0.55em;
@@ -76,8 +81,8 @@
 
       textarea {
         color: $red;
-        width: 697px;
-        height: 228px;
+        width: 432px;
+        height: 175px;
         margin-top: 22px;
         margin-bottom: 22px;
         border-color: $red;
@@ -100,9 +105,8 @@
 
 .boxe-main-droite {
   display: table-cell;
-  padding-top: 40px;
-  padding-right: 10%;
-  margin: auto;
+  padding-right: 20%;
+  margin-top: 50px;
   text-align: center;
   width: 50%;
   height: 50%;
@@ -135,7 +139,14 @@
 }
 
 #fb-root {
-  margin-left: 50%;
+  display: table-cell;
+  padding-right: 20%;
+  margin-top: 50px;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  font-family: $fontLow;
   position: relative;
-  bottom: 100px;
+  left: 500px;
+  bottom: 150px;
 }
