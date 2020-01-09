@@ -105,9 +105,18 @@
     </div>
 
     <div id="fb-root">
-      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v5.0"></script>
-      <div class="fb-page" data-href="https://www.facebook.com/Boxing-Club-Evian-1779416988982586/" data-tabs="timeline" data-width="2000" data-height="0" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-        <blockquote cite="https://www.facebook.com/Boxing-Club-Evian-1779416988982586/" class="fb-xfbml-parse-ignore">
+      <script async defer crossorigin="anonymous"
+              src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v5.0"></script>
+      <div class="fb-page"
+      data-href="https://www.facebook.com/Boxing-Club-Evian-1779416988982586/"
+      data-tabs="timeline" data-width="2000"
+      data-height="0"
+      data-small-header="false"
+      data-adapt-container-width="true"
+      data-hide-cover="true"
+      data-show-facepile="true">
+        <blockquote cite="https://www.facebook.com/Boxing-Club-Evian-1779416988982586/"
+                    class="fb-xfbml-parse-ignore">
           <a href="https://www.facebook.com/Boxing-Club-Evian-1779416988982586/">Boxing Club Evian</a>
         </blockquote>
       </div>

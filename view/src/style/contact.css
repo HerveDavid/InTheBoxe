@@ -190,7 +190,14 @@ body {
 }
 
 #fb-root {
+  display: table-cell;
+  padding-right: 20%;
+  margin-top: 50px;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  font-family: Palanquin;
   position: relative;
-  left: 850px;
-  bottom: 550px;
+  left: 500px;
+  bottom: 150px;
 }
