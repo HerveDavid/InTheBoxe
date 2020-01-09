@@ -1,58 +1,19 @@
-@import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
-header {
-  position: fixed;
-  /* Set the navbar to fixed position */
-  top: 0;
-  /* Position the navbar at the top of the page */
-  left: 10em;
-  right: 10em;
-  z-index: 100;
-  background-color: #FFFFFF;
-  color: #000000;
-  font-family: Palanquin;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.6em;
-  line-height: 1em;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
-}
+/* Error: $color: theme-color("primary") is not a color.
+ *     ,
+ * 181 | $link-hover-color:                        darken($link-color, 15%) !default;
+ *     |                                           ^^^^^^^^^^^^^^^^^^^^^^^^
+ *     '
+ *   bootstrap/scss/_variables.scss 181:43  @import
+ *   style_scss/_header.scss 1:9            @import
+ *   style_scss/actualite.scss 1:9          root stylesheet */
 
-header nav {
-  width: 100%;
-}
-
-header nav ul {
-  padding: inherit;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  margin: 0 0;
-}
-
-header nav ul li {
-  text-align: center;
-  width: 100%;
-  padding: 0.8em;
-}
-
-header nav ul li a {
-  color: #000000;
-  text-decoration: none;
-}
-
-header nav ul #Connexion {
-  background-color: #BE1E2D;
-}
-
-header nav ul #Connexion a {
-  font-weight: bold;
-  color: #FFFFFF;
-}
-
-.container {
-  margin-top: 10%;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: $color: theme-color("primary") is not a color.\a     \2577 \a 181 \2502  $link-hover-color:                        darken($link-color, 15%) !default;\a     \2502                                            ^^^^^^^^^^^^^^^^^^^^^^^^\a     \2575 \a   bootstrap/scss/_variables.scss 181:43  @import\a   style_scss/_header.scss 1:9            @import\a   style_scss/actualite.scss 1:9          root stylesheet';
 }
