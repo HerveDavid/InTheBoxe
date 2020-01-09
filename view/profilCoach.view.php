@@ -56,7 +56,7 @@
                 <div class="user-body d-flex flex-row">
                     <ul class="nav nav-tabs flex-column" id="myTab" role="tablist">
                       <li class="nav-item">
-                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#infoCompte" role="tab" aria-controls="home" aria-selected="true">Informations du compte</a>
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#infoCompte" role="tab" aria-controls="contact" aria-selected="true">Informations du compte</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" id="profile-tab" data-toggle="tab" href="#combat" role="tab" aria-controls="profile" aria-selected="false">Demandes de combat</a>
@@ -67,40 +67,55 @@
                       <li class="nav-item">
                         <a class="nav-link" id="contact-tab" data-toggle="tab" href="#adherent" role="tab" aria-controls="contact" aria-selected="false">Gestion des adhérents</a>
                       </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#attente" role="tab" aria-controls="contact" aria-selected="false">Profil</a>
+                      </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
                       <div class="tab-pane fade show active card" id="infoCompte" role="tabpanel" aria-labelledby="home-tab">
                         <div class="card-body">
                           <section>
-                            <h4>Nombre d'adherents: <?=$nombreAdherents?> </h4>
+                            <h3>Nombre d'adherents: <?=$nombreAdherents?> </h3>
                             <br>
-                            Nombre de personnes en attente: <p id="numAtt"><?=$nombreAttente?></p>
-
-                            Nombre de demandes de combats: <p id="numDC"> <?=$nombreDemandesCombats?></p>
-
-                            Nombre de matchs de combats: <p id="numMatch"> <?=$nombreDemandesCombats?></p>
-
+                            <div class="card">
+                              Nombre de personnes en attente: <?=$nombreAttente?>
+                            </div>
+                            <div class="card">
+                              Nombre de demandes de combats: <?=$nombreDemandesCombats?>
+                            </div>
+                            <div class="card">
+                              Nombre de matchs : <?=$nombreDemandesCombats?>
+                            </div>
                           </section>
                         </div>
                       </div>
+                      <!--/////////////////////////////////////////////////////////////section Demandes de combats///////////////////////////////////////////////////////////-->
+
                       <div class="tab-pane fade card" id="combat" role="tabpanel" aria-labelledby="profile-tab">
                         <h3 class="card-header">Nombre de demandes: </h3>
                         <div class="card-body d-flex justify-content-between align-self-baseline align-content-between flex-wrap">
-                          <?php foreach ($demandesCombats as $demande) { ?>
+                          <?php foreach ($demandesCombats as $adh) { ?>
                           <div class="card">
                             <div class="card-body">
-                              <img src="../view/src/img/profil/connexion_logo.png" alt="Mon nom" title="Mon nom" class="img-thumbnail" width="100" height="100">
-                              <br>
-                              <h6><?=$demande->getNom()?> <?=$demande->getPrenom()?> </h6>
-                              <br>
-                              Catégorie : <?=$demande->getCategorie()?>
-                              <br>
-                              Age : <?=$demande->getAge()?>
-                              <br>
-                              V - N - D
-                              <br>
-                              <?=$demande->getVictoire()?> - <?=$demande->getNul()?> - <?=$demande->getDefaite()?>
-
+                              <img src="../view/src/img/profil/connexion_logo.png" alt="Mon nom" title="Mon nom" class="img-thumbnail" width="150" height="150">
+                              <br><br>
+                              <h6><?=$adh->getNom()?> <?=$adh->getPrenom()?> </h6>
+                              <hr class="style1">
+                              <div class="card">
+                                Catégorie : <?=$adh->getCategorie()?>
+                              </div>
+                              <div class="card">
+                                Age : <?=$adh->getAge()?>
+                              </div>
+                              <div class="card">
+                                Victoires : <?=$adh->getVictoire()?>
+                              </div>
+                              <div class="card">
+                                Nuls : <?=$adh->getNul()?>
+                              </div>
+                              <div class="card">
+                                Défaites : <?=$adh->getDefaite()?>
+                              </div>
                             </div>
                             <div class="card-footer">
                               <button type="" class="btn btn-secondary">Accepter</button>
@@ -110,6 +125,8 @@
                           <?php } ?>
                         </div>
                       </div>
+                      <!--/////////////////////////////////////////////////////////////section Actualités///////////////////////////////////////////////////////////-->
+
                       <div class="tab-pane fade" id="actualite" role="tabpanel" aria-labelledby="contact-tab">
                         <form action="../controle/gerant.ctrl.php"  method="post">
                           <div class="form-group">
@@ -139,7 +156,7 @@
                         <h3>Historique des actualités</h3>
                         <hr class="style1">
                         <form method="post" action="../controle/gerant.ctrl.php">
-                          <button type="submit" name="clear" value="true" class="btn btn-secondary">Supprimer les actualite passé</button>
+                          <button type="submit" name="clear" value="true" class="btn btn-secondary">Supprimer les actualitées passer</button>
                         </form>
                         <br>
                         <br>
@@ -158,7 +175,7 @@
                               <?=$date?>
                             </div>
                             <div class="col-sm">
-                              <?=substr($description, 0, 45).'...'?>
+                              <?=substr($description, 0, 45).'...'?> // pour limite l'affichage de la discription a 45 caractéres
                             </div>
                             <form method="post" action="../controle/gerant.ctrl.php">
                               <button type="submit" name="supp" value='<?=$nom?>/<?=$date?>' class="btn btn-danger">Supprimer</button>
@@ -168,60 +185,72 @@
                         <br>
                         <?php } ?>
                       </div>
-                      <div class="tab-pane fade" id="adherent" role="tabpanel" aria-labelledby="contact-tab">
-                        <div class="dropdown">
-                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Trié par :
-                          </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">A-Z</a>
-                            <a class="dropdown-item" href="#">Z-A</a>
-                            <a class="dropdown-item" href="#">Age croissant</a>
-                            <a class="dropdown-item" href="#">Age décroissant</a>
+                      <!--/////////////////////////////////////////////////////////////section List Adherents///////////////////////////////////////////////////////////-->
+
+                      <div class="tab-pane fade card" id="adherent" role="tabpanel" aria-labelledby="contact-tab">
+                        <h3 class="card-header">Liste des adhérents du club : </h3>
+                        <div class="card-body d-flex justify-content-between align-self-baseline align-content-between flex-wrap">
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Trié par :
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">A-Z</a>
+                              <a class="dropdown-item" href="#">Z-A</a>
+                              <a class="dropdown-item" href="#">Age croissant</a>
+                              <a class="dropdown-item" href="#">Age décroissant</a>
+                            </div>
                           </div>
-                        </div>
-                        <div class="">
-                          <?php for ($i=0; $i < 100; $i++) { ?>
-                          <div class="card">
-                            <div class="card-header">
-                              <div class="user-image text-center">
-                                  <img src="../view/src/img/profil/connexion_logo.png" alt="Mon nom" title="Mon nom" class="img-thumbnail">
+                          <div class="card-body d-flex justify-content-between align-self-baseline align-content-between flex-wrap">
+                            <?php foreach ($listAdherents as $adh) { ?>
+                            <div class="card">
+                              <div class="card-body">
+                                <img src="../view/src/img/profil/connexion_logo.png" alt="Mon nom" title="Mon nom" class="img-thumbnail" width="150" height="150">
+                                <br><br>
+                                <h6><?=$adh->getNom()?> <?=$adh->getPrenom()?> </h6>
+                                <hr class="style1">
+                                <div class="card">
+                                  Catégorie : <?=$adh->getCategorie()?>
+                                </div>
+                                <div class="card">
+                                  Age : <?=$adh->getAge()?>
+                                </div>
+                                <div class="card">
+                                  Victoires : <?=$adh->getVictoire()?>
+                                </div>
+                                <div class="card">
+                                  Nuls : <?=$adh->getNul()?>
+                                </div>
+                                <div class="card">
+                                  Défaites : <?=$adh->getDefaite()?>
+                                </div>
                               </div>
-                              Noms
+                              <div class="card-footer">
+                                <script type="text/javascript">
+                                function test(){
+                                  document.write('<div>Print this after the script tag</div>');
+                                }
+                                </script>
+                                <!-- <form action="../controle/modificationAdherent.ctrl.php" method="POST"  > -->
+                                  <button onclick="test()" type="button"  class="btn btn-secondary" >Modifier</button>
+                                <!-- </form> id="contact-tab" data-toggle="tab" href="#attente" role="tab" aria-controls="contact" aria-selected="false"  -->
+                              </div>
                             </div>
-                            <div class="card-body">
-                              Description
-                            </div>
-                            <div class="card-footer">
-                              <button type="" class="btn btn-secondary">Modifier</button>
-                            </div>
+                            <?php } ?>
                           </div>
-                          <br>
-                          <?php } ?>
                         </div>
                       </div>
-                    </div>
-                      <!-- <div class="tab-content">
-                          <div id="information" class="tab-pane active">
-                              <h4>Information de compte</h4>
-
-                              <section>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                              </section>
-                              <hr class="style1">
-                          </div>
-                          <div id="email" class="tab-pane active">
-                              <h4>Envoyer un message</h4>
-                              <hr class="style1">
-                          </div>
-                          <div id="settings" class="tab-pane active">
-                            <h4>Réglages</h4>
-
-                          </div>
+                      <!--/////////////////////////////////////////////////////////////section Modifier///////////////////////////////////////////////////////////-->
+                      <!-- <div class="tab-pane fade" id="attente" role="tabpanel" aria-labelledby="contact-tab">
+                        <?php if (isset($_POST['walid'])): ?>
+                          <p>dhîzaeohdẑeuihduizefhuizehfpuizefhpuize</p>
+                        <?php endif; ?>
                       </div> -->
+                    </div>
                   </div>
-              </div>
-          </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <?php

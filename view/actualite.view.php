@@ -49,6 +49,7 @@
                  ?>
 
                 <h4><?=$actu->getNom()?> - <?=$date?></h4>
+                <hr class="style1">
                 <?php if ($actu->getType()=='evenement'){ ?>
                   <img src="../view/src/img/actualite/evenement.png" alt="evenement">
                 <?php }elseif ($actu->getType()=='match') {?>
