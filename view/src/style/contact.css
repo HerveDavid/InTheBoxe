@@ -58,6 +58,11 @@ header nav ul #Connexion a {
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .boxe-main-full {
   margin: auto;
   text-align: center;
@@ -66,7 +71,6 @@ header nav ul #Connexion a {
   padding-top: 100px;
   display: inline-table;
   position: relative;
-  left: 10%;
 }
 
 .boxe-main-full h5 {
@@ -152,9 +156,8 @@ header nav ul #Connexion a {
 
 .boxe-main-droite {
   display: table-cell;
-  padding-top: 40px;
-  padding-right: 10%;
-  margin: auto;
+  padding-right: 20%;
+  margin-top: 50px;
   text-align: center;
   width: 50%;
   height: 50%;
@@ -187,7 +190,7 @@ header nav ul #Connexion a {
 }
 
 #fb-root {
-  margin-left: 50%;
   position: relative;
-  bottom: 100px;
+  left: 680px;
+  bottom: 550px;
 }

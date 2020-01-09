@@ -77,7 +77,7 @@ body {
 }
 
 #Content h1 {
-  text-shadow: 3px 3px 3px #BE1E2D, 3px 3px 3px #BE1E2D;
+  text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
 
 #Content h2 {
@@ -101,7 +101,7 @@ body {
   font-size: 2em;
   line-height: 1.5em;
   display: flex;
-  text-shadow: 3px 3px 3px #BE1E2D, 3px 3px 3px #BE1E2D;
+  text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
 
 #Content a {
