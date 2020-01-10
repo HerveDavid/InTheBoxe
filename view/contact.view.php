@@ -102,6 +102,7 @@
       <h5>
         Boxing Club Evian
       </h5>
+      <br>
       <p>
         Impasse du Docteur Dumur
         <br>
@@ -113,9 +114,11 @@
         <br>
         Parking à proximité du club
       </p>
+      <br>
       <p id="titreHoraires">
-        Horaires d'ouverture
+        Horaires d'ouvertures
       </p>
+      <br>
       <p id="horaires">
         Lundi ……………….…......................…. 17h > 20h
         <br>
@@ -123,7 +126,7 @@
         <br>
         Mercredi ………….......…….….....…. 18h > 20h
         <br>
-        Jeudi   ..............9h > 10h30 | 18h > 20h
+        Jeudi   ..........................9h > 10h30 | 18h > 20h
         <br>
         Vendredi ……………..…............……. 17h > 20h
         <br>
