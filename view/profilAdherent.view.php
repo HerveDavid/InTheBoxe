@@ -200,7 +200,7 @@
     <!-- Footer Elements -->
     <div style="text-align:center;" class="container">
       <a href="https://www.start-securite.fr/">
-        <img id="sponsor" src="../view/src/img/sponsor.png" alt="sponsor">
+        <!-- <img id="sponsor" src="../view/src/img/sponsor.png" alt="sponsor"> -->
       </a>
     </div>
     <!-- Footer Elements -->
