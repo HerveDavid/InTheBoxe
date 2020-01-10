@@ -139,12 +139,12 @@
           </div>
         </a>
 
-        <br>
-        <h1 class="text-center">Contact</h1>
-        <hr>
+
+
         <p class="text-center">
           <span>Hommes: 06 58 87 23 90 - Femmes: 06 33 83 56 77</span>
         </p>
+        <hr>
 
       </div>
     <?php } else { ?>
@@ -316,6 +316,24 @@
       </table>
     <?php } ?>
     </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small cyan darken-3">
+      <!-- Footer Elements -->
+      <div style="text-align:center;" class="container">
+        <a href="https://www.start-securite.fr/">
+          <img id="sponsor" src="../view/src/img/sponsor.png" alt="sponsor">
+        </a>
+      </div>
+      <!-- Footer Elements -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="../controle/accueil.ctrl.php"> InTheBoxe.fr</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
   </body>
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

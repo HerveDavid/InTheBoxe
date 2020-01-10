@@ -61,7 +61,7 @@
         </div>
       </nav>
     </header>
-    
+
     <?php
       $nom = $profil->getNom() ;
       $prenom = $profil->getPrenom();
@@ -291,6 +291,24 @@
     //message a transmettre
 
      ?>
+
+     <!-- Footer -->
+     <footer class="page-footer font-small cyan darken-3">
+       <!-- Footer Elements -->
+       <div style="text-align:center;" class="container">
+         <a href="https://www.start-securite.fr/">
+           <img id="sponsor" src="../view/src/img/sponsor.png" alt="sponsor">
+         </a>
+       </div>
+       <!-- Footer Elements -->
+       <!-- Copyright -->
+       <div class="footer-copyright text-center py-3">© 2020 Copyright:
+         <a href="../controle/accueil.ctrl.php"> InTheBoxe.fr</a>
+       </div>
+       <!-- Copyright -->
+     </footer>
+     <!-- Footer -->
+
   </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

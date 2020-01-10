@@ -20,6 +20,7 @@
   background-color: #BE1E2D;
   border-radius: 10px;
 }
+
 .bg-red .nav-link {
   color: #FFFFFF;
 }
@@ -33,12 +34,14 @@ article {
   flex-direction: row;
   justify-content: space-around;
 }
+
 article h1 {
   font-family: Rubik;
   font-size: 2em;
   border-bottom: 0.2em solid #BE1E2D;
   width: 90%;
 }
+
 article p {
   font-family: Palanquin;
   margin: 10%;
@@ -47,6 +50,7 @@ article p {
   font-weight: 600;
   width: 100%;
 }
+
 article div {
   width: 100%;
   display: flex;
@@ -56,6 +60,7 @@ article div {
   padding-left: 10%;
   padding-right: 10%;
 }
+
 article div form {
   display: flex;
   text-align: center;
@@ -64,10 +69,12 @@ article div form {
   border-radius: 10px;
   width: 100%;
 }
+
 article div fieldset {
   border: 0px;
   width: inherit;
 }
+
 article div fieldset input {
   width: 100%;
   color: white;
@@ -76,18 +83,22 @@ article div fieldset input {
   border-left: 0px;
   border-right: 0px;
 }
+
 article div fieldset input[type=submit] {
   background-color: #BE1E2D;
 }
+
 article div fieldset p {
   margin: 8%;
   margin-left: 0px;
 }
+
 article ::placeholder {
   font-size: 110%;
   color: white;
   opacity: 1;
 }
+
 article #Droite {
   padding-top: 0px;
   color: white;
@@ -95,13 +106,16 @@ article #Droite {
   background-repeat: round;
   background-size: 100%;
 }
+
 article #Droite h1 {
   margin-top: 20%;
   border: 0;
 }
+
 article #Droite p {
   width: 80%;
 }
+
 article #Droite input {
   margin: 0;
 }

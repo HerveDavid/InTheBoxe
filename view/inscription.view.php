@@ -58,7 +58,7 @@
         </div>
       </nav>
     </header>
-    
+
     <article>
     <div id="Gauche">
       <h1>S'inscrire à des cours</h1>
@@ -122,6 +122,24 @@
       </form>
     </div>
   </article>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small cyan darken-3">
+    <!-- Footer Elements -->
+    <div style="text-align:center;" class="container">
+      <a href="https://www.start-securite.fr/">
+        <img id="sponsor" src="../view/src/img/sponsor.png" alt="sponsor">
+      </a>
+    </div>
+    <!-- Footer Elements -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="../controle/accueil.ctrl.php"> InTheBoxe.fr</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
   </body>
 </html>
 

@@ -21,6 +21,7 @@
   background-color: #BE1E2D;
   border-radius: 10px;
 }
+
 .bg-red .nav-link {
   color: #FFFFFF;
 }
@@ -41,6 +42,7 @@ header {
   background-color: #BE1E2D;
   border: none;
 }
+
 .btn-primary a {
   color: white;
 }

@@ -21,6 +21,7 @@
   background-color: #BE1E2D;
   border-radius: 10px;
 }
+
 .bg-red .nav-link {
   color: #FFFFFF;
 }
@@ -43,6 +44,7 @@ body {
   text-rendering: optimizelegibility;
   font-family: Palanquin;
 }
+
 .boxe-main-full h1 {
   margin: 0 0 0.55em;
   text-align: center;
@@ -51,9 +53,11 @@ body {
   text-rendering: optimizelegibility;
   font-family: Rubik;
 }
+
 .boxe-main-full p {
   text-align: center;
 }
+
 .boxe-main-full p img {
   width: 50px;
   height: 50px;
@@ -62,10 +66,12 @@ body {
 .boxe-main-gauche p {
   font-family: Rubik;
 }
+
 .boxe-main-gauche p img {
   width: 50px;
   height: 50px;
 }
+
 .boxe-main-gauche form input {
   border-color: #BE1E2D;
   color: #BE1E2D;
@@ -74,6 +80,7 @@ body {
   margin-top: 22px;
   margin-bottom: 22px;
 }
+
 .boxe-main-gauche form textarea {
   color: #BE1E2D;
   width: 432px;
@@ -82,28 +89,33 @@ body {
   margin-bottom: 22px;
   border-color: #BE1E2D;
 }
+
 .boxe-main-gauche form .bouton {
   width: 100px;
   height: 50px;
   margin-top: 22px;
   margin-bottom: 22px;
 }
+
 .boxe-main-gauche form .bouton:hover {
   background-color: #BE1E2D;
-  opacity: 0.8;
+  opacity: 0.80;
   color: white;
 }
 
 .boxe-main-droite h5 {
   color: #BE1E2D;
 }
+
 .boxe-main-droite #place {
   font-family: Rubik;
 }
+
 .boxe-main-droite #place img {
   width: 50px;
   height: 40px;
 }
+
 .boxe-main-droite #titreHoraires {
   color: #BE1E2D;
 }
