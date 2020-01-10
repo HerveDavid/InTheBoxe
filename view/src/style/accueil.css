@@ -28,6 +28,11 @@ header {
   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
 
+navbar-toggler-icon {
+  color: black;
+  background-color: black;
+}
+
 body {
   font-family: Palanquin;
   font-style: normal;

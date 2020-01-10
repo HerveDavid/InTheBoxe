@@ -17,7 +17,7 @@
           <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon">Menu</span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -61,7 +61,7 @@
         </div>
       </nav>
     </header>
-    
+
     <?php
       $nom = $profil->getNom() ;
       $prenom = $profil->getPrenom();
