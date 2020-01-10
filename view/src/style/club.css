@@ -6,9 +6,14 @@
 
 .nav-link {
   font-size: 1.5em;
-  font-family: Rubik;
+  font-family: Palanquin;
   margin-left: 1em;
   margin-right: 1em;
+  color: #6c6c6c;
+}
+
+.active {
+  color: black;
 }
 
 .bg-red {

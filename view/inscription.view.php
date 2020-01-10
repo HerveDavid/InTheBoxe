@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <nav class="navbar navbar-expand-lg bg-white">
         <a class="navbar-brand" href="#">
           <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
         </a>
@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="../controle/accueil.ctrl.php">Accueil<span class="sr-only">(current)</span></a>
+              <a class="nav-link active" href="../controle/accueil.ctrl.php">Accueil<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../controle/actualite.ctrl.php">Actualités</a>
@@ -42,6 +42,7 @@
                     <?=$nom?>
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="../controle/profil.ctrl.php">Profil</a>
                     <a class="dropdown-item" href="../controle/accueil.ctrl.php?deco=1">Déconnexion</a>
                     <div class="dropdown-divider"></div>
                   </div>
@@ -56,6 +57,7 @@
         </div>
       </nav>
     </header>
+    
     <article>
     <div id="Gauche">
       <h1>S'inscrire à des cours</h1>
