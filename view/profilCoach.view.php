@@ -14,7 +14,7 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-white">
         <a class="navbar-brand" href="#">
-          <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
+          <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe" >
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -102,9 +102,9 @@
                       <li class="nav-item">
                         <a class="nav-link <?=$disabled?>" id="contact-tab" data-toggle="tab" href="#adherent" role="tab" aria-controls="contact" aria-selected="false">Gestion des adhérents</a>
                       </li>
-                      <li class="nav-item">
+                      <!-- <li class="nav-item">
                         <a class="nav-link <?=$disabled?>" id="contact-tab" data-toggle="tab" href="#attente" role="tab" aria-controls="contact" aria-selected="false">Profil</a>
-                      </li>
+                      </li> -->
                     </ul>
                     <div class="tab-content" id="myTabContent">
 
@@ -189,6 +189,8 @@
                             <textarea name="description" class="form-control" id="formControlTextarea" rows="3" required></textarea>
                           </div>
                           <button type="submit" class="btn btn-primary">Poster</button>
+                          <?php global $erreurActu; ?>
+                          <p style='color:red'> <?= $erreurActu ?></p>
                         </form>
                         <br>
                         <h3>Historique des actualités</h3>
@@ -213,7 +215,7 @@
                               <?=$date?>
                             </div>
                             <div class="col-sm">
-                              <?=substr($description, 0, 45).'...'?> // pour limite l'affichage de la discription a 45 caractéres
+                              <?=substr($description, 0, 45).'...'?>  <!-- pour limite laffichage de la discription a 45 caractéres -->
                             </div>
                             <form method="post" action="../controle/gerant.ctrl.php">
                               <button type="submit" name="supp" value='<?=$nom?>/<?=$date?>' class="btn btn-danger">Supprimer</button>
@@ -277,88 +279,95 @@
                       <!--/////////////////////////////////////////////////////////////section Modifier///////////////////////////////////////////////////////////-->
                       <div class="tab-pane fade <?=$modifier?>" id="attente" role="tabpanel" aria-labelledby="contact-tab">
                           <?php
-                            if (isset($modifierAdherent)) {
-                             var_dump($modifierAdherent);
+                            if (isset($modifAdh)) {
+                             $nomAdh = $modifAdh->getNom();
+                             $prenomAdh = $modifAdh->getPrenom();
+                             $emailAdh = $modifAdh->getMail();
+                             $dateAdh = $modifAdh->getDateNaiss();
+                             $telAdh = $modifAdh->getTel();
+                             $adresseAdh = $modifAdh->getAdresse();
+                             $villeAdh = $modifAdh->getVille();
+                             $codeAdh = $modifAdh->getCodePostal();
+                             $poidsAdh = $modifAdh->getPoids();
+                             $tailleAdh = $modifAdh->getTaille();
+                             $categrAdh = $modifAdh->getCategorie();
+                             $victAdh = $modifAdh->getVictoire();
+                             $defAdh = $modifAdh->getDefaite();
+                             $nulAdh = $modifAdh->getNul();
+                             $genre = $modifAdh->getGenre();
+                             $listCategories= $modifAdh->getListCategorie();
+
                             }
                            ?>
-                           <form class="modifier" action="../controle/inscription.ctrl.php" method="post">
+                           <form class="modifier" action="../controle/parametrage.ctrl.php" method="post">
+                             <input value="<?=$emailAdh?>" type="email" name="mail" id="mail"  hidden/>
 
                              <div class="card">
                                <div class="card-body">
+                                 <?php if (strtolower($genre)=="masculin"): ?>
+                                   <p> <label for="M">Masculin</label><input checked="checked" type="radio" name="choix" value="Masculin" id="M" required> </p>
+                                   <p> <label for="F">Féminin</label><input  type="radio" name="choix" value="Féminin" id="F" required> </p>
+                                 <?php else: ?>
+                                   <p> <label for="M">Masculin</label><input  type="radio" name="choix" value="Masculin" id="M" required> </p>
+                                   <p> <label for="F">Féminin</label><input checked="checked" type="radio" name="choix" value="Féminin" id="F" required> </p>
+                                 <?php endif; ?>
+
                                  <p>
-                                 <label for="M">Masculin</label>
-                                 <input type="radio" name="choix" value="Masculin" id="M" required>
+                                   <label for="">Prénom :</label><input value="<?=$prenomAdh?>" value="" type="text" name="prenom" id="prenom" autofocus placeholder="Prénom" required/>
                                  </p>
                                  <p>
-                                 <label for="F">Féminin</label>
-                                 <input type="radio" name="choix" value="Féminin" id="F" required>
-                                 </p>
-                                 <p>
-                                   <label for="">Prénom :</label>
-                                   <input type="text" name="prenom" id="prenom" autofocus placeholder="Prénom" required/>
-                                 </p>
-                                 <p>
-                                   <label for="">Nom :</label>
-                                   <input type="text" name="nom" id="nom" required placeholder="Nom" required/>
-                                 </p>
-                                 <p>
-                                   <label for="">E-mail :</label>
-                                   <input type="email" name="mail" id="mail" required placeholder="Adresse mail" required/>
+                                   <label for="">Nom :</label><input value="<?=$nomAdh?>"  type="text" name="nom" id="nom" required placeholder="Nom" required/>
                                  </p>
 
                                  <p>
-                                   <label for="">Téléphone :</label>
-                                   <input type="tel" name="tel" id="tel" placeholder="Téléphone"/>
-                                 </p>
-
-                                 <p>
-                                   <label for="">Date de naissance :</label>
-                                   <input type="date" name="naiss" id="naiss" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" required placeholder="Date de naissance"/>
+                                   <label for="">Téléphone :</label><input value="<?=$telAdh?>" type="tel" name="tel" id="tel" placeholder="Téléphone"/>
                                  </p>
                                  <p>
-                                   <label for="">Adresse :</label>
-                                   <input type="text" name="adresse" id="adresse" required placeholder="Adresse"required/>
+                                   <label for="">Date de naissance :</label><input value="<?=$dateAdh?>" type="date" name="naiss" id="naiss" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" required placeholder="Date de naissance"/>
                                  </p>
                                  <p>
-                                   <label for="">Ville :</label>
-                                   <input type="text" name="ville" id="ville" required placeholder="Ville" required/>
+                                   <label for="">Adresse :</label><input value="<?=$adresseAdh?>" type="text" name="adresse" id="adresse" required placeholder="Adresse"required/>
                                  </p>
                                  <p>
-                                   <label for="">Code Postal :</label>
-                                   <input type="number" name="cp" id="cp" required placeholder="Code postal" required/>
+                                   <label for="">Ville :</label><input value="<?=$villeAdh?>" type="text" name="ville" id="ville" required placeholder="Ville" required/>
                                  </p>
                                  <p>
-                                   <label for="">Taille:</label>
-                                   <input type="number" name="cp" id="cp" required placeholder="Code postal" required/>
+                                   <label for="">Code Postal :</label> <input value="<?=$codeAdh?>" type="number" name="cp" id="cp" required placeholder="Code postal" required/>
                                  </p>
                                  <p>
-                                   <label for="">Poids :</label>
-                                   <input type="number" name="cp" id="cp" required placeholder="Code postal" required/>
+                                   <label for="">Taille:</label><input value="<?=$tailleAdh?>" type="text" name="taille" id="metre" required placeholder="Taille" required/>
+                                 </p>
+                                 <p>
+                                   <label for="">Poids (en kg):</label><input value="<?=$poidsAdh?>" type="number" name="poids" id="kg" required placeholder="Poids" required/>
                                  </p>
                                  <p>
                                    <label for="">Catégorie :</label>
                                    <select name="typeCategorie" >
-                                     <option>poids mi-mouches</option>
-                                     <option>poids mouches</option>
-                                     <option>poids coqs</option>
-                                     <option>poids légers</option>
-                                     <option>poids super-légers</option>
-                                     <option>poids moyens</option>
-                                     <option>poids mi-lourds</option>
-                                     <option>poids lourds</option>
-                                     <option>poids moyens</option>
+                                     <?php
+                                            ?>
+                                     <?php foreach ($listCategories as $categ): ?>
+                                       <?php if ($categ==$categrAdh): ?>
+                                         <option selected="selected"><?=$categ?></option>
+                                       <?php else: ?>
+                                         <option><?=$categ?></option>
+                                       <?php endif;?>
+                                     <?php endforeach; ?>
                                    </select>
                                  </p>
+                                 <p>
+                                   <label for="">Victoires :</label><input value="<?=$victAdh?>" type="number" name="V" id="win" required placeholder="Victoires" required/>
+                                   <label for="">Nuls :</label><input value="<?=$nulAdh?>" type="number" name="N" id="draw" required placeholder="Nuls" required/>
+                                   <label for="">Défaite :</label><input  value="<?=$defAdh?>" type="number" name="D" id="loss" required placeholder="Défaites" required/>
+                                 </p>
                                </div>
-                               <div class="card-footer">
-                                 <input type="submit" value="Valider">
-                                 <?php global $erreur; ?>
-                                 <p style='color:red'> <?= $erreur ?></p>
-                               </div>
+
                              </div>
-
-
-
+                             <div class="card-footer">
+                               <input class="btn btn-danger" type="submit" value="Valider">
+                             </div>
+                           </form>
+                           <form action="../controle/profil.ctrl.php" method="POST"  >
+                             <button id="buttonRetour" type="submit" name="tabActive" value=" / / /show active" class="btn btn-secondary">retour</button>
                            </form>
 
                       </div>

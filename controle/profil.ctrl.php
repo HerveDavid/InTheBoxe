@@ -24,11 +24,11 @@
     }
     if (isset($_POST['modifier'])) {  //pour afficher la tab de modification avec le bon adherent
       $modifier="show active";
-      $modifierAdherent=$dao->getAdherent($_POST['modifier']);
+      $modifAdh=$dao->getAdherent($_POST['modifier']);
     }else {
       $modifier="";
     }
-    if (isset($_POST['disabled'])) {
+    if (isset($_POST['disabled'])) { // pour verrouillier la list des tab a gauche
       $disabled=$_POST['disabled'];
       $InfClub="";
       $DemComb = "";
@@ -36,6 +36,11 @@
       $GestActu ="";
     }else {
       $disabled="";
+    }
+    if (isset($_GET['erreurActu'])) {
+      $erreurActu="Vous avez saisie une date déjà expiré !";
+    }else {
+      $erreurActu="";
     }
     // var_dump($_REQUEST);
     // var_dump($_GET);

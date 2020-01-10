@@ -21,6 +21,23 @@ if (isset($_POST['prenom']) && isset($_POST['nom'])
    $adh = $dao->getAdherent($_SESSION['mail']);
    $_SESSION['prenom']= $adh->getPrenom();
 }
+if (isset($_POST['mail'])) {
+  $dao->updateAdherent('genre '.$_POST['choix'],$_POST['mail']);
+  $dao->updateAdherent('prenom '.$_POST['prenom'],$_POST['mail']);
+  $dao->updateAdherent('nom '.$_POST['nom'],$_POST['mail']);
+  $dao->updateAdherent('tel '.$_POST['tel'],$_POST['mail']);
+  $dao->updateAdherent('datenaiss '.$_POST['naiss'],$_POST['mail']);
+  $dao->updateAdherent('adresse '.$_POST['adresse'],$_POST['mail']);
+  $dao->updateAdherent('ville '.$_POST['ville'],$_POST['mail']);
+  $dao->updateAdherent('codePostal '.$_POST['cp'],$_POST['mail']);
+  $dao->updateAdherent('taille '.$_POST['taille'],$_POST['mail']);
+  $dao->updateAdherent('poids '.$_POST['poids'],$_POST['mail']);
+  $dao->updateAdherent('categorie '.$_POST['typeCategorie'],$_POST['mail']);
+  $dao->updateAdherent('victoire '.$_POST['V'],$_POST['mail']);
+  $dao->updateAdherent('nul '.$_POST['N'],$_POST['mail']);
+  $dao->updateAdherent('defaite '.$_POST['D'],$_POST['mail']);
+  header('Location: profil.ctrl.php?tabActive=" / / /show active"');
+}
 
 
 header('Location: profil.ctrl.php');

@@ -29,6 +29,7 @@ abstract class Adherent {
   //////////////////autres Methodes//////////////////
   public function getPalmares(){return "Adherent : '$this->getNom()' '$this->getPrenom()' Nombre de victoire : '$this->getVictoire()' Nombre de match nul : '$this->getNul' Nombre de défaite : '$this->getDefaite' ";}
   public function getAge(){return round((time() - strtotime($this->datenaiss)) / 3600 / 24 / 365.242); }
+  public function getListCategorie(){return array("poids mi-mouches","poids mouches","poids coqs","poids légers","poids super-légers","poids moyens","poids mi-lourds","poids lourds"); }
 }
 
 //////////////////////////////ADHERENT CLUB/////////////////////
