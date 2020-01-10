@@ -20,9 +20,12 @@
   background-color: #BE1E2D;
   border-radius: 10px;
 }
-
 .bg-red .nav-link {
   color: #FFFFFF;
+}
+
+header {
+  box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
 
 body {
@@ -47,11 +50,9 @@ body {
   top: 8em;
   margin: 0 15.5em;
 }
-
 #Content h1 {
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
-
 #Content h2 {
   font-family: Rubik;
   font-weight: bold;
@@ -60,12 +61,10 @@ body {
   margin: 0px;
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
-
 #Content h2 {
   font-size: 4.5em;
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
-
 #Content p {
   font-family: Palanquin;
   font-style: normal;
@@ -75,7 +74,6 @@ body {
   display: flex;
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
-
 #Content a {
   font-family: Palanquin;
   font-style: normal;
@@ -100,7 +98,6 @@ footer {
   height: 10em;
   align-items: center;
 }
-
 footer h1 {
   z-index: 2;
   width: auto;
@@ -114,7 +111,6 @@ footer h1 {
   font-size: 1em;
   text-align: justify;
 }
-
 footer h2 {
   z-index: 2;
   padding: 2em;
@@ -122,13 +118,11 @@ footer h2 {
   color: #FFFFFF;
   font-family: Palanquin;
 }
-
 footer nav {
   z-index: 2;
   margin-top: -10em;
   width: 100%;
 }
-
 footer nav ul {
   padding: inherit;
   height: 100%;
@@ -138,13 +132,12 @@ footer nav ul {
   margin: 0 0;
   justify-content: space-around;
 }
-
 footer nav ul li {
   align-content: center;
 }
 
 footer:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -159,13 +152,11 @@ footer:before {
 #tarif {
   text-align: center;
 }
-
 #tarif li {
   font-size: 1.5em;
   font-family: Rubik;
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
-
 #tarif a {
   font-size: 1.2em;
   font-family: Rubik;

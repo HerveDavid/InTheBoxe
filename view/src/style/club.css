@@ -20,9 +20,12 @@
   background-color: #BE1E2D;
   border-radius: 10px;
 }
-
 .bg-red .nav-link {
   color: #FFFFFF;
+}
+
+header {
+  box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
 
 body {
@@ -51,16 +54,13 @@ p {
   padding: 0;
   display: flex;
 }
-
 .club img {
   border: 0;
   flex: 50%;
 }
-
 .club .container {
   flex: 50%;
 }
-
 .club .container section {
   margin: 0;
   padding-top: 5em;

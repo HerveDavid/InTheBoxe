@@ -20,9 +20,12 @@
   background-color: #BE1E2D;
   border-radius: 10px;
 }
-
 .bg-red .nav-link {
   color: #FFFFFF;
+}
+
+header {
+  box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
 
 h1 {
