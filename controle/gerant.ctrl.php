@@ -32,5 +32,4 @@
   }
   header('Location: profil.ctrl.php');
 
-
  ?>
