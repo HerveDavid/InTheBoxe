@@ -11,27 +11,23 @@ fieldset {
   background: rgba(0, 0, 0, 0.6);
   border: none;
 }
-
 fieldset h1 {
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-style: bold;
   color: white;
   text-align: center;
   font-size: 5em;
 }
-
 fieldset .services {
   padding-bottom: 100px;
   text-align: center;
 }
-
 fieldset .service-item {
   display: inline-block;
   padding-left: 90px;
   padding-right: 90px;
   padding-top: 80px;
 }
-
 fieldset .service-item img {
   width: 250px;
   height: 250px;
@@ -39,28 +35,24 @@ fieldset .service-item img {
   border: 10px solid #fff;
   border-radius: 50%;
 }
-
 fieldset .service-item h4 {
   margin-top: 20px;
   font-size: 22px;
   color: #fff;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-style: bold;
   font-size: 4em;
   margin-bottom: 0px;
 }
-
 fieldset .service-item a {
   text-decoration: none;
 }
-
 fieldset .bouton {
   background: rgba(0, 0, 0, 0);
   text-align: center;
   position: relative;
   bottom: 100px;
 }
-
 fieldset .bouton a {
   color: white;
   text-decoration: none;
@@ -73,18 +65,16 @@ fieldset .bouton a {
   cursor: pointer;
   letter-spacing: 0.07em;
 }
-
 fieldset .bouton a .text {
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-style: bold;
   transform: translate3d(0, 1em, 0);
   display: block;
   transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
-
 fieldset .bouton a:after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: -1px;
   left: calc(1em * 1.2);
   right: calc(1em * 1.2);
@@ -93,56 +83,47 @@ fieldset .bouton a:after {
   transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
   transform-origin: left;
 }
-
 fieldset .bouton .line {
   position: absolute;
   background: white;
 }
-
 fieldset .bouton .line.-right, fieldset .bouton .line.-left {
   width: 1px;
   bottom: -1px;
   top: -1px;
   transform: scale3d(1, 0, 1);
 }
-
 fieldset .bouton .line.-top, fieldset .bouton .line.-bottom {
   height: 1px;
   left: -1px;
   right: -1px;
   transform: scale3d(0, 1, 1);
 }
-
 fieldset .bouton .line.-right {
   right: -1px;
   transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
   transform-origin: top;
 }
-
 fieldset .bouton .line.-top {
   top: -1px;
   transition: transform 0.08s linear 0.43s;
   transform-origin: left;
 }
-
 fieldset .bouton .line.-left {
   left: -1px;
   transition: transform 0.08s linear 0.51s;
   transform-origin: bottom;
 }
-
 fieldset .bouton .line.-bottom {
   bottom: -1px;
   transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
   transform-origin: right;
 }
-
 fieldset .bouton a:hover .text,
 fieldset .bouton a:active .text {
   transform: translate3d(0, 0, 0);
   transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
-
 fieldset .bouton a:hover:after,
 fieldset .bouton a:active:after {
   transform: scale3d(0, 1, 1);
@@ -151,30 +132,25 @@ fieldset .bouton a:active:after {
   transform-origin: right;
   transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
 }
-
 fieldset .bouton a:hover .line,
 fieldset .bouton a:active .line {
   transform: scale3d(1, 1, 1);
 }
-
 fieldset .bouton a:hover .line.-right,
 fieldset .bouton a:active .line.-right {
   transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
   transform-origin: bottom;
 }
-
 fieldset .bouton a:hover .line.-top,
 fieldset .bouton a:active .line.-top {
   transition: transform 0.08s linear 0.4s;
   transform-origin: right;
 }
-
 fieldset .bouton a:hover .line.-left,
 fieldset .bouton a:active .line.-left {
   transition: transform 0.08s linear 0.48s;
   transform-origin: top;
 }
-
 fieldset .bouton a:hover .line.-bottom,
 fieldset .bouton a:active .line.-bottom {
   transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;

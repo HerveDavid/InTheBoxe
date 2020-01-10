@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <nav class="navbar navbar-expand-lg bg-white">
         <a class="navbar-brand" href="#">
           <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
         </a>
@@ -58,6 +58,7 @@
         </div>
       </nav>
     </header>
+
     <article>
     <div id="divco">
       <img src="../view/src/img/connexion_logo.png" alt="">

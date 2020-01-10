@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <nav class="navbar navbar-expand-lg bg-white">
         <a class="navbar-brand" href="#">
           <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
         </a>
@@ -27,8 +27,8 @@
             <li class="nav-item">
               <a class="nav-link" href="../controle/actualite.ctrl.php">Actualités</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="../controle/planning.ctrl.php">Planning/Tarifs</a>
+            <li class="nav-item">
+              <a class="nav-link active" href="../controle/planning.ctrl.php">Planning/Tarifs</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../controle/club.ctrl.php">Club</a>

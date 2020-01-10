@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <nav class="navbar navbar-expand-lg bg-white">
         <a class="navbar-brand" href="#">
           <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
         </a>
@@ -23,8 +23,8 @@
             <li class="nav-item">
               <a class="nav-link" href="../controle/accueil.ctrl.php">Accueil<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="../controle/actualite.ctrl.php">Actualités</a>
+            <li class="nav-item">
+              <a class="nav-link active" href="../controle/actualite.ctrl.php">Actualités</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../controle/planning.ctrl.php">Planning/Tarifs</a>
@@ -39,7 +39,7 @@
           <ul class="navbar-nav my-2 my-lg-0">
             <?php if (isset($_SESSION['mail'])) {
                 $nom = $_SESSION['prenom']; ?>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown bg-red">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <?=$nom?>
                   </a>
