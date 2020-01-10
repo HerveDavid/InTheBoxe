@@ -34,6 +34,7 @@
       </nav>
     </header>
     <?php
+
       $nom = $profil->getNom() ;
       $prenom = $profil->getPrenom();
       $mail= $profil -> getMail();
@@ -41,6 +42,11 @@
       $nombreAdherents= count($listAdherents);
       $nombreDemandesCombats = count($demandesCombats);
       $nombreAttente = count($listAttente);
+      if ($disabled=="disabled") {
+        $active="";
+      }else {
+        $active="active";
+      }
      ?>
     <div class="container d-flex justify-content-around">
       <div class="user-details">
@@ -56,23 +62,26 @@
                 <div class="user-body d-flex flex-row">
                     <ul class="nav nav-tabs flex-column" id="myTab" role="tablist">
                       <li class="nav-item">
-                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#infoCompte" role="tab" aria-controls="contact" aria-selected="true">Informations du compte</a>
+                        <a class="nav-link <?=$active?><?=$disabled?>" id="home-tab" data-toggle="tab" href="#infoCompte" role="tab" aria-controls="contact" aria-selected="true">Informations du compte</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#combat" role="tab" aria-controls="profile" aria-selected="false">Demandes de combat</a>
+                        <a class="nav-link <?=$disabled?>" id="profile-tab" data-toggle="tab" href="#combat" role="tab" aria-controls="profile" aria-selected="false">Demandes de combat</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#actualite" role="tab" aria-controls="contact" aria-selected="false">Gestion de l'actualité</a>
+                        <a class="nav-link <?=$disabled?>" id="contact-tab" data-toggle="tab" href="#actualite" role="tab" aria-controls="contact" aria-selected="false">Gestion de l'actualité</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#adherent" role="tab" aria-controls="contact" aria-selected="false">Gestion des adhérents</a>
+                        <a class="nav-link <?=$disabled?>" id="contact-tab" data-toggle="tab" href="#adherent" role="tab" aria-controls="contact" aria-selected="false">Gestion des adhérents</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#attente" role="tab" aria-controls="contact" aria-selected="false">Profil</a>
+                        <a class="nav-link <?=$disabled?>" id="contact-tab" data-toggle="tab" href="#attente" role="tab" aria-controls="contact" aria-selected="false">Profil</a>
                       </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
-                      <div class="tab-pane fade show active card" id="infoCompte" role="tabpanel" aria-labelledby="home-tab">
+
+                      <!--/////////////////////////////////////////////////////////////section informations///////////////////////////////////////////////////////////-->
+
+                      <div class="tab-pane fade <?=$InfClub?> card" id="infoCompte" role="tabpanel" aria-labelledby="home-tab">
                         <div class="card-body">
                           <section>
                             <h3>Nombre d'adherents: <?=$nombreAdherents?> </h3>
@@ -91,7 +100,7 @@
                       </div>
                       <!--/////////////////////////////////////////////////////////////section Demandes de combats///////////////////////////////////////////////////////////-->
 
-                      <div class="tab-pane fade card" id="combat" role="tabpanel" aria-labelledby="profile-tab">
+                      <div class="tab-pane fade <?=$DemComb?> card" id="combat" role="tabpanel" aria-labelledby="profile-tab">
                         <h3 class="card-header">Nombre de demandes: </h3>
                         <div class="card-body d-flex justify-content-between align-self-baseline align-content-between flex-wrap">
                           <?php foreach ($demandesCombats as $adh) { ?>
@@ -127,7 +136,7 @@
                       </div>
                       <!--/////////////////////////////////////////////////////////////section Actualités///////////////////////////////////////////////////////////-->
 
-                      <div class="tab-pane fade" id="actualite" role="tabpanel" aria-labelledby="contact-tab">
+                      <div class="tab-pane fade <?=$GestActu?>" id="actualite" role="tabpanel" aria-labelledby="contact-tab">
                         <form action="../controle/gerant.ctrl.php"  method="post">
                           <div class="form-group">
                             <label for="formControlInput">Nom de l'actualité</label>
@@ -187,7 +196,7 @@
                       </div>
                       <!--/////////////////////////////////////////////////////////////section List Adherents///////////////////////////////////////////////////////////-->
 
-                      <div class="tab-pane fade card" id="adherent" role="tabpanel" aria-labelledby="contact-tab">
+                      <div class="tab-pane fade <?=$GestAdh?> card" id="adherent" role="tabpanel" aria-labelledby="contact-tab">
                         <h3 class="card-header">Liste des adhérents du club : </h3>
                         <div class="card-body d-flex justify-content-between align-self-baseline align-content-between flex-wrap">
                           <div class="dropdown">
@@ -226,14 +235,10 @@
                                 </div>
                               </div>
                               <div class="card-footer">
-                                <script type="text/javascript">
-                                function test(){
-                                  document.write('<div>Print this after the script tag</div>');
-                                }
-                                </script>
-                                <!-- <form action="../controle/modificationAdherent.ctrl.php" method="POST"  > -->
-                                  <button onclick="test()" type="button"  class="btn btn-secondary" >Modifier</button>
-                                <!-- </form> id="contact-tab" data-toggle="tab" href="#attente" role="tab" aria-controls="contact" aria-selected="false"  -->
+                                <form action="../controle/profil.ctrl.php" method="POST"  >
+                                  <input type="text" name="disabled" value="disabled" hidden>
+                                  <button type="submit" name="modifier" value="<?=$adh->getMail()?>" class="btn btn-secondary">Modifier</button>
+                                </form>
                               </div>
                             </div>
                             <?php } ?>
@@ -241,11 +246,93 @@
                         </div>
                       </div>
                       <!--/////////////////////////////////////////////////////////////section Modifier///////////////////////////////////////////////////////////-->
-                      <!-- <div class="tab-pane fade" id="attente" role="tabpanel" aria-labelledby="contact-tab">
-                        <?php if (isset($_POST['walid'])): ?>
-                          <p>dhîzaeohdẑeuihduizefhuizehfpuizefhpuize</p>
-                        <?php endif; ?>
-                      </div> -->
+                      <div class="tab-pane fade <?=$modifier?>" id="attente" role="tabpanel" aria-labelledby="contact-tab">
+                          <?php
+                            if (isset($modifierAdherent)) {
+                             var_dump($modifierAdherent);
+                            }
+                           ?>
+                           <form class="modifier" action="../controle/inscription.ctrl.php" method="post">
+
+                             <div class="card">
+                               <div class="card-body">
+                                 <p>
+                                 <label for="M">Masculin</label>
+                                 <input type="radio" name="choix" value="Masculin" id="M" required>
+                                 </p>
+                                 <p>
+                                 <label for="F">Féminin</label>
+                                 <input type="radio" name="choix" value="Féminin" id="F" required>
+                                 </p>
+                                 <p>
+                                   <label for="">Prénom :</label>
+                                   <input type="text" name="prenom" id="prenom" autofocus placeholder="Prénom" required/>
+                                 </p>
+                                 <p>
+                                   <label for="">Nom :</label>
+                                   <input type="text" name="nom" id="nom" required placeholder="Nom" required/>
+                                 </p>
+                                 <p>
+                                   <label for="">E-mail :</label>
+                                   <input type="email" name="mail" id="mail" required placeholder="Adresse mail" required/>
+                                 </p>
+
+                                 <p>
+                                   <label for="">Téléphone :</label>
+                                   <input type="tel" name="tel" id="tel" placeholder="Téléphone"/>
+                                 </p>
+
+                                 <p>
+                                   <label for="">Date de naissance :</label>
+                                   <input type="date" name="naiss" id="naiss" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" required placeholder="Date de naissance"/>
+                                 </p>
+                                 <p>
+                                   <label for="">Adresse :</label>
+                                   <input type="text" name="adresse" id="adresse" required placeholder="Adresse"required/>
+                                 </p>
+                                 <p>
+                                   <label for="">Ville :</label>
+                                   <input type="text" name="ville" id="ville" required placeholder="Ville" required/>
+                                 </p>
+                                 <p>
+                                   <label for="">Code Postal :</label>
+                                   <input type="number" name="cp" id="cp" required placeholder="Code postal" required/>
+                                 </p>
+                                 <p>
+                                   <label for="">Taille:</label>
+                                   <input type="number" name="cp" id="cp" required placeholder="Code postal" required/>
+                                 </p>
+                                 <p>
+                                   <label for="">Poids :</label>
+                                   <input type="number" name="cp" id="cp" required placeholder="Code postal" required/>
+                                 </p>
+                                 <p>
+                                   <label for="">Catégorie :</label>
+                                   <select name="typeCategorie" >
+                                     <option>poids mi-mouches</option>
+                                     <option>poids mouches</option>
+                                     <option>poids coqs</option>
+                                     <option>poids légers</option>
+                                     <option>poids super-légers</option>
+                                     <option>poids moyens</option>
+                                     <option>poids mi-lourds</option>
+                                     <option>poids lourds</option>
+                                     <option>poids moyens</option>
+                                   </select>
+                                 </p>
+                               </div>
+                               <div class="card-footer">
+                                 <input type="submit" value="Valider">
+                                 <?php global $erreur; ?>
+                                 <p style='color:red'> <?= $erreur ?></p>
+                               </div>
+                             </div>
+
+
+
+                           </form>
+
+                      </div>
                     </div>
                   </div>
                 </div>

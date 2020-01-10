@@ -4,6 +4,7 @@
   if (isset($_GET['deco'])) {
     $_SESSION['mail']=Null;
   }
-  include('../view/accueil.view.php');
   
+  include('../view/accueil.view.php');
+
  ?>

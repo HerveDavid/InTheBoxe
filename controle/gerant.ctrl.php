@@ -20,16 +20,22 @@
                      'coach' => $nomCoach);
     $actu = new Actualite($param);
     $dao->CreeActualite($actu);
+    header('Location: profil.ctrl.php?tabActive=" / /show active/ "');
   }
   if (isset($_POST['clear'])) {
     $dao->suppActualitePasser();
+    header('Location: profil.ctrl.php?tabActive=" / /show active/ "');
   }
   if (isset($_POST['supp'])) {
     $value = explode("/",$_POST['supp']);
     $nom= $value[0];
     $date = $value[1];
     $dao->suppActualite($nom,$date);
+    header('Location: profil.ctrl.php?tabActive=" / /show active/ "');
   }
-  header('Location: profil.ctrl.php');
+  // if () {
+  //   header('Location: profil.ctrl.php?modifier="true");
+  // }
+  //header('Location: profil.ctrl.php');
 
  ?>
