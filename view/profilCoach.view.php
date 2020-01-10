@@ -1,36 +1,61 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../view/src/style/profilCoach.css">
 
     <title></title>
   </head>
   <body>
     <header>
-      <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
-      <nav class="topNavigation">
-        <ul>
-          <?php if (!isset($_SESSION['mail'])) { ?>
-          <li id="Accueil"><a href="../controle/accueil.ctrl.php">Accueil</a></li>
-          <?php } ?>
-          <li id="Actualités"><a href="../controle/actualite.ctrl.php">Actualités</a></li>
-          <li id="Planning"><a href="../controle/planning.ctrl.php">Planning/Tarifs</a></li>
-          <li id= "Club"><a href="../controle/club.ctrl.php">Club</a></li>
-          <li id="Contact"><a href="../controle/contact.ctrl.php">Contact</a></li>
-          <?php if (isset($_SESSION['mail'])) {
-            $nom = $_SESSION['prenom']; ?>
-            <li id="Connexion"><a href="../controle/profil.ctrl.php"><?=$nom?></a></li>
-            <li id="Connexion"><a href="../controle/accueil.ctrl.php?deco=1">Déconnexion</a></li>
-          <?php }else { ?>
-            <li id="Connexion"><a href="../controle/connexion.ctrl.php">Connexion</a></li>
-          <?php } ?>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../controle/accueil.ctrl.php">Accueil<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../controle/actualite.ctrl.php">Actualités</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../controle/planning.ctrl.php">Planning/Tarifs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../controle/club.ctrl.php">Club</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../controle/contact.ctrl.php">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav my-2 my-lg-0">
+            <?php if (isset($_SESSION['mail'])) {
+                $nom = $_SESSION['prenom']; ?>
+                <li class="nav-item dropdown bg-red">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <?=$nom?>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="../controle/accueil.ctrl.php?deco=1">Déconnexion</a>
+                    <div class="dropdown-divider"></div>
+                  </div>
+                </li>
+            <?php }else { ?>
+
+              <li class="nav-item my-2 my-sm-0 bg-red">
+                <a class="nav-link" href="../controle/connexion.ctrl.php">Connexion</a>
+              </li>
+            <?php } ?>
+          </ul>
+        </div>
       </nav>
     </header>
     <?php
@@ -264,3 +289,6 @@
      ?>
   </body>
 </html>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
