@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../view/src/style/profilCoach.css">
-    <link rel="icon" href="../view/src/img/logo2.png" />
+    <link rel="icon" href="../view/src/img/logo.png" />
 
     <title></title>
   </head>

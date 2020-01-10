@@ -4,31 +4,7 @@
     <meta charset="utf-8">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <link rel="stylesheet" href="../view/src/style/contact.css">
-<<<<<<< HEAD
-      <link rel="icon" href="../view/src/img/logo2.png" />
-    <title></title>
-  </head>
-  <body>
-    <header>
-      <img class="logo" src="../view/src/img/logo2.png" alt="logo-InTheBoxe" width="85" height="68">
-      <nav class="topNavigation">
-        <ul>
-          <?php if (!isset($_SESSION['mail'])) { ?>
-          <li id="Accueil"><a href="../controle/accueil.ctrl.php">Accueil</a></li>
-          <?php } ?>
-          <li id="Actualités"><a href="../controle/actualite.ctrl.php">Actualités</a></li>
-          <li id="Planning"><a href="../controle/planning.ctrl.php">Planning/Tarifs</a></li>
-          <li id= "Club"><a href="../controle/club.ctrl.php">Club</a></li>
-          <li id="Contact"><a href="../controle/contact.ctrl.php">Contact</a></li>
-          <?php if (isset($_SESSION['mail'])) {
-            $nom = $_SESSION['prenom']; ?>
-            <li id="Connexion"><a href="../controle/profil.ctrl.php"><?=$nom?></a></li>
-            <li id="Connexion"><a href="../controle/accueil.ctrl.php?deco=1">Déconnexion</a></li>
-          <?php }else { ?>
-            <li id="Connexion"><a href="../controle/connexion.ctrl.php">Connexion</a></li>
-          <?php } ?>
-        </ul>
-=======
+      <link rel="icon" href="../view/src/img/logo.png" />
     <title>Contact</title>
   </head>
   <body>
@@ -79,7 +55,6 @@
             <?php } ?>
           </ul>
         </div>
->>>>>>> 7dc101dd7914203f40194f638915a478eff1cdae
       </nav>
     </header>
 

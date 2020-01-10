@@ -7,7 +7,7 @@
 <html lang="fr" dir="ltr">
   <head>
     <link rel="stylesheet" href="../view/src/style/profilAdherent.css">
-    <link rel="icon" href="../view/src/img/logo2.png" />
+    <link rel="icon" href="../view/src/img/logo.png" />
     <meta charset="utf-8">
     <title>Votre profil</title>
   </head>
