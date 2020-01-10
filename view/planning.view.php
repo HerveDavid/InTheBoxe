@@ -14,6 +14,7 @@
     <script src='../framework/fullcalendar/packages/timegrid/main.js'></script>
 
     <link rel="stylesheet" href="../view/src/style/planning.css">
+    <link rel="icon" href="../view/src/img/logo2.png" />
     <script type="text/javascript" src="../view/src/js/profil.js"></script>
 
     <meta charset="utf-8">
@@ -21,7 +22,7 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
+      <img class="logo" src="../view/src/img/logo2.png" alt="logo-InTheBoxe" width="85" height="68">
       <nav class="topNavigation">
         <ul>
           <?php if (!isset($_SESSION['mail'])) { ?>

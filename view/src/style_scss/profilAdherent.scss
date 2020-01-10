@@ -29,6 +29,24 @@ body {
    background-color: $red;
  }
 
+ #apk {
+   display: block;
+   position: relative;
+   top: 10px;
+   text-align: center;
+   font-family: $fontLow;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 1.5em;
+   line-height: 1.5em;
+   border-radius: 15px;
+   padding: 0.4em 2.5em;
+   background-color: $red;
+   color: $white;
+   text-decoration: none;
+   box-shadow: 3px 3px 3px rgba(255, 255, 255, .2), 3px 3px 3px rgba(255, 255, 255, .2);
+ }
+
       $thick : 1px;
       $pad : 1em;
       $extra : calc(#{$pad} * 1.2);

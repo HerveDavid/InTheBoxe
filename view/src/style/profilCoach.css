@@ -7,7 +7,8 @@ header {
   left: 10em;
   right: 10em;
   z-index: 100;
-  background-color: #FFFFFF;
+  background-color: white;
+  border-radius: 10px;
   color: #000000;
   font-family: Palanquin;
   font-style: normal;
@@ -46,6 +47,9 @@ header nav ul li a {
 
 header nav ul #Connexion {
   background-color: #BE1E2D;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 30px;
 }
 
 header nav ul #Connexion a {
@@ -80,22 +84,4 @@ body {
 
 .tab-pane {
   width: 50em;
-}
-.numAtt {
-  margin: 0;
-  padding: 0;
-  background-color: blue;
-  color: blue;
-}
-.numDC {
-  margin: 0;
-  padding: 0;
-  color: blue;
-
-}
-.numMatch {
-  margin: 0;
-  padding: 0;
-  color: blue;
-
 }

@@ -2,12 +2,13 @@
 <html lang="fr" dir="ltr">
   <head>
     <link rel="stylesheet" href="../view/src/style/accueil.css">
+    <link rel="icon" href="../view/src/img/logo2.png" />
     <meta charset="utf-8">
     <title>InTheBoxe</title>
   </head>
   <body>
     <header>
-      <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
+      <img class="logo" src="../view/src/img/logo2.png" alt="logo-InTheBoxe" width="85" height="68">
       <nav class="topNavigation">
         <ul>
           <li id="Accueil"><a href="../controle/accueil.ctrl.php">Accueil</a></li>

@@ -11,8 +11,10 @@ header {
   z-index: 100;
   // position: absolute;
   // margin: 0 9.6em;
-  background-color: $white;
+  background-color: white;
+  border-radius: 10px;
   color: $black;
+
 
   font-family: $fontLow;
   font-style: normal;
@@ -33,6 +35,7 @@ header {
   nav {
 
     width: 100%;
+
 
     ul {
       padding: inherit;
@@ -57,6 +60,9 @@ header {
 
       #Connexion{
         background-color: $red;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 30px;
         a {
           font-weight: bold;
           color: $white;

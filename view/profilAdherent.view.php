@@ -7,6 +7,7 @@
 <html lang="fr" dir="ltr">
   <head>
     <link rel="stylesheet" href="../view/src/style/profilAdherent.css">
+    <link rel="icon" href="../view/src/img/logo2.png" />
     <meta charset="utf-8">
     <title>Votre profil</title>
   </head>
@@ -26,7 +27,7 @@
     $statue = $profil->getStatut();
      ?>
     <header>
-      <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
+      <img class="logo" src="../view/src/img/logo2.png" alt="logo-InTheBoxe" width="85" height="68">
       <nav class="topNavigation">
         <ul>
           <?php if (!isset($_SESSION['mail'])) { ?>
@@ -109,6 +110,8 @@
                             <span class="line -bottom"></span>
                           </a>
                         </section>
+
+                        <a id="apk" href="../appAndroid/InTheBoxe_1_1.0.apk" download="InTheBoxe_1_1.0.apk">Téléchargez l'application d'entrainement sur votre smartphone Android</a>
 
                         <hr class="style1">
 
