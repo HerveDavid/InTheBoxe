@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
+.logo {
+  width: 80px;
+  height: 60px;
+}
+
 .bg-red {
   background-color: #BE1E2D;
   border-radius: 10px;
