@@ -1,4 +1,5 @@
 @import "header";
+
 @import "body";
 @import "popupConnexion";
 
@@ -12,7 +13,7 @@ body{
   color: $white;
 }
 
-#Content {
+#content {
   position: relative;
   top: 8em;
   margin: 0 15.5em;
@@ -68,7 +69,7 @@ body{
 
 
 
-footer{
+#exFoot{
   background: inherit;
   // overflow: hidden;
   // background-color: rgba(#3E3E3E, 0.76);
@@ -119,7 +120,7 @@ footer{
   }
 }
 
-footer:before{
+#exFoot:before{
   content: '';
   position: absolute;
   top: 0;

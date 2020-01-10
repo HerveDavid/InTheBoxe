@@ -1,24 +1,29 @@
 @import "header";
 @import "variables";
 
-* {
-  box-sizing: border-box;
-}
+// * {
+//   box-sizing: border-box;
+// }
+
+// body {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
 
 body {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  text-align: center;
+
+  // #sponsor {
+  //   position: fixed;
+  //   top: 600px;
+  //   left: 300px;
+  // }
 }
 
 .boxe-main-full {
-  margin: auto;
-  text-align: center;
-  width: 50%;
-  height: 50%;
-  padding-top: 100px;
-  display: inline-table;
-  position: relative;
-
 
   h5 {
     margin: 0 0 0.55em;
@@ -48,16 +53,7 @@ body {
 }
 
 .boxe-main-gauche {
-  padding-top: 40px;
-  padding-left: 10%;
-  margin: auto;
-  text-align: left;
-  width: 50%;
-  height: 50%;
-  display: table-cell;
-
   p {
-    text-align: center;
     font-family: $fontHigh;
     img {
       width: 50px;
@@ -66,7 +62,6 @@ body {
   }
 
   #question {
-    text-align: left;
   }
 
   form {
@@ -104,24 +99,13 @@ body {
 }
 
 .boxe-main-droite {
-  display: table-cell;
-  padding-right: 20%;
-  margin-top: 50px;
-  text-align: center;
-  width: 50%;
-  height: 50%;
-  font-family: $fontLow;
 
   h5 {
     color: $red;
-    text-align: right;
   }
 
   #place {
-    text-align: center;
     font-family: $fontHigh;
-    position: relative;
-    left: 60px;
     img {
       width: 50px;
       height: 40px;
@@ -129,7 +113,6 @@ body {
   }
 
   p {
-    text-align: right;
   }
 
   #titreHoraires {
@@ -139,14 +122,6 @@ body {
 }
 
 #fb-root {
-  display: table-cell;
-  padding-right: 20%;
-  margin-top: 50px;
-  text-align: center;
-  width: 50%;
-  height: 50%;
-  font-family: $fontLow;
   position: relative;
-  left: 500px;
-  bottom: 150px;
+  left: 550px;
 }

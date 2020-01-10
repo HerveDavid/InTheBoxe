@@ -8,6 +8,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../view/src/style/profilCoach.css">
+    <link rel="icon" href="../view/src/img/logo.png" />
 
     <title></title>
   </head>
@@ -38,5 +39,23 @@
     //message a transmettre
 
      ?>
+
+     <!-- Footer -->
+     <footer class="page-footer font-small cyan darken-3">
+       <!-- Footer Elements -->
+       <div style="text-align:center;" class="container">
+         <a href="https://www.start-securite.fr/">
+           <img id="sponsor" src="../view/src/img/sponsor.png" alt="sponsor">
+         </a>
+       </div>
+       <!-- Footer Elements -->
+       <!-- Copyright -->
+       <div class="footer-copyright text-center py-3">© 2020 Copyright:
+         <a href="../controle/accueil.ctrl.php"> InTheBoxe.fr</a>
+       </div>
+       <!-- Copyright -->
+     </footer>
+     <!-- Footer -->
+     
   </body>
 </html>

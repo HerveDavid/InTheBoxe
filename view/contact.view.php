@@ -2,31 +2,64 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <link rel="stylesheet" href="../view/src/style/contact.css">
-    <title></title>
+      <link rel="icon" href="../view/src/img/logo.png" />
+    <title>Contact</title>
   </head>
   <body>
     <header>
-      <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
-      <nav class="topNavigation">
-        <ul>
-          <?php if (!isset($_SESSION['mail'])) { ?>
-          <li id="Accueil"><a href="../controle/accueil.ctrl.php">Accueil</a></li>
-          <?php } ?>
-          <li id="Actualités"><a href="../controle/actualite.ctrl.php">Actualités</a></li>
-          <li id="Planning"><a href="../controle/planning.ctrl.php">Planning/Tarifs</a></li>
-          <li id= "Club"><a href="../controle/club.ctrl.php">Club</a></li>
-          <li id="Contact"><a href="../controle/contact.ctrl.php">Contact</a></li>
-          <?php if (isset($_SESSION['mail'])) {
-            $nom = $_SESSION['prenom']; ?>
-            <li id="Connexion"><a href="../controle/profil.ctrl.php"><?=$nom?></a></li>
-            <li id="Connexion"><a href="../controle/accueil.ctrl.php?deco=1">Déconnexion</a></li>
-          <?php }else { ?>
-            <li id="Connexion"><a href="../controle/connexion.ctrl.php">Connexion</a></li>
-          <?php } ?>
-        </ul>
+      <nav class="navbar navbar-expand-lg bg-white">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="../view/src/img/logo.png" alt="logo-InTheBoxe">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../controle/accueil.ctrl.php">Accueil<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../controle/actualite.ctrl.php">Actualités</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../controle/planning.ctrl.php">Planning/Tarifs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../controle/club.ctrl.php">Club</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../controle/contact.ctrl.php">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav my-2 my-lg-0">
+            <?php if (isset($_SESSION['mail'])) {
+                $nom = $_SESSION['prenom']; ?>
+                <li class="nav-item dropdown bg-red">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <?=$nom?>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="../controle/profil.ctrl.php">Profil</a>
+                    <a class="dropdown-item" href="../controle/accueil.ctrl.php?deco=1">Déconnexion</a>
+                    <div class="dropdown-divider"></div>
+                  </div>
+                </li>
+            <?php }else { ?>
+
+              <li class="nav-item my-2 my-sm-0 bg-red">
+                <a class="nav-link" href="../controle/connexion.ctrl.php">Connexion</a>
+              </li>
+            <?php } ?>
+          </ul>
+        </div>
       </nav>
     </header>
+
+    <!-- <img id="sponsor" src="../view/src/img/sponsor.png" alt="sponsor"> -->
 
     <div class="boxe-main-full">
       <article class="boxe-article">
@@ -37,7 +70,14 @@
                 <img src="../view/src/img/contact/gantsBoxe.png" alt="gantsBoxe">
             </p>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2751.449025643487!2d6.586565315525784!3d46.40015197912312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c3cab6d4c055f%3A0x4fa7470265a3f22a!2sImpasse%20Dr%20Dumur%2C%2074500%20%C3%89vian-les-Bains!5e0!3m2!1sfr!2sfr!4v1575628999904!5m2!1sfr!2sfr" width="1200" height="250" frameborder="0" align="middle" style="border:0;" allowfullscreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2751.449025643487!2d6.586565315525784!3d46.40015197912312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c3cab6d4c055f%3A0x4fa7470265a3f22a!2sImpasse%20Dr%20Dumur%2C%2074500%20%C3%89vian-les-Bains!5e0!3m2!1sfr!2sfr!4v1575628999904!5m2!1sfr!2sfr"
+            width="1300"
+            height="300"
+            frameborder="0"
+            align="middle"
+            style="border:0;"
+            allowfullscreen="true">
+            </iframe>
 
           </div>
       </article>
@@ -72,6 +112,7 @@
       <h5>
         Boxing Club Evian
       </h5>
+      <br>
       <p>
         Impasse du Docteur Dumur
         <br>
@@ -83,9 +124,11 @@
         <br>
         Parking à proximité du club
       </p>
+      <br>
       <p id="titreHoraires">
-        Horaires d'ouverture
+        Horaires d'ouvertures
       </p>
+      <br>
       <p id="horaires">
         Lundi ……………….…......................…. 17h > 20h
         <br>
@@ -93,7 +136,7 @@
         <br>
         Mercredi ………….......…….….....…. 18h > 20h
         <br>
-        Jeudi   ..............9h > 10h30 | 18h > 20h
+        Jeudi   ..........................9h > 10h30 | 18h > 20h
         <br>
         Vendredi ……………..…............……. 17h > 20h
         <br>
@@ -122,5 +165,25 @@
       </div>
     </div>
 
+    <!-- Footer -->
+    <footer class="page-footer font-small cyan darken-3">
+      <!-- Footer Elements -->
+      <div style="text-align:center;" class="container">
+        <a href="https://www.start-securite.fr/">
+          <img id="sponsor" src="../view/src/img/sponsor.png" alt="sponsor">
+        </a>
+      </div>
+      <!-- Footer Elements -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="../controle/accueil.ctrl.php"> InTheBoxe.fr</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
   </body>
 </html>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
