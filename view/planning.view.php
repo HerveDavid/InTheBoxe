@@ -45,6 +45,7 @@
                     <?=$nom?>
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="../controle/profil.ctrl.php">Profil</a>
                     <a class="dropdown-item" href="../controle/accueil.ctrl.php?deco=1">Déconnexion</a>
                     <div class="dropdown-divider"></div>
                   </div>
