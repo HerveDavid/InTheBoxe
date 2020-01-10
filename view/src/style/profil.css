@@ -1,1 +1,4 @@
-@import"https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap";body{font-family:Palanquin}
+@import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
+body {
+  font-family: Palanquin;
+}

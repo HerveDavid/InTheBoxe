@@ -21,19 +21,18 @@
   background-color: #BE1E2D;
   border-radius: 10px;
 }
+
 .bg-red .nav-link {
   color: #FFFFFF;
 }
 
-.boxe-main-full {
-  margin: auto;
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
-  width: 50%;
-  height: 50%;
-  padding-top: 100px;
-  display: inline-table;
-  position: relative;
 }
+
 .boxe-main-full h5 {
   margin: 0 0 0.55em;
   text-align: center;
@@ -41,6 +40,7 @@
   text-rendering: optimizelegibility;
   font-family: Palanquin;
 }
+
 .boxe-main-full h1 {
   margin: 0 0 0.55em;
   text-align: center;
@@ -49,34 +49,25 @@
   text-rendering: optimizelegibility;
   font-family: Rubik;
 }
+
 .boxe-main-full p {
   text-align: center;
 }
+
 .boxe-main-full p img {
   width: 50px;
   height: 50px;
 }
 
-.boxe-main-gauche {
-  padding-top: 40px;
-  padding-left: 10%;
-  margin: auto;
-  text-align: left;
-  width: 50%;
-  height: 50%;
-  display: table-cell;
-}
 .boxe-main-gauche p {
-  text-align: center;
   font-family: Rubik;
 }
+
 .boxe-main-gauche p img {
   width: 50px;
   height: 50px;
 }
-.boxe-main-gauche #question {
-  text-align: left;
-}
+
 .boxe-main-gauche form input {
   border-color: #BE1E2D;
   color: #BE1E2D;
@@ -85,6 +76,7 @@
   margin-top: 22px;
   margin-bottom: 22px;
 }
+
 .boxe-main-gauche form textarea {
   color: #BE1E2D;
   width: 432px;
@@ -93,57 +85,38 @@
   margin-bottom: 22px;
   border-color: #BE1E2D;
 }
+
 .boxe-main-gauche form .bouton {
   width: 100px;
   height: 50px;
   margin-top: 22px;
   margin-bottom: 22px;
 }
+
 .boxe-main-gauche form .bouton:hover {
   background-color: #BE1E2D;
-  opacity: 0.8;
+  opacity: 0.80;
   color: white;
 }
 
-.boxe-main-droite {
-  display: table-cell;
-  padding-right: 20%;
-  margin-top: 50px;
-  text-align: center;
-  width: 50%;
-  height: 50%;
-  font-family: Palanquin;
-}
 .boxe-main-droite h5 {
   color: #BE1E2D;
-  text-align: right;
 }
+
 .boxe-main-droite #place {
-  text-align: center;
   font-family: Rubik;
-  position: relative;
-  left: 60px;
 }
+
 .boxe-main-droite #place img {
   width: 50px;
   height: 40px;
 }
-.boxe-main-droite p {
-  text-align: right;
-}
+
 .boxe-main-droite #titreHoraires {
   color: #BE1E2D;
 }
 
 #fb-root {
-  display: table-cell;
-  padding-right: 20%;
-  margin-top: 50px;
-  text-align: center;
-  width: 50%;
-  height: 50%;
-  font-family: Palanquin;
   position: relative;
-  left: 500px;
-  bottom: 150px;
+  left: 550px;
 }

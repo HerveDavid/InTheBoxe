@@ -4,6 +4,7 @@
     <meta charset="utf-8">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <link rel="stylesheet" href="../view/src/style/contact.css">
+      <link rel="icon" href="../view/src/img/logo.png" />
     <title>Contact</title>
   </head>
   <body>
@@ -102,6 +103,7 @@
       <h5>
         Boxing Club Evian
       </h5>
+      <br>
       <p>
         Impasse du Docteur Dumur
         <br>
@@ -113,9 +115,11 @@
         <br>
         Parking à proximité du club
       </p>
+      <br>
       <p id="titreHoraires">
-        Horaires d'ouverture
+        Horaires d'ouvertures
       </p>
+      <br>
       <p id="horaires">
         Lundi ……………….…......................…. 17h > 20h
         <br>
@@ -123,7 +127,7 @@
         <br>
         Mercredi ………….......…….….....…. 18h > 20h
         <br>
-        Jeudi   ..............9h > 10h30 | 18h > 20h
+        Jeudi   ..........................9h > 10h30 | 18h > 20h
         <br>
         Vendredi ……………..…............……. 17h > 20h
         <br>

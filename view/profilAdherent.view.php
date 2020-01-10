@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../view/src/style/profilAdherent.css">
+    <link rel="icon" href="../view/src/img/logo.png" />
     <meta charset="utf-8">
     <title>Votre profil</title>
   </head>
@@ -133,6 +134,8 @@
                             <span class="line -bottom"></span>
                           </a>
                         </section>
+
+                        <a id="apk" href="../appAndroid/InTheBoxe_1_1.0.apk" download="InTheBoxe_1_1.0.apk">Téléchargez l'application d'entrainement sur votre smartphone Android</a>
 
                         <hr class="style1">
 
