@@ -23,6 +23,12 @@
   echo " test de la methode getAdherent : (retourn l'adherent cree)";
   var_dump($dao->getAdherent('waw@yahoo.com'));
 
+  echo " test de la methode getProfil : (retourne le profil)";
+  var_dump($dao->getProfil('waw@yahoo.com'));
+
+  echo " test de la methode getProfil : (retourne null)";
+  var_dump($dao->getProfil('wazdzaw@yahoo.com'));
+
   echo " test de la methode estCoach : (retourn normalement false)";
   var_dump($dao->estCoach('waw@yahoo.com'));
 

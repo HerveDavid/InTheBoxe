@@ -74,7 +74,9 @@
             <input type="password" placeholder="Mot de passe" name="mdp" id="mdp" required/>
           </p>
           <input type="submit" id="submit" value="Connexion">
-          <a id="inscription" href="../controle/inscription.ctrl.php">Inscription</a>
+          <p><a id="inscription" href="../controle/motDePasseOublie.ctrl.php">Mot de passe oublié?</a></p> 
+          <br>
+          <p>vous êtes pas adherent?<a id="inscription" href="../controle/inscription.ctrl.php">inscrivez vous</a></p>
           <?php global $erreur; ?>
           <p style='color:red'> <?=$erreur ?></p>
         </fieldset>

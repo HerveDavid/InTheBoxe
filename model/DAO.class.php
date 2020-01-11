@@ -117,11 +117,11 @@ class DAO {
   public function getProfil($email){
     $query = "SELECT * FROM profil WHERE mail='$email'";
     $sql= $this->db->query($query);
-    $profil = $sql->fetchAll(PDO::FETCH_ASSOC)[0];
+    $profil = $sql->fetchAll(PDO::FETCH_ASSOC);
 
     if (count($profil)==0) {
       return null;
-    }else {return new Profil($profil);}
+    }else {return new Profil($profil[0]);}
   }
   ////////////////// ACTUS ////////////////////////////////////////////////
   public function getActualites(){
