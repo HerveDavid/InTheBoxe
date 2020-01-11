@@ -102,7 +102,7 @@ body {
 #exFoot {
   background: inherit;
   position: relative;
-  top: 22em;
+  top: 30em;
   margin: 0 15.5em;
   display: flex;
   flex-direction: row;
@@ -153,6 +153,7 @@ body {
 }
 
 #exFoot:before {
+  height: 70px;
   content: '';
   position: absolute;
   top: 0;
@@ -179,4 +180,8 @@ body {
   font-size: 1.2em;
   font-family: Rubik;
   color: white;
+}
+
+#tarif .footer {
+  margin-top: 40px;
 }

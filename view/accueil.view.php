@@ -82,10 +82,20 @@
           <li><img src="../view/src/img/accueil/cours3.png" alt="cours-3">CROSSFIT 190€</li>
         </ul>
         <a href="../controle/planning.ctrl.php"> <br> Explorez nos tarifs dans l'onglet Planning/Tarifs</a>
+        <div class="footer">
+        <div style="text-align:center;" class="container">
+          <a href="https://www.start-securite.fr/">
+            <img id="sponsor" src="../view/src/img/sponsor.png" alt="sponsor">
+          </a>
+        </div>
+        <!-- Footer Elements -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="../controle/accueil.ctrl.php"> InTheBoxe.fr</a>
+        </div>
       </nav>
     </div>
-
-    
+    </div>
 
   </body>
   <script>

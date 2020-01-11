@@ -74,7 +74,7 @@ body{
   // overflow: hidden;
   // background-color: rgba(#3E3E3E, 0.76);
   position: relative;
-  top: 22em;
+  top: 30em;
   margin: 0 15.5em;
 
   display: flex;
@@ -120,7 +120,8 @@ body{
   }
 }
 
-#exFoot:before{
+#exFoot:before {
+  height: 70px;
   content: '';
   position: absolute;
   top: 0;
@@ -144,5 +145,8 @@ body{
       font-size: 1.2em;
       font-family: $fontHigh;
       color: white;
+    }
+    .footer {
+      margin-top: 40px;
     }
 }
