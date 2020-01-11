@@ -85,11 +85,11 @@
                     <hr class="style1">
                 </div>
                 <?php if ($statue=='attente') :?>
-                  <p style='color:red' >Votre profile est en attente il faut vous rendre au club pour validé votre inscription.</p>
+                  <p style='color:red' >Votre profil est en attente, il faut vous rendre au club pour valider votre inscription.</p>
                    <p style='color:red' > Conditions et documents requis:</p>
                   <ul>
-                    <li style='color:red' >Paiment des frais d'inscriptions</li>
-                    <li style='color:red'>Certificat medical</li>
+                    <li style='color:red' >Paiement des frais d'inscription</li>
+                    <li style='color:red'>Certificat médical</li>
                     <li style='color:red'>Carte d'identité</li>
                   </ul>
                 <?php else :?>
@@ -113,7 +113,7 @@
                         <div id="email" class="tab-pane active">
                           <?php if ($message): ?>
                             <h4 style="color:grey">Envoyer une demande de combat</h4>
-                            <p style="color:green">Votre demande viens d'être envoyé ! le Coach vous enverra un mail pour vous faire part de sa décision</p>
+                            <p style="color:green">Votre demande vient d'être envoyée ! le coach vous enverra un mail pour vous faire part de sa décision</p>
                           <?php elseif($demande):?>
                             <h4 style="color:grey">Envoyer une demande de combat</h4>
                             <p style="color:grey">Vous avez une demande en cours </p>
@@ -149,7 +149,7 @@
                                       <br>
                                     <?php }
                                   } else { ?>
-                                    <p>  Vous n'êtes inscrit a aucun cours </p>
+                                    <p>  Vous n'êtes inscrit à aucun cours </p>
 
                                   <?php } ?>
                             <hr class="style1">

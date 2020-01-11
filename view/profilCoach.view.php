@@ -196,7 +196,7 @@
                         <h3>Historique des actualités</h3>
                         <hr class="style1">
                         <form method="post" action="../controle/gerant.ctrl.php">
-                          <button type="submit" name="clear" value="true" class="btn btn-secondary">Supprimer les actualitées passer</button>
+                          <button type="submit" name="clear" value="true" class="btn btn-secondary">Supprimer les actualités</button>
                         </form>
                         <br>
                         <br>
@@ -232,7 +232,7 @@
                         <div class="card-body d-flex justify-content-between align-self-baseline align-content-between flex-wrap">
                           <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Trié par :
+                              Trier par :
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                               <a class="dropdown-item" href="#">A-Z</a>

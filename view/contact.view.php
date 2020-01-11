@@ -178,7 +178,7 @@
       <div class="footer-copyright text-center py-3">Copyright BOXING CLUB EVIAN © 2020 |
         <a href="../RGPD/mentionsLegals.html"> Mentions Légales</a>
         |
-        <a href="../RGPD/politiqueDeConfidentialite.html"> Politique de Confidentialité</a> 
+        <a href="../RGPD/politiqueDeConfidentialite.html"> Politique de Confidentialité</a>
         |
         <a href="#">Site web crée par la WaliTeam</a>
       </div>
