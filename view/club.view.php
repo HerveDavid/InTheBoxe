@@ -144,9 +144,12 @@
       </div>
       <!-- Footer Elements -->
       <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        <a href="../controle/accueil.ctrl.php"> InTheBoxe.fr</a>
-        <a href="../view/mentionsLegals.view.php"> Mentions Légales</a>
+      <div class="footer-copyright text-center py-3">Copyright BOXING CLUB EVIAN © 2020 |
+        <a href="../RGPD/mentionsLegals.html"> Mentions Légales</a>
+        |
+        <a href="../RGPD/politiqueDeConfidentialite.html"> Politique de Confidentialité</a>
+        |
+        <a href="#">Site web crée par la WaliTeam</a>
       </div>
       <!-- Copyright -->
     </footer>
