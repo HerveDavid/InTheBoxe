@@ -29,7 +29,7 @@ if (isset($_POST['mail'])
 
     // Initialisation des variables
     $email=$_POST['mail'];
-    $motdepasse=$_POST['mdp'];
+    $motdepasse=$_POST['mdp']; 
 
     $profil = $dao->getProfil($email);
     // Vérification que le mail existe
