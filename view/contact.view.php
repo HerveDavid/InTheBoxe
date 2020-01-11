@@ -177,6 +177,7 @@
       <!-- Copyright -->
       <div class="footer-copyright text-center py-3">© 2020 Copyright:
         <a href="../controle/accueil.ctrl.php"> InTheBoxe.fr</a>
+        <a href="../view/mentionsLegals.view.php"> Mentions Légales</a>
       </div>
       <!-- Copyright -->
     </footer>
