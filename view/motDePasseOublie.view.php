@@ -17,7 +17,7 @@
       <form class="connexion" action="../controle/motDePasseOublie.ctrl.php" method="post">
         <fieldset>
           <p>
-             Saisiez votre mail pour recevoir votre mot de passe :
+             Entrez votre email pour récupérer votre mot de passe :
             <input type="email" placeholder="Adresse mail" name="mail" id="mail" required/>
           </p>
           <input type="submit" id="submit" value="Envoyer">

@@ -17,7 +17,7 @@
              <title></title>
             </head>
             <body>
-             <h1>Mot de Passe Oublier : </h1>
+             <h1>Mot de passe oublié : </h1>
              <br>
              <p>Votre mot de passe est : </p>
              <h3>$mdp</h3>
@@ -25,15 +25,15 @@
             </body>
            </html>";
       if (mail($to, $subject, $email,implode("\r\n", $headers))) {
-       $confirmation = "Le message à bien étais envoyé !";
+       $confirmation = "Le message à bien était envoyé !";
       } else {
-       $confirmation = "Le message n'a pas étais envoyé !";
+       $confirmation = "Le message n'a pas était envoyé !";
       }
       $erreur="";
       include('../view/motDePasseOublie.view.php');
     }else {
       $confirmation="";
-      $erreur="Vous n'êtes pas inscrit a notre site";
+      $erreur="Vous n'êtes pas inscrit à notre site";
       include('../view/motDePasseOublie.view.php');
     }
   }else {
