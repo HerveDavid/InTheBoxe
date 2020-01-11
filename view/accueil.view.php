@@ -62,7 +62,7 @@
     </header>
 
     <!-- Connexion formulaire -->
-    <div id="Content">
+    <div id="content">
       <h2>Boxing Club Evian-Les-Bains</h2>
       <h1>Explorez vos limites</h1>
       <p>
@@ -71,7 +71,7 @@
       <br>
       <a href="../controle/inscription.ctrl.php">Inscription</a>
     </div>
-    <footer>
+    <div id="exFoot">
       <!-- <section> -->
 
       <!-- </section> -->
@@ -82,8 +82,25 @@
           <li><img src="../view/src/img/accueil/cours3.png" alt="cours-3">CROSSFIT 190€</li>
         </ul>
         <a href="../controle/planning.ctrl.php"> <br> Explorez nos tarifs dans l'onglet Planning/Tarifs</a>
+        <div class="footer">
+        <div style="text-align:center;" class="container">
+          <a href="https://www.start-securite.fr/">
+            <img id="sponsor" src="../view/src/img/sponsor.png" alt="sponsor">
+          </a>
+        </div>
+        <!-- Footer Elements -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">Copyright BOXING CLUB EVIAN © 2020 |
+          <a href="../RGPD/mentionsLegals.html"> Mentions Légales</a>
+          |
+          <a href="../RGPD/politiqueDeConfidentialite.html"> Politique de Confidentialité</a>
+          |
+          <a href="#">Site web crée par la WaliTeam</a>
+        </div>
       </nav>
-    </footer>
+    </div>
+    </div>
+
   </body>
   <script>
     function openForm() {
@@ -94,6 +111,9 @@
       document.getElementById("myForm").style.display = "none";
     }
   </script>
+
+
+
 </html>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

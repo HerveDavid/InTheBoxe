@@ -20,6 +20,7 @@
   background-color: #BE1E2D;
   border-radius: 10px;
 }
+
 .bg-red .nav-link {
   color: #FFFFFF;
 }
@@ -50,15 +51,17 @@ body {
   color: #FFFFFF;
 }
 
-#Content {
+#content {
   position: relative;
   top: 8em;
   margin: 0 15.5em;
 }
-#Content h1 {
+
+#content h1 {
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
-#Content h2 {
+
+#content h2 {
   font-family: Rubik;
   font-weight: bold;
   font-size: 3em;
@@ -66,11 +69,13 @@ body {
   margin: 0px;
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
-#Content h2 {
+
+#content h2 {
   font-size: 4.5em;
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
-#Content p {
+
+#content p {
   font-family: Palanquin;
   font-style: normal;
   font-weight: 600;
@@ -79,7 +84,8 @@ body {
   display: flex;
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
-#Content a {
+
+#content a {
   font-family: Palanquin;
   font-style: normal;
   font-weight: bold;
@@ -93,17 +99,18 @@ body {
   box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.2), 3px 3px 3px rgba(255, 255, 255, 0.2);
 }
 
-footer {
+#exFoot {
   background: inherit;
   position: relative;
-  top: 22em;
+  top: 30em;
   margin: 0 15.5em;
   display: flex;
   flex-direction: row;
   height: 10em;
   align-items: center;
 }
-footer h1 {
+
+#exFoot h1 {
   z-index: 2;
   width: auto;
   height: 100%;
@@ -116,19 +123,22 @@ footer h1 {
   font-size: 1em;
   text-align: justify;
 }
-footer h2 {
+
+#exFoot h2 {
   z-index: 2;
   padding: 2em;
   margin: 0;
   color: #FFFFFF;
   font-family: Palanquin;
 }
-footer nav {
+
+#exFoot nav {
   z-index: 2;
   margin-top: -10em;
   width: 100%;
 }
-footer nav ul {
+
+#exFoot nav ul {
   padding: inherit;
   height: 100%;
   display: flex;
@@ -137,12 +147,14 @@ footer nav ul {
   margin: 0 0;
   justify-content: space-around;
 }
-footer nav ul li {
+
+#exFoot nav ul li {
   align-content: center;
 }
 
-footer:before {
-  content: "";
+#exFoot:before {
+  height: 70px;
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -157,13 +169,19 @@ footer:before {
 #tarif {
   text-align: center;
 }
+
 #tarif li {
   font-size: 1.5em;
   font-family: Rubik;
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
+
 #tarif a {
   font-size: 1.2em;
   font-family: Rubik;
   color: white;
+}
+
+#tarif .footer {
+  margin-top: 40px;
 }

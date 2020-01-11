@@ -8,10 +8,10 @@ Client : Boxing Club Evian-les-Bains.
 
 Participants au projet InTheBoxe :
 
-Chef de projet : Walid KADURA
-Développement : Walid KADURA, César WATRIN, David HERVE, Louis GODEFROID
-Gestion de projet : Walid KADURA, César WATRIN, Gabriel VIALLON, Amine BENMANSOUR, Florent PEYRIN
+Chef de projet / Gestion de projet : Walid KADURA
+Développement : Walid KADURA, César WATRIN, David HERVE, Gabriel VIALLON
+Cahier des charges : Walid KADURA, César WATRIN, Gabriel VIALLON, Amine BENMANSOUR, Florent PEYRIN , Louis GODEFROID
 Relation client : Amine BENMANSOUR
 
 Langages utilisés : HTML, CSS, SCSS, JavaScript, PHP, SQL.
-Framework : Bootstrap.
+Framework : Bootstrap

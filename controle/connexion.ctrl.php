@@ -1,9 +1,6 @@
 <?php
 
 /////////////////declaration/////////////////////////////////////////////
-
-// Utilisation de la classe View du framework
-require_once('../framework/view.class.php');
 // Utilisation de la DAO
 require_once('../model/DAO.class.php');
 $dao = new DAO;
@@ -32,7 +29,7 @@ if (isset($_POST['mail'])
 
     // Initialisation des variables
     $email=$_POST['mail'];
-    $motdepasse=$_POST['mdp'];
+    $motdepasse=$_POST['mdp']; 
 
     $profil = $dao->getProfil($email);
     // Vérification que le mail existe
@@ -41,12 +38,9 @@ if (isset($_POST['mail'])
         //recuperer le prenom du profil
         if ($dao->estCoach($email)) {
           $adh = $dao->getCoach($email);
-          echo "coach";
         } else {
-          echo "adherent";
           $adh = $dao->getAdherent($email);
         }
-        var_dump($adh);
         session_start();
         $_SESSION['mail'] = $email;
         $_SESSION['prenom'] = $adh->getPrenom();

@@ -59,14 +59,16 @@
       </nav>
     </header>
 
-    <div class="boxe-main-full d-flex flex-wrap justify-content-center">
-      <div class="d-flex flex-column bd-highlight mb-3 ">
-        <h5 class="text-center">CONTACT</h5>
-        <h1>Restons en contact</h1>
-        <p>
-            <img src="../view/src/img/contact/gantsBoxe.png" alt="gantsBoxe">
-        </p>
-      </div>
+    <!-- <img id="sponsor" src="../view/src/img/sponsor.png" alt="sponsor"> -->
+
+    <div class="boxe-main-full">
+      <article class="boxe-article">
+          <div class="boxe-map">
+            <h5>CONTACT</h5>
+            <h1>Restons en contact</h1>
+            <p>
+                <img src="../view/src/img/contact/gantsBoxe.png" alt="gantsBoxe">
+            </p>
 
 
             <div class="embed-responsive embed-responsive-16by9">
@@ -163,6 +165,27 @@
         </blockquote>
       </div>
     </div> -->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small cyan darken-3">
+      <!-- Footer Elements -->
+      <div style="text-align:center;" class="container">
+        <a href="https://www.start-securite.fr/">
+          <img id="sponsor" src="../view/src/img/sponsor.png" alt="sponsor">
+        </a>
+      </div>
+      <!-- Footer Elements -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">Copyright BOXING CLUB EVIAN © 2020 |
+        <a href="../RGPD/mentionsLegals.html"> Mentions Légales</a>
+        |
+        <a href="../RGPD/politiqueDeConfidentialite.html"> Politique de Confidentialité</a>
+        |
+        <a href="#">Site web crée par la WaliTeam</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
   </body>
 </html>

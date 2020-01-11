@@ -20,6 +20,7 @@
   background-color: #BE1E2D;
   border-radius: 10px;
 }
+
 .bg-red .nav-link {
   color: #FFFFFF;
 }
@@ -40,16 +41,20 @@ navbar-toggler-icon {
   margin: 5%;
   margin-top: 7%;
 }
+
 #divco img {
   max-width: 90px;
 }
+
 #divco fieldset {
   border: 0px;
   background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
   color: white;
+  padding: 15px;
   border-radius: 10px;
 }
+
 #divco fieldset input {
   width: 100%;
   background: none;
@@ -58,10 +63,12 @@ navbar-toggler-icon {
   border-right: 0px;
   color: white;
 }
+
 #divco fieldset input[type=submit] {
   background-color: #BE1E2D;
   color: white;
 }
+
 #divco fieldset #inscription {
   color: white;
   position: relative;

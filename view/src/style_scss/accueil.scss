@@ -13,7 +13,7 @@ body{
   color: $white;
 }
 
-#Content {
+#content {
   position: relative;
   top: 8em;
   margin: 0 15.5em;
@@ -69,12 +69,12 @@ body{
 
 
 
-footer{
+#exFoot{
   background: inherit;
   // overflow: hidden;
   // background-color: rgba(#3E3E3E, 0.76);
   position: relative;
-  top: 22em;
+  top: 30em;
   margin: 0 15.5em;
 
   display: flex;
@@ -120,7 +120,8 @@ footer{
   }
 }
 
-footer:before{
+#exFoot:before {
+  height: 70px;
   content: '';
   position: absolute;
   top: 0;
@@ -144,5 +145,8 @@ footer:before{
       font-size: 1.2em;
       font-family: $fontHigh;
       color: white;
+    }
+    .footer {
+      margin-top: 40px;
     }
 }
