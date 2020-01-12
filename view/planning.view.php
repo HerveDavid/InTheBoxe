@@ -64,6 +64,7 @@
     <div class="container" id="planning">
 
       <?php if (!$adhConnecter) {?>
+
         <h1 class="text-center">Planning des cours</h1>
         <hr>
         <p class="text-center">
@@ -147,7 +148,9 @@
         <hr>
 
       </div>
-    <?php } else { ?>
+    <?php } else {  $typeCours= $adherent->getTypeCours();?>
+      <?php global $confirmation; ?>
+      <h5 style='color:green'> <?=$confirmation ?></h5>
       <table class="table table-striped table-bordered table-hover">
         <thead>
           <tr>
@@ -173,17 +176,29 @@
             <td class="ing-cell ing-hour-col-17-00 ing-day-row-1 boxe-educative text-center">
               <h5>Boxe Educative</h5>
               <p>
-                9/13 ans de 17h à 18h
+                9 à 13 ans
                 <br>
-                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                <?php if ($typeCours=="Boxe éducative 9/13"): ?>
+                  <?php if (containt(1)): ?>
+                    <p>Vous êtes déjà inscrit à ce cours</p>
+                  <?php else: ?>
+                    <a href="../controle/planning.ctrl.php?cours=4">réserver en ligne</a>
+                  <?php endif; ?>
+                <?php endif; ?>
               </p>
             </td>
             <td colspan="2" class="ing-cell ing-hour-col-18-00 ing-day-row-1 boxe-loisir text-center">
               <h5>Boxe Loisir</h5>
               <p>
-                +14 ans de 18h15 à 20h
+                +14 ans
                 <br>
-                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                <?php if ($typeCours=="Boxe Loisir"): ?>
+                  <?php if (containt(1)): ?>
+                    <p>Vous êtes déjà inscrit à ce cours</p>
+                  <?php else: ?>
+                  <a href="../controle/planning.ctrl.php?cours=1">réserver en ligne</a>
+                  <?php endif; ?>
+                <?php endif; ?>
               </p>
             </td>
             <td class="ing-cell ing-hour-col-19-00 ing-day-row-1"></td>
@@ -200,18 +215,29 @@
             <td class="ing-cell ing-hour-col-18-00 ing-day-row-1 cross-fit-boxing text-center">
               <h5>Cross Fit Boxing</h5>
               <p>
-                +14 ans de 18h à 19h15
+                +14 ans
                 <br>
-                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
-              </p>
+                <?php if ($typeCours=="Boxe Loisir"): ?>
+                  <?php if (containt(7)): ?>
+                    <p>Vous êtes déjà inscrit à ce cours</p>
+                  <?php else: ?>
+                    <a href="../controle/planning.ctrl.php?cours=7">réserver en ligne</a>
+                  <?php endif; ?>
+                <?php endif; ?>              </p>
             </td>
             <td class="ing-cell ing-hour-col-19-00 ing-day-row-1"></td>
             <td colspan="2" class="ing-cell ing-hour-col-20-00 ing-day-row-1 boxe-femmes text-center">
               <h5>Boxing Femmes</h5>
               <p>
-                +14 ans de 20h30 à 22h
+                +14 ans
                 <br>
-                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                <?php if ($typeCours=="Boxing Ladies"): ?>
+                  <?php if (containt(8)): ?>
+                    <p>Vous êtes déjà inscrit à ce cours</p>
+                  <?php else: ?>
+                    <a href="../controle/planning.ctrl.php?cours=8">réserver en ligne</a>
+                  <?php endif; ?>
+                <?php endif; ?>
               </p>
             </td>
             <td class="ing-cell ing-hour-col-21-00 ing-day-row-1"></td>
@@ -221,9 +247,15 @@
             <td class="ing-cell ing-hour-col-09-00 ing-day-row-1 boxe-femmes text-center">
               <h5>Boxing Femmes</h5>
               <p>
-                +14 ans de 09h30 à 11h
+                +14 ans
                 <br>
-                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                <?php if ($typeCours=="Boxing Ladies"): ?>
+                  <?php if (containt(9)): ?>
+                    <p>Vous êtes déjà inscrit à ce cours</p>
+                  <?php else: ?>
+                    <a href="../controle/planning.ctrl.php?cours=9">réserver en ligne</a>
+                  <?php endif; ?>
+                <?php endif; ?>
               </p>
             </td>
             <td class="ing-cell ing-hour-col-11-00 ing-day-row-1"></td>
@@ -231,25 +263,43 @@
             <td class="ing-cell ing-hour-col-16-00 ing-day-row-1 boxe-educative2 text-center">
               <h5>Boxe Educative</h5>
               <p>
-                6/ans ans de 16h à 17h
+                6 à 8 ans
                 <br>
-                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                <?php if ($typeCours=="Boxe éducative 6/8"): ?>
+                  <?php if (containt(6)): ?>
+                    <p>Vous êtes déjà inscrit à ce cours</p>
+                  <?php else: ?>
+                    <a href="../controle/planning.ctrl.php?cours=6">réserver en ligne</a>
+                  <?php endif; ?>
+                <?php endif; ?>
               </p>
             </td>
             <td class="ing-cell ing-hour-col-17-00 ing-day-row-1 boxe-educative text-center">
               <h5>Boxe Educative</h5>
               <p>
-                9/13 ans de 17h à 18h
+                9 à 13 ans
                 <br>
-                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                <?php if ($typeCours=="Boxe éducative 9/13"): ?>
+                  <?php if (containt(5)): ?>
+                    <p>Vous êtes déjà inscrit à ce cours</p>
+                  <?php else: ?>
+                    <a href="../controle/planning.ctrl.php?cours=5">réserver en ligne</a>
+                  <?php endif; ?>
+                <?php endif; ?>
               </p>
             </td>
             <td colspan="2" class="ing-cell ing-hour-col-18-00 ing-day-row-1 boxe-loisir text-center">
               <h5>Boxe Loisir</h5>
               <p>
-                +14 ans de 18h15 à 20h
+                +14 ans
                 <br>
-                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                <?php if ($typeCours=="Boxe Loisir"): ?>
+                  <?php if (containt(2)): ?>
+                    <p>Vous êtes déjà inscrit à ce cours</p>
+                  <?php else: ?>
+                    <a href="../controle/planning.ctrl.php?cours=2">réserver en ligne</a>
+                  <?php endif; ?>
+                <?php endif; ?>
               </p>
             </td>
             <td class="ing-cell ing-hour-col-19-00 ing-day-row-1"></td>
@@ -267,9 +317,15 @@
             <td class="ing-cell ing-hour-col-19-00 ing-day-row-1 boxe-femmes text-center">
               <h5>Boxing Femmes</h5>
               <p>
-                +14 ans de 19h30 à 20h
+                +14 ans
                 <br>
-                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                <?php if ($typeCours=="Boxing Ladies"): ?>
+                  <?php if (containt(10)): ?>
+                    <p>Vous êtes déjà inscrit à ce cours</p>
+                  <?php else: ?>
+                    <a href="../controle/planning.ctrl.php?cours=10">réserver en ligne</a>
+                  <?php endif; ?>
+                <?php endif; ?>
               </p>
             </td>
             <td class="ing-cell ing-hour-col-20-00 ing-day-row-1"></td>
@@ -285,8 +341,15 @@
             <td colspan="2" class="ing-cell ing-hour-col-18-00 ing-day-row-1 boxe-loisir text-center">
               <h5>Boxe Loisir</h5>
               <p>
-                +14 ans de 18h15 à 20h
-                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                +14 ans
+                <br>
+                <?php if ($typeCours=="Boxe Loisir"): ?>
+                  <?php if (containt(3)): ?>
+                    <p>Vous êtes déjà inscrit à ce cours</p>
+                  <?php else: ?>
+                    <a href="../controle/planning.ctrl.php?cours=3">réserver en ligne</a>
+                  <?php endif; ?>
+                <?php endif; ?>
               </p>
             </td>
             <td class="ing-cell ing-hour-col-19-00 ing-day-row-1"></td>
@@ -299,9 +362,15 @@
             <td colspan="2" class="ing-cell ing-hour-col-11-00 ing-day-row-1 boxe-femmes text-center">
               <h5>Boxing Femmes</h5>
               <p>
-                +14 ans de 11h15 à 12h45
+                +14 ans
                 <br>
-                <a href="../controle/connexion.ctrl.php">réserver en ligne</a>
+                <?php if ($typeCours=="Boxing Ladies"): ?>
+                  <?php if (containt(11)): ?>
+                    <p>Vous êtes déjà inscrit à ce cours</p>
+                  <?php else: ?>
+                    <a href="../controle/planning.ctrl.php?cours=11">réserver en ligne</a>
+                  <?php endif; ?>
+                <?php endif; ?>
               </p>
             </td>
             <td class="ing-cell ing-hour-col-12-00 ing-day-row-1"></td>

@@ -11,19 +11,8 @@
       $subject = "Mot de Passe Oublier";
       $headers[] = 'MIME-Version: 1.0';
       $headers[] = 'Content-type: text/html; charset=iso-8859-1';
-      $email = "
-          <html>
-            <head>
-             <title></title>
-            </head>
-            <body>
-             <h1>Mot de passe oublié : </h1>
-             <br>
-             <p>Votre mot de passe est : </p>
-             <h3>$mdp</h3>
-             <br>
-            </body>
-           </html>";
+      $email = "Votre mot de passe est : $mdp ";
+
       if (mail($to, $subject, $email,implode("\r\n", $headers))) {
        $confirmation = "Le message à bien était envoyé !";
       } else {

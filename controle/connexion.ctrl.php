@@ -11,9 +11,9 @@ $dao = new DAO;
 
 if (isset($_GET['erreur'])) {
   if ($_GET['erreur']==1) {
-    $erreur = "Le mail que vous avez entre est incorrect";
+    $erreur = "Le mail que vous avez entré est incorrect";
   }else {
-    $erreur = "Le mot de passe que vous avez entre est incorrect";
+    $erreur = "Le mot de passe que vous avez entré est incorrect";
   }
 }
 else {
@@ -29,7 +29,7 @@ if (isset($_POST['mail'])
 
     // Initialisation des variables
     $email=$_POST['mail'];
-    $motdepasse=$_POST['mdp']; 
+    $motdepasse=$_POST['mdp'];
 
     $profil = $dao->getProfil($email);
     // Vérification que le mail existe

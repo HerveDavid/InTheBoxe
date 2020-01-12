@@ -12,11 +12,11 @@ class Cours{
           $this->$key = $value;
       }
     }
-
-public function getType() {return $this->type;}
-public function getHoraireDebut(){return $this->horaireDebut;}
-public function getHoraireFin() {return $this->horaireFin;}
-public function getJour() {return $this->jours;}
+  public function getNumCours() {return $this->num;}
+  public function getType() {return $this->type;}
+  public function getHoraireDebut(){return $this->horaireDebut;}
+  public function getHoraireFin() {return $this->horaireFin;}
+  public function getJour() {return $this->jours;}
 
 
 

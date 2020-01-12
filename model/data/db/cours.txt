@@ -3,8 +3,9 @@
 3|Boxe Loisir|18:15|20:00|Vendredi
 4|Boxe éducative 9/13|17:00|18:00|Lundi
 5|Boxe éducative 9/13|17:00|18:00|Mercredi
-6|Boxe éducative 8/9|16:00|17:00|Mercredi
-7|Cross Fit Boxing|16:00|17:00|Mardi
-8|Boxing Ladies|17:00|18:00|Mardi
-9|Boxing Ladies|16:00|17:00|Jeudi
-10|Boxing Ladies|18:00|19:00|Samedi
+6|Boxe éducative 6/8|16:00|17:00|Mercredi
+7|Cross Fit Boxing|18:00|19:00|Mardi
+8|Boxing Ladies|20:00|22:00|Mardi
+9|Boxing Ladies|09:00|11:00|Mercredi
+10|Boxing Ladies|19:00|20:00|Jeudi
+11|Boxing Ladies|11:00|13:00|Samedi

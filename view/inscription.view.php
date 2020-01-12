@@ -72,6 +72,8 @@
       <h1>Inscription</h1>
       <form class="inscription" action="../controle/inscription.ctrl.php" method="post">
         <fieldset>
+          <?php global $erreur; ?>
+          <p style='color:red'> <?= $erreur ?></p>
           <p>
           <label for="M">Masculin</label>
           <input type="radio" name="choix" value="Masculin" id="M" required>
@@ -116,8 +118,7 @@
             <label for="scales">En soumettant ce formulaire, j'accepte que les informations saisies soient utilisés a titre informationnelles et connus uniquement par l'équipe du Boxing Club Evian-Les-Bains</label>
           </p>
           <input type="submit" value="Inscription">
-          <?php global $erreur; ?>
-          <p style='color:red'> <?= $erreur ?></p>
+
         </fieldset>
       </form>
     </div>

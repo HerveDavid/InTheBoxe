@@ -1,4 +1,7 @@
-walidi@gmail.com|KADURA|walid|2000-11-10|25, Rue des Oliviers|38000|GRENOBLE|0652908745|adherent|masculin|1m40|60|Poids léger|novice|10.50|3|1|2
-cesar@gmail.com|WATRIN|cesar|2000-03-21|12, Avenue Joseph Valier|38000|GRENOBLE|0652208745|adherent|masculin|1m80|80|Poids lourd|loisir|0|1|12|0
-louis@gmail.com|GODEFROID|louis|1999-09-29|2, Chemin de Contamine|38000|GRENOBLE|0652638489|adherent|masculin|1m75|65|Poids léger|pro|22.90|7|8|9
-amine@gmail.com|BENMANSOUR|amine|1999-09-29|2, Chemin de Contamine|38000|GRENOBLE|0652664489|attente|masculin|1m65|70|Poids Moyen |pro|22.90|10|5|7
+walidi@gmail.com|KADURA|walid|2000-11-10|25, Rue des Oliviers|38000|GRENOBLE|0652908745|adherent|Masculin|1m40|60|Poids léger|Boxe Loisir|3|1|2
+cesar@gmail.com|WATRIN|cesar|2000-03-21|12, Avenue Joseph Valier|38000|GRENOBLE|0652208745|adherent|Masculin|1m80|80|Poids lourd|Boxe Loisir|1|12|0
+louis@gmail.com|GODEFROID|louis|1999-09-29|2, Chemin de Contamine|38000|GRENOBLE|0652638489|adherent|Masculin|1m75|65|Poids léger|Boxe Loisir|7|8|9
+amine@gmail.com|BENMANSOUR|amine|1999-09-29|2, Chemin de Contamine|38000|GRENOBLE|0652664489|adherent|Masculin|1m65|70|Poids Moyen |Boxe Loisir|10|5|7
+lucy@gmail.com|SMITH|lucy|1999-09-29|2, Chemin de Contamine|38000|GRENOBLE|0652664489|adherent|Féminin|1m65|70|Poids Moyen |Boxing Ladies|10|5|7
+loic@gmail.com|VAIL|loic|2010-09-29|2, Chemin de Contamine|38000|GRENOBLE|0652664489|adherent|masculin|1m50|60|Poids Moyen |Boxe éducative 9/13|10|5|7
+anthony@gmail.com|VAIL|anthony|2012-09-29|2, Chemin de Contamine|38000|GRENOBLE|0652664489|adherent|masculin|1m40|50|Poids mouches |Boxe éducative 6/8|10|5|7

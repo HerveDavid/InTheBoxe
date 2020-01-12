@@ -3,8 +3,6 @@ session_start();
 
   /////////////////declaration/////////////////////////////////////////////
 
-  // Utilisation de la classe View du framework
-  require_once('../framework/view.class.php');
   // Utilisation de la DAO
   require_once('../model/DAO.class.php');
   $dao = new DAO();
@@ -40,7 +38,7 @@ session_start();
 
     $prenom=$_POST['prenom'];
     $nom=strtoupper($_POST['nom']); //permet de mettre le nom en majuscules
-    $email=$_POST['mail'];
+    $email=strtolower($_POST['mail']);
     $motdepasse=$_POST['mdp'];
     $confimMdp=$_POST['confim'];
 
@@ -60,15 +58,14 @@ session_start();
         $newAdherent= new AdherentClub($param);
 
         // Insertion de l'Adherent dans la base de données
-        if ($dao->CreeAdherent($newAdherent,$motdepasse)){
-          echo "un nouvel adherent a bien étais créé !";
-        }else {
-          echo "Echec";
-        }
+        //$dao->CreeAdherent($newAdherent,$motdepasse)
+
         $_SESSION['mail'] = $email;
         $_SESSION['prenom'] = $prenom;
+        $_SESSION['param'] = $param;
+        $_SESSION['mdp'] = $motdepasse;
         // Afficher le nouveau profil
-        header('Location: profil.ctrl.php');
+        header('Location: verification.ctrl.php?verif=0');
 
         // Si le mot de passe sasie et le mot de passe de Confirmation ne correspondents pas
       } else {

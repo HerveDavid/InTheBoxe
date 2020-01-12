@@ -1,5 +1,4 @@
 shourky@gmail.com|s|true
-autre@gmail.com|a|false
 walid@gmail.com|w|true
 walidi@gmail.com|w|false
 cesar@gmail.com|c|false
@@ -7,3 +6,6 @@ louis@gmail.com|l|false
 amine@gmail.com|a|false
 Karim@gmail.com|k|true
 Himed@gmail.com|h|true
+loic@gmail.com|l|false
+anthony@gmail.com|a|false
+lucy@gmail.com|l|false

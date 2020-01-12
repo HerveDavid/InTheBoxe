@@ -19,7 +19,7 @@
     $tel = $profil->getTel();
     $codePostal = $profil->getCodePostal();
     $ville = $profil->getVille();
-    $listCours = $dao->getCours($mail);
+    $listCours = $dao->getAllCours($mail);
     $statue = $profil->getStatut();
      ?>
      <header>
@@ -51,10 +51,10 @@
            </ul>
            <ul class="navbar-nav my-2 my-lg-0">
              <?php if (isset($_SESSION['mail'])) {
-                 $nom = $_SESSION['prenom']; ?>
+                 $prenom = $_SESSION['prenom']; ?>
                  <li class="nav-item dropdown bg-red">
                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     <?=$nom?>
+                     <?=$prenom?>
                    </a>
                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                      <a class="dropdown-item" href="../controle/profil.ctrl.php">Profil</a>
@@ -100,7 +100,7 @@
                             <ul>
                               <li>Poids (en kg): <?=$profil->getPoids()?> </li>
                               <li>Taille : <?=$profil->getTaille()?></li>
-                              <li>Licence : <?=$profil->getLicence()?></li>
+                              <li>Type de cours inscrit : <?=$profil->getTypeCours()?></li>
                               <li>Catégorie : <?=$profil->getCategorie()?></li>
 
                               <li>Victoires : <?=$profil->getVictoire()?></li>
@@ -146,7 +146,9 @@
                                     foreach ($listCours as $cours) { ?>
                                       <h6> <?= $cours->getType() ?></h6>
                                       <p>  <?= $cours->getHoraireDebut() ?> - <?= $cours->getHoraireFin() ?> le <?= $cours->getJour() ?></p>
+                                      <a href="../controle/ .ctrl.php">Supprimer</a>
                                       <br>
+
                                     <?php }
                                   } else { ?>
                                     <p>  Vous n'êtes inscrit à aucun cours </p>
@@ -159,15 +161,6 @@
                           <h4>Modifier les informations personnelles</h4>
                           <form class="parametrage" action="../controle/parametrage.ctrl.php" method="post">
                             <fieldset>
-                              <p>
-                                <label for="prenom"><h6>Prénom</h6></label>
-                                <input type="text" name="prenom" id="prenom" autofocus placeholder="Prénom" value="<?=$prenom ?>" required/>
-                              </p>
-                              <p>
-                                <label for="nom"><h6>Nom</h6></label>
-                                <input type="text" name="nom" id="nom" required placeholder="Nom" value="<?=$nom ?>" required/>
-                              </p>
-
                               <p>
                                 <label for="tel"><h6>Téléphone</h6></label>
                                 <input type="tel" name="tel" id="tel" placeholder="Téléphone" value="<?=$tel ?>"/>

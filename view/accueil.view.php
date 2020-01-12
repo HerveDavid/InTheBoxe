@@ -69,7 +69,10 @@
         Inscrivez-vous pour accéder aux cours et aux entrainements en ligne
       </p>
       <br>
-      <a href="../controle/inscription.ctrl.php">Inscription</a>
+      <?php if (!isset($_SESSION['mail'])): ?>
+        <a href="../controle/inscription.ctrl.php">Inscription</a>
+      <?php endif; ?>
+
     </div>
     <div id="exFoot">
       <!-- <section> -->

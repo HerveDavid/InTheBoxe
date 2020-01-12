@@ -78,6 +78,8 @@
           <br>
         <a id="inscription" href="../controle/inscription.ctrl.php">S'inscrire</a>
           <?php global $erreur; ?>
+          <br>
+          <br>
           <p style='color:red'> <?=$erreur ?></p>
         </fieldset>
       </form>

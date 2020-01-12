@@ -42,9 +42,6 @@
     }else {
       $erreurActu="";
     }
-    // var_dump($_REQUEST);
-    // var_dump($_GET);
-    // var_dump($_POST);
     include('../view/profilCoach.view.php');
 
   }else {

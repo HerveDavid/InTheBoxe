@@ -101,16 +101,17 @@ class DAO {
     return $listCours;
   }
 
-  public function getCours($email){
-    $query = "SELECT num,type,horaireDebut,horaireFin,jours FROM cours , participant WHERE mail='$email' and num=numCours";
+  public function getCours($num){
+    $query = "SELECT num,type,horaireDebut,horaireFin,jours FROM cours WHERE num='$num'";
     $sql= $this->db->query($query);
     $resultat = $sql->fetchAll(PDO::FETCH_ASSOC);
-    $listCours=array();
-    foreach ($resultat as $value) {
-      $cours = new Cours($value);
-      array_push($listCours,$cours);
-    }
-    return $listCours;
+    $cours = new Cours($resultat[0]);
+    return $cours;
+  }
+  public function reserveCours($num,$mail){
+    $query = "INSERT INTO participant VALUES ($num,'$mail')";
+
+    return $insertParticipant=$this->db->query($query);
   }
   //////////////////  COURS ////////////////////////////////////////////////
 
@@ -141,8 +142,10 @@ class DAO {
     $sql= $this->db->query($query);
     $demandesCombats = $sql->fetchAll(PDO::FETCH_ASSOC);
     $listDemandes= array();
-    foreach ($demandesCombats as $demande) {
-      array_push($listDemandes,$this->getAdherent($demande['mail']));
+    if (count($demandesCombats)>0) {
+      foreach ($demandesCombats as $demande) {
+        array_push($listDemandes,$this->getAdherent($demande['mail']));
+      }
     }
     return $listDemandes;
   }

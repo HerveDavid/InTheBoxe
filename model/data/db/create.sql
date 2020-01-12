@@ -13,8 +13,7 @@ CREATE TABLE adherentClub(
   taille VARCHAR(10),
   poids INTEGER,
   categorie VARCHAR(20),
-  licence VARCHAR(20),
-  apayer FLOAT,
+  typeCours VARCHAR(30),
   victoire INTEGER,
   defaite INTEGER,
   nul INTEGER

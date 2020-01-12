@@ -9,12 +9,10 @@ abstract class Adherent {
   protected $poids;
   protected $genre;
   protected $categorie;
-  protected $licence;
   protected $victoire;
   protected $defaite;
   protected $nul;
   //////////////////declaration des getter//////////////////////
-  public function getLicence() {return $this->licence;}
   public function getNom() {return $this->nom;}
   public function getPrenom() {return $this->prenom;}
   public function getDateNaiss() {return $this->datenaiss;}
@@ -41,7 +39,7 @@ class AdherentClub extends Adherent {
   private $ville;
   private $tel;
   private $statut;
-  private $apayer;
+  private $typeCours;
 
   public function __construct(array $param = array()) {
       foreach ($param as $key => $value) {
@@ -54,7 +52,7 @@ class AdherentClub extends Adherent {
   public function getAdresse() {return $this->adresse;}
   public function getCodePostal() {return $this->codePostal;}
   public function getVille() {return $this->ville;}
-  public function getApayer() {return $this->apayer;}
+  public function getTypeCours() {return $this->typeCours;}
   public function getTel() {return $this->tel;}
 }
 
