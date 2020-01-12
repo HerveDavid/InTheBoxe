@@ -417,7 +417,7 @@
                                   <div class="card-footer">
                                     <form action="../controle/profil.ctrl.php" method="POST"  >
                                       <input type="text" name="disabled" value="disabled" hidden>
-                                      <button type="submit" name="Selectionner" value="<?=$adh->getPrenom()?>/<?=$adh->getClub()?>" class="btn btn-danger">Selectionner</button>
+                                      <button type="submit" name="Selectionner" value="<?=$adh->getPrenom()?>/<?=$adh->getClub()?>/<?=$combattant->getMail()?>" class="btn btn-danger">Selectionner</button>
                                     </form>
                                   </div>
                                 </div>
@@ -435,9 +435,42 @@
                         <h3 class="card-header">Liste des adversaires potentiels : </h3>
                         <div class="card-body d-flex justify-content-between align-self-baseline align-content-between flex-wrap">
                           <?php
-                          var_dump($club);
+                          // var_dump($club);
+                          // var_dump($nomAdversaire);
+                          // var_dump($combattantAdherent);
                            ?>
 
+
+                           <div class="card">
+                             <h1><?=$club->getNom()?></h1>
+                             <hr class="style1">
+                             <h4>Téléphone : <?=$club->getTel()?></h4>
+                             <h4>Adresse : <?=$club->getAdresse()?></h4>
+                             <h4>E-mail : <?=$club->getMail()?></h4>
+                             <div class="card-body">
+                               <form class="" action="index.html" method="post">
+
+                               <p>
+                                 <label for="">Téléphone :</label><input  type="tel" name="tel" id="tel" placeholder="Téléphone"/>
+                               </p>
+                               <p>
+                                 <label for="">Date de naissance :</label><input type="date" name="naiss" id="naiss" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" required placeholder="Date de naissance"/>
+                               </p>
+                               <p>
+                                 <label for="">Adresse :</label><input  type="text" name="adresse" id="adresse" required placeholder="Adresse"required/>
+                               </p>
+                               <p>
+                                 <label for="">Ville :</label><input  type="text" name="ville" id="ville" required placeholder="Ville" required/>
+                               </p>
+                             </div>
+                             <div class="card-footer">
+                               <input class="btn btn-danger" type="submit" value="Valider">
+                             </div>
+                           </form>
+                           </div>
+                           <form action="../controle/profil.ctrl.php" method="POST"  >
+                             <button id="buttonRetour" type="submit" name="accepterDemande" value="<?=$combattantAdherent?>" class="btn btn-secondary">Retour</button>
+                           </form>
                         </div>
                       </div>
                     </div>

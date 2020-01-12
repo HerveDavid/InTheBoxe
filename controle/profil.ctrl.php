@@ -37,6 +37,7 @@
       $sectionClub="show active";
       $club = $dao->getClub($choix[1]);
       $nomAdversaire = $choix[0];
+      $combattantAdherent = $choix[2];
     }
     if (isset($_REQUEST['disabled'])) { // pour verrouillier la list des tab a gauche
       $disabled=$_REQUEST['disabled'];
