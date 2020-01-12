@@ -39,14 +39,10 @@
   }
   if (isset($_POST['supp'])) {
     $value = explode("/",$_POST['supp']);
-    var_dump($value);
     $nom= $value[0];
     $date = $value[1];
-    var_dump($nom);
-    var_dump($date);
-  //  $dao->suppActualite($nom,$date);
-    var_dump($dao->suppActualite($nom,$date));
-    //header('Location: profil.ctrl.php?tabActive=" / /show active/ "');
+   $dao->suppActualite($nom,$date);
+    header('Location: profil.ctrl.php?tabActive=" / /show active/ / / "');
   }
   // if () {
   //   header('Location: profil.ctrl.php?modifier="true");
