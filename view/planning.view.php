@@ -153,7 +153,7 @@
 
 
 
-        <p class="text-center">
+        <p class="mt-5 text-center">
           <span>Hommes: 06 58 87 23 90 - Femmes: 06 33 83 56 77</span>
         </p>
         <hr>
