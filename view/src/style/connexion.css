@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
+/* line 3, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .logo {
   width: 50px;
   height: 50px;
 }
 
+/* line 8, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .nav-link {
   font-size: 1.5em;
   font-family: Palanquin;
@@ -12,28 +14,34 @@
   color: #6c6c6c;
 }
 
+/* line 16, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .active {
   color: black;
 }
 
+/* line 20, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red {
   background-color: #BE1E2D;
   border-radius: 10px;
 }
 
+/* line 23, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red .nav-link {
   color: #FFFFFF;
 }
 
+/* line 28, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 header {
   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
 
+/* line 32, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 navbar-toggler-icon {
   color: black;
   background-color: black;
 }
 
+/* line 2, ../web/Atom/github/InTheBoxe/view/src/style_scss/connexion.scss */
 #divco {
   display: flex;
   flex-direction: column;
@@ -42,10 +50,12 @@ navbar-toggler-icon {
   margin-top: 7%;
 }
 
+/* line 9, ../web/Atom/github/InTheBoxe/view/src/style_scss/connexion.scss */
 #divco img {
   max-width: 90px;
 }
 
+/* line 12, ../web/Atom/github/InTheBoxe/view/src/style_scss/connexion.scss */
 #divco fieldset {
   border: 0px;
   background-color: rgba(0, 0, 0, 0.6);
@@ -55,6 +65,7 @@ navbar-toggler-icon {
   border-radius: 10px;
 }
 
+/* line 20, ../web/Atom/github/InTheBoxe/view/src/style_scss/connexion.scss */
 #divco fieldset input {
   width: 100%;
   background: none;
@@ -64,17 +75,20 @@ navbar-toggler-icon {
   color: white;
 }
 
+/* line 28, ../web/Atom/github/InTheBoxe/view/src/style_scss/connexion.scss */
 #divco fieldset input[type=submit] {
   background-color: #BE1E2D;
   color: white;
 }
 
+/* line 32, ../web/Atom/github/InTheBoxe/view/src/style_scss/connexion.scss */
 #divco fieldset #inscription {
   color: white;
   position: relative;
   top: 15px;
 }
 
+/* line 41, ../web/Atom/github/InTheBoxe/view/src/style_scss/connexion.scss */
 body {
   background: url(../img/connexion/connexion.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -84,7 +98,10 @@ body {
   background-attachment: fixed;
 }
 
+/* line 50, ../web/Atom/github/InTheBoxe/view/src/style_scss/connexion.scss */
 ::placeholder {
   font-size: 110%;
   opacity: 1;
 }
+
+/*# sourceMappingURL=connexion.css.map */

@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
+/* line 3, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .logo {
   width: 50px;
   height: 50px;
 }
 
+/* line 8, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .nav-link {
   font-size: 1.5em;
   font-family: Palanquin;
@@ -13,28 +15,34 @@
   color: #6c6c6c;
 }
 
+/* line 16, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .active {
   color: black;
 }
 
+/* line 20, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red {
   background-color: #BE1E2D;
   border-radius: 10px;
 }
 
+/* line 23, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red .nav-link {
   color: #FFFFFF;
 }
 
+/* line 28, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 header {
   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
 
+/* line 32, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 navbar-toggler-icon {
   color: black;
   background-color: black;
 }
 
+/* line 13, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 body {
   display: flex;
   flex-direction: column;
@@ -42,9 +50,12 @@ body {
   text-align: center;
 }
 
+/* line 26, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 .boxe-main-full {
   margin-top: 5%;
 }
+
+/* line 30, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 .boxe-main-full h5 {
   margin: 0 0 0.55em;
   text-align: center;
@@ -53,6 +64,7 @@ body {
   font-family: Palanquin;
 }
 
+/* line 38, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 .boxe-main-full h1 {
   margin: 0 0 0.55em;
   text-align: center;
@@ -62,24 +74,29 @@ body {
   font-family: Rubik;
 }
 
+/* line 47, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 .boxe-main-full p {
   text-align: center;
 }
 
+/* line 50, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 .boxe-main-full p img {
   width: 50px;
   height: 50px;
 }
 
+/* line 58, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 .boxe-main-gauche p {
   font-family: Rubik;
 }
 
+/* line 60, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 .boxe-main-gauche p img {
   width: 50px;
   height: 50px;
 }
 
+/* line 70, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 .boxe-main-gauche form input {
   border-color: #BE1E2D;
   color: #BE1E2D;
@@ -89,6 +106,7 @@ body {
   margin-bottom: 22px;
 }
 
+/* line 79, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 .boxe-main-gauche form textarea {
   color: #BE1E2D;
   width: 432px;
@@ -98,6 +116,7 @@ body {
   border-color: #BE1E2D;
 }
 
+/* line 88, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 .boxe-main-gauche form .bouton {
   width: 100px;
   height: 50px;
@@ -105,30 +124,38 @@ body {
   margin-bottom: 22px;
 }
 
+/* line 95, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 .boxe-main-gauche form .bouton:hover {
   background-color: #BE1E2D;
   opacity: 0.80;
   color: white;
 }
 
+/* line 105, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 .boxe-main-droite h5 {
   color: #BE1E2D;
 }
 
+/* line 109, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 .boxe-main-droite #place {
   font-family: Rubik;
 }
 
+/* line 111, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 .boxe-main-droite #place img {
   width: 50px;
   height: 40px;
 }
 
+/* line 120, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 .boxe-main-droite #titreHoraires {
   color: #BE1E2D;
 }
 
+/* line 126, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 #fb-root {
   position: relative;
   left: 550px;
 }
+
+/*# sourceMappingURL=contact.css.map */

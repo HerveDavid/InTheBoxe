@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
+/* line 3, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .logo {
   width: 50px;
   height: 50px;
 }
 
+/* line 8, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .nav-link {
   font-size: 1.5em;
   font-family: Palanquin;
@@ -12,28 +14,34 @@
   color: #6c6c6c;
 }
 
+/* line 16, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .active {
   color: black;
 }
 
+/* line 20, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red {
   background-color: #BE1E2D;
   border-radius: 10px;
 }
 
+/* line 23, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red .nav-link {
   color: #FFFFFF;
 }
 
+/* line 28, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 header {
   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
 
+/* line 32, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 navbar-toggler-icon {
   color: black;
   background-color: black;
 }
 
+/* line 1, ../web/Atom/github/InTheBoxe/view/src/style_scss/_body.scss */
 body {
   font-family: Palanquin;
   font-style: normal;
@@ -41,6 +49,7 @@ body {
   color: #000000;
 }
 
+/* line 4, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 h1 {
   font-family: Rubik;
   font-size: 2em;
@@ -48,6 +57,7 @@ h1 {
   width: 50%;
 }
 
+/* line 11, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 p {
   text-align: justify;
   font-size: 1em;
@@ -55,27 +65,32 @@ p {
   width: 75%;
 }
 
+/* line 18, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 .club {
   margin: 0;
   padding: 0;
   display: flex;
 }
 
+/* line 22, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 .club img {
   border: 0;
   flex: 50%;
 }
 
+/* line 26, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 .club .container {
   flex: 50%;
 }
 
+/* line 28, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 .club .container section {
   margin: 0;
   padding-top: 5em;
   padding-left: 2em;
 }
 
+/* line 36, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 #icones {
   display: flex;
   flex-direction: row;
@@ -83,10 +98,14 @@ p {
   text-align: center;
 }
 
+/* line 44, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 #Club-2 section {
   padding-top: 25em;
 }
 
+/* line 50, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 #Club-3 section {
   padding-top: 25em;
 }
+
+/*# sourceMappingURL=club.css.map */
