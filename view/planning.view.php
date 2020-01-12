@@ -72,7 +72,7 @@
           <span>Retrouvez le planning des cours privés, semi-privés ou en groupe.</span>
         </p>
 
-        <a href="../controle/connexion.ctrl.php" style="text-decoration:none">
+        <a href="../controle/connexion.ctrl.php" class="shiny-btn" style="text-decoration:none">
           <div class="boxe-loisir card container">
             <div class="row">
               <div class="p-2 text-center col">
