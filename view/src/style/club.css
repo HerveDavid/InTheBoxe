@@ -50,6 +50,16 @@ body {
 }
 
 /* line 4, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+body {
+  background: url(../img/club/club.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* line 13, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 h1 {
   font-family: Rubik;
   font-size: 2em;
@@ -57,7 +67,7 @@ h1 {
   width: 50%;
 }
 
-/* line 11, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 20, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 p {
   text-align: justify;
   font-size: 1em;
@@ -65,32 +75,32 @@ p {
   width: 75%;
 }
 
-/* line 18, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 27, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 .club {
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-/* line 22, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 31, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 .club img {
   border: 0;
   flex: 50%;
 }
 
-/* line 26, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 35, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 .club .container {
   flex: 50%;
 }
 
-/* line 28, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 37, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 .club .container section {
   margin: 0;
   padding-top: 5em;
   padding-left: 2em;
 }
 
-/* line 36, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 45, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 #icones {
   display: flex;
   flex-direction: row;
@@ -98,12 +108,12 @@ p {
   text-align: center;
 }
 
-/* line 44, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 53, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 #Club-2 section {
   padding-top: 25em;
 }
 
-/* line 50, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 59, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 #Club-3 section {
   padding-top: 25em;
 }

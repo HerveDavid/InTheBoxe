@@ -10,6 +10,15 @@
 //   flex-wrap: wrap;
 // }
 
+body {
+  background: url(../img/contact/contact.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 img {
   width: 5em;
   height: 5em;

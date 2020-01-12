@@ -43,19 +43,29 @@ navbar-toggler-icon {
 }
 
 /* line 13, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+body {
+  background: url(../img/contact/contact.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* line 22, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 img {
   width: 5em;
   height: 5em;
 }
 
-/* line 18, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 27, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 h5 {
   color: #BE1E2D;
   text-rendering: optimizelegibility;
   font-family: Palanquin;
 }
 
-/* line 24, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 33, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 h1 {
   font-weight: 700;
   text-transform: uppercase;
@@ -63,12 +73,12 @@ h1 {
   font-family: Rubik;
 }
 
-/* line 32, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 41, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 p {
   font-family: Rubik;
 }
 
-/* line 37, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 46, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 form input {
   border-color: #BE1E2D;
   color: #BE1E2D;
@@ -80,7 +90,7 @@ form input {
   height: 100%;
 }
 
-/* line 48, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 57, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 form textarea {
   color: #BE1E2D;
   width: 548.09px;
@@ -90,7 +100,7 @@ form textarea {
   border-color: #BE1E2D;
 }
 
-/* line 57, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 66, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 form .bouton {
   width: 6em;
   height: 3em;
@@ -98,7 +108,7 @@ form .bouton {
   margin-bottom: 1em;
 }
 
-/* line 64, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 73, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
 form .bouton:hover {
   background-color: #BE1E2D;
   opacity: 0.80;
