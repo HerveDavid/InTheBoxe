@@ -64,6 +64,7 @@
       <img src="../view/src/img/club/background.png">
       <div class="container">
         <section>
+          <fieldset>
           <h1>L’Histoire du club</h1>
           <p>Créé en 2015 par Aissat CHAOIKI, le Boxing Club
             d’Evian-Les-Bains n’a cessé de croitre au fil des années.
@@ -102,6 +103,7 @@
             Notre club vous acueille dans son établissement situé à
             quelques pas du lac Léman.
           </p>
+          </fieldset>
           <img src="" alt="">
         </div>
       </section>
@@ -109,6 +111,7 @@
     <div class="club" id="Club-2">
       <div class="container">
         <section>
+          <fieldset>
           <h1>Nos locaux</h1>
           <p>
             Parce que le bien être de nos adhérents est notre
@@ -116,6 +119,7 @@
             équipée, lumineuse et spacieuse pour vous assurer
             la meilleure expérience sportive possible.
           </p>
+        </fieldset>
         </section>
       </div>
       <img src="../view/src/img/club/local.png">
@@ -124,6 +128,7 @@
       <img src="../view/src/img/club/equipement.png">
       <div class="container">
         <section>
+          <fieldset>
           <h1>Nos équipements</h1>
           <p>
             Durant les séances d’entraînement, vous serez en
@@ -131,6 +136,7 @@
             à cet effet afin de développer votre technique ou
             votre condition physique.
           </p>
+          </fieldset>
         </section>
       </div>
     </div>

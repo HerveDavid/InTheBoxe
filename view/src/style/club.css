@@ -76,31 +76,38 @@ p {
 }
 
 /* line 28, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+fieldset {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+
+/* line 34, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 .club {
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-/* line 32, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 38, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 .club img {
   border: 0;
   flex: 50%;
 }
 
-/* line 36, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 42, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 .club .container {
   flex: 50%;
 }
 
-/* line 38, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 44, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 .club .container section {
   margin: 0;
   padding-top: 5em;
   padding-left: 2em;
 }
 
-/* line 46, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 52, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 #icones {
   display: flex;
   flex-direction: row;
@@ -108,12 +115,12 @@ p {
   text-align: center;
 }
 
-/* line 54, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 60, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 #Club-2 section {
   padding-top: 25em;
 }
 
-/* line 60, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 66, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
 #Club-3 section {
   padding-top: 25em;
 }

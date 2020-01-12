@@ -65,7 +65,7 @@
       <h1>S'inscrire à des cours</h1>
       <p>Communiquez directement avec vos coachs et participez aux cours</p>
       <h1>Entrainement en ligne</h1>
-      <p>Progressez avec nos exercices certifiés par nes coachs</p>
+      <p>Progressez avec nos exercices certifiés par nos coachs</p>
       <h1>Combats</h1>
       <p>Trouvez un adversaire qui correspond à votre niveau et participez à un combat</p>
     </div>
@@ -115,7 +115,7 @@
           </p>
           <p>
             <input type="checkbox" id="scales" name="scales" required>
-            <label for="scales">En soumettant ce formulaire, j'accepte que les informations saisies soient utilisés a titre informationnelles et connus uniquement par l'équipe du Boxing Club Evian-Les-Bains</label>
+            <label for="scales">En soumettant ce formulaire, j'accepte que les informations saisies soient utilisées à titre informationnelles et connues uniquement par l'équipe du Boxing Club Evian-Les-Bains</label>
           </p>
           <input type="submit" value="Inscription">
           </div>
