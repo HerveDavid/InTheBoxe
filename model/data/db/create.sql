@@ -85,7 +85,7 @@ CREATE TABLE club(
 CREATE TABLE exercice(
   nomExo VARCHAR(25) PRIMARY KEY,
   nbRep INTEGER,
-  nbSerie INTEGER,
+  nbSerie INTEGER
 );
 
 
