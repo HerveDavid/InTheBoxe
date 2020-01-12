@@ -10,120 +10,61 @@
 //   flex-wrap: wrap;
 // }
 
-body {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  text-align: center;
-
-  // #sponsor {
-  //   position: fixed;
-  //   top: 600px;
-  //   left: 300px;
-  // }
+img {
+  width: 5em;
+  height: 5em;
 }
 
-.boxe-main-full {
+h5 {
+  color: $red;
+  text-rendering: optimizelegibility;
+  font-family: $fontLow;
+}
 
-  margin-top: 5%;
+h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-rendering: optimizelegibility;
+  font-family: $fontHigh;
+}
 
-  h5 {
-    margin: 0 0 0.55em;
-    text-align: center;
+
+p {
+  font-family: $fontHigh;
+}
+
+form {
+    input {
+    border-color: $red;
     color: $red;
-    text-rendering: optimizelegibility;
-    font-family: $fontLow;
-  }
-
-  h1 {
-    margin: 0 0 0.55em;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-rendering: optimizelegibility;
+    background-color: white;
     font-family: $fontHigh;
-  }
-
-  p {
-    text-align: center;
-
-    img {
-      width: 50px;
-      height: 50px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 100%;
     }
-  }
-}
 
-.boxe-main-gauche {
-  p {
-    font-family: $fontHigh;
-    img {
-      width: 50px;
-      height: 50px;
-    }
-  }
-
-  #question {
-  }
-
-  form {
-      input {
-      border-color: $red;
+    textarea {
       color: $red;
-      background-color: white;
-      font-family: $fontHigh;
-      margin-top: 22px;
-      margin-bottom: 22px;
-      }
-
-      textarea {
-        color: $red;
-        width: 432px;
-        height: 175px;
-        margin-top: 22px;
-        margin-bottom: 22px;
-        border-color: $red;
-      }
-
-      .bouton {
-        width: 100px;
-        height: 50px;
-        margin-top: 22px;
-        margin-bottom: 22px;
-      }
-
-      .bouton:hover {
-        background-color: $red;
-        opacity: 0.80;
-        color: white;
-      }
-  }
-}
-
-.boxe-main-droite {
-
-  h5 {
-    color: $red;
-  }
-
-  #place {
-    font-family: $fontHigh;
-    img {
-      width: 50px;
-      height: 40px;
+      width: 100%;
+      height: 100%;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      border-color: $red;
     }
-  }
 
-  p {
-  }
+    .bouton {
+      width: 6em;
+      height: 3em;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
 
-  #titreHoraires {
-    color: $red;
-  }
+    .bouton:hover {
+      background-color: $red;
+      opacity: 0.80;
+      color: white;
+    }
 
-}
-
-#fb-root {
-  position: relative;
-  left: 550px;
 }

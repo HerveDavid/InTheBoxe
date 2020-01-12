@@ -47,57 +47,52 @@ navbar-toggler-icon {
   font-family: Palanquin;
 }
 
-/* line 7, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
-#planning {
-  margin-top: 10%;
-}
-
-/* line 11, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 8, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
 .btn-primary {
   background-color: #BE1E2D;
   border: none;
 }
 
-/* line 14, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 11, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
 .btn-primary a {
   color: white;
 }
 
-/* line 19, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 16, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
 hr {
   background-color: #BE1E2D;
 }
 
-/* line 23, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 20, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
 span {
   color: #545353;
 }
 
-/* line 27, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 24, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
 .boxe-educative {
   background-color: #17d93a;
   color: white;
 }
 
-/* line 33, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 30, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
 .boxe-educative2 {
   background-color: #006f2c;
   color: white;
 }
 
-/* line 39, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 36, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
 .boxe-loisir {
   background-color: #11c4f4;
   color: white;
 }
 
-/* line 44, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 41, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
 .cross-fit, .cross-fit-boxing {
   background-color: #c1a900;
   color: white;
 }
 
-/* line 49, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 46, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
 .boxe-femmes {
   background-color: #e600a0;
   color: white;
