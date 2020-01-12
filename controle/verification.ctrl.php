@@ -40,7 +40,7 @@
         include('../view/verification.view.php');
       }
   }else {
-    $erreur="mail non envoyer";
+    $erreur="email non envoyé";
     include('../view/verification.view.php');
   }
 
