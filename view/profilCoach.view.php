@@ -306,11 +306,11 @@
                              <div class="card">
                                <div class="card-body">
                                  <?php if (strtolower($genre)=="masculin"): ?>
-                                   <p> <label for="M">Masculin</label><input checked="checked" type="radio" name="choix" value="Masculin" id="M" required> </p>
-                                   <p> <label for="F">Féminin</label><input  type="radio" name="choix" value="Féminin" id="F" required> </p>
+                                   <p> <label for="M">Masculin </label><input checked="checked" type="radio" name="choix" value="Masculin" id="M" required> </p>
+                                   <p> <label for="F">Féminin </label><input  type="radio" name="choix" value="Féminin" id="F" required> </p>
                                  <?php else: ?>
-                                   <p> <label for="M">Masculin</label><input  type="radio" name="choix" value="Masculin" id="M" required> </p>
-                                   <p> <label for="F">Féminin</label><input checked="checked" type="radio" name="choix" value="Féminin" id="F" required> </p>
+                                   <p> <label for="M">Masculin </label><input  type="radio" name="choix" value="Masculin" id="M" required> </p>
+                                   <p> <label for="F">Féminin </label><input checked="checked" type="radio" name="choix" value="Féminin" id="F" required> </p>
                                  <?php endif; ?>
 
                                  <p>

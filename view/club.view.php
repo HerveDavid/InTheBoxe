@@ -136,7 +136,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="page-footer font-small cyan darken-3">
+    <footer class="mt-5 page-footer font-small cyan darken-3">
       <!-- Footer Elements -->
       <div style="text-align:center;" class="container">
         <a href="https://www.start-securite.fr/">

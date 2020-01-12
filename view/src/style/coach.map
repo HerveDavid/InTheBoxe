@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "coach.css",
+	"sources": [
+		"../style_scss/coach.scss"
+	],
+	"sourcesContent": [
+		""
+	],
+	"names": [],
+	"mappings": ""
+}
