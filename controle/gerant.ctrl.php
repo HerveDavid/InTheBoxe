@@ -26,6 +26,13 @@
     }
 
   }
+  if (isset($_POST['accepterDemande']) ) {
+    header('Location: profil.ctrl.php?adv=1&disabled=disabled');
+  }
+  if (isset($_POST['refuserDemande'])) {
+    $dao->suppDemandeCombat($_POST['refuserDemande']);
+    header('Location: profil.ctrl.php?tabActive=" /show active/ / / / "');
+  }
   if (isset($_POST['clear'])) {
     $dao->suppActualitePasser();
     header('Location: profil.ctrl.php?tabActive=" / /show active/ "');

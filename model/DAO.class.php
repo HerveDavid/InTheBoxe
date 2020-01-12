@@ -149,6 +149,16 @@ class DAO {
     }
     return $listDemandes;
   }
+  public function getAdversaires($categorie){
+    $query = "SELECT * FROM adherentExterieur WHERE categorie='$categorie'";
+    $sql= $this->db->query($query);
+    $adversaires = $sql->fetchAll(PDO::FETCH_ASSOC);
+    $listAdversaires = array();
+    foreach ($adversaires as $adv ) {
+      array_push($listAdversaires,new Actualite($adv));
+    }
+    return $listAdversaires;
+  }
 
   public function estCoach($email){
     return $this->getProfil($email)->estCoach()=='true';
@@ -266,7 +276,6 @@ class DAO {
       }
     }
   }
-  //Nous serons fermés le 17 Janvier 2020 pour cause de travaux. N'hésitez pas à utiliser l'application d'entrainement pour vous entraîner chez vous.
 
 }
 

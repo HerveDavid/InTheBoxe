@@ -16,11 +16,10 @@
       $DemComb = $choix[1];
       $GestActu = $choix[2];
       $GestAdh =$choix[3];
+      $GestMatch =$choix[4];
+      $GestAtt =$choix[5];
     } else {
-      $InfClub="show active";
-      $DemComb = "";
-      $GestAdh = "";
-      $GestActu ="";
+      $InfClub="show active";  $DemComb = "";   $GestAdh = "";   $GestActu =""; $GestMatch = "";   $GestAtt ="";
     }
     if (isset($_POST['modifier'])) {  //pour afficher la tab de modification avec le bon adherent
       $modifier="show active";
@@ -28,12 +27,16 @@
     }else {
       $modifier="";
     }
-    if (isset($_POST['disabled'])) { // pour verrouillier la list des tab a gauche
-      $disabled=$_POST['disabled'];
-      $InfClub="";
-      $DemComb = "";
-      $GestAdh = "";
-      $GestActu ="";
+    if (isset($_POST['accepterDemande'])) {
+      $adversaires="show active";
+      $combattant=$dao->getAdherent($_POST['accepterDemande']);
+      $listAdversaires= $dao->getAdversaires($combattant->getCategorie());
+    }
+    if (isset($_REQUEST['disabled'])) { // pour verrouillier la list des tab a gauche
+      $disabled=$_REQUEST['disabled'];
+      $InfClub="";  $DemComb = "";
+      $GestAdh = "";   $GestActu ="";
+      $GestMatch = "";  $GestAtt ="";
     }else {
       $disabled="";
     }
