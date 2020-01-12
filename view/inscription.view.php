@@ -76,10 +76,10 @@
           <?php global $erreur; ?>
           <p style='color:red'> <?= $erreur ?></p>
           <div class="Mas">
-           <label for="M">Homme </label><input checked="checked" type="radio" name="choix" value="Masculin" id="M" required>
+           <label for="M">Masculin</label><input checked="checked" type="radio" name="choix" value="Masculin" id="M" required>
            </div>
            <div class="Fem">
-             <label for="F">Femme </label><input  type="radio" name="choix" value="Féminin" id="F" required>
+             <label for="F">Féminin</label><input  type="radio" name="choix" value="Féminin" id="F" required>
            </div>
            <div class="reste">
           <p>
