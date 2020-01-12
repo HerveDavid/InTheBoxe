@@ -48,51 +48,67 @@ navbar-toggler-icon {
 }
 
 /* line 8, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+body {
+  background: url(../img/planning/planning.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  color: black;
+}
+
+/* line 18, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
 .btn-primary {
   background-color: #BE1E2D;
   border: none;
 }
 
-/* line 11, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 21, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
 .btn-primary a {
   color: white;
 }
 
-/* line 16, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 26, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+h1 {
+  color: gray;
+}
+
+/* line 30, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
 hr {
   background-color: #BE1E2D;
 }
 
-/* line 20, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 34, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
 span {
   color: #545353;
 }
 
-/* line 24, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 38, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
 .boxe-educative {
   background-color: #17d93a;
   color: white;
 }
 
-/* line 30, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 44, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
 .boxe-educative2 {
   background-color: #006f2c;
   color: white;
 }
 
-/* line 36, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 50, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
 .boxe-loisir {
   background-color: #11c4f4;
   color: white;
 }
 
-/* line 41, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 55, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
 .cross-fit, .cross-fit-boxing {
   background-color: #c1a900;
   color: white;
 }
 
-/* line 46, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 60, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
 .boxe-femmes {
   background-color: #e600a0;
   color: white;

@@ -5,12 +5,26 @@
   font-family: $fontLow;
 }
 
+body {
+  background: url(../img/planning/planning.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  color: black;
+}
+
 .btn-primary {
   background-color: $red;
   border: none;
   a {
     color: white;
   }
+}
+
+h1 {
+  color: gray;
 }
 
 hr {
@@ -49,5 +63,5 @@ span {
 }
 
 .shiny-btn {
-  
+
 }
