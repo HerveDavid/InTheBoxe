@@ -1,5 +1,18 @@
 @import "header";
 
+$gris: #d8dad7;
+
+body {
+  background-color:$gris;
+  background-image:
+    radial-gradient(circle at 100% 150%, $gris 24%, white 24%, white 28%, $gris 28%, $gris 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, $gris 24%, white 24%, white 28%, $gris 28%, $gris 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, white 10%, $gris 10%, $gris 23%, white 23%, white 30%, $gris 30%, $gris 43%, white 43%, white 50%, $gris 50%, $gris 63%, white 63%, white 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, white 5%, $gris 5%, $gris 15%, white 15%, white 20%, $gris 20%, $gris 29%, white 29%, white 34%, $gris 34%, $gris 44%, white 44%, white 49%, transparent 49%, transparent),
+    radial-gradient(circle at 0    50%, white 5%, $gris 5%, $gris 15%, white 15%, white 20%, $gris 20%, $gris 29%, white 29%, white 34%, $gris 34%, $gris 44%, white 44%, white 49%, transparent 49%, transparent);
+    background-size: 100px 50px;
+}
+
 .container {
-  margin-top: 10%;
+  margin-top: 5%;
 }
