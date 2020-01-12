@@ -149,8 +149,8 @@
         <hr>
 
       </div>
-    <?php } else {  $typeCours= $adherent->getTypeCours();?>
-      <?php global $confirmation; ?>
+    <?php } else {  $typeCours= $adherent->getTypeCours();
+      global $confirmation; ?>
       <h5 style='color:green'> <?=$confirmation ?></h5>
       <table class="table table-striped table-bordered table-hover">
         <thead>
