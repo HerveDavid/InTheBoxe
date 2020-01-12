@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../view/src/style/accueil.css">
     <link rel="icon" href="../view/src/img/logo.png" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <meta charset="utf-8">
     <title>InTheBoxe</title>
   </head>
@@ -63,7 +64,7 @@
 
     <!-- Connexion formulaire -->
     <div id="content">
-      <h2>Boxing Club Evian-Les-Bains</h2>
+      <h2>Boxing Club Evian-les-Bains</h2>
       <h1>Explorez vos limites</h1>
       <p>
         Inscrivez-vous pour accéder aux cours et aux entrainements en ligne
@@ -113,6 +114,28 @@
     function closeForm() {
       document.getElementById("myForm").style.display = "none";
     }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script>
+  window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#eaf7f7",
+      "text": "#5c7291"
+    },
+    "button": {
+      "background": "#BE1E2D",
+      "text": "#ffffff"
+    }
+  },
+  "content": {
+    "message": "Le site Boxing Club Evian-les-Bains utilise des cookies pour améliorer son utilisation. En continuant sur notre site vous acceptez l'utilisation de ces cookies.",
+    "dismiss": "Accepter",
+    "link": "En savoir plus",
+    "href": "../RGPD/mentionsLegals.html"
+  }
+});
   </script>
 
 
