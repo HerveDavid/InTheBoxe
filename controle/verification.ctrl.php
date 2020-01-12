@@ -39,7 +39,7 @@
         $erreur = "le code entré est incorrect";
         include('../view/verification.view.php');
       }
-  }else {
+  } else {
     $erreur="email non envoyé";
     include('../view/verification.view.php');
   }

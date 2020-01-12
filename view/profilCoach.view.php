@@ -219,7 +219,7 @@
                               <?=substr($description, 0, 45).'...'?>  <!-- pour limite laffichage de la discription a 45 caractéres -->
                             </div>
                             <form method="post" action="../controle/gerant.ctrl.php">
-                              <button type="submit" name="supp" value='<?=$nom?>/<?=$date?>' class="btn btn-danger">Supprimer</button>
+                              <button type="submit" name="supp" value="<?=str_replace('\'','\"',$nom)?>/<?=$date?>" class="btn btn-danger">Supprimer</button>
                             </form>
                           </div>
                         </div>
@@ -236,7 +236,7 @@
                               Trier par :
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">A-Z</a>
+                              <a class="dropdown-item" href="../controle/">A-Z</a>
                               <a class="dropdown-item" href="#">Z-A</a>
                               <a class="dropdown-item" href="#">Age croissant</a>
                               <a class="dropdown-item" href="#">Age décroissant</a>
