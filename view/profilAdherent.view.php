@@ -147,9 +147,11 @@
                                     foreach ($listCours as $cours) { ?>
                                       <h6> <?= $cours->getType() ?></h6>
                                       <p>  <?= $cours->getHoraireDebut() ?> - <?= $cours->getHoraireFin() ?> le <?= $cours->getJour() ?></p>
-                                      <a href="../controle/ .ctrl.php">Supprimer</a>
+                                      <a href="../controle/ .ctrl.php">
+                                        <button type="button" name="button">Supprimer</button>
+                                      </a>
                                       <br>
-
+                                      <br>
                                     <?php }
                                   } else { ?>
                                     <p>  Vous n'êtes inscrit à aucun cours </p>
