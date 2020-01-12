@@ -62,7 +62,7 @@
       </nav>
     </header>
 
-    <div class="container" id="planning">
+    <div class="mt-5 container" id="planning">
 
       <?php if (!$adhConnecter) {?>
 
