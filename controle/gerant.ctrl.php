@@ -35,7 +35,7 @@
   }
   if (isset($_POST['clear'])) {
     $dao->suppActualitePasser();
-    header('Location: profil.ctrl.php?tabActive=" / /show active/ "');
+    header('Location: profil.ctrl.php?tabActive=" / /show active/ / / "');
   }
   if (isset($_POST['supp'])) {
     $value = explode("/",$_POST['supp']);
