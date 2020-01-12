@@ -239,19 +239,19 @@ class DAO {
     return $this->db->query($suppAdherent) && $this->db->query($suppProfil) ;
   }
   public function CreeActualite(Actualite $actu){
-    $nom = $actu->getNom();
+    $nom = str_replace('"','\'',$actu->getNom());
     $type = $actu->getType();
     $date = $actu->getDate();
-    $description = $actu->getDescription();
+    $description = str_replace('"','\'',$actu->getDescription());
     $coach = $actu->getCoach();
 
-    $query = "INSERT INTO actualite (nom,type,dateAct,description,coach) VALUES ('$nom','$type' ,'$date','$description','$coach')";
+    $query = "INSERT INTO actualite (nom,type,dateAct,description,coach) VALUES ('$nom','$type' ,'$date',\"$description\",'$coach')";
     $insertActualite=$this->db->query($query);
-
   }
   public function suppActualite($nom,$date){
-    $suppActualite = "DELETE FROM Actualite WHERE nom= '$nom' and dateAct='$date'";
-
+    $nom= str_replace('"','\'',$nom);
+    $suppActualite = "DELETE FROM Actualite WHERE nom= \"$nom\" and dateAct='$date'";
+    var_dump($suppActualite);
     return $this->db->query($suppActualite)  ;
   }
   public function suppActualitePasser(){
@@ -266,6 +266,7 @@ class DAO {
       }
     }
   }
+  //Nous serons fermés le 17 Janvier 2020 pour cause de travaux. N'hésitez pas à utiliser l'application d'entrainement pour vous entraîner chez vous.
 
 }
 

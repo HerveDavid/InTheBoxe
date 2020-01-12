@@ -60,7 +60,7 @@ session_start();
         // Insertion de l'Adherent dans la base de données
         //$dao->CreeAdherent($newAdherent,$motdepasse)
 
-        $_SESSION['mail'] = $email;
+        $_SESSION['email'] = $email;
         $_SESSION['prenom'] = $prenom;
         $_SESSION['param'] = $param;
         $_SESSION['mdp'] = $motdepasse;
