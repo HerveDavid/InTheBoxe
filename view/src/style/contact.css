@@ -1,1 +1,108 @@
-@import"https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap";@import"https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap";.logo{width:50px;height:50px}.nav-link{font-size:1.5em;font-family:Palanquin;margin-left:1em;margin-right:1em;color:#6c6c6c}.active{color:#000}.bg-red{background-color:#be1e2d;border-radius:10px}.bg-red .nav-link{color:#fff}header{box-shadow:10px 5px 25px rgba(0,0,0,.13)}navbar-toggler-icon{color:#000;background-color:#000}img{width:5em;height:5em}h5{color:#be1e2d;text-rendering:optimizelegibility;font-family:Palanquin}h1{font-weight:700;text-transform:uppercase;text-rendering:optimizelegibility;font-family:Rubik}p{font-family:Rubik}form input{border-color:#be1e2d;color:#be1e2d;background-color:#fff;font-family:Rubik;margin-top:1em;margin-bottom:1em;width:100%;height:100%}form textarea{color:#be1e2d;width:548.09px;height:211px;margin-top:1em;margin-bottom:1em;border-color:#be1e2d}form .bouton{width:6em;height:3em;margin-top:1em;margin-bottom:1em}form .bouton:hover{background-color:#be1e2d;opacity:.8;color:#fff}
+@import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
+/* line 3, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+/* line 8, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+.nav-link {
+  font-size: 1.5em;
+  font-family: Palanquin;
+  margin-left: 1em;
+  margin-right: 1em;
+  color: #6c6c6c;
+}
+
+/* line 16, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+.active {
+  color: black;
+}
+
+/* line 20, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+.bg-red {
+  background-color: #BE1E2D;
+  border-radius: 10px;
+}
+
+/* line 23, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+.bg-red .nav-link {
+  color: #FFFFFF;
+}
+
+/* line 28, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+header {
+  box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
+}
+
+/* line 32, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+navbar-toggler-icon {
+  color: black;
+  background-color: black;
+}
+
+/* line 13, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+img {
+  width: 5em;
+  height: 5em;
+}
+
+/* line 18, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+h5 {
+  color: #BE1E2D;
+  text-rendering: optimizelegibility;
+  font-family: Palanquin;
+}
+
+/* line 24, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-rendering: optimizelegibility;
+  font-family: Rubik;
+}
+
+/* line 32, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+p {
+  font-family: Rubik;
+}
+
+/* line 37, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+form input {
+  border-color: #BE1E2D;
+  color: #BE1E2D;
+  background-color: white;
+  font-family: Rubik;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 48, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+form textarea {
+  color: #BE1E2D;
+  width: 548.09px;
+  height: 211px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-color: #BE1E2D;
+}
+
+/* line 57, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+form .bouton {
+  width: 6em;
+  height: 3em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* line 64, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+form .bouton:hover {
+  background-color: #BE1E2D;
+  opacity: 0.80;
+  color: white;
+}
+
+/*# sourceMappingURL=contact.css.map */
