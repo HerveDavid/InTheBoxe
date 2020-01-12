@@ -69,13 +69,13 @@ session_start();
 
         // Si le mot de passe sasie et le mot de passe de Confirmation ne correspondents pas
       } else {
-        header('Location: inscription.ctrl.php?erreur=Les mot de passes ne correspondents pas');//ORTHOGRAPHE
+        header('Location: inscription.ctrl.php?erreur=Les mots de passe ne correspondent pas');//ORTHOGRAPHE
         //var_dump($motdepasse);
       }
 
     // Si le mail saisie a déjà etais utiliser
     } else {
-      header('Location: inscription.ctrl.php?erreur=Cette email a deja etais attribuer');//ORTHOGRAPHE
+      header('Location: inscription.ctrl.php?erreur=Cet email a déjà été attribué');//ORTHOGRAPHE
       //header('Location: inscription.ctrl.php?erreur=Cette email a déjà étais attribuer');//ORTHOGRAPHE
       //var_dump($email);
     }
