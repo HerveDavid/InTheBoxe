@@ -75,8 +75,6 @@ CREATE TABLE actualite(
   PRIMARY KEY(nom,dateAct);
 );
 
-
-
 CREATE TABLE club(
   nom VARCHAR(25) PRIMARY KEY,
   adresse VARCHAR(25),
@@ -87,7 +85,7 @@ CREATE TABLE club(
 CREATE TABLE exercice(
   nomExo VARCHAR(25) PRIMARY KEY,
   nbRep INTEGER,
-  nbSerie INTEGER,
+  nbSerie INTEGER
 );
 
 

@@ -388,37 +388,56 @@
                       <div class="tab-pane fade <?=$adversaires?> card" id="adherent" role="tabpanel" aria-labelledby="contact-tab">
                         <h3 class="card-header">Liste des adversaires potentiels : </h3>
                         <div class="card-body d-flex justify-content-between align-self-baseline align-content-between flex-wrap">
+
+
                             <?php foreach ($listAdversaires as $adh) { ?>
-                            <div class="card">
-                              <div class="card-body">
-                                <img src="../view/src/img/profil/connexion_logo.png" alt="Mon nom" title="Mon nom" class="img-thumbnail" width="150" height="150">
-                                <br><br>
-                                <h6><?=$adh->getNom()?> <?=$adh->getPrenom()?> </h6>
-                                <hr class="style1">
+                              <?php if (isset($adh)): ?>
                                 <div class="card">
-                                  Catégorie : <?=$adh->getCategorie()?>
+                                  <div class="card-body">
+                                    <img src="../view/src/img/profil/connexion_logo.png" alt="Mon nom" title="Mon nom" class="img-thumbnail" width="150" height="150">
+                                    <br><br>
+                                    <h6><?=$adh->getNom()?> <?=$adh->getPrenom()?> </h6>
+                                    <hr class="style1">
+                                    <div class="card">
+                                      Catégorie : <?=$adh->getCategorie()?>
+                                    </div>
+                                    <div class="card">
+                                      Club : <?=$adh->getClub()?>
+                                    </div>
+                                    <div class="card">
+                                      Victoires : <?=$adh->getVictoire()?>
+                                    </div>
+                                    <div class="card">
+                                      Nuls : <?=$adh->getNul()?>
+                                    </div>
+                                    <div class="card">
+                                      Défaites : <?=$adh->getDefaite()?>
+                                    </div>
+                                  </div>
+                                  <div class="card-footer">
+                                    <form action="../controle/profil.ctrl.php" method="POST"  >
+                                      <input type="text" name="disabled" value="disabled" hidden>
+                                      <button type="submit" name="Selectionner" value="<?=$adh->getPrenom()?>/<?=$adh->getClub()?>" class="btn btn-danger">Selectionner</button>
+                                    </form>
+                                  </div>
                                 </div>
-                                <div class="card">
-                                  Age : <?=$adh->getAge()?>
-                                </div>
-                                <div class="card">
-                                  Victoires : <?=$adh->getVictoire()?>
-                                </div>
-                                <div class="card">
-                                  Nuls : <?=$adh->getNul()?>
-                                </div>
-                                <div class="card">
-                                  Défaites : <?=$adh->getDefaite()?>
-                                </div>
-                              </div>
-                              <div class="card-footer">
-                                <form action="../controle/profil.ctrl.php" method="POST"  >
-                                  <input type="text" name="disabled" value="disabled" hidden>
-                                  <button type="submit" name="modifier" value="<?=$adh->getMail()?>" class="btn btn-secondary">Modifier</button>
-                                </form>
-                              </div>
-                            </div>
+                              <?php endif; ?>
+
                             <?php } ?>
+
+                        </div>
+                        <form action="../controle/profil.ctrl.php" method="POST"  >
+                          <button id="buttonRetour" type="submit" name="tabActive" value=" /show active/ / / / " class="btn btn-secondary">Retour</button>
+                        </form>
+                      </div>
+                      <!--/////////////////////////////////////////////////////////////section club///////////////////////////////////////////////////////////-->
+                      <div class="tab-pane fade <?=$sectionClub?> card" id="adherent" role="tabpanel" aria-labelledby="contact-tab">
+                        <h3 class="card-header">Liste des adversaires potentiels : </h3>
+                        <div class="card-body d-flex justify-content-between align-self-baseline align-content-between flex-wrap">
+                          <?php
+                          var_dump($club);
+                           ?>
+
                         </div>
                       </div>
                     </div>

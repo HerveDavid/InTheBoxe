@@ -12,7 +12,7 @@ abstract class Adherent {
   protected $victoire;
   protected $defaite;
   protected $nul;
-  
+
   //////////////////declaration des getter//////////////////////
   public function getNom() {return $this->nom;}
   public function getPrenom() {return $this->prenom;}
@@ -60,12 +60,12 @@ class AdherentClub extends Adherent {
 
 //////////////////////////////ADHERENT EXTERIEUR/////////////////////
 class AdherentExterieur extends Adherent{
-
+  private $club;
     public function __construct(array $param = array()) {
       foreach ($param as $key => $value) {
-          var_dump($key);
           $this->$key = $value;
       }
     }
+    public function getClub() {return $this->club;}
   }
  ?>

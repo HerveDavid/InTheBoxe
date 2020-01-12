@@ -30,7 +30,13 @@
     if (isset($_POST['accepterDemande'])) {
       $adversaires="show active";
       $combattant=$dao->getAdherent($_POST['accepterDemande']);
-      $listAdversaires= $dao->getAdversaires($combattant->getCategorie());
+      $listAdversaires= $dao->getAdversaires($combattant->getCategorie(),$combattant->getGenre());
+    }
+    if (isset($_POST['Selectionner'])) {
+      $choix = explode("/",$_POST['Selectionner']);
+      $sectionClub="show active";
+      $club = $dao->getClub($choix[1]);
+      $nomAdversaire = $choix[0];
     }
     if (isset($_REQUEST['disabled'])) { // pour verrouillier la list des tab a gauche
       $disabled=$_REQUEST['disabled'];
@@ -41,7 +47,7 @@
       $disabled="";
     }
     if (isset($_GET['erreurActu'])) {
-      $erreurActu="Vous avez saisie une date déjà expiré !";
+      $erreurActu="Vous avez saisie une date déjà expirée !";
     }else {
       $erreurActu="";
     }

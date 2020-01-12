@@ -3,20 +3,19 @@
 class Club{
   private $nom;
   private $adresse;
+  private $mail;
   private $tel;
 
-    public function __construct(array $param = array()) {
-    $i = 0;
-    foreach ($this as $key => $value) {
-      if ($i < count($param)) {
-        $this->$key = $param[$i++];
+  public function __construct(array $param = array()) {
+      foreach ($param as $key => $value) {
+          $this->$key = $value;
       }
     }
-  }
 
-public function getNom(): string {return $this->nom;}
-public function getAdresse(): string {return $this->adresse;}
-public function getTel(): string {return $this->tel;}
+  public function getNom() {return $this->nom;}
+  public function getAdresse() {return $this->adresse;}
+  public function getMail() {return $this->mail;}
+  public function getTel() {return $this->tel;}
 }
 
 

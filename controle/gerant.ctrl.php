@@ -8,7 +8,7 @@
   if (isset($_POST['nomActu']) && isset($_POST['typeActu'])
   && isset($_POST['description']) && isset($_POST['date'])) {
     if ($_POST['date']<date("Y-m-d")) {
-      header('Location: profil.ctrl.php?tabActive=" / /show active/ "&erreurActu=date');
+      header('Location: profil.ctrl.php?tabActive=" / /show active/ / / "&erreurActu=date');
     }else {
       $nomActualite= $_POST['nomActu'];
       $typeActualite = $_POST['typeActu'];
@@ -22,7 +22,7 @@
                        'coach' => $nomCoach);
       $actu = new Actualite($param);
       $dao->CreeActualite($actu);
-      header('Location: profil.ctrl.php?tabActive=" / /show active/ "');
+      header('Location: profil.ctrl.php?tabActive=" / /show active/ / / "');
     }
 
   }
@@ -35,7 +35,7 @@
   }
   if (isset($_POST['clear'])) {
     $dao->suppActualitePasser();
-    header('Location: profil.ctrl.php?tabActive=" / /show active/ "');
+    header('Location: profil.ctrl.php?tabActive=" / /show active/ / / "');
   }
   if (isset($_POST['supp'])) {
     $value = explode("/",$_POST['supp']);

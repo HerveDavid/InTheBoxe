@@ -12,6 +12,7 @@
   require_once('../model/Coach.class.php');
   require_once('../model/profil.class.php');
   require_once('../model/Cours.class.php');
+  require_once('../model/Club.class.php');
 //   $test='';
 // }
 
@@ -149,15 +150,24 @@ class DAO {
     }
     return $listDemandes;
   }
-  public function getAdversaires($categorie){
-    $query = "SELECT * FROM adherentExterieur WHERE categorie='$categorie'";
+  public function getAdversaires($categorie,$genre){
+    $query = "SELECT * FROM adherentExterieur WHERE categorie='$categorie' and genre='$genre'";
     $sql= $this->db->query($query);
     $adversaires = $sql->fetchAll(PDO::FETCH_ASSOC);
     $listAdversaires = array();
     foreach ($adversaires as $adv ) {
-      array_push($listAdversaires,new Actualite($adv));
+      array_push($listAdversaires, new AdherentExterieur($adv));
     }
     return $listAdversaires;
+  }
+  public function getClub($nom){
+    $query = "SELECT * FROM Club WHERE nom='$nom'";
+    $sql= $this->db->query($query);
+    $club = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+    if (count($club)==0) {
+      return null;
+    }else {return new Club($club[0]);}
   }
 
   public function estCoach($email){
