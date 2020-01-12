@@ -47,7 +47,7 @@
       $disabled="";
     }
     if (isset($_GET['erreurActu'])) {
-      $erreurActu="Vous avez saisie une date déjà expiré !";
+      $erreurActu="Vous avez saisie une date déjà expirée !";
     }else {
       $erreurActu="";
     }
