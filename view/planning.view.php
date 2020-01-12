@@ -73,70 +73,80 @@
         </p>
 
         <a href="../controle/connexion.ctrl.php" style="text-decoration:none">
-          <div class="boxe-loisir card d-flex flex-row justify-content-around">
-            <div class="p-2 text-center">
-              <h3>Boxe Loisir :</h3>
-              <h5>+14 ans (après 2005)</h5>
-            </div>
-            <div class="p-2 text-center">
-              <h3>190€</h3>
-              <h5>Lundi, Mercredi et Vendredi de 18h15 à 20h</h5>
-            </div>
-          </div>
-        </a>
-        <br>
-        <a href="../controle/connexion.ctrl.php" style="text-decoration:none">
-          <div class="boxe-educative card d-flex flex-row justify-content-around">
-            <div class="p-2 text-center">
-              <h3>Boxe Educative :</h3>
-              <h5>9/13 ans (2010 à 2006)</h5>
-            </div>
-            <div class="p-2 text-center">
-              <h3>170€</h3>
-              <h5>Lundi, Mercredi de 17h à 18h</h5>
+          <div class="boxe-loisir card container">
+            <div class="row">
+              <div class="p-2 text-center col">
+                <h3>Boxe Loisir :</h3>
+                <h5>+14 ans (après 2005)</h5>
+              </div>
+              <div class="p-2 text-center col">
+                <h3>190€</h3>
+                <h5>Lundi, Mercredi et Vendredi de 18h15 à 20h</h5>
+              </div>
             </div>
           </div>
         </a>
         <br>
         <a href="../controle/connexion.ctrl.php" style="text-decoration:none">
-          <div class="boxe-educative2 card d-flex flex-row justify-content-around">
-            <div class="p-2 text-center">
-              <h3>Boxe Educative :</h3>
-              <h5>6/8 ans (2013 à 2011)</h5>
-            </div>
-            <div class="p-2 text-center">
-              <h3>120€</h3>
-              <h5>Mercredi de 16h à 17h</h5>
-            </div>
-          </div>
-        </a>
-        <br>
-        <a href="../controle/connexion.ctrl.php" style="text-decoration:none">
-          <div class="cross-fit card d-flex flex-row justify-content-around">
-            <div class="p-2 text-center">
-              <h3>Cross Fit Boxing :</h3>
-              <h5>+14 ans (après 2005)</h5>
-            </div>
-            <div class="p-2 text-center">
-              <h3>Compris dans la licence Boxe Loisir</h3>
-              <h5>Mardi de 18h15 à 19h15</h5>
+          <div class="boxe-educative card container">
+            <div class="row">
+              <div class="p-2 text-center col">
+                <h3>Boxe Educative :</h3>
+                <h5>9/13 ans (2010 à 2006)</h5>
+              </div>
+              <div class="p-2 text-center col">
+                <h3>170€</h3>
+                <h5>Lundi, Mercredi de 17h à 18h</h5>
+              </div>
             </div>
           </div>
         </a>
         <br>
         <a href="../controle/connexion.ctrl.php" style="text-decoration:none">
-          <div class="boxe-femmes card d-flex flex-row justify-content-around">
-            <div class="p-2">
-              <h3>Boxe Féminine :</h3>
-              <h5>+14 ans (après 2005)</h5>
+          <div class="boxe-educative2 card container">
+            <div class="row">
+              <div class="p-2 text-center col">
+                <h3>Boxe Educative :</h3>
+                <h5>6/8 ans (2013 à 2011)</h5>
+              </div>
+              <div class="p-2 text-center col">
+                <h3>120€</h3>
+                <h5>Mercredi de 16h à 17h</h5>
+              </div>
             </div>
-            <div class="p-2">
-              <h3>190€</h3>
-              <h5>
-                Mardi 20h30 à 22h, Mercredi 9h30 à 11h
-                <br>
-                Jeudi 19H à 20h, Samedi 11h15 à 12h45
-              </h5>
+          </div>
+        </a>
+        <br>
+        <a href="../controle/connexion.ctrl.php" style="text-decoration:none">
+          <div class="cross-fit card container">
+            <div class="row">
+              <div class="p-2 text-center col">
+                <h3>Cross Fit Boxing :</h3>
+                <h5>+14 ans (après 2005)</h5>
+              </div>
+              <div class="p-2 text-center col">
+                <h3>Compris dans la licence Boxe Loisir</h3>
+                <h5>Mardi de 18h15 à 19h15</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <br>
+        <a href="../controle/connexion.ctrl.php" style="text-decoration:none">
+          <div class="boxe-femmes card container">
+            <div class="row">
+              <div class="p-2 text-center col">
+                <h3>Boxe Féminine :</h3>
+                <h5>+14 ans (après 2005)</h5>
+              </div>
+              <div class="p-2 text-center col">
+                <h3>190€</h3>
+                <h5>
+                  Mardi 20h30 à 22h, Mercredi 9h30 à 11h
+                  <br>
+                  Jeudi 19H à 20h, Samedi 11h15 à 12h45
+                </h5>
+              </div>
             </div>
           </div>
         </a>
@@ -149,7 +159,8 @@
         <hr>
 
       </div>
-    <?php } else {  $typeCours= $adherent->getTypeCours();
+    <?php } else {
+      $typeCours= $adherent->getTypeCours();
       global $confirmation; ?>
       <h5 style='color:green'> <?=$confirmation ?></h5>
       <table class="table table-striped table-bordered table-hover">
@@ -388,7 +399,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="page-footer font-small cyan darken-3">
+    <footer class="mt-5 page-footer font-small cyan darken-3">
       <!-- Footer Elements -->
       <div style="text-align:center;" class="container">
         <a href="https://www.start-securite.fr/">
