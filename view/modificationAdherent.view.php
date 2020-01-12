@@ -8,6 +8,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../view/src/style/profilCoach.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <link rel="icon" href="../view/src/img/logo.png" />
 
     <title></title>
@@ -63,3 +64,25 @@
 
   </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+"palette": {
+  "popup": {
+    "background": "#eaf7f7",
+    "text": "#5c7291"
+  },
+  "button": {
+    "background": "#BE1E2D",
+    "text": "#ffffff"
+  }
+},
+"content": {
+  "message": "Le site Boxing Club Evian-les-Bains utilise des cookies pour améliorer son utilisation. En continuant sur notre site vous acceptez l'utilisation de ces cookies.",
+  "dismiss": "Accepter",
+  "link": "En savoir plus",
+  "href": "../RGPD/mentionsLegals.html"
+}
+});
+</script>
