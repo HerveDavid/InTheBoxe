@@ -1,6 +1,6 @@
 @import "header";
 
-$gris: #d8dad7;
+$gris: #e4e4e4;
 
 body {
   background-color:$gris;
@@ -14,5 +14,11 @@ body {
 }
 
 .container {
+  margin-top: 5%;
+  box-shadow: 10px 5px 25px rgba(20, 20, 20, 1);
+  padding: 0;
+}
+
+footer{
   margin-top: 5%;
 }

@@ -106,7 +106,7 @@
     <!-- Footer -->
     <footer class="page-footer font-small cyan darken-3">
       <!-- Footer Elements -->
-      <div style="text-align:center;" class="container">
+      <div class="text-center">
         <a href="https://www.start-securite.fr/">
           <img id="sponsor" src="../view/src/img/sponsor.png" alt="sponsor">
         </a>
@@ -118,7 +118,7 @@
         |
         <a href="../RGPD/politiqueDeConfidentialite.html"> Politique de Confidentialité</a>
         |
-        <a href="#">Site web crée par la WaliTeam</a>
+        <a href="#">Site web créé par la WaliTeam</a>
       </div>
       <!-- Copyright -->
     </footer>
