@@ -19,7 +19,7 @@
       $GestMatch =$choix[4];
       $GestAtt =$choix[5];
     } else {
-      $InfClub="show active";  $DemComb = "";   $GestAdh = "";   $GestActu =""; $GestMatch = "";   $GestAtt ="";
+    $InfClub="show active";  $InfClub="show active";  $DemComb = "";   $GestAdh = "";   $GestActu =""; $GestMatch = "";   $GestAtt ="";
     }
     if (isset($_POST['modifier'])) {  //pour afficher la tab de modification avec le bon adherent
       $modifier="show active";

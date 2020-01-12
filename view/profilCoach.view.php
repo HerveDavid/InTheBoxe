@@ -104,14 +104,11 @@
                         <a class="nav-link <?=$disabled?>" id="contact-tab" data-toggle="tab" href="#adherent" role="tab" aria-controls="contact" aria-selected="false">Gestion des adhérents</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link <?=$disabled?>" id="contact-tab" data-toggle="tab" href="#match" role="tab" aria-controls="contact" aria-selected="false">Gestion des matchs</a>
+                        <a class="nav-link disabled" id="contact-tab" data-toggle="tab" href="#match" role="tab" aria-controls="contact" aria-selected="false">Gestion des matchs</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link <?=$disabled?>" id="contact-tab" data-toggle="tab" href="#attente" role="tab" aria-controls="contact" aria-selected="false">Gestion des attentes</a>
+                        <a class="nav-link disabled" id="contact-tab" data-toggle="tab" href="#match" role="tab" aria-controls="contact" aria-selected="false">Gestion des attentes</a>
                       </li>
-                      <!-- <li class="nav-item">
-                        <a class="nav-link <?=$disabled?>" id="contact-tab" data-toggle="tab" href="#cours" role="tab" aria-controls="contact" aria-selected="false">Informations des cours</a>
-                      </li> -->
                     </ul>
                     <div class="tab-content" id="myTabContent">
 
@@ -123,13 +120,15 @@
                             <h3>Nombre d'adherents: <?=$nombreAdherents?> </h3>
                             <br>
                             <div class="card">
-                              Nombre de personnes en attente: <?=$nombreAttente?>
-                            </div>
-                            <div class="card">
                               Nombre de demandes de combats: <?=$nombreDemandesCombats?>
                             </div>
+
                             <div class="card">
-                              Nombre de matchs : <?=$nombreDemandesCombats?>
+                              Nombre de personnes en attente: <?=$nombreAttente?>
+                            </div>
+
+                            <div class="card">
+                              Nombre de matchs : 0
                             </div>
                           </section>
                         </div>
@@ -243,7 +242,7 @@
                       <div class="tab-pane fade <?=$GestAdh?> card" id="adherent" role="tabpanel" aria-labelledby="contact-tab">
                         <h3 class="card-header">Liste des adhérents du club : </h3>
                         <div class="card-body d-flex justify-content-between align-self-baseline align-content-between flex-wrap">
-                          <div class="dropdown">
+                          <!-- <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Trier par :
                             </button>
@@ -253,7 +252,7 @@
                               <a class="dropdown-item" href="#">Age croissant</a>
                               <a class="dropdown-item" href="#">Age décroissant</a>
                             </div>
-                          </div>
+                          </div> -->
                           <div class="card-body d-flex justify-content-between align-self-baseline align-content-between flex-wrap">
                             <?php foreach ($listAdherents as $adh) { ?>
                             <div class="card">
@@ -432,45 +431,87 @@
                       </div>
                       <!--/////////////////////////////////////////////////////////////section club///////////////////////////////////////////////////////////-->
                       <div class="tab-pane fade <?=$sectionClub?> card" id="adherent" role="tabpanel" aria-labelledby="contact-tab">
-                        <h3 class="card-header">Liste des adversaires potentiels : </h3>
+                        <?php if (isset($club)): ?>
+                          <h3 class="card-header">Informations du club de l'adversaire : </h3>
+                          <div class="card-body d-flex justify-content-between align-self-baseline align-content-between flex-wrap">
+
+
+
+                            <?php
+                             //var_dump($club);
+                            // var_dump($nomAdversaire);
+                            // var_dump($combattantAdherent);
+                             ?>
+
+                             <div class="card">
+                               <div class="card-body">
+                                 <h1><?=$club->getNom()?></h1>
+                                 <h6>Téléphone : <?=$club->getTel()?></h6>
+                                 <h6>E-mail : <?=$club->getMail()?></h6>
+                                 <h6>Adresse du club : <?=$club->getAdresse()?></h6>
+                                 <br>
+                                 <form class="" action="#" method="post">
+
+                                 <p>
+                                   <label for="">Date :</label><input type="date" name="naiss" id="naiss" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" required placeholder="Date du match"/>
+                                 </p>
+                                 <p>
+                                   <label for="">Lieux :</label><input  type="text" name="adresse" id="adresse" required placeholder="Adresse"required/>
+                                 </p>
+                               </div>
+                               <div class="card-footer">
+                                 <input class="btn btn-danger" disabled value="Valider">
+                               </div>
+                             </form>
+                             </div>
+
+                          </div>
+                          <form action="../controle/profil.ctrl.php" method="POST"  >
+                            <input type="text" name="disabled" value="disabled" hidden>
+                            <button id="buttonRetour" type="submit" name="accepterDemande" value="<?=$combattantAdherent?>" class="btn btn-secondary">Retour</button>
+                          </form>
+                          <?php endif; ?>
+
+                      </div>
+                      <!--/////////////////////////////////////////////////////////////section match///////////////////////////////////////////////////////////-->
+
+                      <div class="tab-pane fade <?=$GestMatch?> card" id="adherent" role="tabpanel" aria-labelledby="contact-tab">
+                        <h3 class="card-header">Liste des matchs en cours :  </h3>
                         <div class="card-body d-flex justify-content-between align-self-baseline align-content-between flex-wrap">
-                          <?php
-                          // var_dump($club);
-                          // var_dump($nomAdversaire);
-                          // var_dump($combattantAdherent);
-                           ?>
 
-
-                           <div class="card">
-                             <h1><?=$club->getNom()?></h1>
-                             <hr class="style1">
-                             <h4>Téléphone : <?=$club->getTel()?></h4>
-                             <h4>Adresse : <?=$club->getAdresse()?></h4>
-                             <h4>E-mail : <?=$club->getMail()?></h4>
-                             <div class="card-body">
-                               <form class="" action="index.html" method="post">
-
-                               <p>
-                                 <label for="">Téléphone :</label><input  type="tel" name="tel" id="tel" placeholder="Téléphone"/>
-                               </p>
-                               <p>
-                                 <label for="">Date de naissance :</label><input type="date" name="naiss" id="naiss" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" required placeholder="Date de naissance"/>
-                               </p>
-                               <p>
-                                 <label for="">Adresse :</label><input  type="text" name="adresse" id="adresse" required placeholder="Adresse"required/>
-                               </p>
-                               <p>
-                                 <label for="">Ville :</label><input  type="text" name="ville" id="ville" required placeholder="Ville" required/>
-                               </p>
-                             </div>
-                             <div class="card-footer">
-                               <input class="btn btn-danger" type="submit" value="Valider">
-                             </div>
-                           </form>
-                           </div>
-                           <form action="../controle/profil.ctrl.php" method="POST"  >
-                             <button id="buttonRetour" type="submit" name="accepterDemande" value="<?=$combattantAdherent?>" class="btn btn-secondary">Retour</button>
-                           </form>
+                          <div class="card-body d-flex justify-content-between align-self-baseline align-content-between flex-wrap">
+                            <?php foreach ($listMatch as $match) { ?>
+                            <div class="card">
+                              <div class="card-body">
+                                <img src="../view/src/img/profil/connexion_logo.png" alt="Mon nom" title="Mon nom" class="img-thumbnail" width="150" height="150">
+                                <br><br>
+                                <h6><?=$adh->getNom()?> <?=$adh->getPrenom()?> </h6>
+                                <hr class="style1">
+                                <div class="card">
+                                  Catégorie : <?=$adh->getCategorie()?>
+                                </div>
+                                <div class="card">
+                                  Age : <?=$adh->getAge()?>
+                                </div>
+                                <div class="card">
+                                  Victoires : <?=$adh->getVictoire()?>
+                                </div>
+                                <div class="card">
+                                  Nuls : <?=$adh->getNul()?>
+                                </div>
+                                <div class="card">
+                                  Défaites : <?=$adh->getDefaite()?>
+                                </div>
+                              </div>
+                              <div class="card-footer">
+                                <form action="../controle/profil.ctrl.php" method="POST"  >
+                                  <input type="text" name="disabled" value="disabled" hidden>
+                                  <button type="submit" name="modifier" value="<?=$adh->getMail()?>" class="btn btn-secondary">Modifier</button>
+                                </form>
+                              </div>
+                            </div>
+                            <?php } ?>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -480,15 +521,6 @@
         </div>
     </div>
 
-    <?php
-    //var_dump($profil);
-
-    // accepter/refuser les demande de competition
-    //affichage les informations des adherent
-    //mesagerie
-    //message a transmettre
-
-     ?>
 
      <!-- Footer -->
      <footer class="page-footer font-small cyan darken-3">
