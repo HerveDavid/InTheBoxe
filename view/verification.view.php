@@ -16,12 +16,12 @@
       <form class="verif" action="../controle/verification.ctrl.php" method="post">
         <fieldset>
           <p>
-             Entrez le code de vérification envoyer a l'adresse <?=$mail?> :
+             Entrez le code de vérification envoyé à l'adresse <?=$mail?> :
             <input type="text" placeholder="Code de vérification" name="code" id="code" required/>
           </p>
           <input type="submit" id="submit" value="Valider">
           <br>
-          <a href="../controle/verification.ctrl.php?verif=1">Renvoyer un mail de verification</a>
+          <a href="../controle/verification.ctrl.php?verif=1">Renvoyer un mail de vérification</a>
           <br>
           <?php global $erreur; ?>
           <p style='color:red'> <?=$erreur ?></p>
