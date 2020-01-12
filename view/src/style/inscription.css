@@ -134,45 +134,41 @@ article #Droite {
 /* line 75, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article #Droite .Fem {
   position: relative;
-  right: 140px;
-  bottom: 87px;
-  margin-bottom: 0px;
+  bottom: 50px;
 }
 
-/* line 82, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 80, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article #Droite .Mas {
   position: relative;
-  left: 110px;
-  bottom: 0px;
-  margin-bottom: 0px;
+  bottom: 50px;
 }
 
-/* line 89, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 85, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article #Droite .reste {
   position: relative;
   bottom: 50px;
 }
 
-/* line 94, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 90, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article #Droite h1 {
   margin-top: 20%;
   border: 0;
   font-size: 3em;
 }
 
-/* line 99, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 95, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article #Droite p {
-  width: 80%;
+  width: 100%;
   font-size: 1em;
 }
 
-/* line 103, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 99, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article #Droite input {
   padding: 5px;
   border-radius: 10px;
 }
 
-/* line 111, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 107, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 footer {
   margin-top: 5%;
 }
