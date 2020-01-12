@@ -72,7 +72,7 @@
       $nombreAdherents= count($listAdherents);
       $nombreDemandesCombats = count($demandesCombats);
       $nombreAttente = count($listAttente);
-      if ($disabled=="disabled") {
+      if ($disabled=="disabled" || $InfClub!="show active") {
         $active="";
       }else {
         $active="active";
@@ -103,8 +103,14 @@
                       <li class="nav-item">
                         <a class="nav-link <?=$disabled?>" id="contact-tab" data-toggle="tab" href="#adherent" role="tab" aria-controls="contact" aria-selected="false">Gestion des adhérents</a>
                       </li>
+                      <li class="nav-item">
+                        <a class="nav-link <?=$disabled?>" id="contact-tab" data-toggle="tab" href="#match" role="tab" aria-controls="contact" aria-selected="false">Gestion des matchs</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link <?=$disabled?>" id="contact-tab" data-toggle="tab" href="#attente" role="tab" aria-controls="contact" aria-selected="false">Gestion des attentes</a>
+                      </li>
                       <!-- <li class="nav-item">
-                        <a class="nav-link <?=$disabled?>" id="contact-tab" data-toggle="tab" href="#attente" role="tab" aria-controls="contact" aria-selected="false">Profil</a>
+                        <a class="nav-link <?=$disabled?>" id="contact-tab" data-toggle="tab" href="#cours" role="tab" aria-controls="contact" aria-selected="false">Informations des cours</a>
                       </li> -->
                     </ul>
                     <div class="tab-content" id="myTabContent">
@@ -157,8 +163,14 @@
                               </div>
                             </div>
                             <div class="card-footer">
-                              <button type="" class="btn btn-secondary">Accepter</button>
-                              <button type="" class="btn btn-danger">Refuser</button>
+                              <form class="" action="../controle/profil.ctrl.php" method="post">
+                                <input type="text" name="disabled" value="disabled" hidden>
+                                <button type="submit" name="accepterDemande" value='<?=$adh->getMail()?>' class="btn btn-secondary">Accepter</button>
+                              </form>
+                              <form class="" action="../controle/gerant.ctrl.php" method="post">
+                                <button type="submit" name="refuserDemande" value='<?=$adh->getMail()?>'  class="btn btn-danger">Refuser</button>
+                              </form>
+
                             </div>
                           </div>
                           <?php } ?>
@@ -219,7 +231,7 @@
                               <?=substr($description, 0, 45).'...'?>  <!-- pour limite laffichage de la discription a 45 caractéres -->
                             </div>
                             <form method="post" action="../controle/gerant.ctrl.php">
-                              <button type="submit" name="supp" value='<?=$nom?>/<?=$date?>' class="btn btn-danger">Supprimer</button>
+                              <button type="submit" name="supp" value="<?=htmlentities($nom,ENT_QUOTES)?>/<?=$date?>" class="btn btn-danger">Supprimer</button>
                             </form>
                           </div>
                         </div>
@@ -236,7 +248,7 @@
                               Trier par :
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">A-Z</a>
+                              <a class="dropdown-item" href="../controle/">A-Z</a>
                               <a class="dropdown-item" href="#">Z-A</a>
                               <a class="dropdown-item" href="#">Age croissant</a>
                               <a class="dropdown-item" href="#">Age décroissant</a>
@@ -371,6 +383,43 @@
                              <button id="buttonRetour" type="submit" name="tabActive" value=" / / /show active" class="btn btn-secondary">retour</button>
                            </form>
 
+                      </div>
+                      <!--/////////////////////////////////////////////////////////////section list d'adversaires///////////////////////////////////////////////////////////-->
+                      <div class="tab-pane fade <?=$adversaires?> card" id="adherent" role="tabpanel" aria-labelledby="contact-tab">
+                        <h3 class="card-header">Liste des adversaires potentiels : </h3>
+                        <div class="card-body d-flex justify-content-between align-self-baseline align-content-between flex-wrap">
+                            <?php foreach ($listAdversaires as $adh) { ?>
+                            <div class="card">
+                              <div class="card-body">
+                                <img src="../view/src/img/profil/connexion_logo.png" alt="Mon nom" title="Mon nom" class="img-thumbnail" width="150" height="150">
+                                <br><br>
+                                <h6><?=$adh->getNom()?> <?=$adh->getPrenom()?> </h6>
+                                <hr class="style1">
+                                <div class="card">
+                                  Catégorie : <?=$adh->getCategorie()?>
+                                </div>
+                                <div class="card">
+                                  Age : <?=$adh->getAge()?>
+                                </div>
+                                <div class="card">
+                                  Victoires : <?=$adh->getVictoire()?>
+                                </div>
+                                <div class="card">
+                                  Nuls : <?=$adh->getNul()?>
+                                </div>
+                                <div class="card">
+                                  Défaites : <?=$adh->getDefaite()?>
+                                </div>
+                              </div>
+                              <div class="card-footer">
+                                <form action="../controle/profil.ctrl.php" method="POST"  >
+                                  <input type="text" name="disabled" value="disabled" hidden>
+                                  <button type="submit" name="modifier" value="<?=$adh->getMail()?>" class="btn btn-secondary">Modifier</button>
+                                </form>
+                              </div>
+                            </div>
+                            <?php } ?>
+                        </div>
                       </div>
                     </div>
                   </div>

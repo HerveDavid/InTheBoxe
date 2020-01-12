@@ -1,0 +1,6 @@
+JIMILI|hakim|Club1|2000-11-10|1m40|60|Masculin|Poids léger|20|1|2
+PEYRIN|florent|Club2|1999-11-10|1m40|60|Masculin|Poids léger|9|0|6
+SMITH|jimmy|Club2|2000-11-10|1m40|60|Masculin|Poids léger|20|1|2
+SMITH|gabriel|Club3|1999-11-10|1m40|60|Masculin|Poids léger|5|0|3
+SMITH|yanis|Club3|2000-11-10|1m40|60|Masculin|Poids léger|0|1|2
+SMITH|martin|Club2|1999-11-10|1m40|60|Masculin|Poids léger|4|0|6

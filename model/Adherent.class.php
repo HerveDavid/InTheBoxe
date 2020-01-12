@@ -12,6 +12,7 @@ abstract class Adherent {
   protected $victoire;
   protected $defaite;
   protected $nul;
+  
   //////////////////declaration des getter//////////////////////
   public function getNom() {return $this->nom;}
   public function getPrenom() {return $this->prenom;}

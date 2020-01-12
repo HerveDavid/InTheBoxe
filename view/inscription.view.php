@@ -75,14 +75,13 @@
         <fieldset>
           <?php global $erreur; ?>
           <p style='color:red'> <?= $erreur ?></p>
-          <p>
-          <label for="M">Masculin</label>
-          <input type="radio" name="choix" value="Masculin" id="M" required>
-          </p>
-          <p>
-          <label for="F">Féminin</label>
-          <input type="radio" name="choix" value="Féminin" id="F" required>
-          </p>
+          <div class="Mas">
+           <label for="M">Masculin</label><input checked="checked" type="radio" name="choix" value="Masculin" id="M" required>
+           </div>
+           <div class="Fem">
+             <label for="F">Féminin</label><input  type="radio" name="choix" value="Féminin" id="F" required>
+           </div>
+           <div class="reste">
           <p>
             <input type="text" name="prenom" id="prenom" autofocus placeholder="Prénom" required/>
           </p>
@@ -119,7 +118,7 @@
             <label for="scales">En soumettant ce formulaire, j'accepte que les informations saisies soient utilisés a titre informationnelles et connus uniquement par l'équipe du Boxing Club Evian-Les-Bains</label>
           </p>
           <input type="submit" value="Inscription">
-
+          </div>
         </fieldset>
       </form>
     </div>

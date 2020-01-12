@@ -1,2 +1,3 @@
-boxing thonon|25 rue du coin|0603049673
-boxing echirolle|25 rue gabrielle peri|0450267683$
+club1|25 rue du coin|club1@gmail.com|0603049673
+club2|25 rue gabrielle peri|club2@gmail.com|0450267683
+club3|25 rue abbe gregoire|club3@gmail.com|0450267683

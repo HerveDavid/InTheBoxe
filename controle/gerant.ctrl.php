@@ -10,7 +10,7 @@
     if ($_POST['date']<date("Y-m-d")) {
       header('Location: profil.ctrl.php?tabActive=" / /show active/ "&erreurActu=date');
     }else {
-      $nomActualite = $_POST['nomActu'];
+      $nomActualite= $_POST['nomActu'];
       $typeActualite = $_POST['typeActu'];
       $description = $_POST['description'];
       $nomCoach = $coach->getNom();
@@ -26,16 +26,27 @@
     }
 
   }
+  if (isset($_POST['accepterDemande']) ) {
+    header('Location: profil.ctrl.php?adv=1&disabled=disabled');
+  }
+  if (isset($_POST['refuserDemande'])) {
+    $dao->suppDemandeCombat($_POST['refuserDemande']);
+    header('Location: profil.ctrl.php?tabActive=" /show active/ / / / "');
+  }
   if (isset($_POST['clear'])) {
     $dao->suppActualitePasser();
     header('Location: profil.ctrl.php?tabActive=" / /show active/ "');
   }
   if (isset($_POST['supp'])) {
     $value = explode("/",$_POST['supp']);
+    var_dump($value);
     $nom= $value[0];
     $date = $value[1];
-    $dao->suppActualite($nom,$date);
-    header('Location: profil.ctrl.php?tabActive=" / /show active/ "');
+    var_dump($nom);
+    var_dump($date);
+  //  $dao->suppActualite($nom,$date);
+    var_dump($dao->suppActualite($nom,$date));
+    //header('Location: profil.ctrl.php?tabActive=" / /show active/ "');
   }
   // if () {
   //   header('Location: profil.ctrl.php?modifier="true");

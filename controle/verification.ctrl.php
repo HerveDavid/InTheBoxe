@@ -3,7 +3,7 @@
 
   require_once('../model/DAO.class.php');
   $dao = new DAO();
-  $mail = $_SESSION['mail'];
+  $mail = $_SESSION['email'];
 
   function random($car) { // fonction de generation de chaine aleatoire
     $string = "";
@@ -34,13 +34,14 @@
         $motdepasse= $_SESSION['mdp'];
         $dao->CreeAdherent($newAdherent,$motdepasse);
         $erreur="";
+         $_SESSION['mail'] = $_SESSION['email'];
         header('Location: profil.ctrl.php');
       }else {
         $erreur = "le code entré est incorrect";
         include('../view/verification.view.php');
       }
-  }else {
-    $erreur="mail non envoyer";
+  } else {
+    $erreur="email non envoyé";
     include('../view/verification.view.php');
   }
 

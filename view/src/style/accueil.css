@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
+/* line 3, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .logo {
   width: 50px;
   height: 50px;
 }
 
+/* line 8, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .nav-link {
   font-size: 1.5em;
   font-family: Palanquin;
@@ -12,28 +14,34 @@
   color: #6c6c6c;
 }
 
+/* line 16, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .active {
   color: black;
 }
 
+/* line 20, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red {
   background-color: #BE1E2D;
   border-radius: 10px;
 }
 
+/* line 23, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red .nav-link {
   color: #FFFFFF;
 }
 
+/* line 28, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 header {
   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
 
+/* line 32, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 navbar-toggler-icon {
   color: black;
   background-color: black;
 }
 
+/* line 1, ../web/Atom/github/InTheBoxe/view/src/style_scss/_body.scss */
 body {
   font-family: Palanquin;
   font-style: normal;
@@ -41,6 +49,7 @@ body {
   color: #000000;
 }
 
+/* line 6, ../web/Atom/github/InTheBoxe/view/src/style_scss/accueil.scss */
 body {
   background: url(../img/accueil/background.png) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -51,16 +60,19 @@ body {
   color: #FFFFFF;
 }
 
+/* line 16, ../web/Atom/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #content {
   position: relative;
   top: 8em;
   margin: 0 15.5em;
 }
 
+/* line 23, ../web/Atom/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #content h1 {
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
 
+/* line 27, ../web/Atom/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #content h2 {
   font-family: Rubik;
   font-weight: bold;
@@ -70,11 +82,13 @@ body {
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
 
+/* line 39, ../web/Atom/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #content h2 {
   font-size: 4.5em;
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
 
+/* line 44, ../web/Atom/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #content p {
   font-family: Palanquin;
   font-style: normal;
@@ -85,6 +99,7 @@ body {
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
 
+/* line 54, ../web/Atom/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #content a {
   font-family: Palanquin;
   font-style: normal;
@@ -99,6 +114,7 @@ body {
   box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.2), 3px 3px 3px rgba(255, 255, 255, 0.2);
 }
 
+/* line 72, ../web/Atom/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #exFoot {
   background: inherit;
   position: relative;
@@ -110,6 +126,7 @@ body {
   align-items: center;
 }
 
+/* line 84, ../web/Atom/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #exFoot h1 {
   z-index: 2;
   width: auto;
@@ -124,6 +141,7 @@ body {
   text-align: justify;
 }
 
+/* line 97, ../web/Atom/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #exFoot h2 {
   z-index: 2;
   padding: 2em;
@@ -132,12 +150,14 @@ body {
   font-family: Palanquin;
 }
 
+/* line 104, ../web/Atom/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #exFoot nav {
   z-index: 2;
   margin-top: -10em;
   width: 100%;
 }
 
+/* line 108, ../web/Atom/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #exFoot nav ul {
   padding: inherit;
   height: 100%;
@@ -148,10 +168,12 @@ body {
   justify-content: space-around;
 }
 
+/* line 116, ../web/Atom/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #exFoot nav ul li {
   align-content: center;
 }
 
+/* line 123, ../web/Atom/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #exFoot:before {
   height: 70px;
   content: '';
@@ -166,22 +188,28 @@ body {
   z-index: 0;
 }
 
+/* line 137, ../web/Atom/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #tarif {
   text-align: center;
 }
 
+/* line 139, ../web/Atom/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #tarif li {
   font-size: 1.5em;
   font-family: Rubik;
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
 
+/* line 144, ../web/Atom/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #tarif a {
   font-size: 1.2em;
   font-family: Rubik;
   color: white;
 }
 
+/* line 149, ../web/Atom/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #tarif .footer {
   margin-top: 40px;
 }
+
+/*# sourceMappingURL=accueil.css.map */

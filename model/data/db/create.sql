@@ -20,7 +20,6 @@ CREATE TABLE adherentClub(
 );
 
 CREATE TABLE adherentExterieur(
-  licence INTEGER PRIMARY KEY,
   nom VARCHAR(25),
   prenom VARCHAR(25),
   club VARCHAR(25),
@@ -28,7 +27,6 @@ CREATE TABLE adherentExterieur(
   taille FLOAT,
   poids INTEGER,
   genre VARCHAR(25),
-  statut VARCHAR(20),
   categorie VARCHAR(20),
   victoire INTEGER,
   defaite INTEGER,
@@ -106,13 +104,9 @@ CREATE TABLE demandeCombats(
 );
 
 CREATE TABLE match(
- boxeurInt VARCHAR(25),
- boxeurext VARCHAR(25),
- clubext VARCHAR(25),
- categorie VARCHAR(20),
+ mailBoxeurInt VARCHAR(25),
+ boxeurExt VARCHAR(25),
+ clubExt VARCHAR(25),
  datecombat DATE,
- lieu VARCHAR(25),
- PRIMARY KEY(licenceint,licenceext,datecombat),
- FOREIGN KEY(boxeurint,licenceint,categorie) REFERENCES adherent(prenom,licence,categorie),
- FOREIGN KEY(boxeurext,licenceext) REFERENCES adherentExterieur
+ lieu VARCHAR(25)
 );
