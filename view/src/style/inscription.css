@@ -89,7 +89,7 @@ article div form {
 
 /* line 41, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article div fieldset {
-  border: 0px;
+  padding: 15px;
   width: inherit;
 }
 
@@ -124,29 +124,55 @@ article ::placeholder {
 /* line 67, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article #Droite {
   padding-top: 0px;
+  padding-bottom: 20px;
   color: white;
   background-image: url("../img/gantsBoxe.jpg");
   background-repeat: round;
   background-size: 100%;
 }
 
-/* line 74, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 75, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
+article #Droite .Fem {
+  position: relative;
+  right: 140px;
+  bottom: 87px;
+  margin-bottom: 0px;
+}
+
+/* line 82, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
+article #Droite .Mas {
+  position: relative;
+  left: 110px;
+  bottom: 0px;
+  margin-bottom: 0px;
+}
+
+/* line 89, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
+article #Droite .reste {
+  position: relative;
+  bottom: 50px;
+}
+
+/* line 94, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article #Droite h1 {
   margin-top: 20%;
   border: 0;
+  font-size: 3em;
 }
 
-/* line 78, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 99, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article #Droite p {
   width: 80%;
+  font-size: 1em;
 }
 
-/* line 81, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 103, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article #Droite input {
-  margin: 0;
+  padding: 5px;
+  border-radius: 10px;
 }
 
-/* line 88, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 111, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 footer {
   margin-top: 5%;
 }

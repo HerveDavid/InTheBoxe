@@ -72,7 +72,7 @@
           <span>Retrouvez le planning des cours privés, semi-privés ou en groupe.</span>
         </p>
 
-        <a href="../controle/connexion.ctrl.php">
+        <a href="../controle/connexion.ctrl.php" style="text-decoration:none">
           <div class="boxe-loisir card d-flex flex-row justify-content-around">
             <div class="p-2 text-center">
               <h3>Boxe Loisir :</h3>
@@ -85,7 +85,7 @@
           </div>
         </a>
         <br>
-        <a href="../controle/connexion.ctrl.php">
+        <a href="../controle/connexion.ctrl.php" style="text-decoration:none">
           <div class="boxe-educative card d-flex flex-row justify-content-around">
             <div class="p-2 text-center">
               <h3>Boxe Educative :</h3>
@@ -98,7 +98,7 @@
           </div>
         </a>
         <br>
-        <a href="../controle/connexion.ctrl.php">
+        <a href="../controle/connexion.ctrl.php" style="text-decoration:none">
           <div class="boxe-educative2 card d-flex flex-row justify-content-around">
             <div class="p-2 text-center">
               <h3>Boxe Educative :</h3>
@@ -111,7 +111,7 @@
           </div>
         </a>
         <br>
-        <a href="../controle/connexion.ctrl.php">
+        <a href="../controle/connexion.ctrl.php" style="text-decoration:none">
           <div class="cross-fit card d-flex flex-row justify-content-around">
             <div class="p-2 text-center">
               <h3>Cross Fit Boxing :</h3>
@@ -124,7 +124,7 @@
           </div>
         </a>
         <br>
-        <a href="../controle/connexion.ctrl.php">
+        <a href="../controle/connexion.ctrl.php" style="text-decoration:none">
           <div class="boxe-femmes card d-flex flex-row justify-content-around">
             <div class="p-2">
               <h3>Boxe Féminine :</h3>
