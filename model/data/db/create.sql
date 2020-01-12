@@ -75,8 +75,6 @@ CREATE TABLE actualite(
   PRIMARY KEY(nom,dateAct);
 );
 
-
-
 CREATE TABLE club(
   nom VARCHAR(25) PRIMARY KEY,
   adresse VARCHAR(25),
