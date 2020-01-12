@@ -22,7 +22,7 @@
                        'coach' => $nomCoach);
       $actu = new Actualite($param);
       $dao->CreeActualite($actu);
-      header('Location: profil.ctrl.php?tabActive=" / /show active/ "');
+      header('Location: profil.ctrl.php?tabActive=" / /show active/ / / "');
     }
 
   }
