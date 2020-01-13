@@ -8,7 +8,7 @@
   require_once('../model/Club.class.php');
   //////////////////////////////////////////////////////////////////////////////
   class DAO {
-    
+
     private $db;
     private $database = '../model/data/db/boxe.db';
 
@@ -134,7 +134,7 @@
       }else {return new Coach($coach[0]);}
     }
     //----------------------------------------------------------------------------
-    public function CreeCoach(Coach $coach , $mdp){
+    public function CreeCoach(Coach $coach , $mdp){ // Creation d'un gerant
       $nom = $coach->getNom();
       $prenom = $coach->getPrenom();
       $mail = $coach->getMail();
@@ -151,7 +151,7 @@
     }
 
     //----------------------------------------------------------------------------
-    public function updateCoach($modif, $mail){
+    public function updateCoach($modif, $mail){ // mettre a jour les infos d'un coach
       $attribut =explode(" ",$modif);
       $query = "UPDATE coach SET '$attribut[0]'='$attribut[1]' WHERE mail= '$mail'";
       return $this->db->query($query);
@@ -171,7 +171,7 @@
       return $listCours;
     }
     //----------------------------------------------------------------------------
-    public function getCours($num){
+    public function getCours($num){ // recuperer le cours identifier par un $num
       $query = "SELECT num,type,horaireDebut,horaireFin,jours FROM cours WHERE num='$num'";
       $sql= $this->db->query($query);
       $resultat = $sql->fetchAll(PDO::FETCH_ASSOC);
@@ -179,13 +179,13 @@
       return $cours;
     }
     //----------------------------------------------------------------------------
-    public function reserveCours($num,$mail){
+    public function reserveCours($num,$mail){ // reservation d'un adherent ($mail) d'une place dans un cours ($num)
       $query = "INSERT INTO participant VALUES ($num,'$mail')";
 
       return $insertParticipant=$this->db->query($query);
     }
     //----------------------------------------------------------------------------
-    public function suppParticipant($num,$mail){
+    public function suppParticipant($num,$mail){ // suppression d'une reservation sur un cours
       $suppParticipant = "DELETE FROM participant WHERE numCours='$num' and mail='$mail'";
       return $this->db->query($suppParticipant);
     }
@@ -193,7 +193,7 @@
     //////////////////  ACTUALITE ///////////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////
 
-    public function getActualites(){
+    public function getActualites(){ // recuperation de tous les actualiter ordonner par date
       $query = "SELECT * FROM actualite ORDER BY dateAct";
       $sql= $this->db->query($query);
       $actualites = $sql->fetchAll(PDO::FETCH_ASSOC);
@@ -204,7 +204,7 @@
       return $listActulaites;
     }
     //----------------------------------------------------------------------------
-    public function CreeActualite(Actualite $actu){
+    public function CreeActualite(Actualite $actu){ //creation d'une actualite
       $nom = str_replace('"','\'',$actu->getNom());
       $type = $actu->getType();
       $date = $actu->getDate();
@@ -215,14 +215,14 @@
       $insertActualite=$this->db->query($query);
     }
     //----------------------------------------------------------------------------
-    public function suppActualite($nom,$date){
+    public function suppActualite($nom,$date){ //suppression d'une actualite
       $nom= str_replace('"','\'',$nom);
       $suppActualite = "DELETE FROM Actualite WHERE nom= \"$nom\" and dateAct='$date'";
       var_dump($suppActualite);
       return $this->db->query($suppActualite)  ;
     }
     //----------------------------------------------------------------------------
-    public function suppActualitePasser(){
+    public function suppActualitePasser(){ //suppression des actualites passer
       $today = date("Y-m-d");
       $actualites = $this->getActualites();
       foreach ($actualites as $actu) {
@@ -237,7 +237,7 @@
     /////////////////////////////////////////////////////////////////////////////
     ////////////////// DEMANDE DE COMBATS ///////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////
-    public function getDemandesCombats(){
+    public function getDemandesCombats(){ // recuperer tous les demandes de combats
       $query = "SELECT * FROM demandeCombats ORDER BY num ";
       $sql= $this->db->query($query);
       $demandesCombats = $sql->fetchAll(PDO::FETCH_ASSOC);
@@ -250,7 +250,7 @@
       return $listDemandes;
     }
     //----------------------------------------------------------------------------
-    public function demandeEnCours($mail){
+    public function demandeEnCours($mail){ // recuperation d'une demande de combat d'un adherent
       $query = "SELECT * FROM demandeCombats WHERE mail='$mail'";
       $sql =  $this->db->query($query);
       $resultat = $sql->fetchAll(PDO::FETCH_CLASS[0]);

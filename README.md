@@ -28,12 +28,10 @@ plusieurs fonctionnalités
 
 ```bash
 import foobar
-
 foobar.pluralize('word') # returns 'words'
 foobar.pluralize('goose') # returns 'geese'
 foobar.singularize('phenomena') # returns 'phenomenon'
 ```
-
 ## Contributeurs
 
 ### Chef de projet
@@ -52,4 +50,7 @@ Walid KADURA
 ### Relation client
 - Amine BENMANSOUR
 
-## License
+## PHASE DE TEST (POUR JURY)
+SITE IMPLANTER SUR SERVEUR : http://boxingclubevian.ddns.net/InTheBoxe-master/controle/accueil.ctrl.php
+(Ce lien vous dirige sur notre site heberger par notre serveur, malheureseument la fonction mail() n'est pas implaimenter sur le serveur donc les fonctionnalités tel que  )
+fonctionnalités:
