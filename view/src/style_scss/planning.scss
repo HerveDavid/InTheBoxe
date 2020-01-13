@@ -15,11 +15,6 @@ body {
   background-color: black;
 }
 
-fieldset {
-  background-color: rgba(0, 0, 0, .18);
-  backdrop-filter: blur(5px);
-  width: 840px;
-}
 
 .btn-primary {
   background-color: $red;
