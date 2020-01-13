@@ -1,43 +1,42 @@
-#IntheBoxe
-
-Réalisation d'un site web dans le domaine de la boxe.
-
-Projet dans le cadre des études d'IUT informatique.
-
-Client : Boxing Club Evian-les-Bains.
-
-Participants au projet InTheBoxe :
-
-Chef de projet / Gestion de projet : Walid KADURA
-Développement : Walid KADURA, César WATRIN, David HERVE, Gabriel VIALLON
-Cahier des charges : Walid KADURA, César WATRIN, Gabriel VIALLON, Amine BENMANSOUR, Florent PEYRIN , Louis GODEFROID
-Relation client : Amine BENMANSOUR
-
-Langages utilisés : HTML, CSS, SCSS, JavaScript, PHP, SQL.
-Framework : Bootstrap
-
 # INTHEBOXE
 
+« Stay focus »
+
+## INTRODUCTION
+
 Intheboxe est un site web réalisé dans le cadre du module M3301 de
-l'iut2 Grenoble UGA.
+l'iut2 Grenoble UGA (2019/2020).
 
-Il présente le club de boxe d'Evian-les-Bains, et propose aux utilisateurs
-plusieurs fonctionnalités
+Le site présente le club de boxe d'Evian-les-Bains, client réel de ce projet.
+Il apporte une solution nomade et numérique pour un club de boxe
+totalisant presque 200 adherents.
 
-## Usage
+## FONCTIONNALITÉES
 
-```bash
-import foobar
+## USAGE
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
+[Le site est visible ici](boxingclubevian.ddns.net).
+
+## LANGAGES UTILISÉES
+
+### FRONT-END
+
+- HTML
+- CSS
+- SCSS
+- JavaScript
+
+### BACK-END
+- PHP
+- SQL
+
+### FRAMEWORK
+- Bootstrap
 
 ## Contributeurs
 
 ### Chef de projet
-Walid KADURA
+- Walid KADURA
 
 ### Développement
 - César WATRIN
