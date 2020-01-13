@@ -1,10 +1,10 @@
 <?php
-
-  class Exercice{
+  class Entrainement{
     //////////////////////declaration des attributs///////////////////
-    private $nom;
-    private $nbRep;
-    private $nbSerie;
+    private $numEnt;
+    private $typeEnt;
+    private $tempsTotal;
+    private $tempsRepos;
     //////////////////declaration du constructeur//////////////////////
     public function __construct(array $param = array()) {
       foreach ($param as $key => $value) {
@@ -12,10 +12,10 @@
       }
     }
     //////////////////declaration des getter//////////////////////
-    public function getNom() {return $this->nom;}
-    public function getNbRep() {return $this->nbRep;}
-    public function getNbSerie() {return $this->nbSerie;}
+    public function getNumEnt(){return $this->numEnt;}
+    public function getTypeEnt(){return $this->typeEnt;}
+    public function getTempsTotal(){return $this->tempsTotal;}
+    public function getTempsRepos(){return $this->tempsRepos;}
   }
 
-
- ?>
+?>
