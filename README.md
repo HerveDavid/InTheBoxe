@@ -14,6 +14,7 @@ totalisant presque 200 adhérents.
 ## USAGE
 
 [Le site est visible ici](http://boxingclubevian.ddns.net/InTheBoxe-master/controle/accueil.ctrl.php).
+> :warning: **Chrome est mal intégré**: Certaine action ne fonctionne pas
 
 ## LANGAGES UTILISÉES
 
