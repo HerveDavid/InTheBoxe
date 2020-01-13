@@ -1,7 +1,9 @@
 <?php
-include('../model/Adherent.class.php');
-include('../model/DAO.class.php');
- $param = array('nom'=>'walid');
+  //////////////////////////MESSAGE IMPORTANT///////////////////////////////////
+  // IL FAUT DEPLACER LE FICHIER DANS LE REPERTOIRE MODEL POUR QUE LES TESTS FONCTIONNES
+
+  include('../model/DAO.class.php');
+  $param = array('nom'=>'walid');
   $adh = new AdherentClub($param);
   var_dump($adh);
 

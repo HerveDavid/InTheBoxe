@@ -1,32 +1,33 @@
 <?php
 
   class Actualite{
+    //////////////////////declaration des attributs///////////////////
     private $nom;
     private $type;
     private $dateAct;
     private $description;
     private $coach;
-
+    //////////////////declaration du constructeur//////////////////////
     public function __construct(array $param = array()) {
       foreach ($param as $key => $value) {
           $this->$key = $value;
       }
     }
-
+    //////////////////declaration des getter//////////////////////
     public function getNom() {return $this->nom;}
     public function getType() {return $this->type;}
     public function getDate(){return $this->dateAct;}
     public function getDescription() {return $this->description;}
     public function getCoach(){return $this->coach;}
-    ////////////////////////////////////////////////////
-    public function getDateTexte(){
+    //////////////////autres Methodes//////////////////
+    public function getDateTexte(){ // permet de changer le format d'une date "10/1/2020" a 10 janvier 2020
       $date = $this->dateAct;
       $jour = date("d",strtotime($date));
       $mois = $this->getMois(date("m",strtotime($date)));
       $annee = date("Y",strtotime($date));
       return   "$jour $mois $annee";
     }
-    public function getMois($mois){
+    public function getMois($mois){ // fonction permettant de chenger les numero de mois en text
     if ($mois==1) {
       return "Janvier";
     }elseif ($mois==2) {
