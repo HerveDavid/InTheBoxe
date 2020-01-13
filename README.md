@@ -7,15 +7,15 @@
 Intheboxe est un site web réalisé dans le cadre du module M3301 de
 l'iut2 Grenoble UGA (2019/2020).
 
-Le site présente le club de boxe d'Evian-les-Bains, client réel de ce projet.
+Le site présente le club de boxe d'Évian-les-Bains, client réel de ce projet.
 Il apporte une solution nomade et numérique pour un club de boxe
-totalisant presque 200 adherents.
+totalisant presque 200 adhérents.
 
 ## FONCTIONNALITÉES
 
 ## USAGE
 
-[Le site est visible ici](boxingclubevian.ddns.net).
+[Le site est visible ici](http://boxingclubevian.ddns.net/InTheBoxe-master/controle/accueil.ctrl.php).
 
 ## LANGAGES UTILISÉES
 
@@ -44,10 +44,10 @@ totalisant presque 200 adherents.
 - David HERVE
 - Gabriel VIALLON
 ### Cahier des charges
-- César WATRIN
-- Gabriel VIALLON
 - Amine BENMANSOUR
+- César WATRIN
 - Florent PEYRIN
+- Gabriel VIALLON
 - Louis GODEFROID
 ### Relation client
 - Amine BENMANSOUR
