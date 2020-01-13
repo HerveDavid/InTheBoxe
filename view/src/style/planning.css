@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
-/* line 3, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 3, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .logo {
   width: 50px;
   height: 50px;
 }
 
-/* line 8, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 8, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .nav-link {
   font-size: 1.5em;
   font-family: Palanquin;
@@ -15,100 +15,99 @@
   color: #6c6c6c;
 }
 
-/* line 16, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 16, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .active {
   color: black;
 }
 
-/* line 20, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 20, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red {
   background-color: #BE1E2D;
   border-radius: 10px;
 }
 
-/* line 23, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 23, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red .nav-link {
   color: #FFFFFF;
 }
 
-/* line 28, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 28, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 header {
   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
 
-/* line 32, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 32, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 navbar-toggler-icon {
   color: black;
   background-color: black;
 }
 
-/* line 4, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 4, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 * {
   font-family: Palanquin;
 }
 
-/* line 8, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 8, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 body {
-  background: url(../img/planning/planning.jpg) no-repeat center center fixed;
+  background: url(../img/contact/contact.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
-  color: black;
 }
 
-/* line 18, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 17, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 .btn-primary {
   background-color: #BE1E2D;
   border: none;
 }
 
-/* line 21, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 20, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 .btn-primary a {
   color: white;
 }
 
-/* line 26, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 25, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 h1 {
-  color: gray;
+  color: black;
 }
 
-/* line 30, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 29, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 hr {
   background-color: #BE1E2D;
 }
 
-/* line 34, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 33, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 span {
-  color: #545353;
+  color: black;
 }
 
-/* line 38, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 37, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 .boxe-educative {
   background-color: #17d93a;
   color: white;
 }
 
-/* line 44, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 43, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 .boxe-educative2 {
   background-color: #006f2c;
   color: white;
 }
 
-/* line 50, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 49, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 .boxe-loisir {
   background-color: #11c4f4;
   color: white;
 }
 
-/* line 55, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 54, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 .cross-fit, .cross-fit-boxing {
   background-color: #c1a900;
   color: white;
 }
 
-/* line 60, ../web/Atom/github/InTheBoxe/view/src/style_scss/planning.scss */
+/* line 59, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 .boxe-femmes {
   background-color: #e600a0;
   color: white;
