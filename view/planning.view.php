@@ -37,6 +37,11 @@
             <li class="nav-item">
               <a class="nav-link" href="../controle/contact.ctrl.php">Contact</a>
             </li>
+            <?php if (isset($_SESSION['mail'])): ?>
+              <li class="nav-item">
+                <a class="nav-link" style="color:#BE1E2D" href="../controle/timer.ctrl.php">Entrainement</a>
+              </li>
+            <?php endif; ?>
           </ul>
           <ul class="navbar-nav my-2 my-lg-0">
             <?php if (isset($_SESSION['mail'])) {
@@ -64,7 +69,10 @@
 
     <div class="mt-5 container" id="planning">
 
+      <fieldset>
+
       <?php if (!$adhConnecter) {?>
+
 
         <h1 class="text-center">Planning des cours</h1>
         <hr>
@@ -398,6 +406,8 @@
     <?php } ?>
     </div>
 
+    </fieldset>
+
     <!-- Footer -->
     <footer class="mt-5 page-footer font-small cyan darken-3">
       <!-- Footer Elements -->
@@ -413,7 +423,7 @@
         |
         <a href="../RGPD/politiqueDeConfidentialite.html"> Politique de Confidentialité</a>
         |
-        <a href="#">Site web crée par la WaliTeam</a>
+        <a href="#">Site web créé par la WaliTeam</a>
       </div>
       <!-- Copyright -->
     </footer>

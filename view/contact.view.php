@@ -35,6 +35,11 @@
             <li class="nav-item">
               <a class="nav-link active" href="../controle/contact.ctrl.php">Contact</a>
             </li>
+            <?php if (isset($_SESSION['mail'])): ?>
+              <li class="nav-item">
+                <a class="nav-link" style="color:#BE1E2D" href="../controle/timer.ctrl.php">Entrainement</a>
+              </li>
+            <?php endif; ?>
           </ul>
           <ul class="navbar-nav my-2 my-lg-0">
             <?php if (isset($_SESSION['mail'])) {
@@ -71,15 +76,13 @@
                 <img src="../view/src/img/contact/gantsBoxe.png" alt="gantsBoxe">
             </p>
 
-            <div>
               <iframe
-                class="embed-responsive-item"
-                width="900"
+                class="embed-responsive-item embed-responsive-21by9"
+                width="940"
                 height="300"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2751.449025643487!2d6.586565315525784!3d46.40015197912312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c3cab6d4c055f%3A0x4fa7470265a3f22a!2sImpasse%20Dr%20Dumur%2C%2074500%20%C3%89vian-les-Bains!5e0!3m2!1sfr!2sfr!4v1575628999904!5m2!1sfr!2sfr"
                 >
               </iframe>
-            </div>
 
           </div>
       </article>
@@ -90,6 +93,7 @@
           <p>
               <img src="../view/src/img/contact/mail.png" alt="enveloppe">
           </p>
+          <fieldset>
           <p id="question">
               Pour toutes informations complémentaires n'hésitez pas à nous contacter
           </p>
@@ -108,10 +112,12 @@
           <?php     global $confirmation; ?>
           <p style='color:green'> <?= $confirmation ?></p>
       </div>
+      </fieldset>
       <div class="">
         <p id="place">
             <img src="../view/src/img/contact/place.png" alt="place">
         </p>
+        <fieldset>
         <h5>
           Boxing Club Evian
         </h5>
@@ -149,6 +155,7 @@
         </p>
 
       </div>
+      </fieldset>
     </div>
 
     <div class="mt-5 text-center" id="fb-root">
@@ -184,7 +191,7 @@
         |
         <a href="../RGPD/politiqueDeConfidentialite.html"> Politique de Confidentialité</a>
         |
-        <a href="#">Site web crée par la WaliTeam</a>
+        <a href="#">Site web créé par la WaliTeam</a>
       </div>
       <!-- Copyright -->
     </footer>

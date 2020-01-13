@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
-/* line 3, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 3, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .logo {
   width: 50px;
   height: 50px;
 }
 
-/* line 8, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 8, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .nav-link {
   font-size: 1.5em;
   font-family: Palanquin;
@@ -14,34 +14,34 @@
   color: #6c6c6c;
 }
 
-/* line 16, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 16, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .active {
   color: black;
 }
 
-/* line 20, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 20, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red {
   background-color: #BE1E2D;
   border-radius: 10px;
 }
 
-/* line 23, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 23, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red .nav-link {
   color: #FFFFFF;
 }
 
-/* line 28, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 28, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 header {
   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
 
-/* line 32, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 32, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 navbar-toggler-icon {
   color: black;
   background-color: black;
 }
 
-/* line 1, ../web/Atom/github/InTheBoxe/view/src/style_scss/_body.scss */
+/* line 1, ../../public_html/github/InTheBoxe/view/src/style_scss/_body.scss */
 body {
   font-family: Palanquin;
   font-style: normal;
@@ -49,7 +49,7 @@ body {
   color: #000000;
 }
 
-/* line 4, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 4, ../../public_html/github/InTheBoxe/view/src/style_scss/club.scss */
 body {
   background: url(../img/club/club.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -59,7 +59,7 @@ body {
   background-attachment: fixed;
 }
 
-/* line 13, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 13, ../../public_html/github/InTheBoxe/view/src/style_scss/club.scss */
 h1 {
   font-family: Rubik;
   font-size: 2em;
@@ -67,7 +67,7 @@ h1 {
   width: 50%;
 }
 
-/* line 20, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 20, ../../public_html/github/InTheBoxe/view/src/style_scss/club.scss */
 p {
   text-align: justify;
   font-size: 1em;
@@ -75,7 +75,7 @@ p {
   width: 75%;
 }
 
-/* line 28, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 28, ../../public_html/github/InTheBoxe/view/src/style_scss/club.scss */
 fieldset {
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
@@ -83,32 +83,32 @@ fieldset {
   padding: 15px;
 }
 
-/* line 35, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 35, ../../public_html/github/InTheBoxe/view/src/style_scss/club.scss */
 .club {
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-/* line 39, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 39, ../../public_html/github/InTheBoxe/view/src/style_scss/club.scss */
 .club img {
   border: 0;
   flex: 50%;
 }
 
-/* line 43, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 43, ../../public_html/github/InTheBoxe/view/src/style_scss/club.scss */
 .club .container {
   flex: 50%;
 }
 
-/* line 45, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 45, ../../public_html/github/InTheBoxe/view/src/style_scss/club.scss */
 .club .container section {
   margin: 0;
   padding-top: 5em;
   padding-left: 2em;
 }
 
-/* line 53, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 53, ../../public_html/github/InTheBoxe/view/src/style_scss/club.scss */
 #icones {
   display: flex;
   flex-direction: row;
@@ -116,12 +116,12 @@ fieldset {
   text-align: center;
 }
 
-/* line 61, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 61, ../../public_html/github/InTheBoxe/view/src/style_scss/club.scss */
 #Club-2 section {
   padding-top: 25em;
 }
 
-/* line 67, ../web/Atom/github/InTheBoxe/view/src/style_scss/club.scss */
+/* line 67, ../../public_html/github/InTheBoxe/view/src/style_scss/club.scss */
 #Club-3 section {
   padding-top: 25em;
 }

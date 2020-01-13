@@ -1,8 +1,13 @@
 <?php
   require_once('../model/DAO.class.php');
-  require_once('../model/Adherent.class.php');
-  require_once('../model/Coach.class.php');
+  //////////////////////////MESSAGE IMPORTANT///////////////////////////////////
+  // IL FAUT DEPLACER LE FICHIER DANS LE REPERTOIRE MODEL POUR QUE LES TESTS FONCTIONNES
 
+  /////////////////////////METHODE TESTER //////////////////////////////////////
+
+  //getDemandesCombat() CreeDemandeCombat() suppDemandeCombat() demandeEnCours()
+
+  ///////////////////////////////////////////////////////////////////
 
   $dao = new DAO();
   $adh = $dao->getAdherent('amine@gmail.com');

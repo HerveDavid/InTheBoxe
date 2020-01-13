@@ -49,6 +49,11 @@
              <li class="nav-item">
                <a class="nav-link" href="../controle/contact.ctrl.php">Contact</a>
              </li>
+             <?php if (isset($_SESSION['mail'])): ?>
+               <li class="nav-item">
+                 <a class="nav-link" style="color:#BE1E2D" href="../controle/timer.ctrl.php">Entrainement</a>
+               </li>
+             <?php endif; ?>
            </ul>
            <ul class="navbar-nav my-2 my-lg-0">
              <?php if (isset($_SESSION['mail'])) {
@@ -125,12 +130,12 @@
                             <h4><a href="../controle/profil.ctrl.php?demande=1">Envoyer une demande de combat </a></h4>
 
                           <?php endif; ?>
-                            <hr class="style1">
+
                         </div>
 
                         <section class="bouton">
                           <a href="../controle/timer.ctrl.php">
-                            <span class="text">Je m'entraine</span>
+                            <span class="text"></span>
                             <span class="line -right"></span>
                             <span class="line -top"></span>
                             <span class="line -left"></span>
@@ -138,7 +143,7 @@
                           </a>
                         </section>
 
-                        <a id="apk" href="../appAndroid/InTheBoxe_1_1.0.apk" download="InTheBoxe_1_1.0.apk">Téléchargez l'application d'entrainement sur votre smartphone Android</a>
+                        <!-- <a id="apk" href="../appAndroid/InTheBoxe_1_1.0.apk" download="InTheBoxe_1_1.0.apk"></a> -->
 
                         <hr class="style1">
 

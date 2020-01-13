@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
-/* line 3, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 3, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .logo {
   width: 50px;
   height: 50px;
 }
 
-/* line 8, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 8, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .nav-link {
   font-size: 1.5em;
   font-family: Palanquin;
@@ -15,36 +15,36 @@
   color: #6c6c6c;
 }
 
-/* line 16, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 16, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .active {
   color: black;
 }
 
-/* line 20, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 20, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red {
   background-color: #BE1E2D;
   border-radius: 10px;
 }
 
-/* line 23, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 23, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red .nav-link {
   color: #FFFFFF;
 }
 
-/* line 28, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 28, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 header {
   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
 
-/* line 32, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 32, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 navbar-toggler-icon {
   color: black;
   background-color: black;
 }
 
-/* line 13, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 13, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
 body {
-  background: url(../img/contact/contact.jpg) no-repeat center center fixed;
+  background: url(../img/club/club.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -52,20 +52,27 @@ body {
   background-attachment: fixed;
 }
 
-/* line 22, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 22, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
 img {
   width: 5em;
   height: 5em;
 }
 
-/* line 27, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 27, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
+fieldset {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  padding: 15px;
+}
+
+/* line 33, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
 h5 {
   color: #BE1E2D;
   text-rendering: optimizelegibility;
   font-family: Palanquin;
 }
 
-/* line 33, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 39, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
 h1 {
   font-weight: 700;
   text-transform: uppercase;
@@ -73,12 +80,12 @@ h1 {
   font-family: Rubik;
 }
 
-/* line 41, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 47, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
 p {
   font-family: Rubik;
 }
 
-/* line 46, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 52, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
 form input {
   border-color: #BE1E2D;
   color: #BE1E2D;
@@ -90,7 +97,7 @@ form input {
   height: 100%;
 }
 
-/* line 57, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 63, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
 form textarea {
   color: #BE1E2D;
   width: 548.09px;
@@ -100,7 +107,7 @@ form textarea {
   border-color: #BE1E2D;
 }
 
-/* line 66, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 72, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
 form .bouton {
   width: 6em;
   height: 3em;
@@ -108,7 +115,7 @@ form .bouton {
   margin-bottom: 1em;
 }
 
-/* line 73, ../web/Atom/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 79, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
 form .bouton:hover {
   background-color: #BE1E2D;
   opacity: 0.80;

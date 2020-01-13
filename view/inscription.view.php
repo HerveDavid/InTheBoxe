@@ -35,6 +35,11 @@
             <li class="nav-item">
               <a class="nav-link" href="../controle/contact.ctrl.php">Contact</a>
             </li>
+            <?php if (isset($_SESSION['mail'])): ?>
+              <li class="nav-item">
+                <a class="nav-link" style="color:#BE1E2D" href="../controle/timer.ctrl.php">Entrainement</a>
+              </li>
+            <?php endif; ?>
           </ul>
           <ul class="navbar-nav my-2 my-lg-0">
             <?php if (isset($_SESSION['mail'])) {
@@ -115,7 +120,7 @@
           </p>
           <p>
             <input type="checkbox" id="scales" name="scales" required>
-            <label for="scales">En soumettant ce formulaire, j'accepte que les informations saisies soient utilisées à titre informationnelles et connues uniquement par l'équipe du Boxing Club Evian-Les-Bains</label>
+            <label for="scales">En soumettant ce formulaire, j'accepte que les informations saisies soient utilisées à titre informationnel et connues uniquement par l'équipe du Boxing Club Evian-Les-Bains</label>
           </p>
           <input type="submit" value="Inscription">
           </div>
@@ -139,7 +144,7 @@
       |
       <a href="../RGPD/politiqueDeConfidentialite.html"> Politique de Confidentialité</a>
       |
-      <a href="#">Site web crée par la WaliTeam</a>
+      <a href="#">Site web créé par la WaliTeam</a>
     </div>
     <!-- Copyright -->
   </footer>
