@@ -129,7 +129,7 @@
                         </p>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                         <input type="submit" class="btn btn-primary" value="Valider">
                       </div>
                     </fieldset>
