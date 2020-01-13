@@ -14,14 +14,18 @@ totalisant presque 200 adhérents.
 ## TEST (POUR JURY)
 
 [Le site sur notre serveur](http://boxingclubevian.ddns.net/InTheBoxe-master/controle/accueil.ctrl.php).
+> :warning: **Chrome est mal supporté**: Certaine action ne fonctionne pas
+
 (Ce lien vous dirige sur notre site heberger par notre serveur, malheureseument la fonction mail() n'est pas implaimenter sur le serveur donc les fonctionnalités tel que l'envoi de mail pour verification lors de l'inscription ne marchera pas donc je vous invite a utiliser le deuxieme lien ci-dessous pour jouir pleinement des fonctionnalités de notre site )
 [Le site sur serveur de l'iut](http://www-etu-info.iut2.upmf-grenoble.fr/~kadurae/InTheBoxe).
+> :warning: **Chrome est mal supporté**: Certaine action ne fonctionne pas
+
 ## FONCTIONNALITES (POUR JURY)
 -inscription
   | message d'erreur ou indication pour guider l'inscription
   |envoi de mail de verification
 -actualite
-  |affichage des actualite 
+  |affichage des actualite
 ## LANGAGES UTILISÉES
 
 ### FRONT-END
