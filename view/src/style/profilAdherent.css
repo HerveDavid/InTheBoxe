@@ -66,27 +66,26 @@ body {
 fieldset {
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
-  border-radius: 40px;
   padding: 15px;
 }
 
-/* line 29, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 28, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .container {
   margin-top: 10%;
   margin-bottom: 10%;
 }
 
-/* line 35, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 34, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .user-image img {
   width: 20%;
 }
 
-/* line 41, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 40, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .style1 {
   background-color: #BE1E2D;
 }
 
-/* line 45, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 44, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 #apk {
   display: block;
   position: relative;
@@ -103,13 +102,13 @@ fieldset {
   color: #BE1E2D;
 }
 
-/* line 66, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 65, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .bouton {
   text-align: center;
   background: rgba(0, 0, 0, 0);
 }
 
-/* line 70, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 69, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .bouton a {
   color: #BE1E2D;
   text-decoration: none;
@@ -123,7 +122,7 @@ fieldset {
   letter-spacing: 0.07em;
 }
 
-/* line 82, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 81, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .bouton a .text {
   font-family: Rubik;
   transform: translate3d(0, 1em, 0);
@@ -131,7 +130,7 @@ fieldset {
   transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
 
-/* line 90, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 89, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .bouton a:after {
   position: absolute;
   content: '';
@@ -144,13 +143,13 @@ fieldset {
   transform-origin: left;
 }
 
-/* line 108, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 107, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .bouton .line {
   position: absolute;
   background: #BE1E2D;
 }
 
-/* line 112, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 111, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .bouton .line.-right, .bouton .line.-left {
   width: 1px;
   bottom: -1px;
@@ -158,7 +157,7 @@ fieldset {
   transform: scale3d(1, 0, 1);
 }
 
-/* line 120, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 119, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .bouton .line.-top, .bouton .line.-bottom {
   height: 1px;
   left: -1px;
@@ -166,42 +165,42 @@ fieldset {
   transform: scale3d(0, 1, 1);
 }
 
-/* line 128, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 127, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .bouton .line.-right {
   right: -1px;
   transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
   transform-origin: top;
 }
 
-/* line 134, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 133, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .bouton .line.-top {
   top: -1px;
   transition: transform 0.08s linear 0.43s;
   transform-origin: left;
 }
 
-/* line 140, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 139, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .bouton .line.-left {
   left: -1px;
   transition: transform 0.08s linear 0.51s;
   transform-origin: bottom;
 }
 
-/* line 146, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 145, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .bouton .line.-bottom {
   bottom: -1px;
   transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
   transform-origin: right;
 }
 
-/* line 156, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 155, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .bouton a:hover .text,
 .bouton a:active .text {
   transform: translate3d(0, 0, 0);
   transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
 
-/* line 161, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 160, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .bouton a:hover:after,
 .bouton a:active:after {
   transform: scale3d(0, 1, 1);
@@ -211,34 +210,34 @@ fieldset {
   transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
 }
 
-/* line 172, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 171, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .bouton a:hover .line,
 .bouton a:active .line {
   transform: scale3d(1, 1, 1);
 }
 
-/* line 175, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 174, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .bouton a:hover .line.-right,
 .bouton a:active .line.-right {
   transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
   transform-origin: bottom;
 }
 
-/* line 180, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 179, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .bouton a:hover .line.-top,
 .bouton a:active .line.-top {
   transition: transform 0.08s linear 0.4s;
   transform-origin: right;
 }
 
-/* line 185, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 184, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .bouton a:hover .line.-left,
 .bouton a:active .line.-left {
   transition: transform 0.08s linear 0.48s;
   transform-origin: top;
 }
 
-/* line 190, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 189, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .bouton a:hover .line.-bottom,
 .bouton a:active .line.-bottom {
   transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
