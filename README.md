@@ -11,8 +11,6 @@ Le site présente le club de boxe d'Évian-les-Bains, client réel de ce projet.
 Il apporte une solution nomade et numérique pour un club de boxe
 totalisant presque 200 adhérents.
 
-## FONCTIONNALITÉES
-
 ## USAGE
 
 [Le site est visible ici](http://boxingclubevian.ddns.net/InTheBoxe-master/controle/accueil.ctrl.php).
