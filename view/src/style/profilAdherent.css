@@ -75,3 +75,8 @@ fieldset {
 li {
   list-style-type: none;
 }
+
+.btn-red {
+  background-color: #BE1E2D;
+  color: #FFFFFF;
+}

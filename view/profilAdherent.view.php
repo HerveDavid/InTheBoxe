@@ -205,7 +205,7 @@
                                   <p>  <?= $cours->getHoraireDebut() ?> - <?= $cours->getHoraireFin() ?> le <?= $cours->getJour() ?></p>
 
                                     <form class="" action="../controle/profil.ctrl.php" method="post">
-                                      <button type="submit" name="supp" value="<?=$cours->getNumCours()?>" >Supprimer</button>
+                                      <button class="btn btn-red" type="submit" name="supp" value="<?=$cours->getNumCours()?>" >Supprimer</button>
                                     </form>
 
                                   <br>
