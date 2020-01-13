@@ -1,9 +1,15 @@
 <?php
   require_once('../model/DAO.class.php');
-  require_once('../model/Adherent.class.php');
-  require_once('../model/Coach.class.php');
+  //////////////////////////MESSAGE IMPORTANT///////////////////////////////////
+  // IL FAUT DEPLACER LE FICHIER DANS LE REPERTOIRE MODEL POUR QUE LES TESTS FONCTIONNES
 
+  /////////////////////////METHODE TESTER //////////////////////////////////////
 
+  //mailExistant() CreeAdherent() getAdherent() getProfil() estCoach() CreeCoach()
+  //estCoach() getCoach() getAllAdherent() getActualites() CreeActualite() suppActualite()
+  //suppActualitePasser()
+
+  ///////////////////////////////////////////////////////////////////
   $dao = new DAO();
   echo " test de la methode mailExistant : (retourn normalement false)";
   var_dump($dao->mailExistant("wadzelid@gmail.com"));
