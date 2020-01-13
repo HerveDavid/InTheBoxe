@@ -413,7 +413,7 @@
         |
         <a href="../RGPD/politiqueDeConfidentialite.html"> Politique de Confidentialité</a>
         |
-        <a href="#">Site web crée par la WaliTeam</a>
+        <a href="#">Site web créé par la WaliTeam</a>
       </div>
       <!-- Copyright -->
     </footer>

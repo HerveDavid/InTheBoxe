@@ -54,7 +54,7 @@
             <?php }else { ?>
 
               <li class="nav-item my-2 my-sm-0 bg-red">
-                <a class="nav-link" href="../controle/connexion.ctrl.php">Connexion</a>
+                <a class="nav-link button" href="../controle/connexion.ctrl.php">Connexion</a>
               </li>
             <?php } ?>
           </ul>
@@ -67,7 +67,7 @@
       <h2>Boxing Club Evian-les-Bains</h2>
       <h1>Explorez vos limites</h1>
       <p>
-        Inscrivez-vous pour accéder aux cours et aux entrainements en ligne
+        Inscrivez-vous pour accéder aux cours et aux entraînements en ligne
       </p>
       <br>
       <?php if (!isset($_SESSION['mail'])): ?>
@@ -99,7 +99,7 @@
           |
           <a href="../RGPD/politiqueDeConfidentialite.html"> Politique de Confidentialité</a>
           |
-          <a href="#">Site web crée par la WaliTeam</a>
+          <a href="#">Site web créé par la WaliTeam</a>
         </div>
       </nav>
     </div>

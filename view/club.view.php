@@ -75,7 +75,7 @@
           <p>
             Notre club porte des valeurs sportives importantes afin de
             permettre à nos adhérents de pratiquer la boxe dans un
-            environnement accueillant et propice à la progression personelle.
+            environnement accueillant et propice à la progression personnelle.
           </p>
           <div id="icones">
             <figure>
@@ -114,7 +114,7 @@
           <fieldset>
           <h1>Nos locaux</h1>
           <p>
-            Parce que le bien être de nos adhérents est notre
+            Parce que le bien-être de nos adhérents est notre
             priorité, nous mettons à votre disposition une salle
             équipée, lumineuse et spacieuse pour vous assurer
             la meilleure expérience sportive possible.
@@ -156,7 +156,7 @@
         |
         <a href="../RGPD/politiqueDeConfidentialite.html"> Politique de Confidentialité</a>
         |
-        <a href="#">Site web crée par la WaliTeam</a>
+        <a href="#">Site web créé par la WaliTeam</a>
       </div>
       <!-- Copyright -->
     </footer>
