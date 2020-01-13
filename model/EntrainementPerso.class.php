@@ -16,6 +16,7 @@ class entrainementPerso{
       if ($i < count($param)) {
         $this->$key = $param[$i++];
       }
+      
     }
   }
 
