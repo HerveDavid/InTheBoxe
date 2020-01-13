@@ -62,7 +62,7 @@ body {
 fieldset {
   background-color: rgba(0, 0, 0, 0.18);
   backdrop-filter: blur(5px);
-  padding: 15px;
+  width: 840px;
 }
 
 /* line 24, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
