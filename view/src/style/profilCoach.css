@@ -54,25 +54,31 @@ h3, h4 {
 /* line 11, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
 body {
   background: #fffff;
+  background: url(../img/profil/profil.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-/* line 15, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
+/* line 21, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
 .container {
   margin-top: 10%;
   margin-bottom: 10%;
 }
 
-/* line 21, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
+/* line 27, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
 .user-image img {
   width: 20%;
 }
 
-/* line 27, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
+/* line 33, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
 .style1 {
   background-color: #BE1E2D;
 }
 
-/* line 31, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
+/* line 37, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
 .tab-pane {
   width: 50em;
 }
