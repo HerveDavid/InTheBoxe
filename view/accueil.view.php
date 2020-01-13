@@ -37,6 +37,11 @@
             <li class="nav-item">
               <a class="nav-link" href="../controle/contact.ctrl.php">Contact</a>
             </li>
+            <?php if (isset($_SESSION['mail'])): ?>
+              <li class="nav-item">
+                <a class="nav-link" style="color:#BE1E2D" href="../controle/timer.ctrl.php">Entrainement</a>
+              </li>
+            <?php endif; ?>
           </ul>
           <ul class="navbar-nav my-2 my-lg-0">
             <?php if (isset($_SESSION['mail'])) {
@@ -69,6 +74,10 @@
       <p>
         Inscrivez-vous pour accéder aux cours et aux entraînements en ligne
       </p>
+      <?php if (isset($_SESSION['mail'])): ?>
+        <br>
+        <a id="apk" href="../appAndroid/InTheBoxe_1_1.0.apk" download="InTheBoxe_1_1.0.apk">Téléchargez l'application d'entrainement sur votre smartphone Android</a>
+      <?php endif; ?>
       <br>
       <?php if (!isset($_SESSION['mail'])): ?>
         <a href="../controle/inscription.ctrl.php">Inscription</a>

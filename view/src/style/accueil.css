@@ -60,19 +60,36 @@ body {
   color: #FFFFFF;
 }
 
-/* line 16, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
+/* line 17, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #content {
   position: relative;
   top: 8em;
   margin: 0 15.5em;
 }
 
-/* line 23, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
+/* line 24, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
+#content #apk {
+  background-color: #BE1E2D;
+  display: block;
+  position: relative;
+  top: 10px;
+  text-align: center;
+  font-family: Palanquin;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  border-radius: 15px;
+  padding: 0.4em 2.5em;
+  color: white;
+}
+
+/* line 41, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #content h1 {
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
 
-/* line 27, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
+/* line 45, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #content h2 {
   font-family: Rubik;
   font-weight: bold;
@@ -82,13 +99,13 @@ body {
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
 
-/* line 39, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
+/* line 57, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #content h2 {
   font-size: 4.5em;
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
 
-/* line 44, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
+/* line 62, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #content p {
   font-family: Palanquin;
   font-style: normal;
@@ -99,7 +116,7 @@ body {
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
 
-/* line 54, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
+/* line 72, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #content a {
   font-family: Palanquin;
   font-style: normal;
@@ -114,7 +131,7 @@ body {
   box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.2), 3px 3px 3px rgba(255, 255, 255, 0.2);
 }
 
-/* line 72, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
+/* line 90, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #exFoot {
   background: inherit;
   position: relative;
@@ -126,7 +143,7 @@ body {
   align-items: center;
 }
 
-/* line 84, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
+/* line 102, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #exFoot h1 {
   z-index: 2;
   width: auto;
@@ -141,7 +158,7 @@ body {
   text-align: justify;
 }
 
-/* line 97, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
+/* line 115, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #exFoot h2 {
   z-index: 2;
   padding: 2em;
@@ -150,14 +167,14 @@ body {
   font-family: Palanquin;
 }
 
-/* line 104, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
+/* line 122, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #exFoot nav {
   z-index: 2;
   margin-top: -10em;
   width: 100%;
 }
 
-/* line 108, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
+/* line 126, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #exFoot nav ul {
   padding: inherit;
   height: 100%;
@@ -168,12 +185,12 @@ body {
   justify-content: space-around;
 }
 
-/* line 116, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
+/* line 134, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #exFoot nav ul li {
   align-content: center;
 }
 
-/* line 123, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
+/* line 141, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #exFoot:before {
   height: 70px;
   content: '';
@@ -188,26 +205,26 @@ body {
   z-index: 0;
 }
 
-/* line 137, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
+/* line 155, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #tarif {
   text-align: center;
 }
 
-/* line 139, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
+/* line 157, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #tarif li {
   font-size: 1.5em;
   font-family: Rubik;
   text-shadow: 3px 3px 3px black, 3px 3px 3px black;
 }
 
-/* line 144, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
+/* line 162, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #tarif a {
   font-size: 1.2em;
   font-family: Rubik;
   color: white;
 }
 
-/* line 149, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
+/* line 167, ../../public_html/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #tarif .footer {
   margin-top: 40px;
 }
