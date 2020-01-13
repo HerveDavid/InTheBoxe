@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
-/* line 4, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 4, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 body {
   background: #302646;
 }
 
-/* line 8, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 8, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre {
   position: relative;
   top: 130px;
@@ -15,7 +15,7 @@ body {
   color: white;
 }
 
-/* line 20, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 20, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre .tim {
   margin: auto;
   width: 960px;
@@ -27,7 +27,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* line 31, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 31, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre button {
   background: rgba(0, 0, 0, 0);
   color: white;
@@ -39,18 +39,18 @@ body {
   margin: 20px;
 }
 
-/* line 42, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 42, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre #reset {
   width: 450px;
   margin: 10px;
 }
 
-/* line 52, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 52, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre .bouton {
   background: rgba(0, 0, 0, 0);
 }
 
-/* line 55, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 55, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre .bouton a {
   color: white;
   text-decoration: none;
@@ -64,7 +64,7 @@ body {
   letter-spacing: 0.07em;
 }
 
-/* line 67, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 67, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre .bouton a .text {
   font-family: 'Oswald', sans-serif;
   transform: translate3d(0, 1em, 0);
@@ -72,7 +72,7 @@ body {
   transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
 
-/* line 75, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 75, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre .bouton a:after {
   position: absolute;
   content: '';
@@ -85,13 +85,13 @@ body {
   transform-origin: left;
 }
 
-/* line 93, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 93, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre .bouton .line {
   position: absolute;
   background: white;
 }
 
-/* line 97, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 97, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre .bouton .line.-right, .chronometre .bouton .line.-left {
   width: 1px;
   bottom: -1px;
@@ -99,7 +99,7 @@ body {
   transform: scale3d(1, 0, 1);
 }
 
-/* line 105, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 105, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre .bouton .line.-top, .chronometre .bouton .line.-bottom {
   height: 1px;
   left: -1px;
@@ -107,42 +107,42 @@ body {
   transform: scale3d(0, 1, 1);
 }
 
-/* line 113, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 113, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre .bouton .line.-right {
   right: -1px;
   transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
   transform-origin: top;
 }
 
-/* line 119, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 119, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre .bouton .line.-top {
   top: -1px;
   transition: transform 0.08s linear 0.43s;
   transform-origin: left;
 }
 
-/* line 125, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 125, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre .bouton .line.-left {
   left: -1px;
   transition: transform 0.08s linear 0.51s;
   transform-origin: bottom;
 }
 
-/* line 131, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 131, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre .bouton .line.-bottom {
   bottom: -1px;
   transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
   transform-origin: right;
 }
 
-/* line 141, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 141, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre .bouton a:hover .text,
 .chronometre .bouton a:active .text {
   transform: translate3d(0, 0, 0);
   transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
 
-/* line 146, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 146, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre .bouton a:hover:after,
 .chronometre .bouton a:active:after {
   transform: scale3d(0, 1, 1);
@@ -152,41 +152,41 @@ body {
   transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
 }
 
-/* line 157, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 157, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre .bouton a:hover .line,
 .chronometre .bouton a:active .line {
   transform: scale3d(1, 1, 1);
 }
 
-/* line 160, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 160, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre .bouton a:hover .line.-right,
 .chronometre .bouton a:active .line.-right {
   transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
   transform-origin: bottom;
 }
 
-/* line 165, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 165, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre .bouton a:hover .line.-top,
 .chronometre .bouton a:active .line.-top {
   transition: transform 0.08s linear 0.4s;
   transform-origin: right;
 }
 
-/* line 170, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 170, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre .bouton a:hover .line.-left,
 .chronometre .bouton a:active .line.-left {
   transition: transform 0.08s linear 0.48s;
   transform-origin: top;
 }
 
-/* line 175, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 175, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 .chronometre .bouton a:hover .line.-bottom,
 .chronometre .bouton a:active .line.-bottom {
   transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
   transform-origin: left;
 }
 
-/* line 186, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 186, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 #plateforme {
   position: relative;
   top: 150px;
@@ -195,12 +195,12 @@ body {
   text-align: center;
 }
 
-/* line 193, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 193, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 #plateforme #surpc {
   font-size: 4em;
 }
 
-/* line 198, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 198, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 #LesTours {
   color: white;
   position: relative;
@@ -208,12 +208,12 @@ body {
   text-align: center;
 }
 
-/* line 203, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 203, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 #LesTours #starteur {
   font-size: 20em;
 }
 
-/* line 206, ../../public_html/github/InTheBoxe/view/src/style_scss/timer.scss */
+/* line 206, ../web/Atom/github/InTheBoxe/view/src/style_scss/timer.scss */
 #LesTours #exercice {
   font-size: 18em;
 }

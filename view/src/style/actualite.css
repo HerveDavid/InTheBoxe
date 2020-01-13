@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
-/* line 3, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 3, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .logo {
   width: 50px;
   height: 50px;
 }
 
-/* line 8, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 8, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .nav-link {
   font-size: 1.5em;
   font-family: Palanquin;
@@ -14,34 +14,34 @@
   color: #6c6c6c;
 }
 
-/* line 16, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 16, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .active {
   color: black;
 }
 
-/* line 20, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 20, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red {
   background-color: #BE1E2D;
   border-radius: 10px;
 }
 
-/* line 23, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 23, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red .nav-link {
   color: #FFFFFF;
 }
 
-/* line 28, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 28, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 header {
   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
 
-/* line 32, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 32, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 navbar-toggler-icon {
   color: black;
   background-color: black;
 }
 
-/* line 5, ../../public_html/github/InTheBoxe/view/src/style_scss/actualite.scss */
+/* line 5, ../web/Atom/github/InTheBoxe/view/src/style_scss/actualite.scss */
 body {
   background-color: black;
   background: url(../img/club/club.jpg) no-repeat center center fixed;
@@ -52,14 +52,14 @@ body {
   background-attachment: fixed;
 }
 
-/* line 23, ../../public_html/github/InTheBoxe/view/src/style_scss/actualite.scss */
+/* line 23, ../web/Atom/github/InTheBoxe/view/src/style_scss/actualite.scss */
 .container {
   margin-top: 5%;
   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.31);
   padding: 0;
 }
 
-/* line 30, ../../public_html/github/InTheBoxe/view/src/style_scss/actualite.scss */
+/* line 30, ../web/Atom/github/InTheBoxe/view/src/style_scss/actualite.scss */
 footer {
   margin-top: 5%;
 }

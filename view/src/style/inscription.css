@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
-/* line 3, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 3, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .logo {
   width: 50px;
   height: 50px;
 }
 
-/* line 8, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 8, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .nav-link {
   font-size: 1.5em;
   font-family: Palanquin;
@@ -14,41 +14,41 @@
   color: #6c6c6c;
 }
 
-/* line 16, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 16, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .active {
   color: black;
 }
 
-/* line 20, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 20, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red {
   background-color: #BE1E2D;
   border-radius: 10px;
 }
 
-/* line 23, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 23, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red .nav-link {
   color: #FFFFFF;
 }
 
-/* line 28, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 28, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 header {
   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
 
-/* line 32, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
+/* line 32, ../web/Atom/github/InTheBoxe/view/src/style_scss/_header.scss */
 navbar-toggler-icon {
   color: black;
   background-color: black;
 }
 
-/* line 3, ../../public_html/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 3, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-/* line 8, ../../public_html/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 8, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article h1 {
   font-family: Rubik;
   font-size: 2em;
@@ -56,7 +56,7 @@ article h1 {
   width: 90%;
 }
 
-/* line 15, ../../public_html/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 15, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article p {
   font-family: Palanquin;
   margin: 10%;
@@ -66,7 +66,7 @@ article p {
   width: 100%;
 }
 
-/* line 24, ../../public_html/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 24, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article div {
   width: 100%;
   display: flex;
@@ -77,7 +77,7 @@ article div {
   padding-right: 10%;
 }
 
-/* line 33, ../../public_html/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 33, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article div form {
   display: flex;
   text-align: center;
@@ -87,13 +87,13 @@ article div form {
   width: 100%;
 }
 
-/* line 41, ../../public_html/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 41, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article div fieldset {
   padding: 15px;
   width: inherit;
 }
 
-/* line 44, ../../public_html/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 44, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article div fieldset input {
   width: 100%;
   color: white;
@@ -103,25 +103,25 @@ article div fieldset input {
   border-right: 0px;
 }
 
-/* line 52, ../../public_html/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 52, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article div fieldset input[type=submit] {
   background-color: #BE1E2D;
 }
 
-/* line 55, ../../public_html/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 55, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article div fieldset p {
   margin: 8%;
   margin-left: 0px;
 }
 
-/* line 61, ../../public_html/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 61, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article ::placeholder {
   font-size: 110%;
   color: white;
   opacity: 1;
 }
 
-/* line 67, ../../public_html/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 67, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article #Droite {
   padding-top: 0px;
   padding-bottom: 20px;
@@ -131,44 +131,44 @@ article #Droite {
   background-size: 100%;
 }
 
-/* line 75, ../../public_html/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 75, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article #Droite .Fem {
   position: relative;
   bottom: 50px;
 }
 
-/* line 80, ../../public_html/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 80, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article #Droite .Mas {
   position: relative;
   bottom: 50px;
 }
 
-/* line 85, ../../public_html/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 85, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article #Droite .reste {
   position: relative;
   bottom: 50px;
 }
 
-/* line 90, ../../public_html/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 90, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article #Droite h1 {
   margin-top: 20%;
   border: 0;
   font-size: 3em;
 }
 
-/* line 95, ../../public_html/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 95, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article #Droite p {
   width: 100%;
   font-size: 1em;
 }
 
-/* line 99, ../../public_html/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 99, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 article #Droite input {
   padding: 5px;
   border-radius: 10px;
 }
 
-/* line 107, ../../public_html/github/InTheBoxe/view/src/style_scss/inscription.scss */
+/* line 107, ../web/Atom/github/InTheBoxe/view/src/style_scss/inscription.scss */
 footer {
   margin-top: 5%;
 }
