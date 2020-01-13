@@ -83,122 +83,147 @@
 
   <div class="container d-flex justify-content-around">
     <div class="user-details">
-            <div class="user-image text-center">
-                <img src="../view/src/img/profil/connexion_logo.png" alt="Mon nom" title="Mon nom" class="img-thumbnail">
-            </div>
-            <div class="user-info-block">
-                <div class="user-heading">
-                    <h3><?= $prenom ?> <?= $nom ?></h3>
-                    <span class="help-block"><?= $mail ?></span>
-                    <hr class="style1">
+
+
+
+      <div class="user-image text-center">
+        <img src="../view/src/img/profil/connexion_logo.png" alt="Mon nom" title="Mon nom" class="img-thumbnail">
+      </div>
+        <div class="d-flex flex-row justify-content-between user-info-block">
+          <div class="">
+            <h3><?= $prenom ?> <?= $nom ?></h3>
+            <span class="help-block"><?= $mail ?></span>
+          </div>
+          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+            Modifications
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modifier les informations personnelles</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
-                <?php if ($statue=='attente') :?>
-                  <p style='color:red' >Votre profil est en attente, il faut vous rendre au club pour valider votre inscription.</p>
-                   <p style='color:red' > Conditions et documents requis:</p>
-                  <ul>
-                    <li style='color:red' >Paiement des frais d'inscription</li>
-                    <li style='color:red'>Certificat médical</li>
-                    <li style='color:red'>Carte d'identité</li>
-                  </ul>
-                <?php else :?>
-                <div class="user-body">
-                    <div class="tab-content">
-                        <div id="information" class="tab-pane active">
-                            <h4>Informations</h4>
-                            <ul>
-                              <li>Poids (en kg): <?=$profil->getPoids()?> </li>
-                              <li>Taille : <?=$profil->getTaille()?></li>
-                              <li>Type de cours inscrit : <?=$profil->getTypeCours()?></li>
-                              <li>Catégorie : <?=$profil->getCategorie()?></li>
+                  <form class="parametrage" action="../controle/parametrage.ctrl.php" method="post">
+                    <fieldset>
+                      <div class="modal-body">
+                        <p>
+                          <label for="tel"><h6>Téléphone</h6></label>
+                          <input type="tel" name="tel" id="tel" placeholder="Téléphone" value="<?=$tel ?>"/>
+                        </p>
 
-                              <li>Victoires : <?=$profil->getVictoire()?></li>
-                              <li>Défaites : <?=$profil->getDefaite()?> </li>
-                              <li>Matchs Nul : <?=$profil->getNul()?></li>
-                            </ul>
-                            <hr class="style1">
-                        </div>
+                        <p>
+                          <label for="adresse"><h6>Adresse</h6></label>
+                          <input type="text" name="adresse" id="adresse" required placeholder="Adresse" value="<?=$adresse ?>" required/>
+                        </p>
+                        <p>
+                          <label for="ville"><h6>Ville</h6></label>
+                          <input type="text" name="ville" id="ville" required placeholder="Ville" value="<?=$ville ?>" required/>
+                        </p>
+                        <p>
+                          <label for="cp"><h6>Code postal</h6></label>
+                          <input type="number" name="codePostal" id="codePostal" required placeholder="Code postal" value="<?=$codePostal ?>" required/>
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                        <input type="submit" class="btn btn-primary" value="Valider">
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
 
-                        <div id="email" class="tab-pane active">
-                          <?php if ($message): ?>
-                            <h4 style="color:grey">Envoyer une demande de combat</h4>
-                            <p style="color:green">Votre demande vient d'être envoyée ! le coach vous enverra un mail pour vous faire part de sa décision</p>
-                          <?php elseif($demande):?>
-                            <h4 style="color:grey">Envoyer une demande de combat</h4>
-                            <p style="color:grey">Vous avez une demande en cours </p>
+          </div>
+              <hr class="style1">
 
-                          <?php else:?>
-                            <h4><a href="../controle/profil.ctrl.php?demande=1">Envoyer une demande de combat </a></h4>
+              <?php if ($statue=='attente') :?>
+                <p style='color:red' >Votre profil est en attente, il faut vous rendre au club pour valider votre inscription.</p>
+                 <p style='color:red' > Conditions et documents requis:</p>
+                <ul>
+                  <li style='color:red' >Paiement des frais d'inscription</li>
+                  <li style='color:red'>Certificat médical</li>
+                  <li style='color:red'>Carte d'identité</li>
+                </ul>
+              <?php else :?>
+              <div class="user-body">
+                <div class="tab-content">
+                    <div id="information" class="tab-pane active">
+                      <h4>Informations</h4>
+                        <ul>
+                          <li>Poids (en kg): <?=$profil->getPoids()?> </li>
+                          <li>Taille : <?=$profil->getTaille()?></li>
+                          <li>Type de cours inscrit : <?=$profil->getTypeCours()?></li>
+                          <li>Catégorie : <?=$profil->getCategorie()?></li>
 
-                          <?php endif; ?>
-
-                        </div>
-
-                        <section class="bouton">
-                          <a href="../controle/timer.ctrl.php">
-                            <span class="text"></span>
-                            <span class="line -right"></span>
-                            <span class="line -top"></span>
-                            <span class="line -left"></span>
-                            <span class="line -bottom"></span>
-                          </a>
-                        </section>
-
-                        <!-- <a id="apk" href="../appAndroid/InTheBoxe_1_1.0.apk" download="InTheBoxe_1_1.0.apk"></a> -->
-
+                          <li>Victoires : <?=$profil->getVictoire()?></li>
+                          <li>Défaites : <?=$profil->getDefaite()?> </li>
+                          <li>Matchs Nul : <?=$profil->getNul()?></li>
+                        </ul>
                         <hr class="style1">
-
-                        <div id="cours" class="tab-pane active">
-                            <h4>Cours inscrit</h4>
-                            <br>
-                            <?php if (count($listCours)>0) {
-                                    foreach ($listCours as $cours) { ?>
-                                      <h6> <?= $cours->getType() ?></h6>
-                                      <p>  <?= $cours->getHoraireDebut() ?> - <?= $cours->getHoraireFin() ?> le <?= $cours->getJour() ?></p>
-
-                                        <form class="" action="../controle/profil.ctrl.php" method="post">
-                                          <button type="submit" name="supp" value="<?=$cours->getNumCours()?>" >Supprimer</button>
-                                        </form>
-
-                                      <br>
-                                      <br>
-                                    <?php }
-                                  } else { ?>
-                                    <p>  Vous n'êtes inscrit à aucun cours </p>
-
-                                  <?php } ?>
-                            <hr class="style1">
-                        </div>
-                      <?php  endif;?>
-                        <div id="settings" class="tab-pane active">
-                          <h4>Modifier les informations personnelles</h4>
-                          <form class="parametrage" action="../controle/parametrage.ctrl.php" method="post">
-                            <fieldset>
-                              <p>
-                                <label for="tel"><h6>Téléphone</h6></label>
-                                <input type="tel" name="tel" id="tel" placeholder="Téléphone" value="<?=$tel ?>"/>
-                              </p>
-
-                              <p>
-                                <label for="adresse"><h6>Adresse</h6></label>
-                                <input type="text" name="adresse" id="adresse" required placeholder="Adresse" value="<?=$adresse ?>" required/>
-                              </p>
-                              <p>
-                                <label for="ville"><h6>Ville</h6></label>
-                                <input type="text" name="ville" id="ville" required placeholder="Ville" value="<?=$ville ?>" required/>
-                              </p>
-                              <p>
-                                <label for="cp"><h6>Code postal</h6></label>
-                                <input type="number" name="codePostal" id="codePostal" required placeholder="Code postal" value="<?=$codePostal ?>" required/>
-                              </p>
-                              <input type="submit" value="Valider">
-                            </fieldset>
-                          </form>
-                        </div>
                     </div>
+
+                    <div id="email" class="tab-pane active">
+                      <?php if ($message): ?>
+                        <h4 style="color:grey">Envoyer une demande de combat</h4>
+                        <p style="color:green">Votre demande vient d'être envoyée ! le coach vous enverra un mail pour vous faire part de sa décision</p>
+                      <?php elseif($demande):?>
+                        <h4 style="color:grey">Envoyer une demande de combat</h4>
+                        <p style="color:grey">Vous avez une demande en cours </p>
+
+                      <?php else:?>
+                        <h4><a href="../controle/profil.ctrl.php?demande=1">Envoyer une demande de combat </a></h4>
+
+                      <?php endif; ?>
+
+                    </div>
+
+                    <section class="bouton">
+                      <a href="../controle/timer.ctrl.php">
+                        <span class="text"></span>
+                        <span class="line -right"></span>
+                        <span class="line -top"></span>
+                        <span class="line -left"></span>
+                        <span class="line -bottom"></span>
+                      </a>
+                    </section>
+
+                      <!-- <a id="apk" href="../appAndroid/InTheBoxe_1_1.0.apk" download="InTheBoxe_1_1.0.apk"></a> -->
+
+                    <hr class="style1">
+
+                    <div id="cours" class="tab-pane active">
+                        <h4>Cours inscrit</h4>
+                        <br>
+                        <?php if (count($listCours)>0) {
+                                foreach ($listCours as $cours) { ?>
+                                  <h6> <?= $cours->getType() ?></h6>
+                                  <p>  <?= $cours->getHoraireDebut() ?> - <?= $cours->getHoraireFin() ?> le <?= $cours->getJour() ?></p>
+
+                                    <form class="" action="../controle/profil.ctrl.php" method="post">
+                                      <button type="submit" name="supp" value="<?=$cours->getNumCours()?>" >Supprimer</button>
+                                    </form>
+
+                                  <br>
+                                  <br>
+                                <?php }
+                              } else { ?>
+                                <p>  Vous n'êtes inscrit à aucun cours </p>
+
+                              <?php } ?>
+                        <hr class="style1">
+                    </div>
+                  <?php  endif;?>
+
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-  </div>
 
   <!-- Footer -->
   <footer class="page-footer font-small cyan darken-3">

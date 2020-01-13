@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
-/* line 3, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .logo {
   width: 50px;
   height: 50px;
 }
 
-/* line 8, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .nav-link {
   font-size: 1.5em;
   font-family: Palanquin;
@@ -14,46 +12,37 @@
   color: #6c6c6c;
 }
 
-/* line 16, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .active {
   color: black;
 }
 
-/* line 20, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red {
   background-color: #BE1E2D;
   border-radius: 10px;
 }
-
-/* line 23, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red .nav-link {
   color: #FFFFFF;
 }
 
-/* line 28, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 header {
   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
 
-/* line 32, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 navbar-toggler-icon {
   color: black;
   background-color: black;
 }
 
-/* line 4, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 h1 {
   font-family: Rubik;
   font-size: 1.5em;
 }
 
-/* line 9, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 h3, h4 {
   font-family: Palanquin;
   font-size: 2em;
 }
 
-/* line 14, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 body {
   background: #fffff;
   background: url(../img/profil/profil.jpg) no-repeat center center fixed;
@@ -64,32 +53,25 @@ body {
   background-attachment: fixed;
 }
 
-/* line 24, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 fieldset {
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
   padding: 15px;
 }
 
-/* line 30, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .container {
   margin-top: 10%;
   margin-bottom: 10%;
 }
 
-/* line 36, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .user-image img {
   width: 20%;
 }
 
-/* line 42, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .style1 {
   background-color: #BE1E2D;
 }
 
-/* line 46, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 li {
   list-style-type: none;
 }
-
-/*# sourceMappingURL=profilAdherent.css.map */

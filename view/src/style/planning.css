@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap");
-/* line 3, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .logo {
   width: 50px;
   height: 50px;
 }
 
-/* line 8, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .nav-link {
   font-size: 1.5em;
   font-family: Palanquin;
@@ -15,39 +13,31 @@
   color: #6c6c6c;
 }
 
-/* line 16, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .active {
   color: black;
 }
 
-/* line 20, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red {
   background-color: #BE1E2D;
   border-radius: 10px;
 }
-
-/* line 23, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 .bg-red .nav-link {
   color: #FFFFFF;
 }
 
-/* line 28, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 header {
   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.13);
 }
 
-/* line 32, ../../public_html/github/InTheBoxe/view/src/style_scss/_header.scss */
 navbar-toggler-icon {
   color: black;
   background-color: black;
 }
 
-/* line 4, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 * {
   font-family: Palanquin;
 }
 
-/* line 8, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 body {
   background: url(../img/club/club.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -58,60 +48,47 @@ body {
   background-color: black;
 }
 
-/* line 19, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 .btn-primary {
   background-color: #BE1E2D;
   border: none;
 }
-
-/* line 22, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 .btn-primary a {
   color: white;
 }
 
-/* line 27, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 h1 {
   color: black;
 }
 
-/* line 31, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 hr {
   background-color: #BE1E2D;
 }
 
-/* line 35, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 span {
   color: black;
 }
 
-/* line 39, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 .boxe-educative {
   background-color: #17d93a;
   color: white;
 }
 
-/* line 45, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 .boxe-educative2 {
   background-color: #006f2c;
   color: white;
 }
 
-/* line 51, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 .boxe-loisir {
   background-color: #11c4f4;
   color: white;
 }
 
-/* line 56, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 .cross-fit, .cross-fit-boxing {
   background-color: #c1a900;
   color: white;
 }
 
-/* line 61, ../../public_html/github/InTheBoxe/view/src/style_scss/planning.scss */
 .boxe-femmes {
   background-color: #e600a0;
   color: white;
 }
-
-/*# sourceMappingURL=planning.css.map */
