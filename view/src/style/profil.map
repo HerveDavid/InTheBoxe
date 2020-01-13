@@ -6,8 +6,8 @@
 		"../style_scss/_variables.scss"
 	],
 	"sourcesContent": [
-		"@import 'variables';\r\n\r\n body{\r\n   font-family: $fontLow;\r\n }\r\n",
-		"// Couleurs\r\n\r\n$white: #FFFFFF;\r\n$black: #000000;\r\n$red: #BE1E2D;\r\n\r\n// Fonts\r\n@import url('https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap');\r\n\r\n$fontHigh: Rubik;\r\n$fontLow: Palanquin;\r\n"
+		"@import 'variables';\n\n body{\n   font-family: $fontLow;\n }\n",
+		"// Couleurs\n\n$white: #FFFFFF;\n$black: #000000;\n$red: #BE1E2D;\n\n// Fonts\n@import url('https://fonts.googleapis.com/css?family=Palanquin|Rubik&display=swap');\n\n$fontHigh: Rubik;\n$fontLow: Palanquin;\n"
 	],
 	"names": [],
 	"mappings": "ACOA,OAAO,CAAC,2EAAI;;ADLX,AAAA,IAAI,CAAA;EACF,WAAW,ECOJ,SAAS;CDNjB"
