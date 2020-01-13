@@ -93,6 +93,7 @@
           <p>
               <img src="../view/src/img/contact/mail.png" alt="enveloppe">
           </p>
+          <fieldset>
           <p id="question">
               Pour toutes informations complémentaires n'hésitez pas à nous contacter
           </p>
@@ -111,10 +112,12 @@
           <?php     global $confirmation; ?>
           <p style='color:green'> <?= $confirmation ?></p>
       </div>
+      </fieldset>
       <div class="">
         <p id="place">
             <img src="../view/src/img/contact/place.png" alt="place">
         </p>
+        <fieldset>
         <h5>
           Boxing Club Evian
         </h5>
@@ -152,6 +155,7 @@
         </p>
 
       </div>
+      </fieldset>
     </div>
 
     <div class="mt-5 text-center" id="fb-root">

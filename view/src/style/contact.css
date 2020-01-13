@@ -44,7 +44,7 @@ navbar-toggler-icon {
 
 /* line 13, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
 body {
-  background: url(../img/contact/contact.jpg) no-repeat center center fixed;
+  background: url(../img/club/club.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -59,13 +59,20 @@ img {
 }
 
 /* line 27, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
+fieldset {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  padding: 15px;
+}
+
+/* line 33, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
 h5 {
   color: #BE1E2D;
   text-rendering: optimizelegibility;
   font-family: Palanquin;
 }
 
-/* line 33, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 39, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
 h1 {
   font-weight: 700;
   text-transform: uppercase;
@@ -73,12 +80,12 @@ h1 {
   font-family: Rubik;
 }
 
-/* line 41, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 47, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
 p {
   font-family: Rubik;
 }
 
-/* line 46, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 52, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
 form input {
   border-color: #BE1E2D;
   color: #BE1E2D;
@@ -90,7 +97,7 @@ form input {
   height: 100%;
 }
 
-/* line 57, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 63, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
 form textarea {
   color: #BE1E2D;
   width: 548.09px;
@@ -100,7 +107,7 @@ form textarea {
   border-color: #BE1E2D;
 }
 
-/* line 66, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 72, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
 form .bouton {
   width: 6em;
   height: 3em;
@@ -108,7 +115,7 @@ form .bouton {
   margin-bottom: 1em;
 }
 
-/* line 73, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
+/* line 79, ../../public_html/github/InTheBoxe/view/src/style_scss/contact.scss */
 form .bouton:hover {
   background-color: #BE1E2D;
   opacity: 0.80;

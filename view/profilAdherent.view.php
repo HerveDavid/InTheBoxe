@@ -143,7 +143,7 @@
                           </a>
                         </section>
 
-                        <!-- <a id="apk" href=""></a> -->
+                        <!-- <a id="apk" href="../appAndroid/InTheBoxe_1_1.0.apk" download="InTheBoxe_1_1.0.apk"></a> -->
 
                         <hr class="style1">
 

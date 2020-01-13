@@ -6,12 +6,19 @@
 }
 
 body {
-  background: url(../img/contact/contact.jpg) no-repeat center center fixed;
+  background: url(../img/club/club.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
+  background-color: black;
+}
+
+fieldset {
+  background-color: rgba(0, 0, 0, .18);
+  backdrop-filter: blur(5px);
+  padding: 15px;
 }
 
 .btn-primary {
@@ -31,13 +38,13 @@ hr {
 }
 
 span {
-  color:  black;
+  color: black;
 }
 
 .boxe-educative{
   background-color: #17d93a;
   color: white;
-  
+
 }
 
 .boxe-educative2{

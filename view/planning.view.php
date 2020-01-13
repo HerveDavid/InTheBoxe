@@ -69,7 +69,10 @@
 
     <div class="mt-5 container" id="planning">
 
+      <fieldset>
+
       <?php if (!$adhConnecter) {?>
+
 
         <h1 class="text-center">Planning des cours</h1>
         <hr>
@@ -402,6 +405,8 @@
       </table>
     <?php } ?>
     </div>
+
+    </fieldset>
 
     <!-- Footer -->
     <footer class="mt-5 page-footer font-small cyan darken-3">
