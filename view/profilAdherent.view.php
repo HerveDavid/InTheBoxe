@@ -74,6 +74,8 @@
        </nav>
      </header>
 
+     <fieldset>
+
   <div class="container d-flex justify-content-around">
     <div class="user-details">
             <div class="user-image text-center">
@@ -212,6 +214,7 @@
   </footer>
   <!-- Footer -->
 
+</fieldset>
 
   </body>
 </html>

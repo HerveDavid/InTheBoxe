@@ -63,6 +63,8 @@
       </nav>
     </header>
 
+    <fieldset>
+
     <?php
 
       $nom = $profil->getNom() ;
@@ -542,6 +544,8 @@
        <!-- Copyright -->
      </footer>
      <!-- Footer -->
+
+   </fieldset>
 
   </body>
 </html>
