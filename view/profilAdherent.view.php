@@ -133,15 +133,15 @@
 
                         </div>
 
-                        <section class="bouton">
+                        <!-- <section class="bouton">
                           <a href="../controle/timer.ctrl.php">
-                            <span class="text"></span>
+                            <span class="text">Je m'entraine</span>
                             <span class="line -right"></span>
                             <span class="line -top"></span>
                             <span class="line -left"></span>
                             <span class="line -bottom"></span>
                           </a>
-                        </section>
+                        </section> -->
 
                         <!-- <a id="apk" href="../appAndroid/InTheBoxe_1_1.0.apk" download="InTheBoxe_1_1.0.apk"></a> -->
 
