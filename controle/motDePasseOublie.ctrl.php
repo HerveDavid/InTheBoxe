@@ -2,9 +2,11 @@
   require_once('../model/DAO.class.php');
   $dao = new DAO;
 
+  /////////////////////////////////VERIFICATION DE L'EXISTANCE DU MAIL////////////////////////
   if (isset($_POST['mail'])) {
     $mail=$_POST['mail'];
     $profil= $dao->getProfil($mail);
+    /////////////////////////////////ENVOI DE MAIL AVEC LE MDP////////////////////////
     if ($profil!=null) {
       $mdp=$profil->getMotDePasse();
       $to      = $mail;
