@@ -130,7 +130,7 @@
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                        <input type="submit" class="btn btn-primary" value="Valider">
+                        <input type="submit" class="btn btn-red" value="Valider">
                       </div>
                     </fieldset>
                   </form>

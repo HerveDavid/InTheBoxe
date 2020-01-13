@@ -171,7 +171,7 @@
       $typeCours= $adherent->getTypeCours();
       global $confirmation; ?>
       <h5 style='color:green'> <?=$confirmation ?></h5>
-      <table class="table table-striped table-bordered table-hover">
+      <table class="table table-striped table-bordered table-hover bg-transp">
         <thead>
           <tr>
             <th scope="col" colspan="2" class="ing-hour-col"></th>
@@ -223,7 +223,7 @@
             </td>
             <td class="ing-cell ing-hour-col-19-00 ing-day-row-1"></td>
             <td class="ing-cell ing-hour-col-20-00 ing-day-row-1"></td>
-            <td class="ing-cell ing-hour-col-21-00 ing-day-row-1"></td>
+            <!-- <td class="ing-cell ing-hour-col-21-00 ing-day-row-1"></td> -->
           </tr>
           <tr>
             <th scope="row" colspan="2" class="ing-day-row ing-day-col-1">mardi</th>
@@ -260,7 +260,7 @@
                 <?php endif; ?>
               </p>
             </td>
-            <td class="ing-cell ing-hour-col-21-00 ing-day-row-1"></td>
+            <!-- <td class="ing-cell ing-hour-col-21-00 ing-day-row-1"></td> -->
           </tr>
           <tr>
             <th scope="row" colspan="2" class="ing-day-row ing-day-col-1">mercredi</th>
@@ -323,7 +323,7 @@
               </p>
             </td>
             <td class="ing-cell ing-hour-col-19-00 ing-day-row-1"></td>
-            <td class="ing-cell ing-hour-col-20-00 ing-day-row-1"></td>
+            <!-- <td class="ing-cell ing-hour-col-20-00 ing-day-row-1"></td> -->
             <td class="ing-cell ing-hour-col-21-00 ing-day-row-1"></td>
           </tr>
           <tr>
@@ -374,7 +374,7 @@
             </td>
             <td class="ing-cell ing-hour-col-19-00 ing-day-row-1"></td>
             <td class="ing-cell ing-hour-col-20-00 ing-day-row-1"></td>
-            <td class="ing-cell ing-hour-col-21-00 ing-day-row-1"></td>
+            <!-- <td class="ing-cell ing-hour-col-21-00 ing-day-row-1"></td> -->
           </tr>
           <tr>
             <th scope="row" colspan="2" class="ing-day-row ing-day-col-1">samedi</th>
@@ -399,7 +399,7 @@
             <td class="ing-cell ing-hour-col-18-00 ing-day-row-1"></td>
             <td class="ing-cell ing-hour-col-19-00 ing-day-row-1"></td>
             <td class="ing-cell ing-hour-col-20-00 ing-day-row-1"></td>
-            <td class="ing-cell ing-hour-col-21-00 ing-day-row-1"></td>
+            <!-- <td class="ing-cell ing-hour-col-21-00 ing-day-row-1"></td> -->
           </tr>
         </tbody>
       </table>
