@@ -193,7 +193,7 @@ body {
 /* line 141, ../web/Atom/github/InTheBoxe/view/src/style_scss/accueil.scss */
 #exFoot:before {
   height: 70px;
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -228,5 +228,3 @@ body {
 #tarif .footer {
   margin-top: 40px;
 }
-
-/*# sourceMappingURL=accueil.css.map */

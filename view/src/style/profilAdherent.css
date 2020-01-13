@@ -92,4 +92,10 @@ li {
   list-style-type: none;
 }
 
+/* line 50, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+.btn-red {
+  background-color: #BE1E2D;
+  color: #FFFFFF;
+}
+
 /*# sourceMappingURL=profilAdherent.css.map */
