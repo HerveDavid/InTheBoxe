@@ -63,6 +63,11 @@
     }else {
       $message =false;
     }
+    if (isset($_POST['supp'])) {
+      $numCours=$_POST['supp'];
+      $mail = $_SESSION['mail'];
+      $dao->suppParticipant($numCours,$mail);
+    }
     include('../view/profilAdherent.view.php');
   }
 

@@ -202,6 +202,11 @@ class DAO {
     $suppDemande = "DELETE FROM demandeCombats WHERE mail='$mail'";
     return $this->db->query($suppDemande);
   }
+  public function suppParticipant($num,$mail){
+    $suppParticipant = "DELETE FROM participant WHERE numCours='$num' and mail='$mail'";
+    return $this->db->query($suppParticipant);
+  }
+
 
 
   public function CreeAdherent(adherent $adherent , $mdp){
