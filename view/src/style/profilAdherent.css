@@ -44,14 +44,16 @@ navbar-toggler-icon {
 /* line 4, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 h1 {
   font-family: Rubik;
+  font-size: 1.5em;
 }
 
-/* line 8, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 9, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 h3, h4 {
   font-family: Palanquin;
+  font-size: 2em;
 }
 
-/* line 12, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 14, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 body {
   background: #fffff;
   background: url(../img/profil/profil.jpg) no-repeat center center fixed;
@@ -62,44 +64,32 @@ body {
   background-attachment: fixed;
 }
 
-/* line 22, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 24, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 fieldset {
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
   padding: 15px;
 }
 
-/* line 28, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 30, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .container {
   margin-top: 10%;
   margin-bottom: 10%;
 }
 
-/* line 34, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 36, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .user-image img {
   width: 20%;
 }
 
-/* line 40, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+/* line 42, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
 .style1 {
   background-color: #BE1E2D;
 }
 
-/* line 44, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
-#apk {
-  display: block;
-  position: relative;
-  top: 10px;
-  text-align: center;
-  font-family: Palanquin;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  border-radius: 15px;
-  padding: 0.4em 2.5em;
-  background-color: rgba(0, 0, 0, 0);
-  color: #BE1E2D;
+/* line 46, ../../public_html/github/InTheBoxe/view/src/style_scss/profilAdherent.scss */
+li {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=profilAdherent.css.map */

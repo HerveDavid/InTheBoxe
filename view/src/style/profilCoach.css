@@ -49,16 +49,17 @@ h1 {
 /* line 7, ../../public_html/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
 h3, h4 {
   font-family: Palanquin;
+  font-size: 3em;
 }
 
-/* line 11, ../../public_html/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
+/* line 12, ../../public_html/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
 fieldset {
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
   padding: 15px;
 }
 
-/* line 17, ../../public_html/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
+/* line 18, ../../public_html/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
 body {
   background: #fffff;
   background: url(../img/profil/profil.jpg) no-repeat center center fixed;
@@ -69,23 +70,23 @@ body {
   background-attachment: fixed;
 }
 
-/* line 27, ../../public_html/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
+/* line 28, ../../public_html/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
 .container {
   margin-top: 10%;
   margin-bottom: 10%;
 }
 
-/* line 33, ../../public_html/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
+/* line 34, ../../public_html/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
 .user-image img {
   width: 20%;
 }
 
-/* line 39, ../../public_html/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
+/* line 40, ../../public_html/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
 .style1 {
   background-color: #BE1E2D;
 }
 
-/* line 43, ../../public_html/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
+/* line 44, ../../public_html/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
 .tab-pane {
   width: 50em;
 }

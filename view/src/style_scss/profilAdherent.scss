@@ -3,10 +3,12 @@
 
 h1 {
   font-family: $fontHigh;
+  font-size: 1.5em;
 }
 
 h3, h4 {
   font-family: $fontLow;
+  font-size: 2em;
 }
 
 body {
@@ -41,21 +43,27 @@ fieldset {
    background-color: $red;
  }
 
- #apk {
-   display: block;
-   position: relative;
-   top: 10px;
-   text-align: center;
-   font-family: $fontLow;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 1.5em;
-   line-height: 1.5em;
-   border-radius: 15px;
-   padding: 0.4em 2.5em;
-   background-color: rgba(0, 0, 0, 0);
-   color: $red;
- }
+li {
+  list-style-type: none;
+}
+
+ // #apk {
+ //   display: block;
+ //   position: relative;
+ //   top: 10px;
+ //   text-align: center;
+ //   font-family: $fontLow;
+ //   font-style: normal;
+ //   font-weight: bold;
+ //   font-size: 1.5em;
+ //   line-height: 1.5em;
+ //   border-radius: 15px;
+ //   padding: 0.4em 2.5em;
+ //   background-color: rgba(0, 0, 0, 0);
+ //   color: $red;
+ // }
+
+
       //
       // $thick : 1px;
       // $pad : 1em;
