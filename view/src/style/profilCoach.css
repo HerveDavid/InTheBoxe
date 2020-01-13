@@ -52,6 +52,14 @@ h3, h4 {
 }
 
 /* line 11, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
+fieldset {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border-radius: 40px;
+  padding: 15px;
+}
+
+/* line 18, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
 body {
   background: #fffff;
   background: url(../img/profil/profil.jpg) no-repeat center center fixed;
@@ -62,23 +70,23 @@ body {
   background-attachment: fixed;
 }
 
-/* line 21, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
+/* line 28, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
 .container {
   margin-top: 10%;
   margin-bottom: 10%;
 }
 
-/* line 27, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
+/* line 34, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
 .user-image img {
   width: 20%;
 }
 
-/* line 33, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
+/* line 40, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
 .style1 {
   background-color: #BE1E2D;
 }
 
-/* line 37, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
+/* line 44, ../web/Atom/github/InTheBoxe/view/src/style_scss/profilCoach.scss */
 .tab-pane {
   width: 50em;
 }
