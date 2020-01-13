@@ -1,13 +1,9 @@
 <?php
-//classe des entrainements personalisés
-  class matchPotentiel{
+  class Match{
   //////////////////////declaration des attributs///////////////////
-  private $boxeurint;
-  private $licenceint;
-  private $boxeurext;
-  private $licenceext;
-  private $clubext;
-  private $categorie;
+  private $mailBoxeurInt;
+  private $boxeurExt;
+  private $clubExt;
   private $datecombat;
   private $lieu;
 
@@ -17,19 +13,12 @@
         $this->$key = $value;
     }
   }
-  //////////////////autres Methodes//////////////////
-
-  public function getBoxeurInt(){return $this->boxeurint;}
-  public function getLicenceInt(){return $this->licenceint;}
-  public function getBoxeurExt(){return $this->boxeurext;}
-  public function getLicenceExt(){return $this->licenceext;}
-  public function getClubExt(){return $this->clubext;}
-  public function getCategorie(){return $this->categorie;}
+  //////////////////declaration des getter//////////////////////
+  public function getMailBoxeurInt(){return $this->mailBoxeurInt;}
+  public function getBoxeurExt(){return $this->boxeurExt;}
+  public function getClubExt(){return $this->clubExt;}
   public function getDateCombat(){return $this->datecombat;}
   public function getLieu(){return $this->lieu;}
-  public function getPerdant(){return $adherent->getPerdant;}
-  }
-
   }
 
 ?>
