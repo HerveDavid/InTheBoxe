@@ -59,6 +59,7 @@ totalisant près de 200 adhérents.
 - César WATRIN
 - David HERVE
 - Gabriel VIALLON
+- Florent PEYRIN
 
 ### Cahier des charges
 - Walid KADURA
